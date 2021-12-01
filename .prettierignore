@@ -1,0 +1,22 @@
+node_modules
+/.yarn
+.yarn
+**/_next/**
+**/.cache/**
+**/.dist/**
+**/.next/**
+**/.now/**
+**/.types/**
+**/.vercel/**
+**/.vercel*/**
+**/bundles/**
+**/dist/**
+**/out/**
+
+**/deprecated/**
+**/fonts/**
+**/zzz--do-not-use/**
+
+public/scripts/**
+
+# Brewfile.lock.json

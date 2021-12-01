@@ -1,0 +1,7 @@
+[credential]
+  helper = GIT_CREDENTIAL_HELPER
+[github]
+  user = USERNAME
+[user]
+  name = AUTHORNAME
+  email = AUTHOREMAIL

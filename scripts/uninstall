@@ -1,0 +1,78 @@
+#!/usr/bin/env bash
+#
+# uninstall things.
+
+cd "$(dirname "$0")/.."
+DOTFILES_ROOT=$(pwd -P)
+
+set -e
+
+PKG_NAME=$(node -pe "require('./package.json')['name']")
+# @note(PKG) variable setting for outputs
+if [[ ! -d ".git" ]] || test ! $(which yarn); then
+  PKG_NAME="🎉️  $PKG_NAME"
+  PKG_VERSION="x.y.z (init)"
+else
+  PKG_NAME="📦️  $PKG_NAME"
+  PKG_VERSION="$(git fetch origin --tags -f -q && git describe --tags --abbrev=0 | sed 's/v//')"
+fi
+
+msg () {
+  printf "\r  [ \033[00;34m$1\033[0m ] $2\n"
+}
+
+info () {
+  printf "\r  [ \033[00;34m..\033[0m ] $1\n"
+}
+
+user () {
+  printf "\r  [ \033[0;33m📛️\033[0m ] $1\n"
+}
+
+success () {
+  printf "\r\033[2K  [ \033[00;32mOK\033[0m ] $1\n"
+}
+
+fail () {
+  printf "\r\033[2K  [\033[0;31mFAIL\033[0m] $1\n"
+  echo ''
+  exit
+}
+
+unlink_file () {
+  local src=$1 dst=$2
+
+  unlink "$2"
+  success "🔥️ unlinked $1 from $2"
+}
+
+uninstall_dotfiles () {
+  info '🔥️ uninstalling dotfiles'
+
+  for src in $(find -H "$DOTFILES_ROOT" -maxdepth 2 -name '*.symlink' -not -path '*.git*' | sort)
+  do
+    dst="$HOME/.$(basename "${src%.*}")"
+    unlink_file "$src" "$dst"
+  done
+
+  #
+  # vim.install.sh
+  for f in {ftdetect,ftplugin}; do
+    mkdir -p "$HOME/.vim/$f"
+    for src in $(find -H "$DOTFILES_ROOT/symlinks/vim/$f" -maxdepth 2 -name '*.vim' | sort)
+      do
+        dst="$HOME/.vim/$f/$(basename "${src%.*}.vim")"
+        unlink_file "$src" "$dst"
+      done
+  done
+}
+
+msg 🧹️ ""
+msg 🧹️ "$PKG_NAME@$PKG_VERSION"
+msg 🧹️ ""
+
+uninstall_dotfiles
+
+msg 🏁️ ""
+msg 🏁️ "$PKG_NAME@$PKG_VERSION"
+msg 🏁️ ""

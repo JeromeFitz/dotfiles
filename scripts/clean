@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+#
+# removes node_modules
+
+if [[ -d ./node_modules ]]; then rm -rf ./node_modules; fi

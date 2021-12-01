@@ -1,0 +1,21 @@
+{
+  "files.associations": {
+    ".gitconfig.*": "properties",
+    "*.conf.symlink": "properties",
+    "*.js.symlink": "javascript",
+    "*.json.symlink": "json",
+    "*.plist.symlink": "xml",
+    "*.symlink": "shellscript",
+    "*.yml.symlink": "yaml",
+    "Brewfile": "ruby",
+    "keybindings.json.symlink": "jsonc",
+    "settings.json.symlink": "jsonc"
+  },
+  "editor.formatOnSave": true,
+  "workbench.colorCustomizations": {
+    "titleBar.activeForeground": "#f1f1f1",
+    "titleBar.inactiveForeground": "#f1f1f1",
+    "titleBar.activeBackground": "#6272a4",
+    "titleBar.inactiveBackground": "#6273a46c"
+  }
+}

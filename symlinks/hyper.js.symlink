@@ -1,0 +1,145 @@
+// Future versions of Hyper may add additional config options,
+// which will not automatically be merged into this file.
+// See https://hyper.is#cfg for all currently supported options.
+
+const fontFamily =
+  "'Operator Mono', 'Fira Code', 'Roboto Mono', Menlo, 'DejaVu Sans Mono', Consolas, 'Lucida Console', monospace"
+
+module.exports = {
+  config: {
+    // The update channel to receive updates from
+    updateChannel: 'stable',
+
+    // The default size in pixels for the terminal
+    fontSize: 17,
+
+    // The font family to use with optional fallbacks
+    fontFamily,
+
+    // The font family to use for the UI with optional fallbacks
+    uiFontFamily: fontFamily,
+
+    fontWeight: 'normal',
+    fontWeightBold: 'bold',
+
+    // The color of the caret in the terminal
+    cursorColor: 'rgba(248,28,229,0.8)',
+
+    // The text color under BLOCK cursor
+    cursorAccentColor: '#000',
+
+    // The shape of the caret in the terminal.
+    // Available options are: 'BEAM', 'UNDERLINE', 'BLOCK'
+    cursorShape: 'BEAM',
+
+    // If true, cursor will blink
+    cursorBlink: true,
+
+    // The color of the main text of the terminal
+    foregroundColor: '#f4f4f4',
+
+    // The color and opacity of the window and main terminal background
+    backgroundColor: 'rgba(0,0,0,1)',
+
+    // The background color/opacity of the text selection in terminal
+    selectionColor: 'rgba(248,28,229,0.3)',
+
+    // The color of the main window border and tab bar
+    borderColor: '#333',
+
+    // Custom CSS to include in the main window
+    css: '',
+
+    // CSS padding values for the space around each term
+    padding: '12px 14px',
+
+    // the full list. if you're going to provide the full color palette,
+    // including the 6 x 6 color cubes and the grayscale map, just provide
+    // an array here instead of a color map object
+    colors: {
+      black: '#000000',
+      red: '#cc0000',
+      green: '#28cc00',
+      yellow: '#cccc00',
+      blue: '#0051cc',
+      magenta: '#a300cc',
+      cyan: '#00CCCC',
+      white: '#bbbbbb',
+      lightBlack: '#808080',
+      lightRed: '#cc0000',
+      lightGreen: '#28cc00',
+      lightYellow: '#cccc00',
+      lightBlue: '#0051cc',
+      lightMagenta: '#a300cc',
+      lightCyan: '#00CCCC',
+      lightWhite: '#bbbbbb',
+    },
+
+    // A path to a custom shell to run when Hyper starts a new session
+    shell: '',
+
+    // for setting shell arguments (i.e. for using interactive shellArgs: ['-i'])
+    // by default ['--login'] will be used
+    shellArgs: ['--login'],
+
+    // for environment variables
+    env: {},
+
+    // The default width/height in pixels of a new window
+    // windowSize: [540, 380],
+
+    // The number of rows to be persisted in terminal buffer for scrolling
+    scrollback: 1000,
+
+    // If true, selected text will automatically be copied to the clipboard
+    copyOnSelect: true,
+
+    // If true, on right click selected text will be copied or pasted if no selection is present (true by default on Windows)
+    quickEdit: false,
+
+    // If true, Hyper will be set as the default protocol client for SSH
+    defaultSSHApp: true,
+
+    // Change the behaviour of modifier keys to act as meta key
+    modifierKeys: { altIsMeta: false },
+
+    // Change the visibility of the hamburger menu. Available options are: true, false
+    showHamburgerMenu: false,
+
+    // Change the position/visibility of the window controls. Available options are: true, false, "left"
+    showWindowControls: true,
+
+    // set to false for no bell
+    // bell: 'SOUND',
+    // bellSoundURL: 'http://example.com/bell.mp3',
+    bell: false,
+
+    /**
+     * @note(plugins)
+     */
+    hypercwd: {
+      initialWorkingDirectory: '~/Code',
+    },
+
+    opacity: 1,
+  },
+
+  plugins: [
+    'hyper-highlight-active-pane',
+    'hyper-pane',
+    'hypercwd',
+    'hyper-opacity',
+    'hyper-dracula',
+    // 'hyperborder',
+  ],
+
+  // ~/.hyper_plugins/local
+  localPlugins: [],
+
+  /**
+   * @note(deprecated)
+   * keep these here for quicker edits when debugging
+   */
+  deprecatedPlugins: [],
+  deprecatedLocalPlugins: ['radix-colors'],
+}
