@@ -20,6 +20,9 @@ osascript -e 'tell application "System Events" to tell appearance preferences to
 # # icnv ▸ Icon View
 defaults write com.apple.Finder FXPreferredViewStyle clmv
 
+# Show all file extensions inside the Finder
+defaults write NSGlobalDomain "AppleShowAllExtensions" -bool "true"
+
 # Hide external drives or removeable media from the desktop
 defaults write com.apple.finder ShowExternalHardDrivesOnDesktop -bool false
 defaults write com.apple.finder ShowRemovableMediaOnDesktop -bool false
@@ -38,8 +41,8 @@ defaults write com.apple.finder ShowRemovableMediaOnDesktop -bool false
 # defaults write com.apple.dock wvous-bl-corner -int 10
 # defaults write com.apple.dock wvous-bl-modifier -int 0
 
-# Set the icon size of Dock items to 36 pixels
-defaults write com.apple.dock tilesize -int 36
+# Set the icon size of Dock items
+defaults write com.apple.dock tilesize -int 72
 
 # # Prevent changing the Dock size
 # defaults write com.apple.dock size-immutable -bool true

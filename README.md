@@ -113,15 +113,6 @@ This may seem a bit verbose, however, keeps things consistent:
 - [`@jeromefitz/semantic`](https://github.com/JeromeFitz/packages/tree/main/packages/semantic)
   - Semantic Release for Versioning
 
-## 🚌️ Roadmap
-
-- [ ] lazy load `nvm`
-- [ ] bonus: `init.sh` script for fresh installs
-- [ ] bonus: lazy load `rbenv`
-- [ ] bonus: lazy load `pyenv`
-
-(Will probably not do any of these. 😬️)
-
 ## 🙇️ References
 
 Over the years I have revamped this a bit through inspiration and sheer 🍽️ `fork`ery:

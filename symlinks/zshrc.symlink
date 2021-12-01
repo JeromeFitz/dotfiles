@@ -6,6 +6,8 @@ export PROJECTS=~/Code
 
 DEFAULT_USER=`whoami`
 
+autoload -Uz compinit && compinit
+
 # Stash your environment variables in ~/.zshrc.private. This means they'll stay out
 # of your main dotfiles repository (which may be public, like this one), but
 # you'll have access to them in your scripts.
@@ -13,9 +15,6 @@ if [[ -a ~/.zshrc.private ]]
 then
   source ~/.zshrc.private
 fi
-
-autoload colors && colors
-autoload -Uz compinit && compinit
 
 # all of our zsh files
 typeset -U config_files
@@ -30,29 +29,15 @@ done
 
 # load everything but the path and completion files
 # echo "> * !*.path|*.completion|nvm.*"
-for file in ${${${config_files:#*/*.path.zsh}:#*/*.completion.zsh}:#*/nvm.*.zsh}
+for file in ${${config_files:#*/*.path.zsh}:#*/*.completion.zsh}
 do
   # echo $file
   source $file
 done
 
-# initialize autocomplete here, otherwise functions won't be loaded
-autoload -U compinit
-compinit
-
 # load every completion after autocomplete loads
 # echo "> completion !*"
 for file in ${(M)config_files:#*/*.completion.zsh}
-do
-  source $file
-done
-
-# @hack(nvm) load nvm last
-# @todo(nvm) lazy load proper
-# ref: https://stackoverflow.com/a/47883587
-# load the nvm files
-# echo "> nvm !*"
-for file in ${(M)config_files:#*/nvm.*.zsh}
 do
   source $file
 done
