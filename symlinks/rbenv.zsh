@@ -1,5 +1,1 @@
-# init according to man page
-if (( $+commands[rbenv] ))
-then
-  eval "$(rbenv init -)"
-fi
+# 🚚️ moved to: sandboxrc.symlink
