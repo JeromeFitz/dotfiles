@@ -1,0 +1,83 @@
+#!/bin/bash
+
+#
+# (c) @benvan
+# ref: https://github.com/benvan/sandboxd
+#
+
+function sandbox_get_config_file() {
+  if  ! [ -z ${SANDBOXRC+x} ]; then
+    echo "$SANDBOXRC"
+  elif [ -d ${XDG_CONFIG_HOME:-$HOME/.config}/sandboxd ]; then
+    echo "${XDG_CONFIG_HOME:-$HOME/.config}/sandboxd/sandboxrc"
+  else
+    echo "${HOME}/.sandboxrc"
+  fi
+}
+
+typeset -r RC_FILE="$(sandbox_get_config_file)"
+
+# holds all hook descriptions in "cmd:hook" format
+sandbox_hooks=()
+
+# deletes all hooks associated with cmd
+function sandbox_delete_hooks(){
+  local cmd=$1
+  for i in "${sandbox_hooks[@]}";
+  do
+    if [[ $i == "${cmd}:"* ]]; then
+     local hook=$(echo $i | sed "s/.*://")
+     # Check if this is still a function, as it could have been unset alrady in case of duplicates.
+     typeset -f "$hook" >/dev/null && unset -f "$hook"
+    fi
+  done
+}
+
+
+# prepares environment and removes hooks
+function sandbox(){
+  local cmd=$1
+
+   if [[ "$(type $cmd | GREP_OPTIONS= grep -o function)" = "function" ]]; then
+    (>&2 echo "🥪️ sandboxing $cmd ...")
+    sandbox_delete_hooks $cmd
+    sandbox_init_$cmd # run user-defined sandbox
+  else
+    (>&2 echo "🥪️ sandbox '$cmd' not found.\nHave you defined sandbox_init_$cmd(){ ... } in your sandboxrc (${RC_FILE})?")
+    return 1
+  fi
+}
+
+# adds hooks to sandboxes
+function sandbox_hook(){
+  local cmd=$1
+  local hook=$2
+
+  sandbox_hooks+=( "${cmd}:${hook}" )
+  eval "$hook(){ sandbox $cmd; $hook \$@ ; }"
+}
+
+# automatically add hooks for shims of virtualenvs, e.g. pyenv, rbenv, etc
+# optionally pass the shim directory, assumed to be $HOME/.<command>/shims
+function sandbox_hook_shims(){
+  local cmd=$1
+  local dir="${2:-$HOME/.$1/shims}"
+  if test -d $dir; then
+    for shim in $(ls $dir); do
+      sandbox_hook $1 $shim
+    done
+  fi
+}
+
+source "$RC_FILE"
+
+# create hooks for the sandbox names themselves
+function sandbox_initialise(){
+  local funcs="$( cat $RC_FILE | sed 's/#.*$//g' | GREP_OPTIONS= grep -o 'sandbox_init_[^(]\+' )"
+  while read f; do
+    local cmd=$(echo $f | sed s/sandbox_init_//)
+    sandbox_hook $cmd $cmd;
+  done < <(echo "$funcs")
+}
+
+sandbox_initialise

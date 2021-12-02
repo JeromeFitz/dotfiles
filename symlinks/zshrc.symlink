@@ -1,42 +1,41 @@
-# shortcut to this dotfiles path is $ZSH
+# 🍰️ shortcut to this dotfiles path is $ZSH
 export ZSH=$HOME/.dotfiles
-
-# your project folder that we can `c [tab]` to
+export BREW_PREFIX=/usr/local
+# ⚛️ `c [tab]` project folder (move to private?)
 export PROJECTS=~/Code
 
 DEFAULT_USER=`whoami`
 
-autoload -Uz compinit && compinit
+# 🥪️ load sandboxd first
+source $ZSH/zsh/plugins/sandboxd.plugin.zsh
 
-# Stash your environment variables in ~/.zshrc.private. This means they'll stay out
-# of your main dotfiles repository (which may be public, like this one), but
-# you'll have access to them in your scripts.
+# ⚗️ debugging
+# zmodload zsh/zprof
+
+# 🔒️ private `./dotfiles-private` repo stuff
 if [[ -a ~/.zshrc.private ]]
 then
   source ~/.zshrc.private
 fi
 
-# all of our zsh files
+# 💽️ get all zsh files
 typeset -U config_files
 config_files=($ZSH/**/*.zsh)
 
-# load the path files
-# echo "> !* path"
+# 🗺️ load: path
 for file in ${(M)config_files:#*/*.path.zsh}
 do
   source $file
 done
 
-# load everything but the path and completion files
-# echo "> * !*.path|*.completion|nvm.*"
-for file in ${${config_files:#*/*.path.zsh}:#*/*.completion.zsh}
+# 🛁️ load: everything (except: path, completion, & sandboxd)
+for file in ${${${config_files:#*/*.path.zsh}:#*/*.completion.zsh}:#*/sandboxd.plugin.zsh}
 do
-  # echo $file
   source $file
 done
 
-# load every completion after autocomplete loads
-# echo "> completion !*"
+# 🧭️ load: completion (after autocomplete loads)
+autoload -Uz compinit && compinit
 for file in ${(M)config_files:#*/*.completion.zsh}
 do
   source $file
@@ -44,7 +43,7 @@ done
 
 unset config_files
 
-# Better history
+# 📜️ Better history
 # Credits to https://coderwall.com/p/jpj_6q/zsh-better-history-searching-with-arrow-keys
 autoload -U up-line-or-beginning-search
 autoload -U down-line-or-beginning-search
@@ -52,3 +51,6 @@ zle -N up-line-or-beginning-search
 zle -N down-line-or-beginning-search
 bindkey "^[[A" up-line-or-beginning-search # Up
 bindkey "^[[B" down-line-or-beginning-search # Down
+
+# ⚗️ debugging
+# zprof
