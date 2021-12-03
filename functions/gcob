@@ -1,0 +1,10 @@
+# ex) gcob JeromeFitz refactor/dotfiles
+#  => git fetch JeromeFitz && git checkout refactor/dotfiles
+gcob() {
+    github=$1
+    IFS=":"
+    read -r remote branch <<< "$github"
+    git fetch $remote
+    git checkout $branch
+    git pull $remote $branch
+}

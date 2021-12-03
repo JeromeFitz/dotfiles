@@ -18,8 +18,8 @@ local COLOR_GIT_CLEAN="%{$fg_bold[red]%}"
 local COLOR_DIRECTORY_NAME="%{$fg_bold[white]%}"
 local COLOR_NEED_PUSH="%{$fg_bold[yellow]%}"
 local COLOR_PREFIX="%{$fg_bold[white]%}"
-local PREFIX_SYMBOL="▲"
-local PREFIX="$COLOR_PREFIX$PREFIX_SYMBOL$COLOR_RESET"
+local PROMPT_PREFIX_SYMBOL="▲"
+local PROMPT_PREFIX="$COLOR_PREFIX$PROMPT_PREFIX_SYMBOL$COLOR_RESET"
 
 if (( $+commands[git] ))
 then
@@ -85,7 +85,7 @@ directory_name() {
 #   fi
 # }
 
-export PROMPT=$'$PREFIX $(directory_name) $(git_dirty)$(need_push)'
+export PROMPT=$'$PROMPT_PREFIX $(directory_name) $(git_dirty)$(need_push)'
 
 set_prompt () {
   export RPROMPT="%{$fg_bold[cyan]%}$COLOR_RESET"
