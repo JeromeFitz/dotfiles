@@ -1,0 +1,6 @@
+gradd() {
+    github=$1
+    IFS=":"
+    read -r user repo <<< "$github"
+    git remote add $user git@github.com:$user/$repo
+}

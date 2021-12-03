@@ -1,0 +1,8 @@
+#!/bin/sh
+
+set -e
+
+# $1 = remote name
+# $2 = github name
+# $3 = repo name
+git remote add $1 git@github.com:$2/$3.git

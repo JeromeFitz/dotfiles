@@ -25,20 +25,33 @@ config_files=($ZSH/**/*.zsh)
 # 🗺️ load: path
 for file in ${(M)config_files:#*/*.path.zsh}
 do
+  # timer=$(($(gdate +%s%N)/1000000))
   source $file
+  # now=$(($(gdate +%s%N)/1000000))
+  # elapsed=$(($now-$timer))
+  # echo $elapsed":" $file
+
 done
 
 # 🛁️ load: everything (except: path, completion, & sandboxd)
 for file in ${${${config_files:#*/*.path.zsh}:#*/*.completion.zsh}:#*/sandboxd.plugin.zsh}
 do
+  # timer=$(($(gdate +%s%N)/1000000))
   source $file
+  # now=$(($(gdate +%s%N)/1000000))
+  # elapsed=$(($now-$timer))
+  # echo $elapsed":" $file
 done
 
 # 🧭️ load: completion (after autocomplete loads)
 autoload -Uz compinit && compinit
 for file in ${(M)config_files:#*/*.completion.zsh}
 do
+  # timer=$(($(gdate +%s%N)/1000000))
   source $file
+  # now=$(($(gdate +%s%N)/1000000))
+  # elapsed=$(($now-$timer))
+  # echo $elapsed":" $file
 done
 
 unset config_files
