@@ -7,4 +7,3 @@ git checkout $1
 git fetch upstream
 git checkout $1
 git merge upstream/$1
-ggp

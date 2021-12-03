@@ -1,10 +1,14 @@
-# ex) gcob JeromeFitz refactor/dotfiles
-#  => git fetch JeromeFitz && git checkout refactor/dotfiles
+# This is from the GitHub Copy on the PR:
+# ex) JeromeFitz:refactor/dotfiles
+# Paste into terminal:
+#   => gcob JeromeFitz:refactor/dotfiles
+# Turns into:
+#   => git fetch JeromeFitz && git checkout refactor/dotfiles
 gcob() {
-    github=$1
-    IFS=":"
-    read -r remote branch <<< "$github"
-    git fetch $remote
-    git checkout $branch
-    git pull $remote $branch
+  github=$1
+  IFS=":"
+  read -r remote branch <<< "$github"
+  git fetch $remote
+  git checkout $branch
+  git pull $remote $branch
 }

@@ -7,4 +7,3 @@ git checkout $1
 git fetch origin
 git checkout $1
 git merge origin/$1
-ggp
