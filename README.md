@@ -1,8 +1,6 @@
 # 💽️ @jeromefitz/dotfiles
 
-A set of scripts to set up and keep a machine up-to-date (`macos`). Via `zsh` and `Homebrew`. 🍻️
-
-Latest iteration heavy from [`rholman`](#%EF%B8%8F-references) && [`jacobwgillespie`](#%EF%B8%8F-references). 🙇
+A set of scripts (`zsh` && `Homebrew`) to set up and keep a machine up-to-date (`macos`).
 
 ## ⬇️ Download
 
@@ -11,9 +9,9 @@ Latest iteration heavy from [`rholman`](#%EF%B8%8F-references) && [`jacobwgilles
 📝️ _**Note:** You’ll need to set the version._
 
 ```sh
-curl -LJO -k https://github.com/JeromeFitz/dotfiles/archive/v1.0.0.tar.gz
+curl -LJO -k https://github.com/JeromeFitz/dotfiles/archive/v2.0.0.tar.gz
 mkdir -p ~/.dotfiles
-tar -xf dotfiles-1.0.0.tar.gz -C ~/.dotfiles
+tar -xf dotfiles-2.0.0.tar.gz -C ~/.dotfiles
 ```
 
 :octocat: **Git installed?**
@@ -46,6 +44,8 @@ Prompt for `git`: `username|authorname|authoremail`
 Sets up `gitconfig.private.symlink` which is included w/in `gitconfig.symlink` and not attributed to repo. 🙈️
 
 ### 🔗️ symlinks
+
+Will set up `~/.[xyz]` with:
 
 ```sh
 └─── symlinks
@@ -81,25 +81,34 @@ Will uninstall those extra `brew|cask|tap|...`.
 
 ### 🛠️ zsh configuration
 
-Order of `source` b/c `nvm` is fickle:
-
 ```sh
 └─── config
+│   │   sandboxd.plugin.zsh
 │   │   *.path.zsh
 │   │   *.!completion.zsh
 │   │   *.completion.zsh
-│   │   nvm.*.zsh
 ```
 
-#### 😱️ oh-my-zsh
+#### 🔥️ config.setup.zsh
 
-I teeter back-and-forth on using `oh-my-zsh` and not.
+Setup file that will cycle through the above to generate a hard-code list to `source` from that you put into `zshrc.symlink`.
 
-To be completely up-front, I usually still clone `oh-my-zsh` into `./.oh-my-zsh` and via `.zshrc.private.symlink` will include specific functions. (`git`, I am specifically talking about the `git` plugin.)
+By not `typeset`’ing and looping through on `zsh` init we save `~0.56s`. 😅️
+
+📝️ _**Note:** If we ran this dynamically first, and cached for subsequent sessions that could be a down the line trade-off for proper dynamic sourcing._
+
+#### 🥪️ sandboxd
+
+Utilizes [`sandboxd`](https://github.com/benvan/sandboxd) for:
+
+- `nvm`
+- `pyenv`
+- `ruby`
 
 ### 🤓️ zsh functions
 
 > `dot` is a simple script that installs some dependencies, sets sane macOS defaults, and so on. Tweak this script, and occasionally run `dot` from time to time to keep your environment fresh and up-to-date. You can find this script in `bin/`.
+>
 > ref: [@holman/dotfiles](https://github.com/holman/dotfiles/blob/master/bin/dot)
 
 ## 📦️ other packages
@@ -117,12 +126,16 @@ This may seem a bit verbose, however, keeps things consistent:
 
 Over the years I have revamped this a bit through inspiration and sheer 🍽️ `fork`ery:
 
-- [croaky/dotfiles](https://github.com/croaky/dotfiles)
-- [thoughtbot/dotfiles](https://github.com/thoughtbot/dotfiles)
-- [thoughtbot/laptop](https://github.com/thoughtbot/laptop)h
-- [dot-local](http://robots.thoughtbot.com/manage-team-and-personal-dotfiles-together-with-rcm)
+- ~~croaky/dotfiles~~ 🪦️
+- [thoughtbot/dotfiles](https://github.com/thoughtbot/dotfiles) 🤖️
+- [thoughtbot/laptop](https://github.com/thoughtbot/laptop) 🤖️
+- [dot-local](http://robots.thoughtbot.com/manage-team-and-personal-dotfiles-together-with-rcm) 🤖️
 - [holman](https://github.com/holman/dotfiles)
 - [jacobwgillespie](https://github.com/jacobwgillespie/dotfiles)
+
+Latest iteration is specifically heavy from [`rholman`](#%EF%B8%8F-references) && [`jacobwgillespie`](#%EF%B8%8F-references). 🏆️
+
+## 🔒️ \*.private
 
 I personally prefer `.private` instead of `.local` and have a separate 🔒️ [repo](https://github.com/JeromeFitz/dotfiles-private) 🔒️ that symlinks (& sources from there...):
 

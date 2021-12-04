@@ -18,77 +18,53 @@ then
   source ~/.zshrc.private
 fi
 
-# # 💽️ get all zsh files
 # #
 # # 🔥️ Hard-code the `config_files` since these rarely change
-# #    1) Uncomment => Run the `config_files` search
-# #    2) Manually populate the hard-coded `config_files` variable
+# #    1) Uncomment => source ... config.setup.zsh
+# #    2) Manually populate the files below/ re-comment out
+# #    3) Replace filepath w/ $ZSH
+# #
 # # 💪️ Gains:
 # #    BEFORE: 0.55 sys
-# #    AFTER:  0.23 sys
+# #    AFTER:  0.10 sys (-0.45)
 # #
+# source $ZSH/zsh/config.setup.zsh
 
-# typeset -U config_files
-# config_files=($ZSH/**/*.zsh)
-# echo $config_files
-
-config_files=(
-  # paths
-  $ZSH/config/go.path.zsh
-  $ZSH/config/homebrew.path.zsh
-  $ZSH/config/java.path.zsh
-  $ZSH/config/nvm.path.zsh
-  $ZSH/config/python.path.zsh
-  $ZSH/config/rust.path.zsh
-  $ZSH/config/system.path.zsh
-  $ZSH/config/yarn.path.zsh
-  # !paths !completion
-  $ZSH/config/database.alias.zsh
-  $ZSH/config/docker.alias.zsh
-  $ZSH/config/git.alias.zsh
-  $ZSH/config/node.alias.zsh
-  $ZSH/config/npm.alias.zsh
-  $ZSH/config/ruby.alias.zsh
-  $ZSH/config/system.alias.zsh
-  $ZSH/config/system.env.zsh
-  $ZSH/config/system.grc.zsh
-  $ZSH/config/system.keys.zsh
-  $ZSH/config/xcode.alias.zsh
-  $ZSH/config/yarn.alias.zsh
-  $ZSH/config/zsh.alias.zsh
-  $ZSH/symlinks/rbenv.zsh
-  $ZSH/zsh/config.zsh
-  $ZSH/zsh/fpath.zsh
-  $ZSH/zsh/plugins/history-substring-search.plugin.zsh
-  $ZSH/zsh/prompt.zsh
-  $ZSH/zsh/window.zsh
-  # completion
-  $ZSH/config/git.completion.zsh
-  $ZSH/config/nvm.completion.zsh
-  $ZSH/config/ruby.completion.zsh
-  $ZSH/config/zsh.completion.zsh
-)
-
-# 🗺️ load: path
-for file in ${(M)config_files:#*/*.path.zsh}
-do
-  source $file
-done
-
-# 🛁️ load: everything (except: path, completion, & sandboxd)
-for file in ${${${config_files:#*/*.path.zsh}:#*/*.completion.zsh}:#*/sandboxd.plugin.zsh}
-do
-  source $file
-done
-
-# 🧭️ load: completion (after autocomplete loads)
+# 🗺️  path
+source $ZSH/config/go.path.zsh
+source $ZSH/config/homebrew.path.zsh
+source $ZSH/config/java.path.zsh
+source $ZSH/config/nvm.path.zsh
+source $ZSH/config/python.path.zsh
+source $ZSH/config/rust.path.zsh
+source $ZSH/config/system.path.zsh
+source $ZSH/config/yarn.path.zsh
+# 🛁️  * (!path|completion|sandboxd|config.setup)
+source $ZSH/config/database.alias.zsh
+source $ZSH/config/docker.alias.zsh
+source $ZSH/config/git.alias.zsh
+source $ZSH/config/node.alias.zsh
+source $ZSH/config/npm.alias.zsh
+source $ZSH/config/ruby.alias.zsh
+source $ZSH/config/system.alias.zsh
+source $ZSH/config/system.env.zsh
+source $ZSH/config/system.grc.zsh
+source $ZSH/config/system.keys.zsh
+source $ZSH/config/xcode.alias.zsh
+source $ZSH/config/yarn.alias.zsh
+source $ZSH/config/zsh.alias.zsh
+source $ZSH/symlinks/rbenv.zsh
+source $ZSH/zsh/config.zsh
+source $ZSH/zsh/fpath.zsh
+source $ZSH/zsh/plugins/history-substring-search.plugin.zsh
+source $ZSH/zsh/prompt.zsh
+source $ZSH/zsh/window.zsh
+# 🧭️  completion (after autocomplete loads)
 autoload -Uz compinit && compinit
-for file in ${(M)config_files:#*/*.completion.zsh}
-do
-  source $file
-done
-
-unset config_files
+source $ZSH/config/git.completion.zsh
+source $ZSH/config/nvm.completion.zsh
+source $ZSH/config/ruby.completion.zsh
+source $ZSH/config/zsh.completion.zsh
 
 # 📜️ Better history
 # Credits to https://coderwall.com/p/jpj_6q/zsh-better-history-searching-with-arrow-keys
