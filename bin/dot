@@ -43,3 +43,6 @@ $ZSH/config/homebrew.install.sh 2>&1
 
 echo "› 💽️ install"
 $ZSH/scripts/install
+
+echo "› 🛠️ config.setup.zsh"
+$ZSH/scripts/zsh-config-setup

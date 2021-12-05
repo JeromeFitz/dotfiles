@@ -18,53 +18,11 @@ then
   source ~/.zshrc.private
 fi
 
-# #
-# # 🔥️ Hard-code the `config_files` since these rarely change
-# #    1) Uncomment => source ... config.setup.zsh
-# #    2) Manually populate the files below/ re-comment out
-# #    3) Replace filepath w/ $ZSH
-# #
-# # 💪️ Gains:
-# #    BEFORE: 0.55 sys
-# #    AFTER:  0.10 sys (-0.45)
-# #
-# source $ZSH/zsh/config.setup.zsh
-
-# 🗺️  path
-source $ZSH/config/go.path.zsh
-source $ZSH/config/homebrew.path.zsh
-source $ZSH/config/java.path.zsh
-source $ZSH/config/nvm.path.zsh
-source $ZSH/config/python.path.zsh
-source $ZSH/config/rust.path.zsh
-source $ZSH/config/system.path.zsh
-source $ZSH/config/yarn.path.zsh
-# 🛁️  * (!path|completion|sandboxd|config.setup)
-source $ZSH/config/database.alias.zsh
-source $ZSH/config/docker.alias.zsh
-source $ZSH/config/git.alias.zsh
-source $ZSH/config/node.alias.zsh
-source $ZSH/config/npm.alias.zsh
-source $ZSH/config/ruby.alias.zsh
-source $ZSH/config/system.alias.zsh
-source $ZSH/config/system.env.zsh
-source $ZSH/config/system.grc.zsh
-source $ZSH/config/system.keys.zsh
-source $ZSH/config/xcode.alias.zsh
-source $ZSH/config/yarn.alias.zsh
-source $ZSH/config/zsh.alias.zsh
-source $ZSH/symlinks/rbenv.zsh
-source $ZSH/zsh/config.zsh
-source $ZSH/zsh/fpath.zsh
-source $ZSH/zsh/plugins/history-substring-search.plugin.zsh
-source $ZSH/zsh/prompt.zsh
-source $ZSH/zsh/window.zsh
-# 🧭️  completion (after autocomplete loads)
-autoload -Uz compinit && compinit
-source $ZSH/config/git.completion.zsh
-source $ZSH/config/nvm.completion.zsh
-source $ZSH/config/ruby.completion.zsh
-source $ZSH/config/zsh.completion.zsh
+# 🛠️ config.setup.zsh
+if [[ -a $ZSH/zsh/config.setup.zsh ]]
+then
+  source $ZSH/zsh/config.setup.zsh
+fi
 
 # 📜️ Better history
 # Credits to https://coderwall.com/p/jpj_6q/zsh-better-history-searching-with-arrow-keys
