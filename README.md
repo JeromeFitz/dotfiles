@@ -1,6 +1,24 @@
 # 💽️ @jeromefitz/dotfiles
 
-A set of scripts (`zsh` && `Homebrew`) to set up and keep a machine up-to-date (`macos`).
+Scripts (`zsh` && `Homebrew`) to set up and keep a machine up-to-date (`macos`).
+
+## ⏱️ Speed Test
+
+Latest on `2021-12-04`:
+
+```bash
+▲ .dotfiles [main] for i in $(seq 1 10); do /usr/bin/time zsh -i -c exit; done
+        0.19 real         0.09 user         0.10 sys
+        0.19 real         0.08 user         0.09 sys
+        0.19 real         0.09 user         0.09 sys
+        0.18 real         0.08 user         0.09 sys
+        0.19 real         0.09 user         0.10 sys
+        0.19 real         0.08 user         0.09 sys
+        0.19 real         0.09 user         0.10 sys
+        0.18 real         0.08 user         0.09 sys
+        0.19 real         0.09 user         0.09 sys
+        0.19 real         0.09 user         0.09 sys
+```
 
 ## ⬇️ Download
 
@@ -9,9 +27,9 @@ A set of scripts (`zsh` && `Homebrew`) to set up and keep a machine up-to-date (
 📝️ _**Note:** You’ll need to set the version._
 
 ```sh
-curl -LJO -k https://github.com/JeromeFitz/dotfiles/archive/v2.0.0.tar.gz
+curl -LJO -k https://github.com/JeromeFitz/dotfiles/archive/v2.1.0.tar.gz
 mkdir -p ~/.dotfiles
-tar -xf dotfiles-2.0.0.tar.gz -C ~/.dotfiles
+tar -xf dotfiles-2.1.0.tar.gz -C ~/.dotfiles
 ```
 
 :octocat: **Git installed?**
@@ -91,9 +109,19 @@ Will uninstall those extra `brew|cask|tap|...`.
 
 #### 🔥️ config.setup.zsh
 
-Setup file that will cycle through the above to generate a hard-code list to `source` from that you put into `zshrc.symlink`.
+Created/Maintained via `./scripts/zsh-config-setup`. That will cycle through the above (`path|*|completion`) to generate a hard-code list to `source` from that is pulled in via `zshrc.symlink`.
 
-By not `typeset`’ing and looping through on `zsh` init we save `~0.56s`. 😅️
+By not `typeset`’ing and looping through on `zsh` init dynamically we save `~0.56s`. 😅️
+
+These files rarely change, so we can side-step the init hit.
+
+The following can be run to keep up-to-date on any changes you make:
+
+```bash
+zsh-config-setup
+```
+
+And will also update via the `boostrap` and `dot` commands. 💯️
 
 📝️ _**Note:** If we ran this dynamically first, and cached for subsequent sessions that could be a down the line trade-off for proper dynamic sourcing._
 

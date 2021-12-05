@@ -1,0 +1,51 @@
+#!/usr/bin/env bash
+
+cd "$(dirname "$0")/.."
+DOTFILES_ROOT=$(pwd -P)
+
+CONFIG_SETUP_ZSH=$DOTFILES_ROOT/zsh/config.setup.zsh
+
+set -e
+
+# # 🛠️ config.setup.zsh
+# #    - Cycle through zsh files:
+# #      0) (re-)init file: config.setup.zsh
+# #      1) path
+# #      2) * (!path|completion|sandboxd|config.setup)
+# #      3) completion
+# #    - Creates `config.setup.zsh` for `zshrc.symlink` source
+# #    - Scripts to init / keep updated:
+# #       - sh ./scripts/zsh-config-setup # init
+# #       - dot # after setup + symlink
+# #       - zsh-config-setup # after setup + symlink
+# #
+# # 💪️ Gains:
+# #    BEFORE: 0.55 sys
+# #    AFTER:  0.10 sys (-0.45)
+# #
+# # 🍱️ SETUP: BEGIN
+
+# # 📝️ 0) (re-)init file
+echo "" > "$CONFIG_SETUP_ZSH"
+
+# # 🗺️ 1) path
+for file in $(find -H "$DOTFILES_ROOT" -maxdepth 2 -name '*.path.zsh' -not -path '*config.setup.zsh' | sort)
+do
+  echo "source ${file/#$DOTFILES_ROOT/\$ZSH}" >> "$CONFIG_SETUP_ZSH"
+done
+
+# # 🛁️  2) * (!path|completion|sandboxd|config.setup)
+for file in $(find -H "$DOTFILES_ROOT" -maxdepth 2 -name '*.zsh' -not -path '*.path.zsh' -not -path '*.completion.zsh' -not -path 'sandboxd.plugin.zsh' -not -path '*config.setup.zsh' | sort)
+do
+  echo "source ${file/#$DOTFILES_ROOT/\$ZSH}" >> "$CONFIG_SETUP_ZSH"
+done
+
+# # 🧭️  3) completion (after autocomplete loads)
+echo "autoload -Uz compinit && compinit" >> "$CONFIG_SETUP_ZSH"
+for file in $(find -H "$DOTFILES_ROOT" -maxdepth 2 -name '*.completion.zsh' -not -path '*config.setup.zsh' | sort)
+do
+  echo "source ${file/#$DOTFILES_ROOT/\$ZSH}" >> "$CONFIG_SETUP_ZSH"
+done
+
+# #
+# # 🍱️ SETUP: END
