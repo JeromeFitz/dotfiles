@@ -14,6 +14,7 @@ brew 'ack'
 brew 'bash'
 brew 'bash-completion'
 brew 'coreutils'
+brew 'deno'
 brew 'dnsmasq'
 brew 'emojify'
 brew 'gh'
@@ -59,9 +60,7 @@ brew 'zsh-syntax-highlighting'
 # Casks
 cask '1password'
 cask 'adobe-creative-cloud'
-cask 'airfoil' #rougeAmoeba
 cask 'alfred'
-cask 'audio-hijack' #rougeAmoeba
 cask 'bartender'
 cask 'brave-browser'
 # cask 'discord'
@@ -69,10 +68,8 @@ cask 'brave-browser'
 cask 'dropbox'
 cask 'encryptme'
 cask 'fantastical'
-cask 'farrago' #rougeAmoeba
 # cask 'figma'
 cask 'firefox'
-cask 'fission' #rougeAmoeba
 cask 'google-backup-and-sync'
 cask 'google-chrome'
 cask 'gpg-suite'
@@ -84,7 +81,6 @@ cask 'iterm2'
 cask 'keka'
 cask 'kid3'
 cask 'little-snitch'
-cask 'loopback' #rougeAmoeba
 cask 'micro-snitch'
 # cask 'microsoft-auto-update'
 # cask 'microsoft-edge'
@@ -119,6 +115,13 @@ cask 'visual-studio-code'
 cask 'vlc'
 cask 'zeplin'
 cask 'zoom'
+
+# Rouge Amoeba
+cask 'airfoil'
+cask 'audio-hijack'
+cask 'farrago'
+cask 'fission'
+cask 'loopback'
 
 # Fonts
 cask 'font-barlow'
