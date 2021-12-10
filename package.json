@@ -41,7 +41,7 @@
   },
   "devDependencies": {
     "@jeromefitz/codestyle": "6.0.4",
-    "@jeromefitz/git-cz": "12.0.2",
+    "@jeromefitz/git-cz": "12.0.4",
     "@jeromefitz/semantic": "6.0.3",
     "dotenv": "10.0.0",
     "husky": "7.0.4",
