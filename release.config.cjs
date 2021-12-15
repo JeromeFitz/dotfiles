@@ -1,4 +1,4 @@
-const release = require('@jeromefitz/semantic/release.config.cjs')
+const release = require('@jeromefitz/semantic/release.config.cjs').default
 const isCI = require('is-ci')
 !isCI && require('dotenv').config({ path: './.env' })
 

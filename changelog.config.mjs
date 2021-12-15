@@ -1,4 +1,4 @@
-import config from '@jeromefitz/git-cz/dist/themes/gitmoji'
+import config from '@jeromefitz/git-cz/gitmoji'
 import isCI from 'is-ci'
 !isCI && require('dotenv').config({ path: './.env' })
 
