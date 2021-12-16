@@ -24,7 +24,6 @@ source $ZSH/symlinks/rbenv.zsh
 source $ZSH/zsh/config.zsh
 source $ZSH/zsh/fpath.zsh
 source $ZSH/zsh/prompt.zsh
-source $ZSH/zsh/window.zsh
 autoload -Uz compinit && compinit
 source $ZSH/config/git.completion.zsh
 source $ZSH/config/nvm.completion.zsh
