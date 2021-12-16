@@ -122,6 +122,23 @@ module.exports = {
     },
 
     opacity: 1,
+
+    tabIcons: {
+      disableColors: true,
+      mapIcons: {
+        coffee: ['brew', 'dot'],
+        git: [
+          'git',
+          'gss',
+          'gac',
+          'gacp',
+          'ggl',
+          'git-fetch-origin',
+          'git-fetch-upstream',
+        ],
+        yarn: ['yarn', 'yuil'],
+      },
+    },
   },
 
   plugins: [
@@ -131,10 +148,12 @@ module.exports = {
     'hyper-opacity',
     'hyper-dracula',
     // 'hyperborder',
+    // @note(hyper) yarn is broken
+    // 'hyper-tab-icons',
   ],
 
   // ~/.hyper_plugins/local
-  localPlugins: [],
+  localPlugins: ['hyper-tab-icons'],
 
   /**
    * @note(deprecated)

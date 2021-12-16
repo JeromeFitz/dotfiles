@@ -73,26 +73,37 @@ directory_name() {
   echo "$COLOR_DIRECTORY_NAME%1/%\\$COLOR_RESET"
 }
 
-# battery_status() {
-#   if test ! "$(uname)" = "Darwin"
-#   then
-#     exit 0
-#   fi
-
-#   if [[ $(sysctl -n hw.model) == *"Book"* ]]
-#   then
-#     $ZSH/bin/battery-status
-#   fi
-# }
-
 export PROMPT=$'$PROMPT_PREFIX $(directory_name) $(git_dirty)$(need_push)'
 
 set_prompt () {
   export RPROMPT="%{$fg_bold[cyan]%}$COLOR_RESET"
 }
 
-precmd() {
-  # does not allow us to ever change title dynamically
-  title "zsh" "%m" "%55<...<%~"
-  set_prompt
+# #
+# #
+# ref: https://github.com/vercel/hyper/issues/1188#issuecomment-332606903
+# #
+# # Override auto-title when static titles are desired ($ title My new title)
+title() { export TITLE_OVERRIDDEN=1; echo -en "\e]0;$*\a"}
+# # Turn off static titles ($ autotitle)
+autotitle() { export TITLE_OVERRIDDEN=0 }; autotitle
+# Condition checking if title is overridden
+overridden() { [[ $TITLE_OVERRIDDEN == 1 ]]; }
+
+# Show cwd when shell prompts for input.
+tabtitle_precmd() {
+   if overridden; then return; fi
+   pwd=$(pwd) # Store full path as variable
+   cwd=${pwd##*/} # Extract current working dir only
+   print -Pn "\e]0;$cwd\a" # Replace with $pwd to show full path
 }
+[[ -z $precmd_functions ]] && precmd_functions=()
+precmd_functions=($precmd_functions tabtitle_precmd)
+
+# Prepend command (w/o arguments) to cwd while waiting for command to complete.
+tabtitle_preexec() {
+   if overridden; then return; fi
+   printf "\033]0;%s\a" "${1%% *} | $cwd" # Omit construct from $1 to show args
+}
+[[ -z $preexec_functions ]] && preexec_functions=()
+preexec_functions=($preexec_functions tabtitle_preexec)
