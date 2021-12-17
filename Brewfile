@@ -34,6 +34,7 @@ brew 'php'
 brew 'shivammathur/php/php@7.4'
 #
 # brew 'postgresql'
+# @todo(psql) upgrade path
 brew 'postgresql@9.4'
 brew 'pyenv'
 brew 'rbenv'
@@ -64,7 +65,7 @@ cask 'alfred'
 cask 'bartender'
 cask 'brave-browser'
 # cask 'discord'
-# cask 'docker'
+cask 'docker'
 cask 'dropbox'
 cask 'encryptme'
 cask 'fantastical'
@@ -147,4 +148,4 @@ mas 'Noizio', id: 928871589
 mas 'Solitaire+', id: 515113678
 # mas 'The Jackbox Party Pack 5', id: 1438912153
 mas 'UTC Time', id: 1538245904
-# mas 'Xcode', id: 497799835
+# mas 'Xcode', id: 497799835 # note(xcode) need to uninstall/install from brew
