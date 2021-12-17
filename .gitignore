@@ -14,3 +14,4 @@ yarn-error.log*
 Brewfile.lock.json
 gitconfig.private.symlink
 npmrc.*
+zprofile.symlink

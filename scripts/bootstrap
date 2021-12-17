@@ -42,7 +42,7 @@ fail () {
 setup_gitconfig () {
   if ! [ -f symlinks/gitconfig.private.symlink ]
   then
-    info '🛠️ setup gitconfig'
+    msg 🛠️ "gitconfig"
 
     git_credential='cache'
     if [ "$(uname -s)" == "Darwin" ]
@@ -50,16 +50,18 @@ setup_gitconfig () {
       git_credential='osxkeychain'
     fi
 
-    user ' - What is your github username?'
+    user ' - 😺️ What is your GitHub username? 🐙️'
     read -e git_username
-    user ' - What is your github author name?'
+    user ' - 😸️ What is your GitHub author name? 🐙️'
     read -e git_authorname
-    user ' - What is your github author email?'
+    user ' - 😹️ What is your GitHub author email? 🐙️'
     read -e git_authoremail
 
     sed -e "s/USERNAME/$git_username/g" -e "s/AUTHORNAME/$git_authorname/g" -e "s/AUTHOREMAIL/$git_authoremail/g" -e "s/GIT_CREDENTIAL_HELPER/$git_credential/g" $DOTFILES_ROOT/symlinks/gitconfig.private.symlink.example > $DOTFILES_ROOT/symlinks/gitconfig.private.symlink
 
-    success 'gitconfig'
+    success "🛠️ gitconfig"
+    msg 🛠️ "complete"
+    info ""
   fi
 }
 
@@ -139,10 +141,10 @@ link_file () {
 }
 
 install_dotfiles () {
-  info "💽️ installing: dotfiles"
+  msg 💽️ "dotfiles"
 
   local overwrite_all=false backup_all=false skip_all=false
-  info "🖇️  installing: symlinks"
+  msg 💽️ "› 🖇️ symlinks"
 
   for src in $(find -H "$DOTFILES_ROOT" -maxdepth 2 -name '*.symlink' -not -path '*.git*' | sort)
   do
@@ -160,6 +162,28 @@ install_dotfiles () {
         link_file "$src" "$dst"
       done
   done
+
+  success "› 🖇️  symlinks"
+  success "💽️ dotfiles"
+  msg 💽️ "complete"
+  info ""
+}
+
+install_homebrew () {
+  # If we're on a Mac, let's install and setup homebrew.
+  if [ "$(uname -s)" == "Darwin" ]
+  then
+    msg 🍺️ "Homebrew"
+    if source bin/dot | while read -r data; do info "$data"; done
+    then
+      success "› 🍻️ dependencies"
+    else
+      fail "› 🤮️ dependencies"
+    fi
+    success "🍺️ Homebrew"
+    msg 🍺️ "complete"
+    info ""
+  fi
 }
 
 msg 🤓️ ""
@@ -168,18 +192,7 @@ msg 🤓️ ""
 
 setup_gitconfig
 install_dotfiles
-
-# If we're on a Mac, let's install and setup homebrew.
-if [ "$(uname -s)" == "Darwin" ]
-then
-  info "🍺️ dependencies installing"
-  if source bin/dot | while read -r data; do info "$data"; done
-  then
-    success "🍻️ dependencies installed"
-  else
-    fail "🤮️ dependencies failed"
-  fi
-fi
+install_homebrew
 
 msg 🏁️ ""
 msg 🏁️ "$PKG_NAME@$PKG_VERSION"
