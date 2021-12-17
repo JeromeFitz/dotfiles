@@ -42,7 +42,7 @@ fail () {
 setup_gitconfig () {
   if ! [ -f symlinks/gitconfig.private.symlink ]
   then
-    info '🛠️ Setup: gitconfig'
+    msg 🛠️ "gitconfig"
 
     git_credential='cache'
     if [ "$(uname -s)" == "Darwin" ]
@@ -59,7 +59,9 @@ setup_gitconfig () {
 
     sed -e "s/USERNAME/$git_username/g" -e "s/AUTHORNAME/$git_authorname/g" -e "s/AUTHOREMAIL/$git_authoremail/g" -e "s/GIT_CREDENTIAL_HELPER/$git_credential/g" $DOTFILES_ROOT/symlinks/gitconfig.private.symlink.example > $DOTFILES_ROOT/symlinks/gitconfig.private.symlink
 
-    success '🛠️ gitconfig'
+    success "🛠️ gitconfig"
+    msg 🛠️ "complete"
+    info ""
   fi
 }
 
