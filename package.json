@@ -42,7 +42,7 @@
   "devDependencies": {
     "@jeromefitz/codestyle": "7.1.1",
     "@jeromefitz/git-cz": "13.1.1",
-    "@jeromefitz/semantic": "7.1.1",
+    "@jeromefitz/semantic": "7.1.2",
     "dotenv": "10.0.0",
     "husky": "7.0.4",
     "is-ci": "3.0.1",
