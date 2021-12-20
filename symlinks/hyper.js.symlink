@@ -146,19 +146,19 @@ module.exports = {
     'hyper-pane',
     'hypercwd',
     'hyper-opacity',
-    'hyper-dracula',
-    // 'hyperborder',
+    // 'hyper-dracula',
+    'hyperborder',
     // @note(hyper) yarn is broken
     // 'hyper-tab-icons',
   ],
 
   // ~/.hyper_plugins/local
-  localPlugins: ['hyper-tab-icons'],
+  localPlugins: ['hyper-bearded-vivid-black', 'hyper-tab-icons'],
 
   /**
    * @note(deprecated)
    * keep these here for quicker edits when debugging
    */
   deprecatedPlugins: [],
-  deprecatedLocalPlugins: ['radix-colors'],
+  deprecatedLocalPlugins: ['hyper-dracula', 'radix-colors'],
 }
