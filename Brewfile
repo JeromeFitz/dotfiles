@@ -136,7 +136,9 @@ cask 'font-roboto'
 mas '1Blocker', id: 1365531024
 # mas 'GarageBand', id: 682658836
 # mas 'GIF Brewery 3', id: 1081413713
+mas 'Gifski', id: 1351639930
 # mas 'iMovie', id: 408981434
+mas 'Jiffy', id: 1502527999
 # mas 'Keynote', id: 409183694
 # mas 'LINE', id: 539883307
 # mas 'Microsoft Excel', id: 462058435
@@ -144,6 +146,7 @@ mas '1Blocker', id: 1365531024
 mas 'Noizio', id: 928871589
 # mas 'Numbers', id: 409203825
 # mas 'Pages', id: 409201541
+mas 'Pandan', id: 1569600264
 # mas 'Quiplash', id: 1002623276
 mas 'Solitaire+', id: 515113678
 # mas 'The Jackbox Party Pack 5', id: 1438912153
