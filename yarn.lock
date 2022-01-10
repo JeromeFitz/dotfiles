@@ -275,10 +275,10 @@
   resolved "https://registry.yarnpkg.com/@jeromefitz/conventional-gitmoji/-/conventional-gitmoji-1.0.0.tgz#39a06d0d88cae8be3f5403ff9b6a3d3cfde7e745"
   integrity sha512-c30l7X3/Rf+CD+ot9AD91c67G8HSZ81ovHVNsG+EgW2n9RMmwDzpgK6AekXpggubM3uWXzMG7znOjX9lW4bECg==
 
-"@jeromefitz/git-cz@13.3.0":
-  version "13.3.0"
-  resolved "https://registry.yarnpkg.com/@jeromefitz/git-cz/-/git-cz-13.3.0.tgz#de705b8b2db12dd4a638b4812fd16f9b03339905"
-  integrity sha512-Qz4TIePxSmXUiKzBPAC6eVoZQ/gaxiIxvyFXTceq/877WcGlK/VWM1YYfhvYlSi4xHjVd3oY9Sh/mHlrq/nV9g==
+"@jeromefitz/git-cz@13.3.1":
+  version "13.3.1"
+  resolved "https://registry.yarnpkg.com/@jeromefitz/git-cz/-/git-cz-13.3.1.tgz#cfbd70ed017a9ddb97b388ad875253696eb5bd46"
+  integrity sha512-wA7VJ0tLw07P8t3lcc3nlrj3o5uyv1+evP7xq7aHDQRmEesaO9oWCmuHp6jJbUdMmNDbekgMcT7b/Kszf/RX9Q==
   dependencies:
     "@jeromefitz/conventional-gitmoji" "*"
     chalk "5.0.0"
