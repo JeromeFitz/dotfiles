@@ -292,10 +292,10 @@
     shellsync "0.2.2"
     word-wrap "1.2.3"
 
-"@jeromefitz/semantic@7.3.0":
-  version "7.3.0"
-  resolved "https://registry.yarnpkg.com/@jeromefitz/semantic/-/semantic-7.3.0.tgz#0345618a54b65417a824c8b339cd3204b79c2d4c"
-  integrity sha512-iQn2K67GZph8n9/KiP2nVE0PZOJaWtZ5J1+rLQRqJ7YnOPYgAg+xqbtN3cw2fIRNniEdiZYUURjsmW+f4X690A==
+"@jeromefitz/semantic@8.0.1":
+  version "8.0.1"
+  resolved "https://registry.yarnpkg.com/@jeromefitz/semantic/-/semantic-8.0.1.tgz#eb9bc329fe6af73a65f5f6843f24366efcfffd10"
+  integrity sha512-o2qKUDDn5Zj8WYxW3RhQlk5SzLpPXiMezTs41QwvNabKVrCtHRcOtwq7Z27NXtKZOvpVP3clxXk3YKR08dck9A==
   dependencies:
     "@jeromefitz/conventional-gitmoji" "*"
     "@octokit/core" "3.5.1"
