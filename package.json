@@ -40,7 +40,7 @@
     "pretty-quick": "pretty-quick"
   },
   "devDependencies": {
-    "@jeromefitz/codestyle": "7.1.5",
+    "@jeromefitz/codestyle": "8.0.0",
     "@jeromefitz/git-cz": "13.3.1",
     "@jeromefitz/semantic": "7.3.0",
     "dotenv": "11.0.0",
