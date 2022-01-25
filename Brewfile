@@ -114,6 +114,7 @@ cask 'transmit'
 # cask 'twitch'
 cask 'visual-studio-code'
 cask 'vlc'
+cask 'webex'
 cask 'zeplin'
 cask 'zoom'
 
