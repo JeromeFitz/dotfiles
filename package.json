@@ -41,7 +41,7 @@
   },
   "devDependencies": {
     "@babel/eslint-parser": "7.16.5",
-    "@jeromefitz/codestyle": "8.0.4",
+    "@jeromefitz/codestyle": "8.0.5",
     "@jeromefitz/git-cz": "14.0.2",
     "@jeromefitz/semantic": "8.0.4",
     "dotenv": "14.2.0",
