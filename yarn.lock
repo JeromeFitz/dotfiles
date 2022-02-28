@@ -323,10 +323,10 @@
     shellsync "0.2.2"
     word-wrap "1.2.3"
 
-"@jeromefitz/semantic@8.1.2":
-  version "8.1.2"
-  resolved "https://registry.yarnpkg.com/@jeromefitz/semantic/-/semantic-8.1.2.tgz#fcdad57ff3a84f0ff8aeb6fd26560f4cdd1dbe1a"
-  integrity sha512-QOlT2aou0Xz0PcBc8ePyNmw3EvK/DABOD9wEHcp2XtQr9jaYSyASuTutVPR7MD7czvCMGrtSV0EHdJqWfE+A3g==
+"@jeromefitz/semantic@9.0.0":
+  version "9.0.0"
+  resolved "https://registry.yarnpkg.com/@jeromefitz/semantic/-/semantic-9.0.0.tgz#640892c1441044507fd8181c5163e0363b20709b"
+  integrity sha512-/pwm8ap/7NhNZhCWI2lAq+GP1wLSa3lcA8JHk9+EYGr8xFNUhsSKLJ31KppZgcWrZbiohx2PFRgTBr3h0HydnA==
   dependencies:
     "@octokit/core" "3.5.1"
     "@semantic-release/commit-analyzer" "9.0.2"
