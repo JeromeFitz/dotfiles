@@ -307,10 +307,10 @@
     pretty-quick "3.1.3"
     typescript "4.5.5"
 
-"@jeromefitz/git-cz@14.1.3":
-  version "14.1.3"
-  resolved "https://registry.yarnpkg.com/@jeromefitz/git-cz/-/git-cz-14.1.3.tgz#7c1d989e3e983418a509a3cdce0208b4678a7a3b"
-  integrity sha512-ICvXpq/JNUAxM8NZeUslPVgY1ne839eaCrNw7geShIJHP19tMipCLHwt7jqgmXbkDKn11PP3LNwBjv2sUe2eFA==
+"@jeromefitz/git-cz@14.1.4":
+  version "14.1.4"
+  resolved "https://registry.yarnpkg.com/@jeromefitz/git-cz/-/git-cz-14.1.4.tgz#20334e6709562ea2452caf7de69210b3915a8434"
+  integrity sha512-7YUEObgNvSfn+oWNnHV/QlWUw45AD7K54ofkMxqshx3W+qWI9Htk+PlcQPDZsMPpjLfne9yhHzi8GBDTF7Xd/g==
   dependencies:
     chalk "5.0.0"
     chalk-pipe "5.1.1"
@@ -323,10 +323,10 @@
     shellsync "0.2.2"
     word-wrap "1.2.3"
 
-"@jeromefitz/semantic@8.1.2":
-  version "8.1.2"
-  resolved "https://registry.yarnpkg.com/@jeromefitz/semantic/-/semantic-8.1.2.tgz#fcdad57ff3a84f0ff8aeb6fd26560f4cdd1dbe1a"
-  integrity sha512-QOlT2aou0Xz0PcBc8ePyNmw3EvK/DABOD9wEHcp2XtQr9jaYSyASuTutVPR7MD7czvCMGrtSV0EHdJqWfE+A3g==
+"@jeromefitz/semantic@9.0.1":
+  version "9.0.1"
+  resolved "https://registry.yarnpkg.com/@jeromefitz/semantic/-/semantic-9.0.1.tgz#e28ff6b0269fbece73ceb2b7efc6006333b5eb56"
+  integrity sha512-d44OEI1fL8Cyk8ByhnJoQ9Fj+xWKTh2sJRGJnA1Vyc4qaOMoL/MB6DNMNMhGwydj3sBdt93BRX6yJgox7NKwRg==
   dependencies:
     "@octokit/core" "3.5.1"
     "@semantic-release/commit-analyzer" "9.0.2"
@@ -4213,12 +4213,10 @@ pify@^3.0.0:
   resolved "https://registry.yarnpkg.com/pify/-/pify-3.0.0.tgz#e5a4acd2c101fdf3d9a4d07f0dbc4db49dd28176"
   integrity sha1-5aSs0sEB/fPZpNB/DbxNtJ3SgXY=
 
-pinst@2.1.6:
-  version "2.1.6"
-  resolved "https://registry.yarnpkg.com/pinst/-/pinst-2.1.6.tgz#8d968b8ec1dac5dddcfc976c735592dbec58b42c"
-  integrity sha512-B4dYmf6nEXg1NpDSB+orYWvKa5Kfmz5KzWC29U59dpVM4S/+xp0ak/JMEsw04UQTNNKps7klu0BUalr343Gt9g==
-  dependencies:
-    fromentries "^1.3.2"
+pinst@3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/pinst/-/pinst-3.0.0.tgz#80dec0a85f1f993c6084172020f3dbf512897eec"
+  integrity sha512-cengSmBxtCyaJqtRSvJorIIZXMXg+lJ3sIljGmtBGUVonMnMsVJbnzl6jGN1HkOWwxNuJynCJ2hXxxqCQrFDdw==
 
 pkg-conf@^2.1.0:
   version "2.1.0"
