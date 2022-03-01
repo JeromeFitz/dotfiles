@@ -5,11 +5,7 @@ const isCI = require('is-ci')
 
 const { name } = require('./package.json')
 
-const branches = [
-  { name: 'main' },
-  { name: 'develop', prerelease: 'develop' },
-  { name: 'fix/upgrades-20220301', prerelease: 'upgrades-20220301' },
-]
+const branches = [{ name: 'main' }, { name: 'develop', prerelease: 'develop' }]
 
 const configPassed = {
   branches,
