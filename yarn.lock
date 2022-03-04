@@ -285,10 +285,10 @@
   resolved "https://registry.yarnpkg.com/@isaacs/string-locale-compare/-/string-locale-compare-1.1.0.tgz#291c227e93fd407a96ecd59879a35809120e432b"
   integrity sha512-SQ7Kzhh9+D+ZW9MA0zkYv3VXhIDNx+LzM6EJ+/65I3QY+enU6Itte7E5XX7EWrqLW2FN4n06GWzBnPoC3th2aQ==
 
-"@jeromefitz/codestyle@8.0.17":
-  version "8.0.17"
-  resolved "https://registry.yarnpkg.com/@jeromefitz/codestyle/-/codestyle-8.0.17.tgz#3b830498bf864842fa1fe6179c2b16078d6f3c29"
-  integrity sha512-qAOWVRhY+Vhd7H9zLILlrvKap/Li9FrcHrJ7lV0GuIJ2Vj05hFK5EiV9KImrk/unlVhEKCCjLoWWpes60Bsa6g==
+"@jeromefitz/codestyle@8.0.18":
+  version "8.0.18"
+  resolved "https://registry.yarnpkg.com/@jeromefitz/codestyle/-/codestyle-8.0.18.tgz#5a06c39ce56adf37d0d27544f95890e39c0e3d36"
+  integrity sha512-NKENQMLSjI1tE7MOvel0TCRWOrEb9CJv2+B7+hY1rxrTjuscnNB0sJnOGdSuSZlXQpYsfzmYtC6MLLDrm56lug==
   dependencies:
     "@babel/core" "7.17.5"
     "@babel/eslint-parser" "7.17.0"
