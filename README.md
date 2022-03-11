@@ -6,6 +6,8 @@ Scripts (`zsh` && `Homebrew`) to set up and keep a machine up-to-date (`macos`).
 
 Latest on `2021-12-04`:
 
+- This is/was run on a 2015 Macbook Pro so take with a grain of salt 🧂️ or two 🤣️
+
 ```bash
 ▲ .dotfiles [main] for i in $(seq 1 10); do /usr/bin/time zsh -i -c exit; done
         0.19 real         0.09 user         0.10 sys
@@ -44,7 +46,14 @@ git clone https://github.com/JeromeFitz/dotfiles.git ~/.dotfiles
 
 ```sh
 cd ~/.dotfiles
+
+# Brewfile
 sh ./script/bootstrap
+
+# # # OR # # #
+
+# Brewfile-Slim
+sh ./script/bootstrap -s
 ```
 
 This will go through:
@@ -52,6 +61,7 @@ This will go through:
 - [x] :octocat: git config
 - [x] 🔗️ symlinks
 - [x] 🍺️ homebrew install (+ post installs)
+  - [x] 💎️ `Brewfile|Brewfile-Slim`
 - [x] 🛠️ zsh configuration
 - [x] 🤓️ zsh functions
 
@@ -74,7 +84,7 @@ Will set up `~/.[xyz]` with:
 
 ### 🍺️ homebrew install
 
-Peep the `Brewfile` in root to see what all will be installed.
+Peep the `Brewfile|Brewfile-Slim` in root to see what all will be installed.
 
 Afterward, this will run every install located in:
 
@@ -138,6 +148,10 @@ Utilizes [`sandboxd`](https://github.com/benvan/sandboxd) for:
 > `dot` is a simple script that installs some dependencies, sets sane macOS defaults, and so on. Tweak this script, and occasionally run `dot` from time to time to keep your environment fresh and up-to-date. You can find this script in `bin/`.
 >
 > ref: [@holman/dotfiles](https://github.com/holman/dotfiles/blob/master/bin/dot)
+
+#### 🚈️ Slim
+
+`dot -s` will run from `Brewfile-Slim` which is a reduced Brewfile.
 
 ## 📦️ other packages
 

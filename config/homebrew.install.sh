@@ -5,6 +5,8 @@
 # This installs some of the common dependencies needed (or at least desired)
 # using Homebrew.
 
+BREWFILE_TYPE=$1
+
 setup_zprofile () {
   # @note(zprofile) need to re-run symlinks for Apple Silicon
   info "› 🍺️ homebrew: zprofile"
@@ -48,8 +50,8 @@ echo "› 🍺️ brew update ..."
 brew update
 
 # Install brew packages
-echo "› 🍺️ installing..."
-brew bundle --file ./Brewfile | indent
+echo "› 🍺️ installing... ($BREWFILE_TYPE)"
+brew bundle --file ./$BREWFILE_TYPE | indent
 
 # Custom dumb stuff until I port this out
 echo "› 🚨️ linting..."

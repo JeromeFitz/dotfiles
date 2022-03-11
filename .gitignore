@@ -12,6 +12,7 @@ yarn-error.log*
 # repo
 .idea
 Brewfile.lock.json
+Brewfile-Slim.lock.json
 gitconfig.private.symlink
 npmrc.*
 zprofile.symlink

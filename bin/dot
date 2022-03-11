@@ -2,6 +2,7 @@
 
 set -e
 
+BREWFILE_TYPE="Brewfile"
 parentDirectory="$(cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd -P)"
 dotfilesDirectory="$(cd "$( dirname "$parentDirectory" )" && pwd -P)"
 
@@ -13,6 +14,8 @@ displayUsageAndExit() {
   echo "Options:"
   echo "  -e, --edit    Open dotfiles directory for editing"
   echo "  -h, --help    Show this help message and exit"
+  echo "  -s, --slim    Brewfile-Slim"
+  echo "  -t, --type    Brewfile|Brewfile-Slim"
   exit
 }
 
@@ -24,6 +27,17 @@ while test $# -gt 0; do
     "-e"|"--edit")
       exec "$EDITOR" "$dotfilesDirectory"
       exit
+      ;;
+    "-s"|"--slim")
+      BREWFILE_TYPE="Brewfile-Slim"
+      shift
+      ;;
+    "-t"|"--type")
+      if [[ "Brewfile-Slim" == $2 ]];
+        then
+          BREWFILE_TYPE="Brewfile-Slim"
+      fi
+      shift
       ;;
     *)
       echo "Invalid option: $1"
@@ -39,7 +53,7 @@ echo "› 💚️ macOS defaults"
 $ZSH/config/macos.set-defaults.sh
 
 echo "› 🍺️ homebrew"
-$ZSH/config/homebrew.install.sh 2>&1
+$ZSH/config/homebrew.install.sh $BREWFILE_TYPE 2>&1
 
 echo "› 💽️ install"
 $ZSH/scripts/install

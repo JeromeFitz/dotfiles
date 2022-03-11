@@ -3,9 +3,24 @@
 # bootstrap installs things.
 
 cd "$(dirname "$0")/.."
+BREWFILE_TYPE="Brewfile"
 DOTFILES_ROOT=$(pwd -P)
 
 set -e
+
+while test $# -gt 0; do
+  case "$1" in
+    "-s"|"--slim")
+      BREWFILE_TYPE="Brewfile-Slim"
+      shift
+      ;;
+    *)
+      echo "Invalid option: $1"
+      exit
+      ;;
+  esac
+  shift
+done
 
 PKG_NAME=$(node -pe "require('./package.json')['name']")
 # @note(PKG) variable setting for outputs
@@ -174,7 +189,7 @@ install_homebrew () {
   if [ "$(uname -s)" == "Darwin" ]
   then
     msg 🍺️ "Homebrew"
-    if source bin/dot | while read -r data; do info "$data"; done
+    if source bin/dot -t $BREWFILE_TYPE | while read -r data; do info "$data"; done
     then
       success "› 🍻️ dependencies"
     else

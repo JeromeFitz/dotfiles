@@ -20,3 +20,4 @@ node_modules
 public/scripts/**
 
 # Brewfile.lock.json
+# Brewfile-Slim.lock.json
