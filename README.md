@@ -29,9 +29,9 @@ Latest on `2021-12-04`:
 📝️ _**Note:** You’ll need to set the version._
 
 ```sh
-curl -LJO -k https://github.com/JeromeFitz/dotfiles/archive/v2.1.0.tar.gz
+curl -LJO -k https://github.com/JeromeFitz/dotfiles/archive/v2.5.0.tar.gz
 mkdir -p ~/.dotfiles
-tar -xf dotfiles-2.1.0.tar.gz -C ~/.dotfiles
+tar -xf dotfiles-2.5.0.tar.gz -C ~/.dotfiles
 ```
 
 :octocat: **Git installed?**
