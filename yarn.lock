@@ -333,12 +333,12 @@
     shellsync "0.2.2"
     word-wrap "1.2.3"
 
-"@jeromefitz/release-notes-generator@1.0.1":
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/@jeromefitz/release-notes-generator/-/release-notes-generator-1.0.1.tgz#9cfb5a3d594ce295515738d36c2a5cf0442c56f9"
-  integrity sha512-XOavfxnaL927lCYzMjKUHpiu7fPthUDeDdQIwytUoELynQ+9+dgZhXaxsJzqcJu+FixkBCd64qYWJE21m0cbeQ==
+"@jeromefitz/release-notes-generator@1.0.2":
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/@jeromefitz/release-notes-generator/-/release-notes-generator-1.0.2.tgz#ffe434f44e94a9cb50fe1974c273e28d7194c0f6"
+  integrity sha512-QJeUgFK2PiK4y9xYxWv1IataK6ngcef012dcLhK8HiWMTOTgWUKZYdjaKSVyQs25au1Za0dVCymWUho8YZ9A9A==
   dependencies:
-    "@octokit/core" "3.5.1"
+    "@octokit/core" "3.6.0"
     conventional-commits-filter "2.0.7"
     conventional-commits-parser "3.2.4"
     date-fns "2.28.0"
@@ -570,7 +570,7 @@
   dependencies:
     "@octokit/types" "^6.0.3"
 
-"@octokit/core@3.5.1", "@octokit/core@^3.5.1":
+"@octokit/core@3.5.1":
   version "3.5.1"
   resolved "https://registry.yarnpkg.com/@octokit/core/-/core-3.5.1.tgz#8601ceeb1ec0e1b1b8217b960a413ed8e947809b"
   integrity sha512-omncwpLVxMP+GLpLPgeGJBF6IWJFjXDS5flY5VbppePYX9XehevbDykRH9PdCdvqt9TS5AOTiDide7h0qrkHjw==
@@ -578,6 +578,19 @@
     "@octokit/auth-token" "^2.4.4"
     "@octokit/graphql" "^4.5.8"
     "@octokit/request" "^5.6.0"
+    "@octokit/request-error" "^2.0.5"
+    "@octokit/types" "^6.0.3"
+    before-after-hook "^2.2.0"
+    universal-user-agent "^6.0.0"
+
+"@octokit/core@3.6.0", "@octokit/core@^3.5.1":
+  version "3.6.0"
+  resolved "https://registry.yarnpkg.com/@octokit/core/-/core-3.6.0.tgz#3376cb9f3008d9b3d110370d90e0a1fcd5fe6085"
+  integrity sha512-7RKRKuA4xTjMhY+eG3jthb3hlZCsOwg3rztWh75Xc+ShDWOfDDATWbeZpAHBNRpm4Tv9WgBMOy1zEJYXG6NJ7Q==
+  dependencies:
+    "@octokit/auth-token" "^2.4.4"
+    "@octokit/graphql" "^4.5.8"
+    "@octokit/request" "^5.6.3"
     "@octokit/request-error" "^2.0.5"
     "@octokit/types" "^6.0.3"
     before-after-hook "^2.2.0"
@@ -635,7 +648,7 @@
     deprecation "^2.0.0"
     once "^1.4.0"
 
-"@octokit/request@^5.6.0":
+"@octokit/request@^5.6.0", "@octokit/request@^5.6.3":
   version "5.6.3"
   resolved "https://registry.yarnpkg.com/@octokit/request/-/request-5.6.3.tgz#19a022515a5bba965ac06c9d1334514eb50c48b0"
   integrity sha512-bFJl0I1KVc9jYTe9tdGGpAMPy32dLBXXo1dS/YwSCTL/2nd9XeHsY616RE3HPXDVk+a+dBuzyz5YdlXwcDTr2A==
