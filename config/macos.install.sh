@@ -6,5 +6,7 @@ fi
 # The Brewfile handles Homebrew-based app and library installs, but there may
 # still be updates and installables in the Mac App Store.
 
-echo "› 🍎️ sudo softwareupdate -i -a"
-sudo softwareupdate -i -a
+# echo "› 🍎️ sudo softwareupdate -i -a"
+# sudo softwareupdate -i -a
+
+echo "› 🍎️ [deprecated] sudo softwareupdate -i -a, please run manually"

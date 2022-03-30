@@ -30,7 +30,7 @@ while test $# -gt 0; do
       ;;
     "-s"|"--slim")
       BREWFILE_TYPE="Brewfile-Slim"
-      shift
+      # shift
       ;;
     "-t"|"--type")
       if [[ "Brewfile-Slim" == $2 ]];

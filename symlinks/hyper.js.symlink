@@ -3,7 +3,7 @@
 // See https://hyper.is#cfg for all currently supported options.
 
 const fontFamily =
-  "'Operator Mono', 'Fira Code', 'Roboto Mono', Menlo, 'DejaVu Sans Mono', Consolas, 'Lucida Console', monospace"
+  "'Operator Mono', 'IBM Plex Mono', 'Fira Code', 'Roboto Mono', Menlo, 'DejaVu Sans Mono', Consolas, 'Lucida Console', monospace"
 
 module.exports = {
   config: {
