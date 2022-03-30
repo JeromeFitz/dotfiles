@@ -51,6 +51,7 @@ sandbox_init_ruby() {
 sandbox_hook_shims ruby "$HOME/.rbenv/shims"
 
 sandbox_init_yarn(){
+  node -v
   if (( $+commands[yarn] ))
   then
     export PATH="$PATH:`yarn global bin`"
