@@ -29,9 +29,9 @@ Latest on `2021-12-04`:
 📝️ _**Note:** You’ll need to set the version._
 
 ```sh
-curl -LJO -k https://github.com/JeromeFitz/dotfiles/archive/v2.5.0.tar.gz
+curl -LJO -k https://github.com/JeromeFitz/dotfiles/archive/v2.5.6.tar.gz
 mkdir -p ~/.dotfiles
-tar -xf dotfiles-2.5.0.tar.gz -C ~/.dotfiles
+tar -xf dotfiles-2.5.6.tar.gz -C ~/.dotfiles
 ```
 
 :octocat: **Git installed?**
@@ -48,12 +48,12 @@ git clone https://github.com/JeromeFitz/dotfiles.git ~/.dotfiles
 cd ~/.dotfiles
 
 # Brewfile
-sh ./script/bootstrap
+sh ./scripts/bootstrap
 
 # # # OR # # #
 
 # Brewfile-Slim
-sh ./script/bootstrap -s
+sh ./scripts/bootstrap -s
 ```
 
 This will go through:
@@ -142,6 +142,8 @@ Utilizes [`sandboxd`](https://github.com/benvan/sandboxd) for:
 - `nvm`
 - `pyenv`
 - `ruby`
+
+📝️ _**Note:** On new boxes you will need to install `node|python|ruby` accordingly._
 
 ### 🤓️ zsh functions
 
