@@ -12,7 +12,7 @@ while test $# -gt 0; do
   case "$1" in
     "-s"|"--slim")
       BREWFILE_TYPE="Brewfile-Slim"
-      shift
+      # shift
       ;;
     *)
       echo "Invalid option: $1"
@@ -203,6 +203,7 @@ install_homebrew () {
 
 msg 🤓️ ""
 msg 🤓️ "$PKG_NAME@$PKG_VERSION"
+msg 🤓️ "🍺️  $BREWFILE_TYPE"
 msg 🤓️ ""
 
 setup_gitconfig
