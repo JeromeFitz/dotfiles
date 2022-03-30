@@ -23,6 +23,7 @@ brew 'go'
 brew 'grep'
 brew 'hub'
 brew 'imagemagick'
+brew 'make'
 brew 'mas' # Mac App Store command-line interface
 # brew 'mongodb'
 brew 'mysql'

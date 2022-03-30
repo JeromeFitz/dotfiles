@@ -58,3 +58,12 @@ sandbox_init_yarn(){
   fi
 }
 # sandbox_hook yarn
+
+sandbox_init_make(){
+  if (( $+commands[make] ))
+  then
+    PATH="/usr/local/opt/make/libexec/gnubin:$PATH"
+  fi
+
+}
+# sandbox_hook make

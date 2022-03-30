@@ -2,7 +2,7 @@
 .windows,
 .monaco,
 .monaco-shell {
-  font-family: 'Operator Mono', 'IBM Plex Mono', 'Fira Code', 'Roboto Mono', Menlo, 'DejaVu Sans Mono',
+  font-family: 'Operator Mono Lig', 'Operator Mono', 'IBM Plex Mono', 'Fira Code', 'Roboto Mono', Menlo, 'DejaVu Sans Mono',
     Consolas, 'Lucida Console', monospace !important;
   font-variant-ligatures: normal;
   font-size: 15px !important;
