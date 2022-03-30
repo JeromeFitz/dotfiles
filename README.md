@@ -4,22 +4,20 @@ Scripts (`zsh` && `Homebrew`) to set up and keep a machine up-to-date (`macos`).
 
 ## ⏱️ Speed Test
 
-Latest on `2021-12-04`:
-
-- This is/was run on a 2015 Macbook Pro so take with a grain of salt 🧂️ or two 🤣️
+Latest on `2022-03-30`:
 
 ```bash
 ▲ .dotfiles [main] for i in $(seq 1 10); do /usr/bin/time zsh -i -c exit; done
-        0.19 real         0.09 user         0.10 sys
-        0.19 real         0.08 user         0.09 sys
-        0.19 real         0.09 user         0.09 sys
-        0.18 real         0.08 user         0.09 sys
-        0.19 real         0.09 user         0.10 sys
-        0.19 real         0.08 user         0.09 sys
-        0.19 real         0.09 user         0.10 sys
-        0.18 real         0.08 user         0.09 sys
-        0.19 real         0.09 user         0.09 sys
-        0.19 real         0.09 user         0.09 sys
+        0.15 real         0.06 user         0.08 sys
+        0.14 real         0.06 user         0.07 sys
+        0.14 real         0.06 user         0.08 sys
+        0.14 real         0.06 user         0.07 sys
+        0.14 real         0.06 user         0.08 sys
+        0.14 real         0.06 user         0.08 sys
+        0.14 real         0.06 user         0.07 sys
+        0.14 real         0.06 user         0.07 sys
+        0.14 real         0.06 user         0.07 sys
+        0.14 real         0.06 user         0.07 sys
 ```
 
 ## ⬇️ Download
@@ -29,14 +27,14 @@ Latest on `2021-12-04`:
 📝️ _**Note:** You’ll need to set the version._
 
 ```sh
-curl -LJO -k https://github.com/JeromeFitz/dotfiles/archive/v2.5.7.tar.gz
+curl -LJO -k https://github.com/JeromeFitz/dotfiles/archive/v2.6.0.tar.gz
 mkdir -p ~/.dotfiles
-tar -xf dotfiles-2.5.7.tar.gz -C ~/.dotfiles
+tar -xf dotfiles-2.6.0.tar.gz -C ~/.dotfiles
 ```
 
 :octocat: **Git installed?**
 
-📝️ _**Note:** No need to set version._
+📝️ _**Note:** No need to set version. Though once you have your SSH Key setup you will want to swap the `git remote` to `git@github.com:JeromeFitz/dotfiles.git`_
 
 ```sh
 git clone https://github.com/JeromeFitz/dotfiles.git ~/.dotfiles
@@ -70,6 +68,53 @@ This will go through:
 Prompt for `git`: `username|authorname|authoremail`
 
 Sets up `gitconfig.private.symlink` which is included w/in `gitconfig.symlink` and not attributed to repo. 🙈️
+
+#### 🚩 Multiple Git Accounts
+
+If you have multiple `git` accounts and need to differentiate between, oh let's say, `GitHub` and `GitLab` for example, you will need to do some custom modifications to the newly created `gitconfig.private.symlink`:
+
+```yml
+...
+# Default
+[includeIf "gitdir:~/"]
+  path = .gitconfig.private.default
+# Custom
+[includeIf "gitdir:~/Code/@custom/"]
+  path = .gitconfig.private.custom
+```
+
+Where they are set up with the following respectively (or, you know, further customized). The main swap (aside from any `GitHub|GitLab` customizations) are the format of the `name` and `email` to associate with the commits:
+
+`./symlinks/gitconfig.private.default.symlink`
+
+```yml
+[github]
+  user = JeromeFitz
+[user]
+  name = Jerome Fitzgerald
+  email = j@jeromefitzgerald.com
+
+```
+
+`./symlinks/gitconfig.private.custom.symlink`
+
+```yml
+[gitlab]
+  user = CustomHandle
+[user]
+  name = Last, First
+  email = j@custom.com
+```
+
+You will the need to run the symlinks again.
+
+To check which `name|email` you are currently using you can run `getGitConfig`:
+
+```bash
+▲ .dotfiles [main] getGitConfig
+[ git ] 📛  user.name:  Jerome Fitzgerald
+[ git ] 📧  user.email: j@jeromefitzgerald.com
+```
 
 ### 🔗️ symlinks
 
