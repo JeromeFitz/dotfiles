@@ -1,15 +1,15 @@
 #!/bin/sh
 #
-# Homebrew
+# Homebrew: Installs some of the common dependencies required
 #
-# This installs some of the common dependencies needed (or at least desired)
-# using Homebrew.
 
 BREWFILE_TYPE=$1
 
+echo "› 🍺️ $BREWFILE_TYPE"
+
 setup_zprofile () {
   # @note(zprofile) need to re-run symlinks for Apple Silicon
-  info "› 🍺️ homebrew: zprofile... ($BREWFILE_TYPE)"
+  info "› 🍺️ homebrew: zprofile"
   if [[ -f "/opt/homebrew/bin/brew" ]];
   then
     info "› 🍺️ homebrew: 🍏️ Apple Silicon"
@@ -22,7 +22,7 @@ setup_zprofile () {
 
 init_xcode () {
   # @note(xcode) cli tools => Can we do this from brew?
-  info "› 🍺️ homebrew: 🔨️ xcode => apple command line tools... ($BREWFILE_TYPE)"
+  info "› 🍺️ homebrew: 🔨️ xcode => apple command line tools"
   xcode-select --install
 }
 
@@ -31,7 +31,7 @@ if test ! $(which brew)
 then
   # @note(bootstrap) *should* only run during `bootstrap`
   #                  *will* have functions available to it
-  echo "› 🍺️ homebrew installation...($BREWFILE_TYPE)"
+  echo "› 🍺️ homebrew installation"
   # Install the correct homebrew for each OS type
   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
@@ -45,15 +45,15 @@ then
 
 fi
 
-# Upgrade homebrew
-echo "› 🍺️ brew update... ($BREWFILE_TYPE)"
+echo "› 🍺️ update"
 brew update
 
-# Install brew packages
-echo "› 🍺️ installing... ($BREWFILE_TYPE)"
+echo "› 🍺️ installing"
 brew bundle --file ./$BREWFILE_TYPE | indent
 
-# Custom dumb stuff until I port this out
+echo "› 🍺️ analytics"
+brew analytics off
+
 echo "› 🚨️ linting..."
 yarn lint:fix
 

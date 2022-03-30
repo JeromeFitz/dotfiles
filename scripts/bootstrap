@@ -5,6 +5,7 @@
 cd "$(dirname "$0")/.."
 BREWFILE_TYPE="Brewfile"
 DOTFILES_ROOT=$(pwd -P)
+PKG_NAME="@jeromefitz/dotfiles"
 
 set -e
 
@@ -22,7 +23,10 @@ while test $# -gt 0; do
   shift
 done
 
-PKG_NAME=$(node -pe "require('./package.json')['name']")
+if which node > /dev/null; then
+  PKG_NAME=$(node -pe "require('./package.json')['name']")
+fi
+
 # @note(PKG) variable setting for outputs
 if [[ ! -d ".git" ]] || test ! $(which yarn); then
   PKG_NAME="🎉️  $PKG_NAME"
@@ -65,11 +69,11 @@ setup_gitconfig () {
       git_credential='osxkeychain'
     fi
 
-    user ' - 😺️ What is your GitHub username? 🐙️'
+    user ' - 😺️ [git] What is your username? 🐙️'
     read -e git_username
-    user ' - 😸️ What is your GitHub author name? 🐙️'
+    user ' - 😸️ [git] What is your author name? 🐙️'
     read -e git_authorname
-    user ' - 😹️ What is your GitHub author email? 🐙️'
+    user ' - 😹️ [git] What is your author email? 🐙️'
     read -e git_authoremail
 
     sed -e "s/USERNAME/$git_username/g" -e "s/AUTHORNAME/$git_authorname/g" -e "s/AUTHOREMAIL/$git_authoremail/g" -e "s/GIT_CREDENTIAL_HELPER/$git_credential/g" $DOTFILES_ROOT/symlinks/gitconfig.private.symlink.example > $DOTFILES_ROOT/symlinks/gitconfig.private.symlink
