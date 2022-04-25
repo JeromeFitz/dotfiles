@@ -45,7 +45,7 @@
     "@jeromefitz/conventional-gitmoji": "3.0.3",
     "@jeromefitz/git-cz": "14.2.4",
     "@jeromefitz/semantic": "9.0.4",
-    "@jeromefitz/release-notes-generator": "1.0.5",
+    "@jeromefitz/release-notes-generator": "1.0.6",
     "dotenv": "16.0.0",
     "husky": "7.0.4",
     "is-ci": "3.0.1",
