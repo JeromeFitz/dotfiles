@@ -330,10 +330,10 @@
     semantic-release "19.0.2"
     title "3.4.4"
 
-"@jeromefitz/git-cz@14.2.4":
-  version "14.2.4"
-  resolved "https://registry.yarnpkg.com/@jeromefitz/git-cz/-/git-cz-14.2.4.tgz#e60a6200a757c4d32816afac4b7fd3e0ac68e594"
-  integrity sha512-miTZtcp3V5ST+OzDGMpGzQrX6E5nB4aOls/0LuPoByPu0Pa0/zkwf/Tq37GjHH0N6KSe3otfV7xkJ8g7HFGIBQ==
+"@jeromefitz/git-cz@14.2.5":
+  version "14.2.5"
+  resolved "https://registry.yarnpkg.com/@jeromefitz/git-cz/-/git-cz-14.2.5.tgz#e8916da1f23d8af64cf045b8dc7a83eb43198a0a"
+  integrity sha512-Xk58cc62Nbx12KBHCHdg1r9nLbCP/wuK8pTTJhd+Ar08JaDkpoDSgOKv0AOhwnNQQlfsbHFKwmQE7xfgdB2WQw==
   dependencies:
     colorize-template "1.0.0"
     fast-json-stable-stringify "2.1.0"
