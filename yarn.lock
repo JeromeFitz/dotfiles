@@ -359,10 +359,10 @@
     read-pkg-up "7.0.1"
     semver "7.3.7"
 
-"@jeromefitz/semantic@9.0.4":
-  version "9.0.4"
-  resolved "https://registry.yarnpkg.com/@jeromefitz/semantic/-/semantic-9.0.4.tgz#ba21c5904f9885fd948df79f26bcf8335f6516c9"
-  integrity sha512-RZKUrJ+OFeIOedHHGxloV1Ef6We+TZ/gCIwGMpi6vXyBU4ZHp8t6mNZ+EwRsZQhDuTX3BxO1M59t6cvr4A1FMg==
+"@jeromefitz/semantic@9.0.5":
+  version "9.0.5"
+  resolved "https://registry.yarnpkg.com/@jeromefitz/semantic/-/semantic-9.0.5.tgz#df772de3869a812d1f50b8b5445656cf8ee1a25e"
+  integrity sha512-KOBbj5rOsRXtprNL0BfDbVFpHGlxwAgB8OQxQPMAKz7UFlH++iPYVUS9oiWMHT15qUSwVOcsBvkxDN8zsGWZRA==
   dependencies:
     "@octokit/core" "3.6.0"
     "@semantic-release/commit-analyzer" "9.0.2"
