@@ -330,15 +330,15 @@
     semantic-release "19.0.2"
     title "3.4.4"
 
-"@jeromefitz/git-cz@14.2.5":
-  version "14.2.5"
-  resolved "https://registry.yarnpkg.com/@jeromefitz/git-cz/-/git-cz-14.2.5.tgz#e8916da1f23d8af64cf045b8dc7a83eb43198a0a"
-  integrity sha512-Xk58cc62Nbx12KBHCHdg1r9nLbCP/wuK8pTTJhd+Ar08JaDkpoDSgOKv0AOhwnNQQlfsbHFKwmQE7xfgdB2WQw==
+"@jeromefitz/git-cz@14.2.6":
+  version "14.2.6"
+  resolved "https://registry.yarnpkg.com/@jeromefitz/git-cz/-/git-cz-14.2.6.tgz#c83a7dd4f47ba6228b224dfc78334caec178c1bb"
+  integrity sha512-eqjGMEldGHQ0lJDDZasrdvcgecZXb5A9uGJfg5Z0oJ2yiGr3CODoPnC3x5JBc/ssXDfJTNS+bWwYMqYNNOlVNA==
   dependencies:
     colorize-template "1.0.0"
     fast-json-stable-stringify "2.1.0"
     fuzzy "0.1.3"
-    inquirer "8.2.2"
+    inquirer "8.2.4"
     inquirer-autocomplete-prompt "2.0.0"
     lodash "4.17.21"
     minimist "1.2.6"
@@ -2863,10 +2863,10 @@ inquirer-autocomplete-prompt@2.0.0:
     run-async "^2.4.1"
     rxjs "^7.5.4"
 
-inquirer@8.2.2:
-  version "8.2.2"
-  resolved "https://registry.yarnpkg.com/inquirer/-/inquirer-8.2.2.tgz#1310517a87a0814d25336c78a20b44c3d9b7629d"
-  integrity sha512-pG7I/si6K/0X7p1qU+rfWnpTE1UIkTONN1wxtzh0d+dHXtT/JG6qBgLxoyHVsQa8cFABxAPh0pD6uUUHiAoaow==
+inquirer@8.2.4:
+  version "8.2.4"
+  resolved "https://registry.yarnpkg.com/inquirer/-/inquirer-8.2.4.tgz#ddbfe86ca2f67649a67daa6f1051c128f684f0b4"
+  integrity sha512-nn4F01dxU8VeKfq192IjLsxu0/OmMZ4Lg3xKAns148rCaXP6ntAoEkVYZThWjwON8AlzdZZi6oqnhNbxUG9hVg==
   dependencies:
     ansi-escapes "^4.2.1"
     chalk "^4.1.1"
@@ -2882,6 +2882,7 @@ inquirer@8.2.2:
     string-width "^4.1.0"
     strip-ansi "^6.0.0"
     through "^2.3.6"
+    wrap-ansi "^7.0.0"
 
 internal-slot@^1.0.3:
   version "1.0.3"
