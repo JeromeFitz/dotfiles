@@ -1,5 +1,4 @@
-const config = require('@jeromefitz/codestyle/.eslintrc.cjs')
-
 module.exports = {
-  ...config,
+  extends: '@jeromefitz/eslint-config/typescript.cjs',
+  root: true,
 }
