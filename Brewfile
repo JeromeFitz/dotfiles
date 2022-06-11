@@ -59,6 +59,10 @@ brew 'zsh-completions'
 brew 'zsh-history-substring-search'
 brew 'zsh-syntax-highlighting'
 
+# Python Specific
+# brew 'fonttools' # python3 -m pip install fonttools
+# brew 'brotli' # python3 -m pip install brotli
+
 # Casks
 cask '1password'
 cask 'adobe-creative-cloud'
