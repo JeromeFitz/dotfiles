@@ -22,6 +22,7 @@ brew 'imagemagick'
 brew 'make'
 brew 'nvm'
 brew 'openssl'
+brew 'pnpm'
 brew 'pyenv'
 brew 'rbenv'
 brew 'svn' # for fonts

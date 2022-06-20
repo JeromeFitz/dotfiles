@@ -33,6 +33,7 @@ brew 'openssl'
 #
 brew 'php'
 brew 'shivammathur/php/php@7.4'
+brew 'pnpm'
 #
 # brew 'postgresql'
 # @todo(psql) upgrade path
