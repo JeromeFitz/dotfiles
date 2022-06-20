@@ -251,10 +251,10 @@
   resolved "https://registry.yarnpkg.com/@isaacs/string-locale-compare/-/string-locale-compare-1.1.0.tgz#291c227e93fd407a96ecd59879a35809120e432b"
   integrity sha512-SQ7Kzhh9+D+ZW9MA0zkYv3VXhIDNx+LzM6EJ+/65I3QY+enU6Itte7E5XX7EWrqLW2FN4n06GWzBnPoC3th2aQ==
 
-"@jeromefitz/conventional-gitmoji@3.1.1":
-  version "3.1.1"
-  resolved "https://registry.yarnpkg.com/@jeromefitz/conventional-gitmoji/-/conventional-gitmoji-3.1.1.tgz#99eb812adce871ae0535f2c8c8349f850e2563ba"
-  integrity sha512-inqkY1lgEnIe6wrP30p9JwAHxqX5/WS4GSOFRyjnF/HTaROYbAWtpbac0kLFPslp5qBzoeXZ4jw2/IQ/PmEShg==
+"@jeromefitz/conventional-gitmoji@3.2.0":
+  version "3.2.0"
+  resolved "https://registry.yarnpkg.com/@jeromefitz/conventional-gitmoji/-/conventional-gitmoji-3.2.0.tgz#60834f19ea4076ecb56979e83fd4746bf4532a40"
+  integrity sha512-nhCZJs8fpnh9AX9UdOxVbFAdkYgncxjGanrfiKLAReKegPIYxn/IPa0UnKImxa1kFZuliIGC6XOaUcxXv40DxQ==
   dependencies:
     grapheme-splitter "1.0.4"
     lodash "4.17.21"
