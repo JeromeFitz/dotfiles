@@ -5,6 +5,17 @@ sandbox_init_nvm(){
 }
 sandbox_hook nvm node
 
+sandbox_init_pnpm(){
+  node -v
+  if (( $+commands[pnpm] ))
+  then
+    # @todo(pnpm) uh... is this brew'd?
+    export PNPM_HOME="~/Library/pnpm"
+    export PATH="$PNPM_HOME:$PATH"
+  fi
+}
+# sandbox_hook pnpm
+
 sandbox_init_pyenv() {
   if (( $+commands[pyenv] )); then
     export PYENV_ROOT="$HOME/.pyenv"
