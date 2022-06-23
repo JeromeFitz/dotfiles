@@ -308,15 +308,17 @@
   resolved "https://registry.yarnpkg.com/@jeromefitz/prettier-config/-/prettier-config-1.1.0.tgz#ed9c0b8051ff52464c75c2f8c91a1ec7f49ccd48"
   integrity sha512-ZwYTRn72YN6oymAC8TOkiYrV2mkdTJxAW7MwKCIfSI0o+lEJjIAsFDahmjsg+U9LMohQ830DhwPio1PWI171Zg==
 
-"@jeromefitz/release-notes-generator@1.1.0":
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/@jeromefitz/release-notes-generator/-/release-notes-generator-1.1.0.tgz#acbe16328aee1b8ce49acd9c23cc8b36ee5495d8"
-  integrity sha512-atbK+4j73wjaMejjqNjRyyTVr05vf7lwCiC0M+jCZOezSBvFLOB6rCtvI9OXG3tllSm1z0scQDaAt3NVJR05nA==
+"@jeromefitz/release-notes-generator@1.2.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@jeromefitz/release-notes-generator/-/release-notes-generator-1.2.0.tgz#7d72e998b19b2ac05ca4fca7ccab1561a5565871"
+  integrity sha512-IoDwwF/fD3m80UXKbqcTGZPVpQFccMaux/bZuC9sVz+dR0CI7KKK8WV+zAyHj4YCehcdxjkoPTwMab4gbwkLsA==
   dependencies:
     "@octokit/core" "3.6.0"
+    "@octokit/rest" "18.12.0"
     conventional-commits-filter "2.0.7"
     conventional-commits-parser "3.2.4"
     date-fns "2.28.0"
+    import-from "4.0.0"
     lodash "4.17.21"
     read-pkg-up "7.0.1"
     semver "7.3.7"
@@ -655,7 +657,7 @@
     node-fetch "^2.6.7"
     universal-user-agent "^6.0.0"
 
-"@octokit/rest@^18.0.0":
+"@octokit/rest@18.12.0", "@octokit/rest@^18.0.0":
   version "18.12.0"
   resolved "https://registry.yarnpkg.com/@octokit/rest/-/rest-18.12.0.tgz#f06bc4952fc87130308d810ca9d00e79f6988881"
   integrity sha512-gDPiOHlyGavxr72y0guQEhLsemgVjwRePayJ+FcKc2SJqKUbxbkvf5kAZEWA/MKvsfYlQAMVzNJE3ezQcxMJ2Q==
@@ -2742,7 +2744,7 @@ import-fresh@^3.0.0, import-fresh@^3.2.1:
     parent-module "^1.0.0"
     resolve-from "^4.0.0"
 
-import-from@^4.0.0:
+import-from@4.0.0, import-from@^4.0.0:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/import-from/-/import-from-4.0.0.tgz#2710b8d66817d232e16f4166e319248d3d5492e2"
   integrity sha512-P9J71vT5nLlDeV8FHs5nNxaLbrpfAV5cF5srvbZfpwpcJoM/xZR3hiv+q+SAnuSmuGbXMWud063iIMx/V/EWZQ==
