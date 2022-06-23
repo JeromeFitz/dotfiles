@@ -280,10 +280,10 @@
     prettier "2.7.1"
     pretty-quick "3.1.3"
 
-"@jeromefitz/git-cz@14.3.1":
-  version "14.3.1"
-  resolved "https://registry.yarnpkg.com/@jeromefitz/git-cz/-/git-cz-14.3.1.tgz#581d0e52e333ed0549e24da8b41808dfa164ac75"
-  integrity sha512-NvTA6Fzs40yenkPeY9X68h83E9GczYAaFcxoNYYg8Vhk9acn6PNrL0LKV7NCebSTcGMPnJ7Qmhi5NBeuw/mtbA==
+"@jeromefitz/git-cz@14.4.0":
+  version "14.4.0"
+  resolved "https://registry.yarnpkg.com/@jeromefitz/git-cz/-/git-cz-14.4.0.tgz#bcb37f68fd2e34b0f68258856e0dc0c06293e17f"
+  integrity sha512-CAV9dtbOoljPoi/CjXA/fr4QGWdJs9t+/VHLhYj7VWARhlVxbH/fo3NrfbvjjlnSDA84S56gkdvfTlVvc0cQFw==
   dependencies:
     colorize-template "1.0.0"
     fast-json-stable-stringify "2.1.0"
