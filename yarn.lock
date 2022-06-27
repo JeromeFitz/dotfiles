@@ -296,12 +296,12 @@
     shellsync "0.2.2"
     word-wrap "1.2.3"
 
-"@jeromefitz/lint-staged@1.1.0":
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/@jeromefitz/lint-staged/-/lint-staged-1.1.0.tgz#7d31584fa728774a966efcc114688fc934edce49"
-  integrity sha512-l5UCs0P5MPYDZCJnnUZKJANCcCHevK1kLoz/eN2jstkqda6rgbtf41IJe+Uwd81QAr2NjOYPgFjIWGJOCDY7gQ==
+"@jeromefitz/lint-staged@1.1.1":
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/@jeromefitz/lint-staged/-/lint-staged-1.1.1.tgz#ce80a1f3150676b5ee3e3c9cde2e621dfc91b178"
+  integrity sha512-OT4pothSgi8szJSkdoGABVUMNtC8mg9mVWkzhzXh9Ksc9Pu+2TMOqUPWDgLX6s7dPw2J3MIRhLWCbC3Z1JlRzw==
   dependencies:
-    lint-staged "13.0.2"
+    lint-staged "13.0.3"
 
 "@jeromefitz/prettier-config@1.1.0":
   version "1.1.0"
@@ -3312,10 +3312,10 @@ lines-and-columns@^1.1.6:
   resolved "https://registry.yarnpkg.com/lines-and-columns/-/lines-and-columns-1.2.4.tgz#eca284f75d2965079309dc0ad9255abb2ebc1632"
   integrity sha512-7ylylesZQ/PV29jhEDl3Ufjo6ZX7gCqJr5F7PKrqc93v7fzSymt1BpwEU8nAUXs8qzzvqhbjhK5QZg6Mt/HkBg==
 
-lint-staged@13.0.2:
-  version "13.0.2"
-  resolved "https://registry.yarnpkg.com/lint-staged/-/lint-staged-13.0.2.tgz#35a1c57130e9ad5b1dea784972a40777ba433dd5"
-  integrity sha512-qQLfLTh9z34eMzfEHENC+QBskZfxjomrf+snF3xJ4BzilORbD989NLqQ00ughsF/A+PT41e87+WsMFabf9++pQ==
+lint-staged@13.0.3:
+  version "13.0.3"
+  resolved "https://registry.yarnpkg.com/lint-staged/-/lint-staged-13.0.3.tgz#d7cdf03a3830b327a2b63c6aec953d71d9dc48c6"
+  integrity sha512-9hmrwSCFroTSYLjflGI8Uk+GWAwMB4OlpU4bMJEAT5d/llQwtYKoim4bLOyLCuWFAhWEupE0vkIFqtw/WIsPug==
   dependencies:
     cli-truncate "^3.1.0"
     colorette "^2.0.17"
