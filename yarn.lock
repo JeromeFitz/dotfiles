@@ -303,10 +303,10 @@
     shellsync "0.2.2"
     word-wrap "1.2.3"
 
-"@jeromefitz/lint-staged@1.1.1":
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/@jeromefitz/lint-staged/-/lint-staged-1.1.1.tgz#ce80a1f3150676b5ee3e3c9cde2e621dfc91b178"
-  integrity sha512-OT4pothSgi8szJSkdoGABVUMNtC8mg9mVWkzhzXh9Ksc9Pu+2TMOqUPWDgLX6s7dPw2J3MIRhLWCbC3Z1JlRzw==
+"@jeromefitz/lint-staged@1.1.2":
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/@jeromefitz/lint-staged/-/lint-staged-1.1.2.tgz#71e3f32e1edd466225260070b5abde8421c19ce2"
+  integrity sha512-0xr2M9JA3wigpkBzRKk/n17xSNfatAkjdJ2BS1WycDUgMdpNAU3nyoUax0yan69ir5YRLom/8er1KkO9MO/Eug==
   dependencies:
     lint-staged "13.0.3"
 
