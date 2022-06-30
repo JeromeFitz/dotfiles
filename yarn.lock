@@ -330,20 +330,17 @@
     read-pkg-up "7.0.1"
     semver "7.3.7"
 
-"@jeromefitz/semantic@9.2.0":
-  version "9.2.0"
-  resolved "https://registry.yarnpkg.com/@jeromefitz/semantic/-/semantic-9.2.0.tgz#c1c50b02610d6fc3f333c0727f3508c0fbcb773c"
-  integrity sha512-4G5WoP5QohPorI8ycaKAddZrEga+0LGZec21hI+V1P7DBHdW2negVxvm4x5omNaldc7e31FSsGPmzl5mZk8TQA==
+"@jeromefitz/semantic@9.2.1":
+  version "9.2.1"
+  resolved "https://registry.yarnpkg.com/@jeromefitz/semantic/-/semantic-9.2.1.tgz#216013fa058604735b5e295bd7248b027f65b1fc"
+  integrity sha512-MrmmL128lelUorp/Z5fwJIozMZIStHQOydLHNn/0eL11HOfz4Xqfgxl4gqIHYwJKVgbWYtBCHvIDineJmliNGQ==
   dependencies:
-    "@octokit/core" "3.6.0"
     "@semantic-release/commit-analyzer" "9.0.2"
     "@semantic-release/exec" "6.0.3"
     "@semantic-release/git" "10.0.1"
     "@semantic-release/github" "8.0.4"
     "@semantic-release/npm" "9.0.1"
     "@semantic-release/release-notes-generator" "10.0.3"
-    grapheme-splitter "1.0.4"
-    lodash "4.17.21"
     semantic-release "19.0.3"
     semantic-release-commit-filter "1.0.2"
     title "3.4.4"
