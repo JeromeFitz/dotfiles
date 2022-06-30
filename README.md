@@ -4,20 +4,20 @@ Scripts (`zsh` && `Homebrew`) to set up and keep a machine up-to-date (`macos`).
 
 ## ⏱️ Speed Test
 
-Latest on `2022-03-30`:
+Latest on `2022-06-30`:
 
 ```bash
 ▲ .dotfiles [main] for i in $(seq 1 10); do /usr/bin/time zsh -i -c exit; done
-        0.15 real         0.06 user         0.08 sys
-        0.14 real         0.06 user         0.07 sys
-        0.14 real         0.06 user         0.08 sys
-        0.14 real         0.06 user         0.07 sys
-        0.14 real         0.06 user         0.08 sys
-        0.14 real         0.06 user         0.08 sys
-        0.14 real         0.06 user         0.07 sys
-        0.14 real         0.06 user         0.07 sys
-        0.14 real         0.06 user         0.07 sys
-        0.14 real         0.06 user         0.07 sys
+        0.06 real         0.03 user         0.03 sys
+        0.06 real         0.03 user         0.03 sys
+        0.06 real         0.03 user         0.03 sys
+        0.06 real         0.03 user         0.03 sys
+        0.06 real         0.03 user         0.03 sys
+        0.06 real         0.03 user         0.03 sys
+        0.06 real         0.03 user         0.03 sys
+        0.06 real         0.03 user         0.03 sys
+        0.06 real         0.03 user         0.03 sys
+        0.06 real         0.03 user         0.03 sys
 ```
 
 ## ⬇️ Download
