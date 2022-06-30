@@ -310,10 +310,10 @@
   dependencies:
     lint-staged "13.0.3"
 
-"@jeromefitz/prettier-config@1.1.0":
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/@jeromefitz/prettier-config/-/prettier-config-1.1.0.tgz#ed9c0b8051ff52464c75c2f8c91a1ec7f49ccd48"
-  integrity sha512-ZwYTRn72YN6oymAC8TOkiYrV2mkdTJxAW7MwKCIfSI0o+lEJjIAsFDahmjsg+U9LMohQ830DhwPio1PWI171Zg==
+"@jeromefitz/prettier-config@1.1.1":
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/@jeromefitz/prettier-config/-/prettier-config-1.1.1.tgz#2891c8f2e523962c963fb08e88090e58c55351a0"
+  integrity sha512-Mv7TcLf6aHBsigTxpKHmjtEmGt+Zm3XFdVPVXHE6riWiuegYtrfe4gguqSuQK6XLltHWSNeNJyVo+7Nx515laQ==
 
 "@jeromefitz/release-notes-generator@1.2.0":
   version "1.2.0"
