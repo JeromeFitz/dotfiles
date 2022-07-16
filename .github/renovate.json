@@ -1,0 +1,47 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [":semanticCommitsDisabled"],
+  "baseBranches": ["main"],
+  "branchPrefix": "deps/",
+  "commitMessage": "{{{commitMessagePrefix}}} {{{commitMessageAction}}} {{{commitMessageTopic}}} {{{commitMessageExtra}}} {{{commitMessageSuffix}}}",
+  "commitMessageAction": "",
+  "commitMessageExtra": "",
+  "commitMessagePrefix": "⬆️  (deps)",
+  "commitMessageSuffix": "",
+  "commitMessageTopic": " {{depName}}{{#if isPinDigest}}{{{newDigestShort}}}{{else}}{{#if isMajor}}{{{newMajor}}}{{else}}{{#if isSingleVersion}}@{{{newVersion}}}{{else}}{{#if newValue}}{{{newValue}}}{{else}}@{{{newDigestShort}}}{{/if}}{{/if}}{{/if}}{{/if}}",
+  "dependencyDashboard": false,
+  "ignoreDeps": ["typescript"],
+  "labels": ["📦️ Dependencies"],
+  "node": {
+    "enabled": false
+  },
+  "packageRules": [
+    {
+      "commitMessagePrefix": "👷  (actions)",
+      "commitMessageExtra": "@{{depName}}{{#if isPinDigest}}{{{newDigestShort}}}{{else}}{{#if isMajor}}{{{newMajor}}}{{else}}{{#if isSingleVersion}}v{{{newVersion}}}{{else}}{{#if newValue}}{{{newValue}}}{{else}}v{{{newDigestShort}}}{{/if}}{{/if}}{{/if}}{{/if}}",
+      "commitMessageTopic": " {{depName}}",
+      "groupName": "github actions :octocat: ...",
+      "groupSlug": "github-actions",
+      "matchPackagePatterns": ["^actions"]
+    },
+    {
+      "commitMessagePrefix": "⬆️  (deps)",
+      "matchDepTypes": ["dependencies"]
+    },
+    {
+      "commitMessagePrefix": "📦  (deps-peer)",
+      "matchDepTypes": ["peerDependencies"]
+    },
+    {
+      "commitMessagePrefix": "📦  (deps-dev)",
+      "matchDepTypes": ["devDependencies"]
+    }
+  ],
+  "prBodyColumns": ["Package", "Update", "Type", "Change"],
+  "prFooter": "<!-- COMMIT_BODY_TEXT_END -->",
+  "prHeader": "<!-- COMMIT_BODY_TEXT_BEGIN -->",
+  "prHourlyLimit": 2,
+  "prTitle": "{{{commitMessagePrefix}}} {{{commitMessageAction}}} {{{commitMessageTopic}}} {{{commitMessageExtra}}} {{{commitMessageSuffix}}}",
+  "rebaseWhen": "conflicted",
+  "semanticCommits": "disabled"
+}
