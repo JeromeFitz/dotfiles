@@ -25,6 +25,27 @@
       "matchPackagePatterns": ["^actions"]
     },
     {
+      "assignees": ["JeromeFitz"],
+      "commitMessagePrefix": "⬆️  (deps)",
+      "commitMessageSuffix": "[b]",
+      "groupName": "next 🔺 ...",
+      "groupSlug": "next",
+      "matchPackageNames": ["@next/bundle-analyzer", "eslint-config-next", "next"],
+      "reviewers": ["JeromeFitz"]
+    },
+    {
+      "commitMessagePrefix": "⬆️  (deps)",
+      "groupName": "radix-ui 🌐 ...",
+      "groupSlug": "radix-ui",
+      "matchPackagePatterns": ["^@radix-ui/"]
+    },
+    {
+      "commitMessagePrefix": "⬆️  (deps)",
+      "groupName": "react ⚛️ ...",
+      "groupSlug": "react",
+      "matchPackageNames": ["@types/react", "react", "react-dom"]
+    },
+    {
       "commitMessagePrefix": "⬆️  (deps)",
       "matchDepTypes": ["dependencies"]
     },
