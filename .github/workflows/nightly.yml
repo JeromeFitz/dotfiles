@@ -1,47 +1,86 @@
-name: '🌃️  Nightly'
+name: '  🌃️  Nightly'
 on:
   schedule:
     # * is a special character in YAML so you have to quote this string
     # ref: https://docs.github.com/en/actions/reference/events-that-trigger-workflows#schedule
+    #        ┌───────────── minute (0 - 59)
+    #        │ ┌───────────── hour (0 - 23)
+    #        │ │ ┌───────────── day of the month (1 - 31)
+    #        │ │ │ ┌───────────── month (1 - 12 or JAN-DEC)
+    #        │ │ │ │ ┌───────────── day of the week (0 - 6 or SUN-SAT)
+    #        │ │ │ │ │
+    #        │ │ │ │ │
+    #        │ │ │ │ │
+    #        * * * * *
     - cron: '0 0 * * *'
+
+env:
+  GH_BOT_TOKEN: ${{ secrets.GH_BOT_TOKEN }}
+  GH_DEPLOY_TOKEN: ${{ secrets.GH_DEPLOY_TOKEN }}
+  GH_TOKEN: ${{ secrets.GH_TOKEN }}
+  NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+  # TURBO_TEAM: ${{ secrets.TURBO_TEAM }}
+  # TURBO_TOKEN: ${{ secrets.TURBO_TOKEN }}
+
 jobs:
-  release:
-    name: '🌃️  Nightly'
+  pull:
+    name: '👷️  CI'
+    if: github.ref == 'refs/heads/main'
+    timeout-minutes: 20
     runs-on: ubuntu-latest
     strategy:
-      matrix:
-        node: ['14']
+      fail-fast: false
+    env:
+      GH_TOKEN: ${{ secrets.GH_BOT_TOKEN }}
+      GITHUB_TOKEN: ${{ secrets.GH_BOT_TOKEN }}
+      NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+      # TURBO_TOKEN: ${{ secrets.TURBO_TOKEN }}
+      # TURBO_TEAM: ${{ secrets.TURBO_TEAM }}
     steps:
-      - name: '🔧️ Setup Node: ${{ matrix.node }}'
-        uses: actions/setup-node@v2
+      - name: '🐙️  Checkout'
+        id: pull-checkout
+        uses: actions/checkout@v3
         with:
-          node-version: ${{ matrix.node }}
-          architecture: 'x64'
-      - name: '🐙️  Git Checkout'
-        uses: actions/checkout@v2
-        with:
-          fetch-depth: 0
-      - name: '🌵️  Cache-tus'
-        uses: actions/cache@v2
-        with:
-          path: '**/node_modules'
-          key: ${{ runner.os }}-modules-${{ hashFiles('**/yarn.lock') }}
-      - name: '📦️ Install Dependecies'
-        run: |
-          yarn install --frozen-lockfile --ignore-engines --network-concurrency 1
+          fetch-depth: 100
+
+      - name: '💽️  Init'
+        id: cron-init
+        uses: JeromeFitz/packages/.github/actions/init@main
+
+      - name: '📦  Install'
+        id: cron-install
+        uses: JeromeFitz/packages/.github/actions/install@main
+
+      # - name: '🔺️  Cache (turbo)'
+      #   id: pull-cache-turbo
+      #   uses: JeromeFitz/packages/.github/actions/cache-turbo@main
+      #   with:
+      #     TURBO_TEAM: ${{ secrets.TURBO_TEAM }}
+      #     TURBO_TOKEN: ${{ secrets.TURBO_TOKEN }}
+
+      # - name: '🚨️  Lint'
+      #   id: cron-lint
+      #   uses: JeromeFitz/packages/.github/actions/lint@main
+      #   with:
+      #     TURBO_TEAM: ${{ secrets.TURBO_TEAM }}
+      #     TURBO_TOKEN: ${{ secrets.TURBO_TOKEN }}
+
       - name: '🚨️  Lint'
+        id: cron-lint
+        shell: bash
         run: |
-          yarn lint
-      # - name: '⚗️  Test'
-      #   run: |
-      #     yarn test
-      - name: '🏷️  Semantic Release'
-        env:
-          GH_TOKEN: ${{ secrets.GH_TOKEN }}
-          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+          pnpm run lint
+
+      # - name: '🏗️  Build'
+      #   id: cron-build
+      #   uses: JeromeFitz/packages/.github/actions/build@main
+      #   with:
+      #     TURBO_TEAM: ${{ secrets.TURBO_TEAM }}
+      #     TURBO_TOKEN: ${{ secrets.TURBO_TOKEN }}
+
+      - name: '🏷️  Release'
+        id: cron-release
+        uses: JeromeFitz/packages/.github/actions/release@main
+        with:
+          GH_TOKEN: ${{ secrets.GH_BOT_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-        run: |
-          echo "registry=http://registry.npmjs.org/" >> .npmrc
-          echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" >> .npmrc
-          echo "@jeromefitz:registry=https://registry.npmjs.org/" >> .npmrc
-          yarn semantic-release

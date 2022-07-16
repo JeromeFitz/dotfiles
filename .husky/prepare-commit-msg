@@ -1,5 +1,5 @@
 [ -n "$CI" ] && exit 0
 
-yarn pretty-quick --staged
+pnpm pretty-quick --staged
 exec < /dev/tty
-yarn git-cz --hook $ALLOW_EMPTY || true
+pnpm git-cz --hook $ALLOW_EMPTY || true
