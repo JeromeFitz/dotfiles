@@ -1,37 +1,129 @@
-name: '⚗️ Pull Request'
+name: '  ▶️  Pull'
+
 on:
   pull_request:
     branches:
       - main
       - canary
+      - develop
+    types:
+      - opened
+      - synchronize
+      - reopened
+      - ready_for_review
+      - converted_to_draft
+
+concurrency:
+  group: pull-${{ github.ref }}-1
+  cancel-in-progress: true
+
+env:
+  GH_BOT_TOKEN: ${{ secrets.GH_BOT_TOKEN }}
+  GH_DEPLOY_TOKEN: ${{ secrets.GH_DEPLOY_TOKEN }}
+  GH_TOKEN: ${{ secrets.GH_DEPLOY_TOKEN }}
+  # TURBO_TEAM: ${{ secrets.TURBO_TEAM }}
+  # TURBO_TOKEN: ${{ secrets.TURBO_TOKEN }}
+
 jobs:
-  release:
-    name: '⚗️ Pull Request'
+  pull:
+    name: '👷️  CI'
+    if: github.event.pull_request.draft == false && !contains(github.event.head_commit.message, '[skip ci]')
+    timeout-minutes: 20
     runs-on: ubuntu-latest
     strategy:
-      matrix:
-        node: ['14']
+      fail-fast: false
+    env:
+      GH_TOKEN: ${{ secrets.GH_DEPLOY_TOKEN }}
+      GITHUB_TOKEN: ${{ secrets.GH_DEPLOY_TOKEN }}
+      NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+      # TURBO_TOKEN: ${{ secrets.TURBO_TOKEN }}
+      # TURBO_TEAM: ${{ secrets.TURBO_TEAM }}
+      IS_ACTOR_VERIFIED: ${{ github.actor == 'jeromefitz' || github.actor == 'renovate[bot]' }}
+      IS_ACTOR_JEROMEFITZ: ${{ github.actor == 'jeromefitz' }}
+      IS_ACTOR_DEPENDABOT: ${{ github.actor == 'dependabot[bot]' }}
+      IS_ACTOR_RENOVATE: ${{ github.actor == 'renovate[bot]' }}
+      IS_LABEL_PNPM: ${{ contains( github.event.pull_request.labels.*.name, '📦 pnpm' ) }}
     steps:
-      - name: '🔧️ Setup Node: ${{ matrix.node }}'
-        uses: actions/setup-node@v2
+      - name: '🐙️  Checkout'
+        id: pull-checkout
+        uses: actions/checkout@v3
         with:
-          node-version: ${{ matrix.node }}
-          architecture: 'x64'
-      - name: '🐙️  Git Checkout'
-        uses: actions/checkout@v2
-        with:
-          fetch-depth: 0
-      - name: '🌵️  Cache-tus'
-        uses: actions/cache@v2
-        with:
-          path: '**/node_modules'
-          key: ${{ runner.os }}-modules-${{ hashFiles('**/yarn.lock') }}
-      - name: '📦️ Install Dependecies'
-        run: |
-          yarn install --frozen-lockfile --ignore-engines --network-concurrency 1
-      - name: '🚨️  Lint'
-        run: |
-          yarn lint
-      # - name: '⚗️  Test'
+          ref: ${{ github.event.pull_request.head.ref }}
+          fetch-depth: 1
+
+      - name: '💽️  Init'
+        id: pull-init
+        uses: JeromeFitz/packages/.github/actions/init@main
+
+      # - name: '🧪 debug'
+      #   id: pull-debug
+      #   shell: bash
       #   run: |
-      #     yarn test
+      #     echo 'IS_ACTOR_VERIFIED:   ${{ env.IS_ACTOR_VERIFIED }}'
+      #     echo 'IS_ACTOR_JEROMEFITZ: ${{ env.IS_ACTOR_JEROMEFITZ }}'
+      #     echo 'IS_ACTOR_RENOVATE:   ${{ env.IS_ACTOR_RENOVATE }}'
+      #     echo 'IS_LABEL_PNPM:       ${{ env.IS_LABEL_PNPM }}'
+      #     echo 'github.actor:        ${{ github.actor }}'
+
+      # - name: '🧪 debug ii'
+      #   id: pull-debug-ii
+      #   if: ${{ env.IS_ACTOR_VERIFIED == 'true' }}
+      #   shell: bash
+      #   run: |
+      #     echo 'Note: true is a string 😑'
+
+      # - name: '🧪 debug iii'
+      #   id: pull-debug-iii
+      #   if: ${{ env.IS_ACTOR_RENOVATE == 'true' || env.IS_LABEL_PNPM == 'true' }}
+      #   shell: bash
+      #   run: |
+      #     echo 'Note: This _would_ run the pnpm check'
+
+      #  NOTE: Turn this off until determine if renovate handles this
+      # - name: '🔒  pnpm'
+      #   id: pull-pnpm
+      #   uses: JeromeFitz/packages/.github/actions/pnpm@main
+      #   if: ${{ env.IS_ACTOR_RENOVATE == 'true' || env.IS_LABEL_PNPM == 'true' }}
+      #   with:
+      #     IS_ACTOR_VERIFIED: ${{ env.IS_ACTOR_VERIFIED }}
+      #     IS_ACTOR_JEROMEFITZ: ${{ env.IS_ACTOR_JEROMEFITZ }}
+      #     IS_ACTOR_DEPENDABOT: ${{ env.IS_ACTOR_DEPENDABOT }}
+      #     IS_ACTOR_RENOVATE: ${{ env.IS_ACTOR_RENOVATE }}
+      #     IS_LABEL_PNPM: ${{ env.IS_LABEL_PNPM }}
+
+      - name: '📦  Install'
+        id: pull-install
+        uses: JeromeFitz/packages/.github/actions/install@main
+
+      # - name: '🔺️  Cache (turbo)'
+      #   id: pull-cache-turbo
+      #   uses: JeromeFitz/packages/.github/actions/cache-turbo@main
+      #   with:
+      #     TURBO_TEAM: ${{ secrets.TURBO_TEAM }}
+      #     TURBO_TOKEN: ${{ secrets.TURBO_TOKEN }}
+
+      # - name: '🚨️  Lint'
+      #   id: pull-lint
+      #   uses: JeromeFitz/packages/.github/actions/lint@main
+      #   with:
+      #     TURBO_TEAM: ${{ secrets.TURBO_TEAM }}
+      #     TURBO_TOKEN: ${{ secrets.TURBO_TOKEN }}
+
+      - name: '🚨️  Lint'
+        id: pull-lint
+        shell: bash
+        run: |
+          pnpm run lint
+
+      # https://docs.github.com/en/actions/learn-github-actions/expressions
+      - name: '📛  Commit Message'
+        id: pull-commit-message
+        run: |
+          echo "::set-output name=message::$(git log --no-merges -1 --oneline)"
+
+      # - name: '🏗️  Build'
+      #   id: pull-build
+      #   uses: JeromeFitz/packages/.github/actions/build@main
+      #   with:
+      #     TURBO_TEAM: ${{ secrets.TURBO_TEAM }}
+      #     TURBO_TOKEN: ${{ secrets.TURBO_TOKEN }}
