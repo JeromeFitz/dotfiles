@@ -55,7 +55,7 @@ echo "› 🍺️ analytics"
 brew analytics off
 
 echo "› 🚨️ linting..."
-yarn lint:fix
+pnpm run lint:fix
 
 echo
 
