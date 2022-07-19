@@ -2,7 +2,7 @@ lockfileVersion: 5.4
 
 specifiers:
   '@babel/core': 7.18.9
-  '@babel/eslint-parser': 7.18.2
+  '@babel/eslint-parser': 7.18.9
   '@jeromefitz/conventional-gitmoji': 3.3.2
   '@jeromefitz/eslint-config': 1.1.4
   '@jeromefitz/git-cz': 14.4.1
@@ -20,7 +20,7 @@ specifiers:
 
 devDependencies:
   '@babel/core': 7.18.9
-  '@babel/eslint-parser': 7.18.2_@babel+core@7.18.9
+  '@babel/eslint-parser': 7.18.9_@babel+core@7.18.9
   '@jeromefitz/conventional-gitmoji': 3.3.2
   '@jeromefitz/eslint-config': 1.1.4_oytjevsdvuoetihuvbukx7cg5y
   '@jeromefitz/git-cz': 14.4.1_j2x2s2qm26pupnaj4dl4i7sgsa
@@ -81,19 +81,6 @@ packages:
       - supports-color
     dev: true
 
-  /@babel/eslint-parser/7.18.2_@babel+core@7.18.9:
-    resolution: {integrity: sha512-oFQYkE8SuH14+uR51JVAmdqwKYXGRjEXx7s+WiagVjqQ+HPE+nnwyF2qlVG8evUsUHmPcA+6YXMEDbIhEyQc5A==}
-    engines: {node: ^10.13.0 || ^12.13.0 || >=14.0.0}
-    peerDependencies:
-      '@babel/core': '>=7.11.0'
-      eslint: ^7.5.0 || ^8.0.0
-    dependencies:
-      '@babel/core': 7.18.9
-      eslint-scope: 5.1.1
-      eslint-visitor-keys: 2.1.0
-      semver: 6.3.0
-    dev: true
-
   /@babel/eslint-parser/7.18.2_c64qm7uxhyngk6awwlemhzy6ra:
     resolution: {integrity: sha512-oFQYkE8SuH14+uR51JVAmdqwKYXGRjEXx7s+WiagVjqQ+HPE+nnwyF2qlVG8evUsUHmPcA+6YXMEDbIhEyQc5A==}
     engines: {node: ^10.13.0 || ^12.13.0 || >=14.0.0}
@@ -103,6 +90,19 @@ packages:
     dependencies:
       '@babel/core': 7.18.9
       eslint: 8.18.0
+      eslint-scope: 5.1.1
+      eslint-visitor-keys: 2.1.0
+      semver: 6.3.0
+    dev: true
+
+  /@babel/eslint-parser/7.18.9_@babel+core@7.18.9:
+    resolution: {integrity: sha512-KzSGpMBggz4fKbRbWLNyPVTuQr6cmCcBhOyXTw/fieOVaw5oYAwcAj4a7UKcDYCPxQq+CG1NCDZH9e2JTXquiQ==}
+    engines: {node: ^10.13.0 || ^12.13.0 || >=14.0.0}
+    peerDependencies:
+      '@babel/core': '>=7.11.0'
+      eslint: ^7.5.0 || ^8.0.0
+    dependencies:
+      '@babel/core': 7.18.9
       eslint-scope: 5.1.1
       eslint-visitor-keys: 2.1.0
       semver: 6.3.0
