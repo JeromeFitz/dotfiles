@@ -3,7 +3,7 @@ lockfileVersion: 5.4
 specifiers:
   '@babel/core': 7.18.13
   '@babel/eslint-parser': 7.18.9
-  '@jeromefitz/conventional-gitmoji': 3.3.3
+  '@jeromefitz/conventional-gitmoji': 3.3.4
   '@jeromefitz/eslint-config': 1.1.4
   '@jeromefitz/git-cz': 14.4.1
   '@jeromefitz/lint-staged': 1.1.2
@@ -21,13 +21,13 @@ specifiers:
 devDependencies:
   '@babel/core': 7.18.13
   '@babel/eslint-parser': 7.18.9_@babel+core@7.18.13
-  '@jeromefitz/conventional-gitmoji': 3.3.3
+  '@jeromefitz/conventional-gitmoji': 3.3.4
   '@jeromefitz/eslint-config': 1.1.4_6icv5iny3som4nuxuhmn635ely
-  '@jeromefitz/git-cz': 14.4.1_uugwvjforpqf2vibwhgnm3zllm
+  '@jeromefitz/git-cz': 14.4.1_quvolgarm6wkxwbhoqbd4m4yma
   '@jeromefitz/lint-staged': 1.1.2
   '@jeromefitz/prettier-config': 1.1.1
   '@jeromefitz/release-notes-generator': 1.2.4
-  '@jeromefitz/semantic': 9.2.4_uugwvjforpqf2vibwhgnm3zllm
+  '@jeromefitz/semantic': 9.2.4_quvolgarm6wkxwbhoqbd4m4yma
   '@jeromefitz/tsconfig': 1.1.1
   dotenv: 16.0.1
   husky: 8.0.1
@@ -320,14 +320,14 @@ packages:
     resolution: {integrity: sha512-ZnQMnLV4e7hDlUvw8H+U8ASL02SS2Gn6+9Ac3wGGLIe7+je2AeAOxPY+izIPJDfFDb7eDjev0Us8MO1iFRN8hA==}
     dev: true
 
-  /@jeromefitz/conventional-gitmoji/3.3.3:
-    resolution: {integrity: sha512-u7n7BgflivpB4XeuM6UZQYndvoxCj0uoAnKbrvXR8qN36lzqBP44svfa+vRbPvYQPrx3w1pGqZCeYav1jwAyDQ==}
+  /@jeromefitz/conventional-gitmoji/3.3.4:
+    resolution: {integrity: sha512-oYfYyPRoFbEmrqngv4pz0bp3Y/UX07u30MN22JJAfqlQnTEfzpNGFMXXF/lhGvqUU67SkFpYPNVuMSqfEqOkeQ==}
     engines: {node: '>=16'}
     peerDependencies:
       lodash: ^4.17.21
     dependencies:
       grapheme-splitter: 1.0.4
-      title: 3.5.2
+      title: 3.5.3
     dev: true
 
   /@jeromefitz/eslint-config/1.1.4_6icv5iny3som4nuxuhmn635ely:
@@ -356,7 +356,7 @@ packages:
       - typescript
     dev: true
 
-  /@jeromefitz/git-cz/14.4.1_uugwvjforpqf2vibwhgnm3zllm:
+  /@jeromefitz/git-cz/14.4.1_quvolgarm6wkxwbhoqbd4m4yma:
     resolution: {integrity: sha512-oNZ0GM2Bh7NrV32Ylkau9YDviMfA9mEP6DUKpQA4V00k9K2m8bhPYXS1Q6RkqUJdLgVQxAA7ZODr101MR88pCg==}
     engines: {node: '>=16'}
     hasBin: true
@@ -364,7 +364,7 @@ packages:
       '@jeromefitz/conventional-gitmoji': ^3.2.0
       lodash: ^4.17.21
     dependencies:
-      '@jeromefitz/conventional-gitmoji': 3.3.3
+      '@jeromefitz/conventional-gitmoji': 3.3.4
       colorize-template: 1.0.0
       fast-json-stable-stringify: 2.1.0
       fuzzy: 0.1.3
@@ -408,13 +408,13 @@ packages:
       - encoding
     dev: true
 
-  /@jeromefitz/semantic/9.2.4_uugwvjforpqf2vibwhgnm3zllm:
+  /@jeromefitz/semantic/9.2.4_quvolgarm6wkxwbhoqbd4m4yma:
     resolution: {integrity: sha512-8GLp+O1d9BdnYl+ot1BlWDBtozWuna/lO+NIf3Ub9hfmwer/Hb5BrUx7KXRoIROlaWmi0mtZicqVXrnaasivSQ==}
     engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
     peerDependencies:
       '@jeromefitz/conventional-gitmoji': ^3.3.1
     dependencies:
-      '@jeromefitz/conventional-gitmoji': 3.3.3
+      '@jeromefitz/conventional-gitmoji': 3.3.4
       '@semantic-release/commit-analyzer': 9.0.2_semantic-release@19.0.4
       '@semantic-release/exec': 6.0.3_semantic-release@19.0.4
       '@semantic-release/git': 10.0.1_semantic-release@19.0.4
@@ -4312,16 +4312,6 @@ packages:
     resolution: {integrity: sha512-iOqSav00cVxEEICeD7TjLB1sueEL+81Wpzp2bY17uZjZN0pWZPuo4suZ/61VujxmqSGFfgOcNuTZ85QJwNZQpw==}
     dependencies:
       readable-stream: 3.6.0
-    dev: true
-
-  /title/3.5.2:
-    resolution: {integrity: sha512-PD9x2repsKvhDr/aE8mz9JlcyGKbTPOhIRraioVi9gc8AZEVok875UPFnWHFs97ddIomPC/oThpENPx3HhV5kg==}
-    hasBin: true
-    dependencies:
-      arg: 1.0.0
-      chalk: 2.3.0
-      clipboardy: 1.2.2
-      titleize: 1.0.0
     dev: true
 
   /title/3.5.3:
