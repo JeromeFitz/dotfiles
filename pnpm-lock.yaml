@@ -4,7 +4,7 @@ specifiers:
   '@babel/core': 7.19.0
   '@babel/eslint-parser': 7.18.9
   '@jeromefitz/conventional-gitmoji': 3.3.4
-  '@jeromefitz/eslint-config': 1.1.4
+  '@jeromefitz/eslint-config': 1.1.5
   '@jeromefitz/git-cz': 14.4.1
   '@jeromefitz/lint-staged': 1.1.2
   '@jeromefitz/prettier-config': 1.1.1
@@ -22,7 +22,7 @@ devDependencies:
   '@babel/core': 7.19.0
   '@babel/eslint-parser': 7.18.9_@babel+core@7.19.0
   '@jeromefitz/conventional-gitmoji': 3.3.4
-  '@jeromefitz/eslint-config': 1.1.4_eneo7ags24zm3yxhvnk6ydem74
+  '@jeromefitz/eslint-config': 1.1.5_eneo7ags24zm3yxhvnk6ydem74
   '@jeromefitz/git-cz': 14.4.1_quvolgarm6wkxwbhoqbd4m4yma
   '@jeromefitz/lint-staged': 1.1.2
   '@jeromefitz/prettier-config': 1.1.1
@@ -330,8 +330,8 @@ packages:
       title: 3.5.3
     dev: true
 
-  /@jeromefitz/eslint-config/1.1.4_eneo7ags24zm3yxhvnk6ydem74:
-    resolution: {integrity: sha512-sKi4KGmiefmHmdPinHHL9BtgCEIerq5A4S43Y+jR/NZMtV9GahgSuPY12xMjSsJIe3gPYPDwk0sxxrm4ndKsMw==}
+  /@jeromefitz/eslint-config/1.1.5_eneo7ags24zm3yxhvnk6ydem74:
+    resolution: {integrity: sha512-Vrh/XH0TZukov6hD8ipLgKnRcEJJvtql0WPrlfpx4pDBQePQfEn33cIJmUWBpVSdIoMluEGTZRauzOdm079FiA==}
     engines: {node: '>=16'}
     dependencies:
       '@babel/eslint-parser': 7.18.2_45dgxsbb2nuf7mquht7mlju6xa
@@ -341,7 +341,7 @@ packages:
       eslint-config-next: 12.2.1_yrtj344k46h67sdw7qqyyz3die
       eslint-config-prettier: 8.5.0_eslint@8.18.0
       eslint-plugin-import: 2.26.0_wno36sjfnklvt2ocf7qbhb2izy
-      eslint-plugin-jest: 26.5.3_nrq6p4q2urprji3uzocsvaezo4
+      eslint-plugin-jest: 27.0.1_nrq6p4q2urprji3uzocsvaezo4
       eslint-plugin-jsx-a11y: 6.6.0_eslint@8.18.0
       eslint-plugin-react: 7.30.1_eslint@8.18.0
       eslint-plugin-react-hooks: 4.6.0_eslint@8.18.0
@@ -1879,12 +1879,12 @@ packages:
       - supports-color
     dev: true
 
-  /eslint-plugin-jest/26.5.3_nrq6p4q2urprji3uzocsvaezo4:
-    resolution: {integrity: sha512-sICclUqJQnR1bFRZGLN2jnSVsYOsmPYYnroGCIMVSvTS3y8XR3yjzy1EcTQmk6typ5pRgyIWzbjqxK6cZHEZuQ==}
-    engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
+  /eslint-plugin-jest/27.0.1_nrq6p4q2urprji3uzocsvaezo4:
+    resolution: {integrity: sha512-LosUsrkwVSs/8Z/I8Hqn5vWgTEsHrfIquDEKOsV8/cl+gbFR4tiRCE1AimEotsHjSC0Rx1tYm6vPhw8C3ktmmg==}
+    engines: {node: ^14.15.0 || ^16.10.0 || >=18.0.0}
     peerDependencies:
       '@typescript-eslint/eslint-plugin': ^5.0.0
-      eslint: ^6.0.0 || ^7.0.0 || ^8.0.0
+      eslint: ^7.0.0 || ^8.0.0
       jest: '*'
     peerDependenciesMeta:
       '@typescript-eslint/eslint-plugin':
