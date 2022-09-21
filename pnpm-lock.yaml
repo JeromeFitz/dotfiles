@@ -8,7 +8,7 @@ specifiers:
   '@jeromefitz/git-cz': 14.4.2
   '@jeromefitz/lint-staged': 1.1.2
   '@jeromefitz/prettier-config': 1.1.1
-  '@jeromefitz/release-notes-generator': 1.2.4
+  '@jeromefitz/release-notes-generator': 1.2.5
   '@jeromefitz/semantic': 9.2.5
   '@jeromefitz/tsconfig': 1.1.1
   dotenv: 16.0.2
@@ -26,7 +26,7 @@ devDependencies:
   '@jeromefitz/git-cz': 14.4.2_pvq26naxwnzthnvk276bghdxlq
   '@jeromefitz/lint-staged': 1.1.2
   '@jeromefitz/prettier-config': 1.1.1
-  '@jeromefitz/release-notes-generator': 1.2.4
+  '@jeromefitz/release-notes-generator': 1.2.5
   '@jeromefitz/semantic': 9.2.5_pvq26naxwnzthnvk276bghdxlq
   '@jeromefitz/tsconfig': 1.1.1
   dotenv: 16.0.2
@@ -400,8 +400,8 @@ packages:
     engines: {node: '>=16'}
     dev: true
 
-  /@jeromefitz/release-notes-generator/1.2.4:
-    resolution: {integrity: sha512-m3We2kkLTM6L9L0ae8ZkjuVf08XQE2pAKK4FVPM7ViEcNysDlb2f3nrRxlaRVgCGC6BjMoPYqSlei1B7yDDdaA==}
+  /@jeromefitz/release-notes-generator/1.2.5:
+    resolution: {integrity: sha512-Oc/dSPBWtUX8/meFozNb8iFuNfv/zfRMzfLkhuyzMJIiSyLDYVQR5PH7IunWRSI0naGpb+gM7Oaj8lRhV5UkHw==}
     engines: {node: '>=16'}
     peerDependencies:
       lodash: ^4.17.21
@@ -409,7 +409,7 @@ packages:
       '@octokit/rest': 19.0.4
       conventional-commits-filter: 2.0.7
       conventional-commits-parser: 3.2.4
-      date-fns: 2.29.2
+      date-fns: 2.29.3
       import-from: 4.0.0
       read-pkg-up: 7.0.1
       semver: 7.3.7
@@ -1486,8 +1486,8 @@ packages:
     resolution: {integrity: sha512-sdQSFB7+llfUcQHUQO3+B8ERRj0Oa4w9POWMI/puGtuf7gFywGmkaLCElnudfTiKZV+NvHqL0ifzdrI8Ro7ESA==}
     dev: true
 
-  /date-fns/2.29.2:
-    resolution: {integrity: sha512-0VNbwmWJDS/G3ySwFSJA3ayhbURMTJLtwM2DTxf9CWondCnh6DTNlO9JgRSq6ibf4eD0lfMJNBxUdEAHHix+bA==}
+  /date-fns/2.29.3:
+    resolution: {integrity: sha512-dDCnyH2WnnKusqvZZ6+jA1O51Ibt8ZMRNkDZdyAyK4YfbDwa/cEmuztzG5pk6hqlp9aSBPYcjOlktquahGwGeA==}
     engines: {node: '>=0.11'}
     dev: true
 
