@@ -5,7 +5,7 @@ specifiers:
   '@babel/eslint-parser': 7.19.1
   '@jeromefitz/conventional-gitmoji': 3.3.5
   '@jeromefitz/eslint-config': 1.1.9
-  '@jeromefitz/git-cz': 14.4.2
+  '@jeromefitz/git-cz': 14.4.3
   '@jeromefitz/lint-staged': 1.1.2
   '@jeromefitz/prettier-config': 1.1.1
   '@jeromefitz/release-notes-generator': 1.2.6
@@ -23,7 +23,7 @@ devDependencies:
   '@babel/eslint-parser': 7.19.1_@babel+core@7.19.3
   '@jeromefitz/conventional-gitmoji': 3.3.5
   '@jeromefitz/eslint-config': 1.1.9_asd3iiu2itujmwwbvckobc3roi
-  '@jeromefitz/git-cz': 14.4.2_pvq26naxwnzthnvk276bghdxlq
+  '@jeromefitz/git-cz': 14.4.3_pvq26naxwnzthnvk276bghdxlq
   '@jeromefitz/lint-staged': 1.1.2
   '@jeromefitz/prettier-config': 1.1.1
   '@jeromefitz/release-notes-generator': 1.2.6
@@ -371,8 +371,8 @@ packages:
       - typescript
     dev: true
 
-  /@jeromefitz/git-cz/14.4.2_pvq26naxwnzthnvk276bghdxlq:
-    resolution: {integrity: sha512-js57G7Oo5lY6JYJAELh+qCvPMGheVn+t8k9Hf/U5iXyqW467ONoGFRo0IpEUf684oYKSKuFhS01kXWXI7272uQ==}
+  /@jeromefitz/git-cz/14.4.3_pvq26naxwnzthnvk276bghdxlq:
+    resolution: {integrity: sha512-tXDoW1T6IHAdf6d4YqHrUokg7PLzi63w1LUntY8gXidjj0A0c0VQj68Kid5N3GkSe3D0pNnItGO3nwPRNLCsJw==}
     engines: {node: '>=16'}
     hasBin: true
     peerDependencies:
@@ -384,7 +384,7 @@ packages:
       fuzzy: 0.1.3
       inquirer: 8.2.4
       inquirer-autocomplete-prompt: 2.0.0_inquirer@8.2.4
-      minimist: 1.2.6
+      minimist: 1.2.7
       picocolors: 1.0.0
       shellsync: 0.2.2
       word-wrap: 1.2.3
@@ -2441,7 +2441,7 @@ packages:
     engines: {node: '>=0.4.7'}
     hasBin: true
     dependencies:
-      minimist: 1.2.6
+      minimist: 1.2.7
       neo-async: 2.6.2
       source-map: 0.6.1
       wordwrap: 1.0.0
@@ -2904,7 +2904,7 @@ packages:
     resolution: {integrity: sha512-aKS4WQjPenRxiQsC93MNfjx+nbF4PAdYzmd/1JIj8HYzqfbu86beTuNgXDzPknWk0n0uARlyewZo4s++ES36Ow==}
     hasBin: true
     dependencies:
-      minimist: 1.2.6
+      minimist: 1.2.7
     dev: true
 
   /json5/2.2.1:
@@ -3212,8 +3212,8 @@ packages:
       kind-of: 6.0.3
     dev: true
 
-  /minimist/1.2.6:
-    resolution: {integrity: sha512-Jsjnk4bw3YJqYzbdyBiNsPWHPfO++UGG749Cxs6peCu5Xg4nrena6OVxOYxrQTqww0Jmwt+Ref8rggumkTLz9Q==}
+  /minimist/1.2.7:
+    resolution: {integrity: sha512-bzfL1YUZsP41gmu/qjrEk0Q6i2ix/cVeAhbCbqH9u3zYutS1cLg00qhrD0M2MVdCcx4Sc0UpP2eBWo9rotpq6g==}
     dev: true
 
   /modify-values/1.0.1:
@@ -3792,7 +3792,7 @@ packages:
     dependencies:
       deep-extend: 0.6.0
       ini: 1.3.8
-      minimist: 1.2.6
+      minimist: 1.2.7
       strip-json-comments: 2.0.1
     dev: true
 
@@ -4414,7 +4414,7 @@ packages:
     dependencies:
       '@types/json5': 0.0.29
       json5: 1.0.1
-      minimist: 1.2.6
+      minimist: 1.2.7
       strip-bom: 3.0.0
     dev: true
 
