@@ -41,8 +41,7 @@
     "lint": "pnpm run lint:prettier --check && pnpm run lint:eslint",
     "pretty-quick": "pretty-quick"
   },
-  "dependencies": {},
-  "devDependencies": {
+  "dependencies": {
     "@babel/core": "7.20.7",
     "@babel/eslint-parser": "7.19.1",
     "@jeromefitz/conventional-gitmoji": "3.3.5",
