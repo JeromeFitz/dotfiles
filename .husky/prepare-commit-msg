@@ -1,5 +1,21 @@
-[ -n "$CI" ] && exit 0
+#!/bin/sh
 
-pnpm pretty-quick --staged
-exec < /dev/tty
-pnpm git-cz --hook $ALLOW_EMPTY || true
+#!/bin/sh
+[ -n "$CI" ] && exit 0
+# shellcheck source=/dev/null
+. "$(dirname "$0")/_/husky.sh"
+
+FILE_ENV=.env
+if [ -f "$FILE_ENV" ]; then
+    # shellcheck disable=SC2046
+    [ ! -f "$FILE_ENV" ] || export $(grep -v '^#' $FILE_ENV | xargs)
+fi
+
+if [ "$HUSKY" = "0" ]; then
+    exit 0
+fi
+
+if [ ! "$HUSKY__PREPARE_COMMITMSG__CONVENTIONAL" = "0" ]; then
+    exec < /dev/tty
+    pnpm ccommit --hook || true
+fi

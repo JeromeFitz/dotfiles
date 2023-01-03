@@ -200,17 +200,6 @@ Utilizes [`sandboxd`](https://github.com/benvan/sandboxd) for:
 
 `dot -s` will run from `Brewfile-Slim` which is a reduced Brewfile.
 
-## 📦️ other packages
-
-This may seem a bit verbose, however, keeps things consistent:
-
-- [`@jeromefitz/codestyle`](https://github.com/JeromeFitz/packages/tree/main/packages/codestyle)
-  - Preferred code formatting for repo
-- [`@jeromefitz/git-cz`](https://github.com/JeromeFitz/packages/tree/main/packages/git-cz)
-  - Conventional Commits w/ Emojis
-- [`@jeromefitz/semantic`](https://github.com/JeromeFitz/packages/tree/main/packages/semantic)
-  - Semantic Release for Versioning
-
 ## 🙇️ References
 
 Over the years I have revamped this a bit through inspiration and sheer 🍽️ `fork`ery:
