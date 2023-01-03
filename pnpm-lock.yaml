@@ -4,12 +4,12 @@ specifiers:
   '@babel/core': 7.20.7
   '@babel/eslint-parser': 7.19.1
   '@jeromefitz/conventional-gitmoji': 3.3.5
-  '@jeromefitz/eslint-config': 1.1.11
+  '@jeromefitz/eslint-config': 1.1.12
   '@jeromefitz/lint-staged': 1.1.5
-  '@jeromefitz/prettier-config': 1.1.1
+  '@jeromefitz/prettier-config': 1.1.2
   '@jeromefitz/release-notes-generator': 1.2.7
   '@jeromefitz/semantic': 9.2.6
-  '@jeromefitz/tsconfig': 1.1.1
+  '@jeromefitz/tsconfig': 1.1.2
   ccommit: 1.0.0
   dotenv: 16.0.3
   husky: 8.0.2
@@ -22,12 +22,12 @@ dependencies:
   '@babel/core': 7.20.7
   '@babel/eslint-parser': 7.19.1_@babel+core@7.20.7
   '@jeromefitz/conventional-gitmoji': 3.3.5
-  '@jeromefitz/eslint-config': 1.1.11_f6pjiui7ufcvjfi2zx5dxxopam
+  '@jeromefitz/eslint-config': 1.1.12_f6pjiui7ufcvjfi2zx5dxxopam
   '@jeromefitz/lint-staged': 1.1.5_is-ci@3.0.1
-  '@jeromefitz/prettier-config': 1.1.1
+  '@jeromefitz/prettier-config': 1.1.2
   '@jeromefitz/release-notes-generator': 1.2.7
   '@jeromefitz/semantic': 9.2.6_pvq26naxwnzthnvk276bghdxlq
-  '@jeromefitz/tsconfig': 1.1.1
+  '@jeromefitz/tsconfig': 1.1.2
   ccommit: 1.0.0
   dotenv: 16.0.3
   husky: 8.0.2
@@ -337,8 +337,8 @@ packages:
       title: 3.5.3
     dev: false
 
-  /@jeromefitz/eslint-config/1.1.11_f6pjiui7ufcvjfi2zx5dxxopam:
-    resolution: {integrity: sha512-WQuOClpFEsvIo08KoRDNq/Q5LLXjDs7r3WbbmWdbTjkXlxN+qDLPQVgcLvPWvksjBbTuIZ+rUXtT1yqpKEOYDQ==}
+  /@jeromefitz/eslint-config/1.1.12_f6pjiui7ufcvjfi2zx5dxxopam:
+    resolution: {integrity: sha512-d/uv3i0iXAFRZ6mMTLCQa8bBlCgWHVo8uNIYgnKnTsgamceHYZyc6roF8rbcJ5Prui/8rAiYzhGvVgAmpf88Hw==}
     engines: {node: '>=16'}
     dependencies:
       '@babel/eslint-parser': 7.19.1_pji7q223wyyzhcorz4wzbl5ifu
@@ -352,8 +352,6 @@ packages:
       eslint-plugin-jsx-a11y: 6.6.1_eslint@8.26.0
       eslint-plugin-react: 7.31.10_eslint@8.26.0
       eslint-plugin-react-hooks: 4.6.0_eslint@8.26.0
-      prettier: 2.7.1
-      pretty-quick: 3.1.3_prettier@2.7.1
     transitivePeerDependencies:
       - '@babel/core'
       - eslint-import-resolver-typescript
@@ -376,9 +374,12 @@ packages:
       - supports-color
     dev: false
 
-  /@jeromefitz/prettier-config/1.1.1:
-    resolution: {integrity: sha512-Mv7TcLf6aHBsigTxpKHmjtEmGt+Zm3XFdVPVXHE6riWiuegYtrfe4gguqSuQK6XLltHWSNeNJyVo+7Nx515laQ==}
+  /@jeromefitz/prettier-config/1.1.2:
+    resolution: {integrity: sha512-n6SZn0YJs2+NsDAWC4zrnKIXmlHpw2jeym9JC6Bt/Y9HUSZLkx13iQvQ2H40jfvuQHUgov1EacKWtDL6OqMq4Q==}
     engines: {node: '>=16'}
+    dependencies:
+      prettier: 2.7.1
+      pretty-quick: 3.1.3_prettier@2.7.1
     dev: false
 
   /@jeromefitz/release-notes-generator/1.2.7:
@@ -419,8 +420,8 @@ packages:
       - supports-color
     dev: false
 
-  /@jeromefitz/tsconfig/1.1.1:
-    resolution: {integrity: sha512-8O5FPY4Pmx+Po//mnNqnowyvQ17xvzsQHMZyRqXhXPE4FBpz1OclIhl2EhVb6iixToHU0WFGlXm3yUoVd/4tQg==}
+  /@jeromefitz/tsconfig/1.1.2:
+    resolution: {integrity: sha512-IGFZiByl/BOHKqRLeyqzSHANZlYZElicMm7ut9gU6p/vHa3gZj3tewuKSaTlu7SrLtiwtLgPyqsvDaM8q4DKiQ==}
     engines: {node: '>=16'}
     dev: false
 
