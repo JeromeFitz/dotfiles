@@ -10,7 +10,7 @@ specifiers:
   '@jeromefitz/release-notes-generator': 1.2.7
   '@jeromefitz/semantic': 9.2.6
   '@jeromefitz/tsconfig': 1.1.2
-  ccommit: 1.0.0
+  ccommit: 1.0.1
   dotenv: 16.0.3
   husky: 8.0.3
   is-ci: 3.0.1
@@ -28,7 +28,7 @@ dependencies:
   '@jeromefitz/release-notes-generator': 1.2.7
   '@jeromefitz/semantic': 9.2.6_pvq26naxwnzthnvk276bghdxlq
   '@jeromefitz/tsconfig': 1.1.2
-  ccommit: 1.0.0
+  ccommit: 1.0.1
   dotenv: 16.0.3
   husky: 8.0.3
   is-ci: 3.0.1
@@ -1229,8 +1229,8 @@ packages:
       redeyed: 2.1.1
     dev: false
 
-  /ccommit/1.0.0:
-    resolution: {integrity: sha512-OTUvRwajmZmr8Rvdb0qnkiwGytIK1+zmyJW7yvQIciF4Z/Mje3MVFzYvCBJiJtKlhXzxmWGogrit+1sCfNFszQ==}
+  /ccommit/1.0.1:
+    resolution: {integrity: sha512-cdvGjSgWSVzAdPrzYaMDRMRatJntixwocNWyXsz7hFU7d/Quc1jPLU68csULqZUUu388v6suZsTmO7VDVMDFVg==}
     engines: {node: '>=16'}
     hasBin: true
     dependencies:
@@ -1239,9 +1239,7 @@ packages:
       fuse.js: 6.6.2
       inquirer: 9.1.4
       inquirer-autocomplete-prompt: 3.0.0_inquirer@9.1.4
-      lodash: 4.17.21
       meow: 11.0.0
-      pkg-dir: 7.0.0
     dev: false
 
   /chalk/2.3.0:
@@ -3842,13 +3840,6 @@ packages:
     dependencies:
       find-up: 2.1.0
       load-json-file: 4.0.0
-    dev: false
-
-  /pkg-dir/7.0.0:
-    resolution: {integrity: sha512-Ie9z/WINcxxLp27BKOCHGde4ITq9UklYKDzVo1nhk5sqGEXU3FpkwP5GM2voTGJkGd9B3Otl+Q4uwSOeSUtOBA==}
-    engines: {node: '>=14.16'}
-    dependencies:
-      find-up: 6.3.0
     dev: false
 
   /prelude-ls/1.2.1:
