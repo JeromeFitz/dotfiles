@@ -42,7 +42,7 @@
     "pretty-quick": "pretty-quick"
   },
   "dependencies": {
-    "@babel/core": "7.20.7",
+    "@babel/core": "7.20.12",
     "@babel/eslint-parser": "7.19.1",
     "@jeromefitz/conventional-gitmoji": "3.3.5",
     "@jeromefitz/eslint-config": "1.1.12",
