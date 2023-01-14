@@ -123,8 +123,10 @@ module.exports = {
     hypercwd: {
       initialWorkingDirectory: '~/Code',
     },
-
-    opacity: 0.95,
+    hyperStatusLine: {
+      footerTransparent: false,
+    },
+    opacity: 1,
 
     tabIcons: {
       disableColors: true,
@@ -139,7 +141,7 @@ module.exports = {
           'git-fetch-origin',
           'git-fetch-upstream',
         ],
-        yarn: ['yarn', 'yuil'],
+        nodejs: ['node', 'npm', 'pnpm', 'yarn'],
       },
     },
   },
@@ -151,8 +153,10 @@ module.exports = {
     'hyper-opacity',
     'hyper-dracula',
     'hyperborder',
+    'hyper-statusline',
     // @note(hyper) yarn is broken
-    // 'hyper-tab-icons',
+    'hyper-tab-icons',
+    // 'hyper-tabs-enhanced',
   ],
 
   // ~/.hyper_plugins/local

@@ -73,7 +73,9 @@ directory_name() {
   echo "$COLOR_DIRECTORY_NAME%1/%\\$COLOR_RESET"
 }
 
-export PROMPT=$'$PROMPT_PREFIX $(directory_name) $(git_dirty)$(need_push)'
+# @note(hyper) comment out when using hyperStatusLine
+# export PROMPT=$'$PROMPT_PREFIX $(directory_name) $(git_dirty)$(need_push)'
+export PROMPT=$'$PROMPT_PREFIX '
 
 set_prompt () {
   export RPROMPT="%{$fg_bold[cyan]%}$COLOR_RESET"
