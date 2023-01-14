@@ -117,16 +117,14 @@ module.exports = {
     /**
      * @note(plugins)
      */
+    hyperBorder: { animate: false },
     // // set to true to preserve working directory when creating splits or tabs
     // preserveCWD: true,
-    /// // set custom startup directory (must be an absolute path)
-    // workingDirectory: '~/Code/',
-    // workingDirectory: '/Users/jerome/Code',
     hypercwd: {
       initialWorkingDirectory: '~/Code',
     },
 
-    opacity: 1,
+    opacity: 0.95,
 
     tabIcons: {
       disableColors: true,
@@ -151,7 +149,7 @@ module.exports = {
     'hyper-pane',
     'hypercwd',
     'hyper-opacity',
-    // 'hyper-dracula',
+    'hyper-dracula',
     'hyperborder',
     // @note(hyper) yarn is broken
     // 'hyper-tab-icons',
