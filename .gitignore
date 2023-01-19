@@ -16,3 +16,4 @@ Brewfile-Slim.lock.json
 gitconfig.private.*
 npmrc.*
 zprofile.symlink
+zsh/brew.export.zsh
