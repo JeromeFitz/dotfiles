@@ -10,6 +10,7 @@ set -e
 # # 🛠️ config.setup.zsh
 # #    - Cycle through zsh files:
 # #      0) (re-)init file: config.setup.zsh
+# #         🍺 BREW_PREFIX can change based on OS/Chip setup/install
 # #      1) path
 # #      2) * (!path|completion|sandboxd|config.setup)
 # #      3) completion
@@ -27,6 +28,15 @@ set -e
 
 # # 📝️ 0) (re-)init file
 echo "" > "$CONFIG_SETUP_ZSH"
+
+if [[ -d "/opt/homebrew/opt" ]]
+then
+  export BREW_PREFIX=/opt/homebrew
+else
+  export BREW_PREFIX=/usr/local
+fi
+
+echo "export BREW_PREFIX=${BREW_PREFIX}" >> "$CONFIG_SETUP_ZSH"
 
 # # 🗺️ 1) path
 for file in $(find -H "$DOTFILES_ROOT" -maxdepth 2 -name '*.path.zsh' -not -path '*config.setup.zsh' | sort)

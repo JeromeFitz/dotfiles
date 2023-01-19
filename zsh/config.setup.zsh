@@ -1,4 +1,5 @@
 
+export BREW_PREFIX=/opt/homebrew
 source $ZSH/config/go.path.zsh
 source $ZSH/config/homebrew.path.zsh
 source $ZSH/config/java.path.zsh
