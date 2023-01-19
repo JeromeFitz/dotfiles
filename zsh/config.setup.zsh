@@ -21,6 +21,7 @@ source $ZSH/config/xcode.alias.zsh
 source $ZSH/config/yarn.alias.zsh
 source $ZSH/config/zsh.alias.zsh
 source $ZSH/symlinks/rbenv.zsh
+source $ZSH/zsh/brew.export.zsh
 source $ZSH/zsh/config.zsh
 source $ZSH/zsh/fpath.zsh
 source $ZSH/zsh/prompt.zsh

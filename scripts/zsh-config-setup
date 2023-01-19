@@ -4,8 +4,22 @@ cd "$(dirname "$0")/.."
 DOTFILES_ROOT=$(pwd -P)
 
 CONFIG_SETUP_ZSH=$DOTFILES_ROOT/zsh/config.setup.zsh
+BREW_EXPORT_ZSH=$DOTFILES_ROOT/zsh/brew.export.zsh
 
 set -e
+
+# # 🛠️ brew.export.zsh
+# # 🍺 BREW_PREFIX can change based on OS/Chip setup/install
+echo "" > "$BREW_EXPORT_ZSH"
+
+if [[ -d "/opt/homebrew/opt" ]]
+then
+  export BREW_PREFIX=/opt/homebrew
+else
+  export BREW_PREFIX=/usr/local
+fi
+
+echo "export BREW_PREFIX=${BREW_PREFIX}" >> "$BREW_EXPORT_ZSH"
 
 # # 🛠️ config.setup.zsh
 # #    - Cycle through zsh files:

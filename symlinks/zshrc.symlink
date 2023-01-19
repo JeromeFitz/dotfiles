@@ -1,6 +1,7 @@
 # 🍰️ shortcut to this dotfiles path is $ZSH
 export ZSH=$HOME/.dotfiles
-export BREW_PREFIX=/usr/local
+# BREW_PREFIX export moved to: zsh-config-setup
+
 # ⚛️ `c [tab]` project folder (move to private?)
 export PROJECTS=~/Code
 

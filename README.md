@@ -4,20 +4,20 @@ Scripts (`zsh` && `Homebrew`) to set up and keep a machine up-to-date (`macos`).
 
 ## ⏱️ Speed Test
 
-Latest on `2022-06-30`:
+Latest on `2023-01-18`:
 
 ```bash
-▲ .dotfiles [main] for i in $(seq 1 10); do /usr/bin/time zsh -i -c exit; done
+▲ for i in $(seq 1 10); do /usr/bin/time zsh -i -c exit; done
         0.06 real         0.03 user         0.03 sys
-        0.06 real         0.03 user         0.03 sys
-        0.06 real         0.03 user         0.03 sys
-        0.06 real         0.03 user         0.03 sys
-        0.06 real         0.03 user         0.03 sys
-        0.06 real         0.03 user         0.03 sys
-        0.06 real         0.03 user         0.03 sys
-        0.06 real         0.03 user         0.03 sys
-        0.06 real         0.03 user         0.03 sys
-        0.06 real         0.03 user         0.03 sys
+        0.06 real         0.03 user         0.02 sys
+        0.05 real         0.03 user         0.02 sys
+        0.05 real         0.03 user         0.02 sys
+        0.06 real         0.03 user         0.02 sys
+        0.06 real         0.03 user         0.02 sys
+        0.05 real         0.03 user         0.02 sys
+        0.06 real         0.03 user         0.02 sys
+        0.06 real         0.03 user         0.02 sys
+        0.05 real         0.03 user         0.02 sys
 ```
 
 ## ⬇️ Download
@@ -27,9 +27,9 @@ Latest on `2022-06-30`:
 📝️ _**Note:** You’ll need to set the version._
 
 ```sh
-curl -LJO -k https://github.com/JeromeFitz/dotfiles/archive/v2.6.0.tar.gz
+curl -LJO -k https://github.com/JeromeFitz/dotfiles/archive/v2.9.10.tar.gz
 mkdir -p ~/.dotfiles
-tar -xf dotfiles-2.6.0.tar.gz -C ~/.dotfiles
+tar -xf dotfiles-2.9.10.tar.gz -C ~/.dotfiles
 ```
 
 :octocat: **Git installed?**
@@ -62,6 +62,8 @@ This will go through:
   - [x] 💎️ `Brewfile|Brewfile-Slim`
 - [x] 🛠️ zsh configuration
 - [x] 🤓️ zsh functions
+
+> 📝 **NOTE:** `node` sometimes gets installed immediately, other times you may need to run this twice.
 
 ### :octocat: git config
 

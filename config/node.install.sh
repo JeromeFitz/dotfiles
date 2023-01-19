@@ -1,4 +1,5 @@
-if test $(which yarn)
-then
-  yarn global add git-standup lerna serve starring typescript vercel
-fi
+# if test $(which yarn)
+# then
+#   # move away from yarn and globals 
+#   # yarn global add git-standup lerna serve starring typescript vercel
+# fi
