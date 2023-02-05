@@ -9,7 +9,7 @@ specifiers:
   '@jeromefitz/prettier-config': 1.1.2
   '@jeromefitz/release-notes-generator': 1.2.7
   '@jeromefitz/semantic': 9.2.6
-  '@jeromefitz/tsconfig': 1.1.2
+  '@jeromefitz/tsconfig': 1.1.3
   ccommit: 1.1.1
   dotenv: 16.0.3
   husky: 8.0.3
@@ -26,7 +26,7 @@ dependencies:
   '@jeromefitz/prettier-config': 1.1.2
   '@jeromefitz/release-notes-generator': 1.2.7
   '@jeromefitz/semantic': 9.2.6_pvq26naxwnzthnvk276bghdxlq
-  '@jeromefitz/tsconfig': 1.1.2
+  '@jeromefitz/tsconfig': 1.1.3
   ccommit: 1.1.1
   dotenv: 16.0.3
   husky: 8.0.3
@@ -418,8 +418,8 @@ packages:
       - supports-color
     dev: false
 
-  /@jeromefitz/tsconfig/1.1.2:
-    resolution: {integrity: sha512-IGFZiByl/BOHKqRLeyqzSHANZlYZElicMm7ut9gU6p/vHa3gZj3tewuKSaTlu7SrLtiwtLgPyqsvDaM8q4DKiQ==}
+  /@jeromefitz/tsconfig/1.1.3:
+    resolution: {integrity: sha512-Pmmss5ZNkuAuRVXtXr6bqSf6MNyryo+835AgMYM3YqYmY+vrQuIT3o04CAKUjmEfU/mMYn5rCclSvZDWThlZ9Q==}
     engines: {node: '>=16'}
     dev: false
 
