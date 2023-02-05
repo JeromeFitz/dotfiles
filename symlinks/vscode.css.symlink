@@ -2,8 +2,7 @@
 .windows,
 .monaco,
 .monaco-shell {
-  font-family: 'Operator Mono Lig', 'Operator Mono', 'IBM Plex Mono', 'Fira Code', 'Roboto Mono', Menlo, 'DejaVu Sans Mono',
-    Consolas, 'Lucida Console', monospace !important;
+  font-family: 'IBM Plex Mono', 'Operator Mono Lig', 'Operator Mono', 'Fira Code', 'Roboto Mono', Menlo, 'DejaVu Sans Mono', Consolas, 'Lucida Console', monospace !important;
   font-variant-ligatures: normal;
   font-size: 15px !important;
   font-weight: 200 !important;
@@ -196,8 +195,7 @@
 .mtk13,
 .mtk16 {
   margin-left: 1px;
-  font-family: 'Operator Mono Lig', 'Operator Mono', 'IBM Plex Mono', 'Fira Code', 'Roboto Mono',
-    Menlo, 'DejaVu Sans Mono', Consolas, 'Lucida Console', monospace !important;
+  font-family: 'IBM Plex Mono', 'Operator Mono Lig', 'Operator Mono', 'Fira Code', 'Roboto Mono', Menlo, 'DejaVu Sans Mono', Consolas, 'Lucida Console', monospace !important;
 }
 
 .mtk1,
@@ -208,16 +206,14 @@
 .mtk10,
 .mtk12,
 .mtk4 {
-  font-family: 'Operator Mono Lig', 'Operator Mono', 'IBM Plex Mono', 'Fira Code', 'Roboto Mono',
-    Menlo, 'DejaVu Sans Mono', Consolas, 'Lucida Console', monospace !important;
+  font-family: 'IBM Plex Mono', 'Operator Mono Lig', 'Operator Mono', 'Fira Code', 'Roboto Mono', Menlo, 'DejaVu Sans Mono', Consolas, 'Lucida Console', monospace !important;
 }
 
 /*
   For the tab titles.
 */
 /* .monaco-icon-label-description-container .label-name {
-  font-family: 'Operator Mono Lig', 'Operator Mono', 'IBM Plex Mono', 'Fira Code', 'Roboto Mono',
-    Menlo, 'DejaVu Sans Mono', Consolas, 'Lucida Console', monospace !important;
+  font-family: 'IBM Plex Mono', 'Operator Mono Lig', 'Operator Mono', 'Fira Code', 'Roboto Mono', Menlo, 'DejaVu Sans Mono', Consolas, 'Lucida Console', monospace !important;
 }
 
 .tabs-container .monaco-icon-label-description-container .label-name,
