@@ -5,7 +5,7 @@ specifiers:
   '@babel/eslint-parser': 7.19.1
   '@jeromefitz/conventional-gitmoji': 3.3.5
   '@jeromefitz/eslint-config': 1.1.13
-  '@jeromefitz/lint-staged': 1.1.5
+  '@jeromefitz/lint-staged': 1.1.6
   '@jeromefitz/prettier-config': 1.1.2
   '@jeromefitz/release-notes-generator': 1.2.7
   '@jeromefitz/semantic': 9.2.6
@@ -22,7 +22,7 @@ dependencies:
   '@babel/eslint-parser': 7.19.1_@babel+core@7.20.12
   '@jeromefitz/conventional-gitmoji': 3.3.5
   '@jeromefitz/eslint-config': 1.1.13_x6u7kz5cmvrhsztuqops5hegii
-  '@jeromefitz/lint-staged': 1.1.5_is-ci@3.0.1
+  '@jeromefitz/lint-staged': 1.1.6_is-ci@3.0.1
   '@jeromefitz/prettier-config': 1.1.2
   '@jeromefitz/release-notes-generator': 1.2.7
   '@jeromefitz/semantic': 9.2.6_pvq26naxwnzthnvk276bghdxlq
@@ -356,8 +356,8 @@ packages:
       - typescript
     dev: false
 
-  /@jeromefitz/lint-staged/1.1.5_is-ci@3.0.1:
-    resolution: {integrity: sha512-omr77k1TF4wAGrCid8sUhq1Qg/ZVhqMx9pBo8DZoqUEaKVGLSz0IeEe9JaqPAl+onM2l+K0E8LjIZo7jPJ7TVg==}
+  /@jeromefitz/lint-staged/1.1.6_is-ci@3.0.1:
+    resolution: {integrity: sha512-l/XgRnC8fRYm+6kVUQCJcq7fh3+/wR4tTOuWYtag3HgotFcORFmkUjt15YNMzzqqplZ2vjKyAj67Fy0qE0jXjA==}
     engines: {node: '>=16'}
     peerDependencies:
       is-ci: ^3.0.1
