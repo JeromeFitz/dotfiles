@@ -6,7 +6,7 @@ specifiers:
   '@jeromefitz/conventional-gitmoji': 3.3.5
   '@jeromefitz/eslint-config': 1.1.13
   '@jeromefitz/lint-staged': 1.1.7
-  '@jeromefitz/prettier-config': 1.1.3
+  '@jeromefitz/prettier-config': 1.1.4
   '@jeromefitz/release-notes-generator': 1.2.8
   '@jeromefitz/semantic': 9.2.6
   '@jeromefitz/tsconfig': 1.1.3
@@ -23,7 +23,7 @@ dependencies:
   '@jeromefitz/conventional-gitmoji': 3.3.5
   '@jeromefitz/eslint-config': 1.1.13_x6u7kz5cmvrhsztuqops5hegii
   '@jeromefitz/lint-staged': 1.1.7_is-ci@3.0.1
-  '@jeromefitz/prettier-config': 1.1.3
+  '@jeromefitz/prettier-config': 1.1.4
   '@jeromefitz/release-notes-generator': 1.2.8
   '@jeromefitz/semantic': 9.2.6_pvq26naxwnzthnvk276bghdxlq
   '@jeromefitz/tsconfig': 1.1.3
@@ -369,15 +369,16 @@ packages:
       - supports-color
     dev: false
 
-  /@jeromefitz/prettier-config/1.1.3:
-    resolution: {integrity: sha512-PxvZJJm7qwexZsqmTUMLejiaodYZgiqzugkKsGv76+qFlZ9738tqmAfobXHQ0yOMwTgtqD+5vGQ4GdD43yMVdA==}
+  /@jeromefitz/prettier-config/1.1.4:
+    resolution: {integrity: sha512-TI2K9a1RuZxWeC5zbQjCD6t3UKcI+YQX0eq3f9WG5hi4AMaNSryphi0ew5r6rTk7WKG34B4T18kcjI1lg0dIEw==}
     engines: {node: '>=16'}
     dependencies:
       prettier: 2.8.3
       prettier-plugin-pkg: 0.17.1_prettier@2.8.3
-      prettier-plugin-tailwindcss: 0.2.2_prettier@2.8.3
+      prettier-plugin-tailwindcss: 0.2.3_prettier@2.8.3
       pretty-quick: 3.1.3_prettier@2.8.3
     transitivePeerDependencies:
+      - '@ianvs/prettier-plugin-sort-imports'
       - '@prettier/plugin-php'
       - '@prettier/plugin-pug'
       - '@shopify/prettier-plugin-liquid'
@@ -4038,10 +4039,11 @@ packages:
       prettier: 2.8.3
     dev: false
 
-  /prettier-plugin-tailwindcss/0.2.2_prettier@2.8.3:
-    resolution: {integrity: sha512-5RjUbWRe305pUpc48MosoIp6uxZvZxrM6GyOgsbGLTce+ehePKNm7ziW2dLG2air9aXbGuXlHVSQQw4Lbosq3w==}
+  /prettier-plugin-tailwindcss/0.2.3_prettier@2.8.3:
+    resolution: {integrity: sha512-s2N5Dh7Ao5KTV1mao5ZBnn8EKtUcDPJEkGViZIjI0Ij9TTI5zgTz4IHOxW33jOdjHKa8CSjM88scelUiC5TNRQ==}
     engines: {node: '>=12.17.0'}
     peerDependencies:
+      '@ianvs/prettier-plugin-sort-imports': '*'
       '@prettier/plugin-php': '*'
       '@prettier/plugin-pug': '*'
       '@shopify/prettier-plugin-liquid': '*'
@@ -4058,6 +4060,8 @@ packages:
       prettier-plugin-svelte: '*'
       prettier-plugin-twig-melody: '*'
     peerDependenciesMeta:
+      '@ianvs/prettier-plugin-sort-imports':
+        optional: true
       '@prettier/plugin-php':
         optional: true
       '@prettier/plugin-pug':
