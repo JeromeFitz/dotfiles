@@ -3,7 +3,7 @@
 // See https://hyper.is#cfg for all currently supported options.
 
 const fontFamily =
-  "'IBM Plex Mono', 'Operator Mono Lig', 'Fira Code', 'Roboto Mono', Menlo, 'DejaVu Sans Mono', Consolas, 'Lucida Console', monospace"
+  "'Operator Mono Lig', 'IBM Plex Mono', 'Fira Code', 'Roboto Mono', Menlo, 'DejaVu Sans Mono', Consolas, 'Lucida Console', monospace"
 
 module.exports = {
   config: {
@@ -11,7 +11,7 @@ module.exports = {
     updateChannel: 'stable',
 
     // The default size in pixels for the terminal
-    fontSize: 16,
+    fontSize: 18,
 
     // The font family to use with optional fallbacks
     fontFamily,
