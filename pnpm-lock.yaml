@@ -14,8 +14,8 @@ dependencies:
     specifier: 1.1.14
     version: 1.1.14(@babel/core@7.21.4)(typescript@5.0.4)
   '@jeromefitz/lint-staged':
-    specifier: 1.1.8
-    version: 1.1.8(is-ci@3.0.1)
+    specifier: 1.1.9
+    version: 1.1.9(is-ci@3.0.1)
   '@jeromefitz/prettier-config':
     specifier: 1.1.6
     version: 1.1.6
@@ -377,14 +377,14 @@ packages:
       - typescript
     dev: false
 
-  /@jeromefitz/lint-staged@1.1.8(is-ci@3.0.1):
-    resolution: {integrity: sha512-LifFeRmpPyr69PCMvSuFuuOQzDKZoBMLaaXdZ9/IFlc+G2gJA3tvxTk8uB6YIOWVFidiTFqCbxZ6r5hBXZAwRg==}
+  /@jeromefitz/lint-staged@1.1.9(is-ci@3.0.1):
+    resolution: {integrity: sha512-aq1emnpQnfRXRFSamMgGAIC3SquFCoWdyvRt8XMMVis8DlpCEiHk328R/u8VMYtPGz2c5V9j0CjZ0/q0aqyOuQ==}
     engines: {node: '>=16'}
     peerDependencies:
       is-ci: ^3.0.1
     dependencies:
       is-ci: 3.0.1
-      lint-staged: 13.2.0
+      lint-staged: 13.2.1
     transitivePeerDependencies:
       - enquirer
       - supports-color
@@ -3209,8 +3209,8 @@ packages:
     resolution: {integrity: sha512-7ylylesZQ/PV29jhEDl3Ufjo6ZX7gCqJr5F7PKrqc93v7fzSymt1BpwEU8nAUXs8qzzvqhbjhK5QZg6Mt/HkBg==}
     dev: false
 
-  /lint-staged@13.2.0:
-    resolution: {integrity: sha512-GbyK5iWinax5Dfw5obm2g2ccUiZXNGtAS4mCbJ0Lv4rq6iEtfBSjOYdcbOtAIFtM114t0vdpViDDetjVTSd8Vw==}
+  /lint-staged@13.2.1:
+    resolution: {integrity: sha512-8gfzinVXoPfga5Dz/ZOn8I2GOhf81Wvs+KwbEXQn/oWZAvCVS2PivrXfVbFJc93zD16uC0neS47RXHIjXKYZQw==}
     engines: {node: ^14.13.1 || >=16.0.0}
     hasBin: true
     dependencies:
