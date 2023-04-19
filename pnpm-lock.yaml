@@ -20,8 +20,8 @@ dependencies:
     specifier: 1.1.6
     version: 1.1.6
   '@jeromefitz/release-notes-generator':
-    specifier: 1.2.8
-    version: 1.2.8
+    specifier: 1.2.9
+    version: 1.2.9
   '@jeromefitz/semantic':
     specifier: 9.2.6
     version: 9.2.6(@jeromefitz/conventional-gitmoji@3.3.6)
@@ -416,8 +416,8 @@ packages:
       - prettier-plugin-twig-melody
     dev: false
 
-  /@jeromefitz/release-notes-generator@1.2.8:
-    resolution: {integrity: sha512-+Uo2fZ77QYtBEdBaM+AFpNjwc7R/iM7jhSfty55N8NOdDQdF0HTcm6JIvC1Q0Fc5Ohvpm3TY71DSnAk1o8zLig==}
+  /@jeromefitz/release-notes-generator@1.2.9:
+    resolution: {integrity: sha512-yAX5Ve/pSdMTbrMXO69wF14xIIjy3Q+Z0Zs3u6lG1cOK9a8/Lre7AuE4EYYCC4jPSIDip2vcOiWzB1R/mmg87g==}
     engines: {node: '>=16'}
     peerDependencies:
       lodash: ^4.17.21
@@ -428,7 +428,7 @@ packages:
       date-fns: 2.29.3
       import-from: 4.0.0
       read-pkg-up: 7.0.1
-      semver: 7.3.8
+      semver: 7.4.0
     transitivePeerDependencies:
       - encoding
     dev: false
@@ -4430,14 +4430,6 @@ packages:
   /semver@6.3.0:
     resolution: {integrity: sha512-b39TBaTSfV6yBrapU89p5fKekE2m/NwnDocOVruQFS1/veMgdzuPcnOM34M6CwxW8jH/lxEa5rBoDeUwu5HHTw==}
     hasBin: true
-    dev: false
-
-  /semver@7.3.8:
-    resolution: {integrity: sha512-NB1ctGL5rlHrPJtFDVIVzTyQylMLu9N9VICA6HSFJo8MCGVTMW6gfpicwKmmK/dAjTOrqu5l63JJOpDSrAis3A==}
-    engines: {node: '>=10'}
-    hasBin: true
-    dependencies:
-      lru-cache: 6.0.0
     dev: false
 
   /semver@7.4.0:
