@@ -7,7 +7,7 @@ export PROJECTS=~/Code
 
 DEFAULT_USER=`whoami`
 
-# 🥪️ load sandboxd first
+# 🥪️ load sandboxd
 source $ZSH/zsh/plugins/sandboxd.plugin.zsh
 
 # ⚗️ debugging

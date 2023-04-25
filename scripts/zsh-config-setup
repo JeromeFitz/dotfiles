@@ -39,8 +39,12 @@ echo "export BREW_PREFIX=${BREW_PREFIX}" >> "$BREW_EXPORT_ZSH"
 # #
 # # 🍱️ SETUP: BEGIN
 
-# # 📝️ 0) (re-)init file
+# # 📝️ 0) (re-)init file + brew up tippy top
 echo "" > "$CONFIG_SETUP_ZSH"
+for file in $(find -H "$DOTFILES_ROOT" -maxdepth 2 -name '*brew.export.zsh' -not -path '*config.setup.zsh' | sort)
+do
+  echo "source ${file/#$DOTFILES_ROOT/\$ZSH}" >> "$CONFIG_SETUP_ZSH"
+done
 
 # # 🗺️ 1) path
 for file in $(find -H "$DOTFILES_ROOT" -maxdepth 2 -name '*.path.zsh' -not -path '*config.setup.zsh' | sort)
@@ -49,7 +53,7 @@ do
 done
 
 # # 🛁️  2) * (!path|completion|sandboxd|config.setup)
-for file in $(find -H "$DOTFILES_ROOT" -maxdepth 2 -name '*.zsh' -not -path '*.path.zsh' -not -path '*.completion.zsh' -not -path 'sandboxd.plugin.zsh' -not -path '*config.setup.zsh' | sort)
+for file in $(find -H "$DOTFILES_ROOT" -maxdepth 2 -name '*.zsh' -not -path '*.path.zsh' -not -path '*.completion.zsh' -not -path 'sandboxd.plugin.zsh' -not -path '*config.setup.zsh' -not -path '*brew.export.zsh' | sort)
 do
   echo "source ${file/#$DOTFILES_ROOT/\$ZSH}" >> "$CONFIG_SETUP_ZSH"
 done

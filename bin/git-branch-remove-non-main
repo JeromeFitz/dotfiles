@@ -1,0 +1,7 @@
+#!/bin/sh
+
+set -e
+
+# $1 = branch name to keep
+git branch | grep -v "main" | xargs git branch -D
+# git branch | grep -v "$1" | xargs git branch -D

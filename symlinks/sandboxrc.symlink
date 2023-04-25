@@ -1,19 +1,8 @@
 sandbox_init_nvm(){
-    [ -s "$BREW_PREFIX/opt/nvm/nvm.sh" ] && \. "$BREW_PREFIX/opt/nvm/nvm.sh"  # This loads nvm
-    [ -s "$BREW_PREFIX/opt/nvm/etc/bash_completion.d/nvm" ] && \. "$BREW_PREFIX/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+  [ -s "$BREW_PREFIX/opt/nvm/nvm.sh" ] && \. "$BREW_PREFIX/opt/nvm/nvm.sh"  # This loads nvm
+  [ -s "$BREW_PREFIX/opt/nvm/etc/bash_completion.d/nvm" ] && \. "$BREW_PREFIX/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
 }
 sandbox_hook nvm node
-
-# sandbox_init_pnpm(){
-#   node -v
-#   if (( $+commands[pnpm] ))
-#   then
-#     # @todo(pnpm) uh... is this brew'd?
-#     export PNPM_HOME="~/Library/pnpm"
-#     export PATH="$PNPM_HOME:$PATH"
-#   fi
-# }
-# sandbox_hook pnpm
 
 sandbox_init_pyenv() {
   if (( $+commands[pyenv] )); then
@@ -64,15 +53,6 @@ sandbox_init_ruby() {
   }
 }
 sandbox_hook_shims ruby "$HOME/.rbenv/shims"
-
-sandbox_init_yarn(){
-  node -v
-  if (( $+commands[yarn] ))
-  then
-    export PATH="$PATH:`yarn global bin`"
-  fi
-}
-# sandbox_hook yarn
 
 sandbox_init_make(){
   if (( $+commands[make] ))

@@ -33,17 +33,18 @@ function sandbox_delete_hooks(){
   done
 }
 
-
 # prepares environment and removes hooks
 function sandbox(){
   local cmd=$1
 
    if [[ "$(type $cmd | GREP_OPTIONS= grep -o function)" = "function" ]]; then
-    (>&2 echo "🥪️ sandboxing $cmd ...")
+    if [[ $cmd != "nvm" ]]; then
+      (>&2 echo "${PROMPT_PREFIX_SYMBOL} 🥪️ sandbox(ing) $cmd ...")
+    fi
     sandbox_delete_hooks $cmd
     sandbox_init_$cmd # run user-defined sandbox
   else
-    (>&2 echo "🥪️ sandbox '$cmd' not found.\nHave you defined sandbox_init_$cmd(){ ... } in your sandboxrc (${RC_FILE})?")
+    (>&2 echo "${PROMPT_PREFIX_SYMBOL} 🥪️ sandbox(not-found): '$cmd'\n${PROMPT_PREFIX_SYMBOL} 🥪️ Have you defined sandbox_init_$cmd(){ ... } in your sandboxrc (${RC_FILE})?")
     return 1
   fi
 }
