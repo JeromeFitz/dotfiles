@@ -4,19 +4,18 @@ Scripts (`zsh` && `Homebrew`) to set up and keep a machine up-to-date (`macos`).
 
 ## ⏱️ Speed Test
 
-Latest on `2023-01-18`:
-
 ```bash
-▲ for i in $(seq 1 10); do /usr/bin/time zsh -i -c exit; done
-        0.06 real         0.03 user         0.03 sys
+▲ date && for i in $(seq 1 10); do /usr/bin/time zsh -i -c exit; done
+Mon Apr 24 23:59:05 EDT 2023
         0.06 real         0.03 user         0.02 sys
+        0.06 real         0.03 user         0.02 sys
+        0.05 real         0.03 user         0.03 sys
+        0.05 real         0.03 user         0.03 sys
         0.05 real         0.03 user         0.02 sys
         0.05 real         0.03 user         0.02 sys
-        0.06 real         0.03 user         0.02 sys
-        0.06 real         0.03 user         0.02 sys
         0.05 real         0.03 user         0.02 sys
-        0.06 real         0.03 user         0.02 sys
-        0.06 real         0.03 user         0.02 sys
+        0.05 real         0.03 user         0.02 sys
+        0.05 real         0.03 user         0.02 sys
         0.05 real         0.03 user         0.02 sys
 ```
 
@@ -27,9 +26,9 @@ Latest on `2023-01-18`:
 📝️ _**Note:** You’ll need to set the version._
 
 ```sh
-curl -LJO -k https://github.com/JeromeFitz/dotfiles/archive/v2.9.10.tar.gz
+curl -LJO -k https://github.com/JeromeFitz/dotfiles/archive/v2.10.0.tar.gz
 mkdir -p ~/.dotfiles
-tar -xf dotfiles-2.9.10.tar.gz -C ~/.dotfiles
+tar -xf dotfiles-2.10.0.tar.gz -C ~/.dotfiles
 ```
 
 :octocat: **Git installed?**
