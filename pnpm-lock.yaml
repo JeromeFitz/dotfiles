@@ -20,8 +20,8 @@ dependencies:
     specifier: 1.1.6
     version: 1.1.6
   '@jeromefitz/release-notes-generator':
-    specifier: 1.2.9
-    version: 1.2.9
+    specifier: 1.2.10
+    version: 1.2.10
   '@jeromefitz/semantic':
     specifier: 9.2.6
     version: 9.2.6(@jeromefitz/conventional-gitmoji@3.3.6)
@@ -416,8 +416,8 @@ packages:
       - prettier-plugin-twig-melody
     dev: false
 
-  /@jeromefitz/release-notes-generator@1.2.9:
-    resolution: {integrity: sha512-yAX5Ve/pSdMTbrMXO69wF14xIIjy3Q+Z0Zs3u6lG1cOK9a8/Lre7AuE4EYYCC4jPSIDip2vcOiWzB1R/mmg87g==}
+  /@jeromefitz/release-notes-generator@1.2.10:
+    resolution: {integrity: sha512-86btwt0Fx0AMBy3KptZ27erAxfaXEE2HXRymkdHENnzlzq3SUSNPoMX/jtiWY4jf21taufQJPvKA+x4ZFxG9tA==}
     engines: {node: '>=16'}
     peerDependencies:
       lodash: ^4.17.21
@@ -428,7 +428,7 @@ packages:
       date-fns: 2.29.3
       import-from: 4.0.0
       read-pkg-up: 7.0.1
-      semver: 7.4.0
+      semver: 7.5.0
     transitivePeerDependencies:
       - encoding
     dev: false
@@ -783,7 +783,7 @@ packages:
       read-pkg: 5.2.0
       registry-auth-token: 4.2.1
       semantic-release: 19.0.5
-      semver: 7.4.0
+      semver: 7.5.0
       tempy: 1.0.1
     dev: false
 
@@ -866,7 +866,7 @@ packages:
       grapheme-splitter: 1.0.4
       ignore: 5.2.4
       natural-compare-lite: 1.4.0
-      semver: 7.4.0
+      semver: 7.5.0
       tsutils: 3.21.0(typescript@5.0.4)
       typescript: 5.0.4
     transitivePeerDependencies:
@@ -966,7 +966,7 @@ packages:
       debug: 4.3.4
       globby: 11.1.0
       is-glob: 4.0.3
-      semver: 7.4.0
+      semver: 7.5.0
       tsutils: 3.21.0(typescript@5.0.4)
       typescript: 5.0.4
     transitivePeerDependencies:
@@ -987,7 +987,7 @@ packages:
       debug: 4.3.4
       globby: 11.1.0
       is-glob: 4.0.3
-      semver: 7.4.0
+      semver: 7.5.0
       tsutils: 3.21.0(typescript@5.0.4)
       typescript: 5.0.4
     transitivePeerDependencies:
@@ -1008,7 +1008,7 @@ packages:
       eslint: 8.38.0
       eslint-scope: 5.1.1
       eslint-utils: 3.0.0(eslint@8.38.0)
-      semver: 7.4.0
+      semver: 7.5.0
     transitivePeerDependencies:
       - supports-color
       - typescript
@@ -1028,7 +1028,7 @@ packages:
       '@typescript-eslint/typescript-estree': 5.58.0(typescript@5.0.4)
       eslint: 8.38.0
       eslint-scope: 5.1.1
-      semver: 7.4.0
+      semver: 7.5.0
     transitivePeerDependencies:
       - supports-color
       - typescript
@@ -3575,7 +3575,7 @@ packages:
     dependencies:
       hosted-git-info: 4.1.0
       is-core-module: 2.12.0
-      semver: 7.4.0
+      semver: 7.5.0
       validate-npm-package-license: 3.0.4
     dev: false
 
@@ -3585,7 +3585,7 @@ packages:
     dependencies:
       hosted-git-info: 5.2.1
       is-core-module: 2.12.0
-      semver: 7.4.0
+      semver: 7.5.0
       validate-npm-package-license: 3.0.4
     dev: false
 
@@ -4401,7 +4401,7 @@ packages:
       p-reduce: 2.1.0
       read-pkg-up: 7.0.1
       resolve-from: 5.0.0
-      semver: 7.4.0
+      semver: 7.5.0
       semver-diff: 3.1.1
       signale: 1.4.0
       yargs: 16.2.0
@@ -4432,8 +4432,8 @@ packages:
     hasBin: true
     dev: false
 
-  /semver@7.4.0:
-    resolution: {integrity: sha512-RgOxM8Mw+7Zus0+zcLEUn8+JfoLpj/huFTItQy2hsM4khuC1HYRDp0cU482Ewn/Fcy6bCjufD8vAj7voC66KQw==}
+  /semver@7.5.0:
+    resolution: {integrity: sha512-+XC0AD/R7Q2mPSRuy2Id0+CGTZ98+8f+KvwirxOKIEyid+XSx6HbC63p+O4IndTHuX5Z+JxQ0TghCkO5Cg/2HA==}
     engines: {node: '>=10'}
     hasBin: true
     dependencies:
