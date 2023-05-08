@@ -20,8 +20,8 @@ dependencies:
     specifier: 1.1.6
     version: 1.1.6
   '@jeromefitz/release-notes-generator':
-    specifier: 1.2.10
-    version: 1.2.10
+    specifier: 1.2.11
+    version: 1.2.11
   '@jeromefitz/semantic':
     specifier: 9.2.6
     version: 9.2.6(@jeromefitz/conventional-gitmoji@3.3.6)
@@ -230,8 +230,8 @@ packages:
       '@babel/types': 7.21.5
     dev: false
 
-  /@babel/runtime@7.20.13:
-    resolution: {integrity: sha512-gt3PKXs0DBoL9xCvOIIZ2NEqAGZqHjAnmVbfQtB620V0uReIQutpel14KcneZuer7UioY8ALKZ7iocavvzTNFA==}
+  /@babel/runtime@7.21.5:
+    resolution: {integrity: sha512-8jI69toZqqcsnqGGqwGS4Qb1VwLOEp4hz+CXPywcvjs60u3B4Pom/U/7rm4W8tMOYEB+E9wgD0mW1l3r8qlI9Q==}
     engines: {node: '>=6.9.0'}
     dependencies:
       regenerator-runtime: 0.13.11
@@ -416,8 +416,8 @@ packages:
       - prettier-plugin-twig-melody
     dev: false
 
-  /@jeromefitz/release-notes-generator@1.2.10:
-    resolution: {integrity: sha512-86btwt0Fx0AMBy3KptZ27erAxfaXEE2HXRymkdHENnzlzq3SUSNPoMX/jtiWY4jf21taufQJPvKA+x4ZFxG9tA==}
+  /@jeromefitz/release-notes-generator@1.2.11:
+    resolution: {integrity: sha512-1LNSK9HMnmgE85WEHgoFOE559bVpzWIGJPUbXQn5R2OVfxPqW6QgvQOdaeTEYGdqmy5yh1zhdBGLATW6U+8YuQ==}
     engines: {node: '>=16'}
     peerDependencies:
       lodash: ^4.17.21
@@ -425,7 +425,7 @@ packages:
       '@octokit/rest': 19.0.7
       conventional-commits-filter: 2.0.7
       conventional-commits-parser: 3.2.4
-      date-fns: 2.29.3
+      date-fns: 2.30.0
       import-from: 4.0.0
       read-pkg-up: 7.0.1
       semver: 7.5.0
@@ -1591,9 +1591,11 @@ packages:
     resolution: {integrity: sha512-sdQSFB7+llfUcQHUQO3+B8ERRj0Oa4w9POWMI/puGtuf7gFywGmkaLCElnudfTiKZV+NvHqL0ifzdrI8Ro7ESA==}
     dev: false
 
-  /date-fns@2.29.3:
-    resolution: {integrity: sha512-dDCnyH2WnnKusqvZZ6+jA1O51Ibt8ZMRNkDZdyAyK4YfbDwa/cEmuztzG5pk6hqlp9aSBPYcjOlktquahGwGeA==}
+  /date-fns@2.30.0:
+    resolution: {integrity: sha512-fnULvOpxnC5/Vg3NCiWelDsLiUc9bRwAPs/+LfTLNvetFCtCTN+yQz15C/fs4AwX1R9K5GLtLfn8QW+dWisaAw==}
     engines: {node: '>=0.11'}
+    dependencies:
+      '@babel/runtime': 7.21.5
     dev: false
 
   /dateformat@3.0.3:
@@ -2049,7 +2051,7 @@ packages:
     peerDependencies:
       eslint: ^3 || ^4 || ^5 || ^6 || ^7 || ^8
     dependencies:
-      '@babel/runtime': 7.20.13
+      '@babel/runtime': 7.21.5
       aria-query: 5.1.3
       array-includes: 3.1.6
       array.prototype.flatmap: 1.3.1
