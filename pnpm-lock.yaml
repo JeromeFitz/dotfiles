@@ -20,8 +20,8 @@ dependencies:
     specifier: 1.1.7
     version: 1.1.7
   '@jeromefitz/release-notes-generator':
-    specifier: 1.2.11
-    version: 1.2.11
+    specifier: 1.2.12
+    version: 1.2.12
   '@jeromefitz/semantic':
     specifier: 9.2.6
     version: 9.2.6(@jeromefitz/conventional-gitmoji@3.3.6)
@@ -415,19 +415,19 @@ packages:
       - prettier-plugin-twig-melody
     dev: false
 
-  /@jeromefitz/release-notes-generator@1.2.11:
-    resolution: {integrity: sha512-1LNSK9HMnmgE85WEHgoFOE559bVpzWIGJPUbXQn5R2OVfxPqW6QgvQOdaeTEYGdqmy5yh1zhdBGLATW6U+8YuQ==}
+  /@jeromefitz/release-notes-generator@1.2.12:
+    resolution: {integrity: sha512-BxDD7v40pS9yzMNbPiAP2uAFRwA5WQAdoMB8Wfw5Nh3Tq4MmCCBKp5U+QfpkqyVDdLxnbTCR/Z5X0S04o53Y/w==}
     engines: {node: '>=16'}
     peerDependencies:
       lodash: ^4.17.21
     dependencies:
-      '@octokit/rest': 19.0.7
+      '@octokit/rest': 19.0.8
       conventional-commits-filter: 2.0.7
       conventional-commits-parser: 3.2.4
       date-fns: 2.30.0
       import-from: 4.0.0
       read-pkg-up: 7.0.1
-      semver: 7.5.0
+      semver: 7.5.1
     transitivePeerDependencies:
       - encoding
     dev: false
@@ -575,18 +575,18 @@ packages:
     resolution: {integrity: sha512-HNWisMYlR8VCnNurDU6os2ikx0s0VyEjDYHNS/h4cgb8DeOxQ0n72HyinUtdDVxJhFy3FWLGl0DJhfEWk3P5Iw==}
     dev: false
 
-  /@octokit/openapi-types@16.0.0:
-    resolution: {integrity: sha512-JbFWOqTJVLHZSUUoF4FzAZKYtqdxWu9Z5m2QQnOyEa04fOFljvyh7D3GYKbfuaSWisqehImiVIMG4eyJeP5VEA==}
+  /@octokit/openapi-types@17.1.2:
+    resolution: {integrity: sha512-OaS7Ol4Y+U50PbejfzQflGWRMxO04nYWO5ZBv6JerqMKE2WS/tI9VoVDDPXHBlRMGG2fOdKwtVGlFfc7AVIstw==}
     dev: false
 
-  /@octokit/plugin-paginate-rest@6.0.0(@octokit/core@4.1.0):
-    resolution: {integrity: sha512-Sq5VU1PfT6/JyuXPyt04KZNVsFOSBaYOAq2QRZUwzVlI10KFvcbUo8lR258AAQL1Et60b0WuVik+zOWKLuDZxw==}
+  /@octokit/plugin-paginate-rest@6.1.0(@octokit/core@4.1.0):
+    resolution: {integrity: sha512-5T4iXjJdYCVA1rdWS1C+uZV9AvtZY9QgTG74kFiSFVj94dZXowyi/YK8f4SGjZaL69jZthGlBaDKRdCMCF9log==}
     engines: {node: '>= 14'}
     peerDependencies:
       '@octokit/core': '>=4'
     dependencies:
       '@octokit/core': 4.1.0
-      '@octokit/types': 9.0.0
+      '@octokit/types': 9.2.2
     dev: false
 
   /@octokit/plugin-request-log@1.0.4(@octokit/core@4.1.0):
@@ -597,14 +597,14 @@ packages:
       '@octokit/core': 4.1.0
     dev: false
 
-  /@octokit/plugin-rest-endpoint-methods@7.0.1(@octokit/core@4.1.0):
-    resolution: {integrity: sha512-pnCaLwZBudK5xCdrR823xHGNgqOzRnJ/mpC/76YPpNP7DybdsJtP7mdOwh+wYZxK5jqeQuhu59ogMI4NRlBUvA==}
+  /@octokit/plugin-rest-endpoint-methods@7.1.0(@octokit/core@4.1.0):
+    resolution: {integrity: sha512-SWwz/hc47GaKJR6BlJI4WIVRodbAFRvrR0QRPSoPMs7krb7anYPML3psg+ThEz/kcwOdSNh/oA8qThi/Wvs4Fw==}
     engines: {node: '>= 14'}
     peerDependencies:
       '@octokit/core': '>=3'
     dependencies:
       '@octokit/core': 4.1.0
-      '@octokit/types': 9.0.0
+      '@octokit/types': 9.2.2
       deprecation: 2.3.1
     dev: false
 
@@ -631,14 +631,14 @@ packages:
       - encoding
     dev: false
 
-  /@octokit/rest@19.0.7:
-    resolution: {integrity: sha512-HRtSfjrWmWVNp2uAkEpQnuGMJsu/+dBr47dRc5QVgsCbnIc1+GFEaoKBWkYG+zjrsHpSqcAElMio+n10c0b5JA==}
+  /@octokit/rest@19.0.8:
+    resolution: {integrity: sha512-/PKrzqn+zDzXKwBMwLI2IKrvk8yv8cedJOdcmxrjR3gmu6UIzURhP5oQj+4qkn7+uQi1gg7QqV4SqlaQ1HYW1Q==}
     engines: {node: '>= 14'}
     dependencies:
       '@octokit/core': 4.1.0
-      '@octokit/plugin-paginate-rest': 6.0.0(@octokit/core@4.1.0)
+      '@octokit/plugin-paginate-rest': 6.1.0(@octokit/core@4.1.0)
       '@octokit/plugin-request-log': 1.0.4(@octokit/core@4.1.0)
-      '@octokit/plugin-rest-endpoint-methods': 7.0.1(@octokit/core@4.1.0)
+      '@octokit/plugin-rest-endpoint-methods': 7.1.0(@octokit/core@4.1.0)
     transitivePeerDependencies:
       - encoding
     dev: false
@@ -655,10 +655,10 @@ packages:
       '@octokit/openapi-types': 14.0.0
     dev: false
 
-  /@octokit/types@9.0.0:
-    resolution: {integrity: sha512-LUewfj94xCMH2rbD5YJ+6AQ4AVjFYTgpp6rboWM5T7N3IsIF65SBEOVcYMGAEzO/kKNiNaW4LoWtoThOhH06gw==}
+  /@octokit/types@9.2.2:
+    resolution: {integrity: sha512-9BjDxjgQIvCjNWZsbqyH5QC2Yni16oaE6xL+8SUBMzcYPF4TGQBXGA97Cl3KceK9mwiNMb1mOYCz6FbCCLEL+g==}
     dependencies:
-      '@octokit/openapi-types': 16.0.0
+      '@octokit/openapi-types': 17.1.2
     dev: false
 
   /@pkgr/utils@2.3.1:
@@ -742,7 +742,7 @@ packages:
     peerDependencies:
       semantic-release: '>=18.0.0-beta.1'
     dependencies:
-      '@octokit/rest': 19.0.7
+      '@octokit/rest': 19.0.8
       '@semantic-release/error': 3.0.0
       aggregate-error: 3.1.0
       bottleneck: 2.19.5
@@ -782,7 +782,7 @@ packages:
       read-pkg: 5.2.0
       registry-auth-token: 4.2.1
       semantic-release: 19.0.5
-      semver: 7.5.0
+      semver: 7.5.1
       tempy: 1.0.1
     dev: false
 
@@ -865,7 +865,7 @@ packages:
       grapheme-splitter: 1.0.4
       ignore: 5.2.4
       natural-compare-lite: 1.4.0
-      semver: 7.5.0
+      semver: 7.5.1
       tsutils: 3.21.0(typescript@5.0.4)
       typescript: 5.0.4
     transitivePeerDependencies:
@@ -965,7 +965,7 @@ packages:
       debug: 4.3.4
       globby: 11.1.0
       is-glob: 4.0.3
-      semver: 7.5.0
+      semver: 7.5.1
       tsutils: 3.21.0(typescript@5.0.4)
       typescript: 5.0.4
     transitivePeerDependencies:
@@ -986,7 +986,7 @@ packages:
       debug: 4.3.4
       globby: 11.1.0
       is-glob: 4.0.3
-      semver: 7.5.0
+      semver: 7.5.1
       tsutils: 3.21.0(typescript@5.0.4)
       typescript: 5.0.4
     transitivePeerDependencies:
@@ -1007,7 +1007,7 @@ packages:
       eslint: 8.40.0
       eslint-scope: 5.1.1
       eslint-utils: 3.0.0(eslint@8.40.0)
-      semver: 7.5.0
+      semver: 7.5.1
     transitivePeerDependencies:
       - supports-color
       - typescript
@@ -1027,7 +1027,7 @@ packages:
       '@typescript-eslint/typescript-estree': 5.59.5(typescript@5.0.4)
       eslint: 8.40.0
       eslint-scope: 5.1.1
-      semver: 7.5.0
+      semver: 7.5.1
     transitivePeerDependencies:
       - supports-color
       - typescript
@@ -3576,7 +3576,7 @@ packages:
     dependencies:
       hosted-git-info: 4.1.0
       is-core-module: 2.12.0
-      semver: 7.5.0
+      semver: 7.5.1
       validate-npm-package-license: 3.0.4
     dev: false
 
@@ -3586,7 +3586,7 @@ packages:
     dependencies:
       hosted-git-info: 5.2.1
       is-core-module: 2.12.0
-      semver: 7.5.0
+      semver: 7.5.1
       validate-npm-package-license: 3.0.4
     dev: false
 
@@ -4399,7 +4399,7 @@ packages:
       p-reduce: 2.1.0
       read-pkg-up: 7.0.1
       resolve-from: 5.0.0
-      semver: 7.5.0
+      semver: 7.5.1
       semver-diff: 3.1.1
       signale: 1.4.0
       yargs: 16.2.0
@@ -4430,8 +4430,8 @@ packages:
     hasBin: true
     dev: false
 
-  /semver@7.5.0:
-    resolution: {integrity: sha512-+XC0AD/R7Q2mPSRuy2Id0+CGTZ98+8f+KvwirxOKIEyid+XSx6HbC63p+O4IndTHuX5Z+JxQ0TghCkO5Cg/2HA==}
+  /semver@7.5.1:
+    resolution: {integrity: sha512-Wvss5ivl8TMRZXXESstBA4uR5iXgEN/VC5/sOcuXdVLzcdkz4HWetIoRfG5gb5X+ij/G9rw9YoGn3QoQ8OCSpw==}
     engines: {node: '>=10'}
     hasBin: true
     dependencies:
