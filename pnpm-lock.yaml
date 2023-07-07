@@ -9,8 +9,8 @@ dependencies:
     specifier: 7.22.8
     version: 7.22.8
   '@babel/eslint-parser':
-    specifier: 7.22.5
-    version: 7.22.5(@babel/core@7.22.8)
+    specifier: 7.22.7
+    version: 7.22.7(@babel/core@7.22.8)
   '@jeromefitz/conventional-gitmoji':
     specifier: 3.3.6
     version: 3.3.6
@@ -110,8 +110,8 @@ packages:
       semver: 6.3.0
     dev: false
 
-  /@babel/eslint-parser@7.22.5(@babel/core@7.22.8):
-    resolution: {integrity: sha512-C69RWYNYtrgIRE5CmTd77ZiLDXqgBipahJc/jHP3sLcAGj6AJzxNIuKNpVnICqbyK7X3pFUfEvL++rvtbQpZkQ==}
+  /@babel/eslint-parser@7.22.7(@babel/core@7.22.8):
+    resolution: {integrity: sha512-LH6HJqjOyu/Qtp7LuSycZXK/CYXQ4ohdkliEaL1QTdtOXVdOVpTBKVxAo/+eeyt+x/2SRzB+zUPduVl+xiEvdg==}
     engines: {node: ^10.13.0 || ^12.13.0 || >=14.0.0}
     peerDependencies:
       '@babel/core': '>=7.11.0'
@@ -119,8 +119,8 @@ packages:
     dependencies:
       '@babel/core': 7.22.8
       '@nicolo-ribaudo/eslint-scope-5-internals': 5.1.1-v1
+      '@nicolo-ribaudo/semver-v6': 6.3.3
       eslint-visitor-keys: 2.1.0
-      semver: 6.3.0
     dev: false
 
   /@babel/generator@7.22.7:
