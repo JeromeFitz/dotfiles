@@ -18,8 +18,8 @@ dependencies:
     specifier: 1.2.0
     version: 1.2.0(@babel/core@7.22.5)(typescript@5.0.4)
   '@jeromefitz/lint-staged':
-    specifier: 1.1.10
-    version: 1.1.10(is-ci@3.0.1)
+    specifier: 1.1.11
+    version: 1.1.11(is-ci@3.0.1)
   '@jeromefitz/prettier-config':
     specifier: 1.2.1
     version: 1.2.1
@@ -398,14 +398,15 @@ packages:
       - typescript
     dev: false
 
-  /@jeromefitz/lint-staged@1.1.10(is-ci@3.0.1):
-    resolution: {integrity: sha512-7BBhmF+wZN9h6PmOklSlAnFnLBZd2j79YG51/bPDEEJGUVYMqFaOr4OBYrFSsslW+O2AZPBnY+YgSBtSVPBKoA==}
+  /@jeromefitz/lint-staged@1.1.11(is-ci@3.0.1):
+    resolution: {integrity: sha512-8vf7lcGzm4rhoc5p1BPMY2w1pIECkXbhJOYO9uGri5IVOF7u4nIPLKgJMBNmBnQRQ+u5TAevm9BDUsfFS6TP9Q==}
     engines: {node: '>=16'}
     peerDependencies:
       is-ci: ^3.0.1
     dependencies:
       is-ci: 3.0.1
       lint-staged: 13.2.2
+      micromatch: 4.0.5
     transitivePeerDependencies:
       - enquirer
       - supports-color
