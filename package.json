@@ -40,7 +40,6 @@
     "postpublish": "pinst --enable",
     "preinstall": "npx only-allow pnpm",
     "prepublishOnly": "pinst --disable",
-    "pretty-quick": "pretty-quick",
     "semantic-release": "semantic-release",
     "uninstall": "sh ./scripts/uninstall"
   },

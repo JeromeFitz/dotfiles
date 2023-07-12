@@ -153,19 +153,25 @@ module.exports = {
     'hyper-opacity',
     'hyper-dracula',
     'hyperborder',
-    'hyper-statusline',
+    '@jeromefitz/hyper-statusline',
     // @note(hyper) yarn is broken
     'hyper-tab-icons',
     // 'hyper-tabs-enhanced',
   ],
 
   // ~/.hyper_plugins/local
-  // localPlugins: ['hyper-bearded-vivid-black', 'hyper-tab-icons'],
+  // localPlugins: [],
+  // localPlugins: ['hyper-statusline'],
 
   /**
    * @note(deprecated)
    * keep these here for quicker edits when debugging
    */
   deprecatedPlugins: [],
-  deprecatedLocalPlugins: ['hyper-dracula', 'radix-colors'],
+  deprecatedLocalPlugins: [
+    'hyper-dracula',
+    'radix-colors',
+    'hyper-bearded-vivid-black',
+    'hyper-tab-icons',
+  ],
 }
