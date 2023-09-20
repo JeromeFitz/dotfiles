@@ -45,7 +45,7 @@
   },
   "dependencies": {
     "@babel/core": "7.22.20",
-    "@babel/eslint-parser": "7.22.11",
+    "@babel/eslint-parser": "7.22.15",
     "@jeromefitz/conventional-gitmoji": "3.3.6",
     "@jeromefitz/eslint-config": "1.2.1",
     "@jeromefitz/lint-staged": "1.1.11",
