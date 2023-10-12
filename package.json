@@ -44,7 +44,7 @@
     "uninstall": "sh ./scripts/uninstall"
   },
   "dependencies": {
-    "@babel/core": "7.23.0",
+    "@babel/core": "7.23.2",
     "@babel/eslint-parser": "7.22.15",
     "@jeromefitz/conventional-gitmoji": "3.3.6",
     "@jeromefitz/eslint-config": "1.2.1",
