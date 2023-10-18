@@ -10,3 +10,6 @@ alias getGitConfig='echo "[ git ] 📛  user.name:       $(git config --get user
 # @note(to-be-removed) Issue with MacOS Monterrey
 # @note(feature) Should this be CRON?
 alias refreshOutlook='launchctl stop com.apple.CalendarAgent && launchctl start com.apple.CalendarAgent'
+
+alias spotlightOff="sudo mdutil -a -i off"
+alias spotlightOn="sudo mdutil -a -i on"
