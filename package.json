@@ -59,5 +59,12 @@
     "is-ci": "3.0.1",
     "pinst": "3.0.0",
     "typescript": "5.0.4"
+  },
+  "pnpm": {
+    "overrides": {
+      "postcss": "8.4.31",
+      "semver": "7.5.2",
+      "word-wrap": "1.2.4"
+    }
   }
 }
