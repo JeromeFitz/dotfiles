@@ -3,7 +3,7 @@
 // See https://hyper.is#cfg for all currently supported options.
 
 const fontFamily =
-  "'Operator Mono Lig', 'IBM Plex Mono', 'Fira Code', 'Roboto Mono', Menlo, 'DejaVu Sans Mono', Consolas, 'Lucida Console', monospace"
+  "'Operator Mono Lig', 'AT Name Mono Variable', 'IBM Plex Mono', 'Fira Code', 'Roboto Mono', Menlo, 'DejaVu Sans Mono', Consolas, 'Lucida Console', monospace"
 
 module.exports = {
   config: {
@@ -11,7 +11,7 @@ module.exports = {
     updateChannel: 'stable',
 
     // The default size in pixels for the terminal
-    fontSize: 18,
+    fontSize: 16,
 
     // The font family to use with optional fallbacks
     fontFamily,
@@ -19,8 +19,8 @@ module.exports = {
     // The font family to use for the UI with optional fallbacks
     uiFontFamily: fontFamily,
 
-    fontWeight: 'normal',
-    fontWeightBold: 'bold',
+    fontWeight: 400,
+    fontWeightBold: 500,
 
     // The color of the caret in the terminal
     cursorColor: 'rgba(248,28,229,0.8)',
