@@ -44,10 +44,10 @@ brew 'zsh-syntax-highlighting'
 
 # Casks
 cask '1password'
-# cask 'alfred'
 # cask 'bartender'
 # cask 'hyper'
 cask 'iterm2'
+cask 'notunes'
 # cask 'raycast'
 cask 'slack'
 # cask 'spotify'
