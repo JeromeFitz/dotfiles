@@ -17,8 +17,8 @@ dependencies:
     specifier: 7.23.3
     version: 7.23.3(@babel/core@7.23.7)
   '@jeromefitz/conventional-gitmoji':
-    specifier: 3.3.6
-    version: 3.3.6
+    specifier: 4.0.0
+    version: 4.0.0
   '@jeromefitz/eslint-config':
     specifier: 1.2.1
     version: 1.2.1(@babel/core@7.23.7)(typescript@5.0.4)
@@ -33,7 +33,7 @@ dependencies:
     version: 1.2.13
   '@jeromefitz/semantic':
     specifier: 9.2.7
-    version: 9.2.7(@jeromefitz/conventional-gitmoji@3.3.6)
+    version: 9.2.7(@jeromefitz/conventional-gitmoji@4.0.0)
   '@jeromefitz/tsconfig':
     specifier: 1.1.3
     version: 1.1.3
@@ -355,9 +355,9 @@ packages:
     resolution: {integrity: sha512-ZnQMnLV4e7hDlUvw8H+U8ASL02SS2Gn6+9Ac3wGGLIe7+je2AeAOxPY+izIPJDfFDb7eDjev0Us8MO1iFRN8hA==}
     dev: false
 
-  /@jeromefitz/conventional-gitmoji@3.3.6:
-    resolution: {integrity: sha512-rjURFO3D9/65myikO1PWcre+Nlh0qHIbNeFUzDeCrwuU50H23XTOFoURZy3qQFlEbHH6FFNnSLEqR4k7As03NA==}
-    engines: {node: '>=16'}
+  /@jeromefitz/conventional-gitmoji@4.0.0:
+    resolution: {integrity: sha512-egyTmgzRvjzdlphF42RGMqdWz52U4Mf/jVxIa9gaJKV9vA9vZtMKHbi+QR5lTL8b3+yDklAH/+c51Mi74iUpjw==}
+    engines: {node: '>=20'}
     peerDependencies:
       lodash: ^4.17.21
     dependencies:
@@ -456,13 +456,13 @@ packages:
       - encoding
     dev: false
 
-  /@jeromefitz/semantic@9.2.7(@jeromefitz/conventional-gitmoji@3.3.6):
+  /@jeromefitz/semantic@9.2.7(@jeromefitz/conventional-gitmoji@4.0.0):
     resolution: {integrity: sha512-+ZQmfdsCQr84Kg+gsrha9rEdhX1q+EhdJSZdOAbEcsYZrRPbpqcK2/BFDXDcASf7t7LoiD3wxn2sAdC0q43slg==}
     engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
     peerDependencies:
       '@jeromefitz/conventional-gitmoji': ^3.3.1
     dependencies:
-      '@jeromefitz/conventional-gitmoji': 3.3.6
+      '@jeromefitz/conventional-gitmoji': 4.0.0
       '@semantic-release/commit-analyzer': 9.0.2(semantic-release@19.0.5)
       '@semantic-release/exec': 6.0.3(semantic-release@19.0.5)
       '@semantic-release/git': 10.0.1(semantic-release@19.0.5)
