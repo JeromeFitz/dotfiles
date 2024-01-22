@@ -1,9 +1,17 @@
-const { getConfig } = require('@jeromefitz/semantic')
-const isCI = require('is-ci')
+import { createRequire } from 'node:module'
 
-!isCI && require('dotenv').config({ path: './.env' })
+import { getConfig } from '@jeromefitz/semantic'
+import isCI from 'is-ci'
 
-const { name } = require('./package.json')
+if (!isCI) {
+  const dotenv = await import('dotenv')
+  dotenv.config({ path: './.env' })
+}
+
+const require = createRequire(import.meta.url)
+const pkg = require('./package.json')
+
+const { name } = pkg
 
 const branches = [{ name: 'main' }, { name: 'develop', prerelease: 'develop' }]
 
@@ -20,4 +28,4 @@ const configPassed = {
 
 const config = getConfig(configPassed)
 
-module.exports = config
+export default config
