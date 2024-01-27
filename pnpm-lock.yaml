@@ -29,8 +29,8 @@ dependencies:
     specifier: 2.0.0
     version: 2.0.0
   '@jeromefitz/release-notes-generator':
-    specifier: 2.0.0
-    version: 2.0.0
+    specifier: 2.0.1
+    version: 2.0.1
   '@jeromefitz/semantic':
     specifier: 10.0.0
     version: 10.0.0(@jeromefitz/conventional-gitmoji@4.0.0)(typescript@5.3.3)
@@ -451,8 +451,8 @@ packages:
       - prettier-plugin-twig-melody
     dev: false
 
-  /@jeromefitz/release-notes-generator@2.0.0:
-    resolution: {integrity: sha512-xtAzjauQowJfH4HtBWi6+4SO/GzWSlnKiOn0NykiCkoS5NefYyZBH9rpEjFmMhroyHB1CTc+mTXaLct4QvaFqA==}
+  /@jeromefitz/release-notes-generator@2.0.1:
+    resolution: {integrity: sha512-ERXyx08IOQwbU3cHU8X9i31iv/djsN/F8tmgj/xV6TQHTEcBOPnXr4RxUIpO9HV9xrMKs3b9iK+8wcHyryxTWg==}
     engines: {node: '>=20'}
     peerDependencies:
       lodash: ^4.17.21
@@ -460,7 +460,7 @@ packages:
       '@octokit/rest': 20.0.2
       conventional-commits-filter: 4.0.0
       conventional-commits-parser: 5.0.0
-      date-fns: 3.3.0
+      date-fns: 3.3.1
       import-from-esm: 1.3.3
       read-package-up: 11.0.0
       semver: 7.5.2
@@ -1617,8 +1617,8 @@ packages:
     resolution: {integrity: sha512-sdQSFB7+llfUcQHUQO3+B8ERRj0Oa4w9POWMI/puGtuf7gFywGmkaLCElnudfTiKZV+NvHqL0ifzdrI8Ro7ESA==}
     dev: false
 
-  /date-fns@3.3.0:
-    resolution: {integrity: sha512-xuouT0GuI2W8yXhCMn/AXbSl1Av3wu2hJXxMnnILTY3bYY0UgNK0qOwVXqdFBrobW5qbX1TuOTgMw7c2H2OuhA==}
+  /date-fns@3.3.1:
+    resolution: {integrity: sha512-y8e109LYGgoQDveiEBD3DYXKba1jWf5BA8YU1FL5Tvm0BTdEfy54WLCwnuYWZNnzzvALy/QQ4Hov+Q9RVRv+Zw==}
     dev: false
 
   /debug@3.2.7:
