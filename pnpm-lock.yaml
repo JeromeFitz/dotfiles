@@ -32,8 +32,8 @@ dependencies:
     specifier: 2.0.1
     version: 2.0.1
   '@jeromefitz/semantic':
-    specifier: 10.0.0
-    version: 10.0.0(@jeromefitz/conventional-gitmoji@4.0.0)(typescript@5.3.3)
+    specifier: 10.0.1
+    version: 10.0.1(@jeromefitz/conventional-gitmoji@4.0.0)(typescript@5.3.3)
   '@jeromefitz/tsconfig':
     specifier: 2.0.0
     version: 2.0.0
@@ -468,11 +468,11 @@ packages:
       - supports-color
     dev: false
 
-  /@jeromefitz/semantic@10.0.0(@jeromefitz/conventional-gitmoji@4.0.0)(typescript@5.3.3):
-    resolution: {integrity: sha512-FDrNn/G7HW4O4ep3UgddG9NF71HaI5B+5bExJRyrPDc5ccRj+WaoY/ZDs4jQma08WF9bvRDtem8Wdb1bdMCLig==}
+  /@jeromefitz/semantic@10.0.1(@jeromefitz/conventional-gitmoji@4.0.0)(typescript@5.3.3):
+    resolution: {integrity: sha512-+n35CBgGblU6R1Zplsb2hYTcwv3xE6rXeo7+r4f6r5FgT4HZzLbZ8C8iGqF0gFmnLcRpv+JxBaEBXSSKge4tTg==}
     engines: {node: '>=20'}
     peerDependencies:
-      '@jeromefitz/conventional-gitmoji': ^3.3.1
+      '@jeromefitz/conventional-gitmoji': ^4.0.0
     dependencies:
       '@jeromefitz/conventional-gitmoji': 4.0.0
       '@semantic-release/commit-analyzer': 11.1.0(semantic-release@23.0.0)
