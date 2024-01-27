@@ -1,6 +1,7 @@
 import { createRequire } from 'node:module'
 
 import { getConfig } from '@jeromefitz/semantic'
+
 import isCI from 'is-ci'
 
 if (!isCI) {
