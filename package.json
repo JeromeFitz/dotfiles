@@ -36,8 +36,8 @@
     "lint": "pnpm run format:lint && pnpm run lint:eslint",
     "lint:eslint": "eslint . --ext cjs,js,jsx,mjs,ts,tsx --max-warnings=0",
     "lint:fix": "pnpm run lint:eslint --fix && pnpm run format",
-    "postinstall": "is-ci || husky install",
     "preinstall": "npx only-allow pnpm",
+    "prepare": "is-ci || husky",
     "semantic-release": "semantic-release",
     "uninstall": "sh ./scripts/uninstall"
   },
@@ -53,7 +53,7 @@
     "@jeromefitz/tsconfig": "2.0.0",
     "ccommit": "2.0.0",
     "dotenv": "16.4.1",
-    "husky": "8.0.3",
+    "husky": "9.0.6",
     "is-ci": "3.0.1",
     "typescript": "5.3.3"
   },
