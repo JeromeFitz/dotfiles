@@ -38,8 +38,8 @@ dependencies:
     specifier: 2.0.0
     version: 2.0.0
   ccommit:
-    specifier: 2.0.1
-    version: 2.0.1
+    specifier: 2.0.2
+    version: 2.0.2
   dotenv:
     specifier: 16.4.2
     version: 16.4.2
@@ -1414,8 +1414,8 @@ packages:
       redeyed: 2.1.1
     dev: false
 
-  /ccommit@2.0.1:
-    resolution: {integrity: sha512-glbXRFIJke+Sg45/vfXIAPuP4AnMCtvWOoYt2khvS6OYoMV/GmvyHKGt6hxhI3tJcGK9sBeMjOWitg5G1XYhng==}
+  /ccommit@2.0.2:
+    resolution: {integrity: sha512-iufE9Zusi05kz11wiVChoYh2kIlBJt9yJyBLYdRLze16yIUEZC6KNE39pMyw0T2n2SH6qWnte+2MVdF1+RUhBw==}
     engines: {node: '>=20'}
     hasBin: true
     dependencies:
@@ -1423,7 +1423,7 @@ packages:
       enquirer: 2.4.1
       execa: 8.0.1
       fuse.js: 7.0.0
-      meow: 13.1.0
+      meow: 13.2.0
     dev: false
 
   /chalk@2.3.0:
@@ -3461,8 +3461,8 @@ packages:
     engines: {node: '>=16.10'}
     dev: false
 
-  /meow@13.1.0:
-    resolution: {integrity: sha512-o5R/R3Tzxq0PJ3v3qcQJtSvSE9nKOLSAaDuuoMzDVuGTwHdccMWcYomh9Xolng2tjT6O/Y83d+0coVGof6tqmA==}
+  /meow@13.2.0:
+    resolution: {integrity: sha512-pxQJQzB6djGPXh08dacEloMFopsOqGVRKFPYvPOt9XDZ1HasbgDZA74CJGreSU4G3Ak7EFJGoiH2auq+yXISgA==}
     engines: {node: '>=18'}
     dev: false
 
