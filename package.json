@@ -49,7 +49,7 @@
     "@jeromefitz/lint-staged": "2.0.2",
     "@jeromefitz/prettier-config": "2.0.1",
     "@jeromefitz/release-notes-generator": "2.0.2",
-    "@jeromefitz/semantic": "10.0.2",
+    "@jeromefitz/semantic": "10.0.3",
     "@jeromefitz/tsconfig": "2.0.0",
     "ccommit": "2.0.2",
     "dotenv": "16.4.5",
