@@ -26,8 +26,8 @@ dependencies:
     specifier: 2.0.2
     version: 2.0.2(is-ci@3.0.1)
   '@jeromefitz/prettier-config':
-    specifier: 2.0.2
-    version: 2.0.2
+    specifier: 2.0.3
+    version: 2.0.3
   '@jeromefitz/release-notes-generator':
     specifier: 2.0.3
     version: 2.0.3
@@ -435,18 +435,19 @@ packages:
       - supports-color
     dev: false
 
-  /@jeromefitz/prettier-config@2.0.2:
-    resolution: {integrity: sha512-4NQozUEbBaf6z02RZst4r/aINd3zZqJAAyjG7aucLOe96SxsHNGto9Oi3LvQDEqcEizA7EDGxZzNYkSOcr9VWg==}
+  /@jeromefitz/prettier-config@2.0.3:
+    resolution: {integrity: sha512-owZDt5U9JOYWL5bkYUnuM4+Fk1doEbm6boM0INu4lZHQvUSlP+W54JGMhc8Ifi2PIAdSUVg+7DtkQoBf49+C1Q==}
     engines: {node: '>=20'}
     dependencies:
       prettier: 3.2.5
       prettier-plugin-pkg: 0.18.1(prettier@3.2.5)
-      prettier-plugin-tailwindcss: 0.5.12(prettier@3.2.5)
+      prettier-plugin-tailwindcss: 0.5.13(prettier@3.2.5)
     transitivePeerDependencies:
       - '@ianvs/prettier-plugin-sort-imports'
       - '@prettier/plugin-pug'
       - '@shopify/prettier-plugin-liquid'
       - '@trivago/prettier-plugin-sort-imports'
+      - '@zackad/prettier-plugin-twig-melody'
       - prettier-plugin-astro
       - prettier-plugin-css-order
       - prettier-plugin-import-sort
@@ -457,7 +458,6 @@ packages:
       - prettier-plugin-sort-imports
       - prettier-plugin-style-order
       - prettier-plugin-svelte
-      - prettier-plugin-twig-melody
     dev: false
 
   /@jeromefitz/release-notes-generator@2.0.3:
@@ -4185,14 +4185,15 @@ packages:
       prettier: 3.2.5
     dev: false
 
-  /prettier-plugin-tailwindcss@0.5.12(prettier@3.2.5):
-    resolution: {integrity: sha512-o74kiDBVE73oHW+pdkFSluHBL3cYEvru5YgEqNkBMFF7Cjv+w1vI565lTlfoJT4VLWDe0FMtZ7FkE/7a4pMXSQ==}
+  /prettier-plugin-tailwindcss@0.5.13(prettier@3.2.5):
+    resolution: {integrity: sha512-2tPWHCFNC+WRjAC4SIWQNSOdcL1NNkydXim8w7TDqlZi+/ulZYz2OouAI6qMtkggnPt7lGamboj6LcTMwcCvoQ==}
     engines: {node: '>=14.21.3'}
     peerDependencies:
       '@ianvs/prettier-plugin-sort-imports': '*'
       '@prettier/plugin-pug': '*'
       '@shopify/prettier-plugin-liquid': '*'
       '@trivago/prettier-plugin-sort-imports': '*'
+      '@zackad/prettier-plugin-twig-melody': '*'
       prettier: ^3.0
       prettier-plugin-astro: '*'
       prettier-plugin-css-order: '*'
@@ -4204,7 +4205,6 @@ packages:
       prettier-plugin-sort-imports: '*'
       prettier-plugin-style-order: '*'
       prettier-plugin-svelte: '*'
-      prettier-plugin-twig-melody: '*'
     peerDependenciesMeta:
       '@ianvs/prettier-plugin-sort-imports':
         optional: true
@@ -4213,6 +4213,8 @@ packages:
       '@shopify/prettier-plugin-liquid':
         optional: true
       '@trivago/prettier-plugin-sort-imports':
+        optional: true
+      '@zackad/prettier-plugin-twig-melody':
         optional: true
       prettier-plugin-astro:
         optional: true
@@ -4233,8 +4235,6 @@ packages:
       prettier-plugin-style-order:
         optional: true
       prettier-plugin-svelte:
-        optional: true
-      prettier-plugin-twig-melody:
         optional: true
     dependencies:
       prettier: 3.2.5
