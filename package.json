@@ -34,7 +34,7 @@
     "format:lint": "pnpm run format:prettier --check",
     "format:prettier": "prettier \"**/*.{cjs,js,jsx,mjs,ts,tsx,json,md,mdx,css,html,yml,yaml,scss}\"",
     "lint": "pnpm run format:lint && pnpm run lint:eslint",
-    "lint:eslint": "eslint . --ext cjs,js,jsx,mjs,ts,tsx --max-warnings=0",
+    "lint:eslint": "eslint . --max-warnings=0",
     "lint:fix": "pnpm run lint:eslint --fix && pnpm run format",
     "preinstall": "npx only-allow pnpm",
     "prepare": "is-ci || husky",

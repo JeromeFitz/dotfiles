@@ -1,8 +1,0 @@
-# Files
-Brewfile-Slim.lock.json
-Brewfile.lock.json
-pnpm-lock.yaml
-yarn.lock
-
-# Folders
-node_modules
