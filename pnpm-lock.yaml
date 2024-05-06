@@ -32,8 +32,8 @@ importers:
         specifier: 2.0.4
         version: 2.0.4
       '@jeromefitz/release-notes-generator':
-        specifier: 2.0.6
-        version: 2.0.6(lodash@4.17.21)
+        specifier: 2.0.7
+        version: 2.0.7(lodash@4.17.21)
       '@jeromefitz/semantic':
         specifier: 10.0.6
         version: 10.0.6(@jeromefitz/conventional-gitmoji@4.0.1(lodash@4.17.21))(typescript@5.3.3)
@@ -283,8 +283,8 @@ packages:
     resolution: {integrity: sha512-eHbAkKXkeBsYwB6db5sfDSz+IQCf/ZIcyZuDatezWzAOfSaBDK1g6MScsVy2HlYvYCFXkeJgqDYgsozVfp1YfA==}
     engines: {node: '>=20'}
 
-  '@jeromefitz/release-notes-generator@2.0.6':
-    resolution: {integrity: sha512-OQ6l2MCrOl1KPJI1ivsCv9GRW2pRZAdEelEno4Pkga2MM8hsKytWrIJgCmvNJwMAwiuq86//TBoc1EcnOB2IAw==}
+  '@jeromefitz/release-notes-generator@2.0.7':
+    resolution: {integrity: sha512-0pbtI78j/vE6gb2oTm++WL3ILL8gV7kh3CAQ7A4aQE4SYXkQD89kZYU7njyBPWSRm3Mb0o0Jt25oKzH362POKQ==}
     engines: {node: '>=20'}
     peerDependencies:
       lodash: ^4.17.21
@@ -373,17 +373,20 @@ packages:
   '@octokit/openapi-types@22.1.0':
     resolution: {integrity: sha512-pGUdSP+eEPfZiQHNkZI0U01HLipxncisdJQB4G//OAmfeO8sqTQ9KRa0KF03TUPCziNsoXUrTg4B2Q1EX++T0Q==}
 
+  '@octokit/openapi-types@22.2.0':
+    resolution: {integrity: sha512-QBhVjcUa9W7Wwhm6DBFu6ZZ+1/t/oYxqc2tp81Pi41YNuJinbFRx8B133qVOrAaBbF7D/m0Et6f9/pZt9Rc+tg==}
+
   '@octokit/plugin-paginate-rest@11.1.1':
     resolution: {integrity: sha512-joUIZu9TupD4pRXLmWShD1Ur/oxYf/bJjYcnaopmGTReNrmWwcW7DUGSrWOjoTeihnlDig+a79m8koiafc4XQw==}
     engines: {node: '>= 18'}
     peerDependencies:
       '@octokit/core': '>=6'
 
-  '@octokit/plugin-paginate-rest@9.1.5':
-    resolution: {integrity: sha512-WKTQXxK+bu49qzwv4qKbMMRXej1DU2gq017euWyKVudA6MldaSSQuxtz+vGbhxV4CjxpUxjZu6rM2wfc1FiWVg==}
+  '@octokit/plugin-paginate-rest@11.3.1':
+    resolution: {integrity: sha512-ryqobs26cLtM1kQxqeZui4v8FeznirUsksiA+RYemMPJ7Micju0WSkv50dBksTuZks9O5cg4wp+t8fZ/cLY56g==}
     engines: {node: '>= 18'}
     peerDependencies:
-      '@octokit/core': '>=5'
+      '@octokit/core': '5'
 
   '@octokit/plugin-request-log@4.0.0':
     resolution: {integrity: sha512-2uJI1COtYCq8Z4yNSnM231TgH50bRkheQ9+aH8TnZanB6QilOnx8RMD2qsnamSOXtDj0ilxvevf5fGsBhBBzKA==}
@@ -391,11 +394,11 @@ packages:
     peerDependencies:
       '@octokit/core': '>=5'
 
-  '@octokit/plugin-rest-endpoint-methods@10.2.0':
-    resolution: {integrity: sha512-ePbgBMYtGoRNXDyKGvr9cyHjQ163PbwD0y1MkDJCpkO2YH4OeXX40c4wYHKikHGZcpGPbcRLuy0unPUuafco8Q==}
+  '@octokit/plugin-rest-endpoint-methods@13.2.2':
+    resolution: {integrity: sha512-EI7kXWidkt3Xlok5uN43suK99VWqc8OaIMktY9d9+RNKl69juoTyxmLoWPIZgJYzi41qj/9zU7G/ljnNOJ5AFA==}
     engines: {node: '>= 18'}
     peerDependencies:
-      '@octokit/core': '>=5'
+      '@octokit/core': ^5
 
   '@octokit/plugin-retry@7.0.3':
     resolution: {integrity: sha512-T9l5Z7XnDZ7dkyNmhJPSUq0YjbqUT/xn4yQbhcSuv4WGC/LqM73/mKwkl68VDPoLw20e8oz4L7qQopWt9v6sow==}
@@ -425,8 +428,8 @@ packages:
     resolution: {integrity: sha512-kL+cAcbSl3dctYLuJmLfx6Iku2MXXy0jszhaEIjQNaCp4zjHXrhVAHeuaRdNvJjW9qjl3u1MJ72+OuBP0YW/pg==}
     engines: {node: '>= 18'}
 
-  '@octokit/rest@20.1.0':
-    resolution: {integrity: sha512-STVO3itHQLrp80lvcYB2UIKoeil5Ctsgd2s1AM+du3HqZIR35ZH7WE9HLwUOLXH0myA0y3AGNPo8gZtcgIbw0g==}
+  '@octokit/rest@20.1.1':
+    resolution: {integrity: sha512-MB4AYDsM5jhIHro/dq4ix1iWTLGToIGk6cWF5L6vanFaMble5jTX/UBQyiv05HsWnwUtY8JrfHy2LWfKwihqMw==}
     engines: {node: '>= 18'}
 
   '@octokit/types@12.6.0':
@@ -434,6 +437,9 @@ packages:
 
   '@octokit/types@13.4.1':
     resolution: {integrity: sha512-Y73oOAzRBAUzR/iRAbGULzpNkX8vaxKCqEtg6K74Ff3w9f5apFnWtE/2nade7dMWWW3bS5Kkd6DJS4HF04xreg==}
+
+  '@octokit/types@13.5.0':
+    resolution: {integrity: sha512-HdqWTf5Z3qwDVlzCrP8UJquMwunpDiMPt5er+QjGzL4hqr/vBVY/MauQgS1xWxCDT1oMx1EULyqxncdCY/NVSQ==}
 
   '@pkgjs/parseargs@0.11.0':
     resolution: {integrity: sha512-+1VkjdD0QBLPodGrJUeqarH8VAIvQODIbwh9XpP5Syisf7YoQgsJKPNFoqqLQlu+VQ/tVSshMR6loPMn8U+dPg==}
@@ -1594,10 +1600,6 @@ packages:
   import-fresh@3.3.0:
     resolution: {integrity: sha512-veYYhQa+D1QBKznvhUHxb8faxlrwUnxseDAbAp457E0wLNio2bOSKnjYDhMj+YiAq61xrMGhQk9iXVk5FzgQMw==}
     engines: {node: '>=6'}
-
-  import-from-esm@1.3.3:
-    resolution: {integrity: sha512-U3Qt/CyfFpTUv6LOP2jRTLYjphH6zg3okMfHbyqRa/W2w6hr8OsJWVggNlR4jxuojQy81TgTJTxgSkyoteRGMQ==}
-    engines: {node: '>=16.20'}
 
   import-from-esm@1.3.4:
     resolution: {integrity: sha512-7EyUlPFC0HOlBDpUFGfYstsU7XHxZJKAAMzCT8wZ0hMW7b+hG51LIKTDcsgtz8Pu6YC0HqRVbX+rVUtsGMUKvg==}
@@ -3299,9 +3301,9 @@ snapshots:
       - prettier-plugin-style-order
       - prettier-plugin-svelte
 
-  '@jeromefitz/release-notes-generator@2.0.6(lodash@4.17.21)':
+  '@jeromefitz/release-notes-generator@2.0.7(lodash@4.17.21)':
     dependencies:
-      '@octokit/rest': 20.1.0
+      '@octokit/rest': 20.1.1
       conventional-commits-filter: 4.0.0
       conventional-commits-parser: 5.0.0
       date-fns: 3.6.0
@@ -3416,24 +3418,26 @@ snapshots:
 
   '@octokit/openapi-types@22.1.0': {}
 
+  '@octokit/openapi-types@22.2.0': {}
+
   '@octokit/plugin-paginate-rest@11.1.1(@octokit/core@6.0.1)':
     dependencies:
       '@octokit/core': 6.0.1
       '@octokit/types': 13.4.1
 
-  '@octokit/plugin-paginate-rest@9.1.5(@octokit/core@5.1.0)':
+  '@octokit/plugin-paginate-rest@11.3.1(@octokit/core@5.1.0)':
     dependencies:
       '@octokit/core': 5.1.0
-      '@octokit/types': 12.6.0
+      '@octokit/types': 13.5.0
 
   '@octokit/plugin-request-log@4.0.0(@octokit/core@5.1.0)':
     dependencies:
       '@octokit/core': 5.1.0
 
-  '@octokit/plugin-rest-endpoint-methods@10.2.0(@octokit/core@5.1.0)':
+  '@octokit/plugin-rest-endpoint-methods@13.2.2(@octokit/core@5.1.0)':
     dependencies:
       '@octokit/core': 5.1.0
-      '@octokit/types': 12.6.0
+      '@octokit/types': 13.5.0
 
   '@octokit/plugin-retry@7.0.3(@octokit/core@6.0.1)':
     dependencies:
@@ -3472,12 +3476,12 @@ snapshots:
       '@octokit/types': 12.6.0
       universal-user-agent: 7.0.2
 
-  '@octokit/rest@20.1.0':
+  '@octokit/rest@20.1.1':
     dependencies:
       '@octokit/core': 5.1.0
-      '@octokit/plugin-paginate-rest': 9.1.5(@octokit/core@5.1.0)
+      '@octokit/plugin-paginate-rest': 11.3.1(@octokit/core@5.1.0)
       '@octokit/plugin-request-log': 4.0.0(@octokit/core@5.1.0)
-      '@octokit/plugin-rest-endpoint-methods': 10.2.0(@octokit/core@5.1.0)
+      '@octokit/plugin-rest-endpoint-methods': 13.2.2(@octokit/core@5.1.0)
 
   '@octokit/types@12.6.0':
     dependencies:
@@ -3486,6 +3490,10 @@ snapshots:
   '@octokit/types@13.4.1':
     dependencies:
       '@octokit/openapi-types': 22.1.0
+
+  '@octokit/types@13.5.0':
+    dependencies:
+      '@octokit/openapi-types': 22.2.0
 
   '@pkgjs/parseargs@0.11.0':
     optional: true
@@ -3510,7 +3518,7 @@ snapshots:
       conventional-commits-filter: 4.0.0
       conventional-commits-parser: 5.0.0
       debug: 4.3.4
-      import-from-esm: 1.3.3
+      import-from-esm: 1.3.4
       lodash-es: 4.17.21
       micromatch: 4.0.5
       semantic-release: 23.0.8(typescript@5.3.3)
@@ -3582,7 +3590,7 @@ snapshots:
       conventional-commits-parser: 5.0.0
       debug: 4.3.4
       get-stream: 7.0.1
-      import-from-esm: 1.3.3
+      import-from-esm: 1.3.4
       into-stream: 7.0.0
       lodash-es: 4.17.21
       read-pkg-up: 11.0.0
@@ -4962,13 +4970,6 @@ snapshots:
       parent-module: 1.0.1
       resolve-from: 4.0.0
 
-  import-from-esm@1.3.3:
-    dependencies:
-      debug: 4.3.4
-      import-meta-resolve: 4.0.0
-    transitivePeerDependencies:
-      - supports-color
-
   import-from-esm@1.3.4:
     dependencies:
       debug: 4.3.4
@@ -5718,7 +5719,7 @@ snapshots:
       git-log-parser: 1.2.0
       hook-std: 3.0.0
       hosted-git-info: 7.0.1
-      import-from-esm: 1.3.3
+      import-from-esm: 1.3.4
       lodash-es: 4.17.21
       marked: 12.0.0
       marked-terminal: 7.0.0(marked@12.0.0)

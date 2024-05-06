@@ -48,7 +48,7 @@
     "@jeromefitz/eslint-config": "3.0.1",
     "@jeromefitz/lint-staged": "2.0.2",
     "@jeromefitz/prettier-config": "2.0.4",
-    "@jeromefitz/release-notes-generator": "2.0.6",
+    "@jeromefitz/release-notes-generator": "2.0.7",
     "@jeromefitz/semantic": "10.0.6",
     "@jeromefitz/tsconfig": "2.0.0",
     "ccommit": "2.0.2",
