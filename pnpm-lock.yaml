@@ -26,8 +26,8 @@ importers:
         specifier: 4.0.0
         version: 4.0.0(typescript@5.3.3)
       '@jeromefitz/lint-staged':
-        specifier: 2.0.3
-        version: 2.0.3(is-ci@3.0.1)
+        specifier: 2.0.4
+        version: 2.0.4(is-ci@3.0.1)
       '@jeromefitz/prettier-config':
         specifier: 2.0.6
         version: 2.0.6
@@ -228,8 +228,8 @@ packages:
     resolution: {integrity: sha512-PLxFqeAFJeTwN8Z6zSIF+C30PKWNRsfzdALB4ChTzx6fQgmatjxV1DIZQ9uu9jBnLIbW648oxdym3HyCR85rNQ==}
     engines: {node: '>=20'}
 
-  '@jeromefitz/lint-staged@2.0.3':
-    resolution: {integrity: sha512-ezN/2xqE/fezSuCzK20iDMYqorGm1JXvxGGdlP9h2cjtCG11PxeTua/NbX55DAJvxopR+FZsTvJwagKPJWV8pA==}
+  '@jeromefitz/lint-staged@2.0.4':
+    resolution: {integrity: sha512-CkZSO5GvX4wit++Ixv1oW0VJYO/sIN27+XsrkDthhxJfwFvRr3XRK4XYS+e4jwNdpt0EyEbw5QIbFgTzcWbm2w==}
     engines: {node: '>=20'}
     peerDependencies:
       is-ci: ^3.0.1
@@ -766,10 +766,6 @@ packages:
 
   brace-expansion@2.0.1:
     resolution: {integrity: sha512-XnAIvQ8eM+kC6aULx6wuQiwVsnzsi9d3WxzV3FpWTGA19F621kwdbsAcFKXgKUHZWsy+mY6iL1sHTxWEFCytDA==}
-
-  braces@3.0.2:
-    resolution: {integrity: sha512-b8um+L1RzM3WDSzvhm6gIz1yfTbBt6YTlcEKAvsmqCZZFw46z626lVj9j1yEPW33H5H+lBQpZMP1k8l+78Ha0A==}
-    engines: {node: '>=8'}
 
   braces@3.0.3:
     resolution: {integrity: sha512-yQbXgO/OSZVD2IsiLlro+7Hf6Q18EJrKSEsdoMzKePKXct3gvD8oLcOQdIzGupr5Fj+EDe8gO/lxc1BzfMpxvA==}
@@ -1335,10 +1331,6 @@ packages:
     resolution: {integrity: sha512-XXTUwCvisa5oacNGRP9SfNtYBNAMi+RPwBFmblZEF7N7swHYQS6/Zfk7SRwx4D5j3CH211YNRco1DEMNVfZCnQ==}
     engines: {node: '>=16.0.0'}
 
-  fill-range@7.0.1:
-    resolution: {integrity: sha512-qOo9F+dMUmC2Lcb4BbVvnKJxTPjCm+RRpe4gDuGrzkL7mEVl/djYSu2OdQ2Pa302N4oqkSg9ir6jaLWJ2USVpQ==}
-    engines: {node: '>=8'}
-
   fill-range@7.1.1:
     resolution: {integrity: sha512-YsGpe3WHLK8ZYi4tWDg2Jy3ebRz2rXowDxnld4bkQB00cc/1Zw9AWnC0i9ztDJitivtQvaI9KaLyKrc+hBW0yg==}
     engines: {node: '>=8'}
@@ -1846,8 +1838,8 @@ packages:
   lines-and-columns@1.2.4:
     resolution: {integrity: sha512-7ylylesZQ/PV29jhEDl3Ufjo6ZX7gCqJr5F7PKrqc93v7fzSymt1BpwEU8nAUXs8qzzvqhbjhK5QZg6Mt/HkBg==}
 
-  lint-staged@15.2.5:
-    resolution: {integrity: sha512-j+DfX7W9YUvdzEZl3Rk47FhDF6xwDBV5wwsCPw6BwWZVPYJemusQmvb9bRsW23Sqsaa+vRloAWogbK4BUuU2zA==}
+  lint-staged@15.2.7:
+    resolution: {integrity: sha512-+FdVbbCZ+yoh7E/RosSdqKJyUM2OEjTciH0TFNkawKgvFp1zbGlEC39RADg+xKBG1R4mhoH2j85myBQZ5wR+lw==}
     engines: {node: '>=18.12.0'}
     hasBin: true
 
@@ -3179,10 +3171,10 @@ snapshots:
       - typescript
       - vue-eslint-parser
 
-  '@jeromefitz/lint-staged@2.0.3(is-ci@3.0.1)':
+  '@jeromefitz/lint-staged@2.0.4(is-ci@3.0.1)':
     dependencies:
       is-ci: 3.0.1
-      lint-staged: 15.2.5
+      lint-staged: 15.2.7
       micromatch: 4.0.5
     transitivePeerDependencies:
       - supports-color
@@ -3428,7 +3420,7 @@ snapshots:
       debug: 4.3.4
       import-from-esm: 1.3.4
       lodash-es: 4.17.21
-      micromatch: 4.0.5
+      micromatch: 4.0.7
       semantic-release: 23.0.8(typescript@5.3.3)
     transitivePeerDependencies:
       - supports-color
@@ -3445,7 +3437,7 @@ snapshots:
       dir-glob: 3.0.1
       execa: 5.1.1
       lodash: 4.17.21
-      micromatch: 4.0.5
+      micromatch: 4.0.7
       p-reduce: 2.1.0
       semantic-release: 23.0.8(typescript@5.3.3)
     transitivePeerDependencies:
@@ -3893,10 +3885,6 @@ snapshots:
   brace-expansion@2.0.1:
     dependencies:
       balanced-match: 1.0.2
-
-  braces@3.0.2:
-    dependencies:
-      fill-range: 7.0.1
 
   braces@3.0.3:
     dependencies:
@@ -4633,7 +4621,7 @@ snapshots:
       '@nodelib/fs.walk': 1.2.8
       glob-parent: 5.1.2
       merge2: 1.4.1
-      micromatch: 4.0.5
+      micromatch: 4.0.7
 
   fast-json-stable-stringify@2.1.0: {}
 
@@ -4654,10 +4642,6 @@ snapshots:
   file-entry-cache@8.0.0:
     dependencies:
       flat-cache: 4.0.1
-
-  fill-range@7.0.1:
-    dependencies:
-      to-regex-range: 5.0.1
 
   fill-range@7.1.1:
     dependencies:
@@ -5134,7 +5118,7 @@ snapshots:
 
   lines-and-columns@1.2.4: {}
 
-  lint-staged@15.2.5:
+  lint-staged@15.2.7:
     dependencies:
       chalk: 5.3.0
       commander: 12.1.0
@@ -5235,7 +5219,7 @@ snapshots:
 
   micromatch@4.0.5:
     dependencies:
-      braces: 3.0.2
+      braces: 3.0.3
       picomatch: 2.3.1
 
   micromatch@4.0.7:
@@ -5652,7 +5636,7 @@ snapshots:
       lodash-es: 4.17.21
       marked: 12.0.0
       marked-terminal: 7.0.0(marked@12.0.0)
-      micromatch: 4.0.5
+      micromatch: 4.0.7
       p-each-series: 3.0.0
       p-reduce: 3.0.0
       read-package-up: 11.0.0
