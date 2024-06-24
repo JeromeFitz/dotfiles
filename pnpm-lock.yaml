@@ -38,8 +38,8 @@ importers:
         specifier: 10.0.6
         version: 10.0.6(@jeromefitz/conventional-gitmoji@4.0.1(lodash@4.17.21))(typescript@5.3.3)
       '@jeromefitz/tsconfig':
-        specifier: 2.0.0
-        version: 2.0.0
+        specifier: 2.0.1
+        version: 2.0.1
       ccommit:
         specifier: 2.0.2
         version: 2.0.2
@@ -250,8 +250,8 @@ packages:
     peerDependencies:
       '@jeromefitz/conventional-gitmoji': ^4.0.0
 
-  '@jeromefitz/tsconfig@2.0.0':
-    resolution: {integrity: sha512-f+4y5PLb9BVvk1s5ez/vReu1KnXoZM/Ra08e7XmDZYZWmpOCfSfZ13D4KHhc5TuJ7lW69jUkl3dt/9fkhnfOkw==}
+  '@jeromefitz/tsconfig@2.0.1':
+    resolution: {integrity: sha512-H4taDa+dcP+3FkZ/pQIplXsbzyAUxhRXyPjFxsRiLZax7jr8fte9JixFBgh45LWHctsbR76maif65ZqsTO3I/w==}
     engines: {node: '>=20'}
 
   '@jridgewell/gen-mapping@0.3.5':
@@ -3237,7 +3237,7 @@ snapshots:
       - supports-color
       - typescript
 
-  '@jeromefitz/tsconfig@2.0.0': {}
+  '@jeromefitz/tsconfig@2.0.1': {}
 
   '@jridgewell/gen-mapping@0.3.5':
     dependencies:
