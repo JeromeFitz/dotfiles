@@ -51,7 +51,7 @@
     "@jeromefitz/release-notes-generator": "3.0.1",
     "@jeromefitz/semantic": "11.0.1",
     "@jeromefitz/tsconfig": "2.0.1",
-    "ccommit": "2.0.2",
+    "ccommit": "3.0.0",
     "dotenv": "16.4.5",
     "husky": "9.0.11",
     "is-ci": "3.0.1",
