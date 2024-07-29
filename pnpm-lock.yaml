@@ -35,8 +35,8 @@ importers:
         specifier: 3.0.4
         version: 3.0.4(lodash@4.17.21)
       '@jeromefitz/semantic':
-        specifier: 11.0.1
-        version: 11.0.1(@jeromefitz/conventional-gitmoji@4.0.5(lodash@4.17.21))(typescript@5.3.3)
+        specifier: 11.0.2
+        version: 11.0.2(@jeromefitz/conventional-gitmoji@4.0.5(lodash@4.17.21))(typescript@5.3.3)
       '@jeromefitz/tsconfig':
         specifier: 2.0.1
         version: 2.0.1
@@ -257,8 +257,8 @@ packages:
     peerDependencies:
       lodash: ^4.17.21
 
-  '@jeromefitz/semantic@11.0.1':
-    resolution: {integrity: sha512-OBah8kDpiR3MTf20Sa2HQ+T8MjBBrNwzINkIzZ02RdJN4tow/LrC8jD/zguNB8b51ln+N8jrNAn1FqaU/ScqYQ==}
+  '@jeromefitz/semantic@11.0.2':
+    resolution: {integrity: sha512-fq6hyJpD0sUNjpTEArZhc4Mc/HIBtPHC9cdzmo+Q8qmphfGUU3n/atCFow4xmPGj/mLaRAqcsdgy9xfZJRkScQ==}
     engines: {node: '>=20'}
     peerDependencies:
       '@jeromefitz/conventional-gitmoji': ^4.0.0
@@ -1059,10 +1059,6 @@ packages:
     resolution: {integrity: sha512-QCOllgZJtaUo9miYBcLChTUaHNjJF3PYs1VidD7AwiEj1kYxKeQTctLAezAOH5ZKRH0g2IgPn6KwB4IT8iRpvA==}
     engines: {node: '>= 0.4'}
 
-  escalade@3.1.1:
-    resolution: {integrity: sha512-k0er2gUkLf8O0zKJiAhmkTnJlTvINGv7ygDNPbeIsX/TJjGJZHuh9B2UxbsaEkmlEo9MfhrSzmhIlhRlI2GXnw==}
-    engines: {node: '>=6'}
-
   escalade@3.1.2:
     resolution: {integrity: sha512-ErCHMCae19vR8vQGe50xIsVomy19rg6gFu3+r3jkEO46suLMWBksvVyoGgQV+jOfl84ZSOSlmv6Gxa89PmTGmA==}
     engines: {node: '>=6'}
@@ -1317,10 +1313,6 @@ packages:
   figures@2.0.0:
     resolution: {integrity: sha512-Oa2M9atig69ZkfwiApY8F2Yy+tzMbazyvqv21R0NsSC8floSOC09BbT1ITWAdoMGQvJ/aZnR1KMwdx9tvHnTNA==}
     engines: {node: '>=4'}
-
-  figures@6.0.1:
-    resolution: {integrity: sha512-0oY/olScYD4IhQ8u//gCPA4F3mlTn2dacYmiDm/mbDQvpmLjV4uH+zhsQ5IyXRyvqkvtUkXkNdGvg5OFJTCsuQ==}
-    engines: {node: '>=18'}
 
   figures@6.1.0:
     resolution: {integrity: sha512-d+l3qxjSesT4V7v2fh+QnmFnUWv9lSpjarhShNTgBOfA0ttejbQUAlHLitbjkoRiDulW0OPoQPYIGhIC8ohejg==}
@@ -3258,7 +3250,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@jeromefitz/semantic@11.0.1(@jeromefitz/conventional-gitmoji@4.0.5(lodash@4.17.21))(typescript@5.3.3)':
+  '@jeromefitz/semantic@11.0.2(@jeromefitz/conventional-gitmoji@4.0.5(lodash@4.17.21))(typescript@5.3.3)':
     dependencies:
       '@jeromefitz/conventional-gitmoji': 4.0.5(lodash@4.17.21)
       '@semantic-release/commit-analyzer': 13.0.0(semantic-release@24.0.0(typescript@5.3.3))
@@ -4286,8 +4278,6 @@ snapshots:
       is-date-object: 1.0.5
       is-symbol: 1.0.4
 
-  escalade@3.1.1: {}
-
   escalade@3.1.2: {}
 
   escape-string-regexp@1.0.5: {}
@@ -4680,10 +4670,6 @@ snapshots:
   figures@2.0.0:
     dependencies:
       escape-string-regexp: 1.0.5
-
-  figures@6.0.1:
-    dependencies:
-      is-unicode-supported: 2.0.0
 
   figures@6.1.0:
     dependencies:
@@ -5683,7 +5669,7 @@ snapshots:
       debug: 4.3.4
       env-ci: 11.0.0
       execa: 9.3.0
-      figures: 6.0.1
+      figures: 6.1.0
       find-versions: 6.0.0
       get-stream: 6.0.1
       git-log-parser: 1.2.0
@@ -6158,7 +6144,7 @@ snapshots:
   yargs@16.2.0:
     dependencies:
       cliui: 7.0.4
-      escalade: 3.1.1
+      escalade: 3.1.2
       get-caller-file: 2.0.5
       require-directory: 2.1.1
       string-width: 4.2.3
@@ -6168,7 +6154,7 @@ snapshots:
   yargs@17.7.2:
     dependencies:
       cliui: 8.0.1
-      escalade: 3.1.1
+      escalade: 3.1.2
       get-caller-file: 2.0.5
       require-directory: 2.1.1
       string-width: 4.2.3
