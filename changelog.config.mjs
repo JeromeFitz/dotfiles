@@ -6,6 +6,7 @@ if (!isCI) {
   dotenv.default.config({ path: './.env' })
 }
 
+// eslint-disable-next-line no-undef
 const isOverride = process.env.GIT_CZ__OVERRIDE_TEST || false
 
 const enabled = isOverride
