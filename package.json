@@ -54,7 +54,7 @@
     "@jeromefitz/tsconfig": "2.0.1",
     "ccommit": "3.0.3",
     "dotenv": "16.4.5",
-    "husky": "9.1.4",
+    "husky": "9.1.5",
     "is-ci": "3.0.1",
     "typescript": "5.3.3"
   },
