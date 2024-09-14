@@ -60,7 +60,7 @@
   },
   "pnpm": {
     "overrides": {
-      "postcss": "8.4.45",
+      "postcss": "8.4.47",
       "semver": "7.6.3",
       "word-wrap": "1.2.5"
     }
