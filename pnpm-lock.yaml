@@ -32,8 +32,8 @@ importers:
         specifier: 2.0.9
         version: 2.0.9
       '@jeromefitz/release-notes-generator':
-        specifier: 3.0.7
-        version: 3.0.7(lodash@4.17.21)
+        specifier: 3.0.8
+        version: 3.0.8(lodash@4.17.21)
       '@jeromefitz/semantic':
         specifier: 11.0.4
         version: 11.0.4(@jeromefitz/conventional-gitmoji@4.0.6(lodash@4.17.21))(typescript@5.3.3)
@@ -214,8 +214,8 @@ packages:
     resolution: {integrity: sha512-dWX3onvTturd2YjnHKnhVbFKHctsxS0zEui8dnUamu/xvoyeJzBSIFVYq4/c4pVZa1jAwLlbRwB7Jmh3k5mGxw==}
     engines: {node: '>=20'}
 
-  '@jeromefitz/release-notes-generator@3.0.7':
-    resolution: {integrity: sha512-UJwINbDivKGlERAGpu0TsiUMNSZWS7BoytYZeLWtdWwn1pApRde4zrn3NMYzu3I3YPvPKFrFgqKgLGfZBr9uxA==}
+  '@jeromefitz/release-notes-generator@3.0.8':
+    resolution: {integrity: sha512-+AIbhNX0ZRG3r0xByxK2mbZgHQIcABubBiQXDzWsirRg1+OCAc6ZisfOCOHIdViJsFjcCxid2CkXJ0lexN5eFw==}
     engines: {node: '>=20'}
     peerDependencies:
       lodash: ^4.17.21
@@ -911,8 +911,8 @@ packages:
     resolution: {integrity: sha512-t/Ygsytq+R995EJ5PZlD4Cu56sWa8InXySaViRzw9apusqsOO2bQP+SbYzAhR0pFKoB+43lYy8rWban9JSuXnA==}
     engines: {node: '>= 0.4'}
 
-  date-fns@3.6.0:
-    resolution: {integrity: sha512-fRHTG8g/Gif+kSh50gaGEdToemgfj74aRX3swtiouboip5JDLAyDE9F11nHMIcvOaXeOC6D7SpNhi7uFyB7Uww==}
+  date-fns@4.1.0:
+    resolution: {integrity: sha512-Ukq0owbQXxa/U3EGtsdVBkR1w7KOQ5gIBqdH2hkvknzZPYvBxb/aa6E8L7tmjFtkwZBu3UXBbjIgPo/Ez4xaNg==}
 
   debug@3.2.7:
     resolution: {integrity: sha512-CFjzYYAi4ThfiQvizrFQevTTXHtnCqWfe7x1AhgEscTz6ZbLbfoLRLPugTQyBth6f8ZERVUSyWHFD/7Wu4t1XQ==}
@@ -3207,12 +3207,12 @@ snapshots:
       - prettier-plugin-style-order
       - prettier-plugin-svelte
 
-  '@jeromefitz/release-notes-generator@3.0.7(lodash@4.17.21)':
+  '@jeromefitz/release-notes-generator@3.0.8(lodash@4.17.21)':
     dependencies:
       '@octokit/rest': 21.0.2
       conventional-commits-filter: 5.0.0
       conventional-commits-parser: 6.0.0
-      date-fns: 3.6.0
+      date-fns: 4.1.0
       import-from-esm: 1.3.4
       lodash: 4.17.21
       read-package-up: 11.0.0
@@ -4073,7 +4073,7 @@ snapshots:
       es-errors: 1.3.0
       is-data-view: 1.0.1
 
-  date-fns@3.6.0: {}
+  date-fns@4.1.0: {}
 
   debug@3.2.7:
     dependencies:
