@@ -56,13 +56,16 @@
     "dotenv": "16.4.5",
     "husky": "9.1.6",
     "is-ci": "3.0.1",
-    "typescript": "5.3.3"
+    "typescript": "5.6.2"
   },
   "pnpm": {
     "overrides": {
       "postcss": "8.4.47",
       "semver": "7.6.3",
       "word-wrap": "1.2.5"
+    },
+    "patchedDependencies": {
+      "@semantic-release/commit-analyzer@13.0.0": "patches/@semantic-release__commit-analyzer@13.0.0.patch"
     }
   }
 }

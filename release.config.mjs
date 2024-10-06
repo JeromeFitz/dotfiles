@@ -1,5 +1,3 @@
-import { createRequire } from 'node:module'
-
 import { getConfig } from '@jeromefitz/semantic'
 
 import isCI from 'is-ci'
@@ -9,24 +7,19 @@ if (!isCI) {
   dotenv.config({ path: './.env' })
 }
 
-const require = createRequire(import.meta.url)
-const pkg = require('./package.json')
-
-const { name } = pkg
-
 const branches = [{ name: 'main' }, { name: 'develop', prerelease: 'develop' }]
 
-const configPassed = {
+const _config = {
   branches,
   contributorsProhibitList: {
     email: [],
     login: ['BotJerome', 'JeromeFitz'],
   },
   enableNpm: false,
-  repositoryUrl: `https://github.com/${name.replace('@', '')}`,
+  repositoryUrl: `https://github.com/JeromeFitz/dotfiles`,
   tagFormat: 'v${version}',
 }
 
-const config = getConfig(configPassed)
+const config = getConfig(_config)
 
 export default config
