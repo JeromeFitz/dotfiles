@@ -27,9 +27,10 @@ Mon Apr 24 23:59:05 EDT 2023
 
 ```sh
 VERSION=3.0.41
-curl -LJ -k https://github.com/JeromeFitz/dotfiles/archive/v$VERSION.tar.gz -o dotfiles@$VERSION.tar.gz
-mkdir -p ~/.dotfiles
-tar -xf dotfiles@$VERSION.tar.gz -C ~/.dotfiles
+REPOSITORY=dotfiles
+curl -LJ -k https://github.com/JeromeFitz/$REPOSITORY/archive/v$VERSION.tar.gz -o $REPOSITORY@$VERSION.tar.gz
+mkdir -p ~/.$REPOSITORY
+tar -xf $REPOSITORY@$VERSION.tar.gz -C ~/.$REPOSITORY
 ```
 
 :octocat: **Git installed?**
