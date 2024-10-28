@@ -26,9 +26,11 @@ Mon Apr 24 23:59:05 EDT 2023
 📝️ _**Note:** You’ll need to set the version._
 
 ```sh
-curl -LJO -k https://github.com/JeromeFitz/dotfiles/archive/v3.0.4.tar.gz
-mkdir -p ~/.dotfiles
-tar -xf dotfiles-3.0.4.tar.gz -C ~/.dotfiles
+VERSION=3.0.41
+REPOSITORY=dotfiles
+curl -LJ -k https://github.com/JeromeFitz/$REPOSITORY/archive/v$VERSION.tar.gz -o $REPOSITORY@$VERSION.tar.gz
+mkdir -p ~/.$REPOSITORY
+tar -xf $REPOSITORY@$VERSION.tar.gz -C ~/.$REPOSITORY
 ```
 
 :octocat: **Git installed?**
