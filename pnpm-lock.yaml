@@ -37,8 +37,8 @@ importers:
         specifier: 2.0.10
         version: 2.0.10
       '@jeromefitz/release-notes-generator':
-        specifier: 3.0.11
-        version: 3.0.11(lodash@4.17.21)
+        specifier: 3.0.12
+        version: 3.0.12(lodash@4.17.21)
       '@jeromefitz/semantic':
         specifier: 11.0.7
         version: 11.0.7(@jeromefitz/conventional-gitmoji@4.0.9(lodash@4.17.21))(typescript@5.6.3)
@@ -70,10 +70,6 @@ packages:
   '@ampproject/remapping@2.2.1':
     resolution: {integrity: sha512-lFMjJTrFL3j7L9yBxwYfCq2k6qqwHyzuUl/XBnif78PWTJYyL/dfowQHWE3sp6U6ZzqWiiIZnpTMO96zhkjwtg==}
     engines: {node: '>=6.0.0'}
-
-  '@babel/code-frame@7.25.7':
-    resolution: {integrity: sha512-0xZJFNE5XMpENsgfHYTw8FbX4kv53mFLn2i3XPoq69LyhYSCBJtitaHx9QnsVTrsogI4Z3+HtEfZ2/GFPOtf5g==}
-    engines: {node: '>=6.9.0'}
 
   '@babel/code-frame@7.26.0':
     resolution: {integrity: sha512-INCKxTtbXtcNbUZ3YXutwMpEleqttcswhAdee7dhuoVrD2cnuc3PqtERBtxkX5nziX9vnBL8WXmSGwv8CuPV6g==}
@@ -116,10 +112,6 @@ packages:
     resolution: {integrity: sha512-4A/SCr/2KLd5jrtOMFzaKjVtAei3+2r/NChoBNoZ3EyP/+GlhoaEGoWOZUmFmoITP7zOJyHIMm+DYRd8o3PvHA==}
     engines: {node: '>=6.9.0'}
 
-  '@babel/helper-validator-identifier@7.25.7':
-    resolution: {integrity: sha512-AM6TzwYqGChO45oiuPqwL2t20/HdMC1rTPAesnBCgPCSF1x3oN9MVUwQV2iyz4xqWrctwK5RNC8LV22kaQCNYg==}
-    engines: {node: '>=6.9.0'}
-
   '@babel/helper-validator-identifier@7.25.9':
     resolution: {integrity: sha512-Ed61U6XJc3CVRfkERJWDz4dJwKe7iLmmJsbOGu9wSloNSFttHV0I8g6UAgb7qnK5ly5bGLPd4oXZlxCdANBOWQ==}
     engines: {node: '>=6.9.0'}
@@ -130,10 +122,6 @@ packages:
 
   '@babel/helpers@7.26.0':
     resolution: {integrity: sha512-tbhNuIxNcVb21pInl3ZSjksLCvgdZy9KwJ8brv993QtIVKJBBkYXz4q4ZbAv31GdnC+R90np23L5FbEBlthAEw==}
-    engines: {node: '>=6.9.0'}
-
-  '@babel/highlight@7.25.7':
-    resolution: {integrity: sha512-iYyACpW3iW8Fw+ZybQK+drQre+ns/tKpXbNESfrhNnPLIklLbXr7MYJ6gPEd0iETGLOK+SxMjVvKb/ffmk+FEw==}
     engines: {node: '>=6.9.0'}
 
   '@babel/parser@7.26.0':
@@ -240,8 +228,8 @@ packages:
     resolution: {integrity: sha512-smqvsOb9JzxQJZW9kbedPKUz1/yeU4VRQByFBJNGjzZDs3GCwcgBoxYu1K4ThBvq6m2Iix5EFc7E//BfVrZShw==}
     engines: {node: '>=20'}
 
-  '@jeromefitz/release-notes-generator@3.0.11':
-    resolution: {integrity: sha512-/6q5eE0kRDDwcFI4ZMu6a96YDn8D0UYXTL2kUi8FBRg0/Ntho/9Qq5dtj8fscaypWV1q0mJTl+k+v1VbLJANVQ==}
+  '@jeromefitz/release-notes-generator@3.0.12':
+    resolution: {integrity: sha512-iwj/VXGsJwxVECyhEJIpCKF1EHMfE1gPKRjL8LVzalQ/SaLHYrqYtsonIqKISPzCVtegRNmqF4qfuof7qcSB+g==}
     engines: {node: '>=20'}
     peerDependencies:
       lodash: ^4.17.21
@@ -2923,11 +2911,6 @@ snapshots:
       '@jridgewell/gen-mapping': 0.3.5
       '@jridgewell/trace-mapping': 0.3.25
 
-  '@babel/code-frame@7.25.7':
-    dependencies:
-      '@babel/highlight': 7.25.7
-      picocolors: 1.1.0
-
   '@babel/code-frame@7.26.0':
     dependencies:
       '@babel/helper-validator-identifier': 7.25.9
@@ -2998,8 +2981,6 @@ snapshots:
 
   '@babel/helper-string-parser@7.25.9': {}
 
-  '@babel/helper-validator-identifier@7.25.7': {}
-
   '@babel/helper-validator-identifier@7.25.9': {}
 
   '@babel/helper-validator-option@7.25.9': {}
@@ -3008,13 +2989,6 @@ snapshots:
     dependencies:
       '@babel/template': 7.25.9
       '@babel/types': 7.26.0
-
-  '@babel/highlight@7.25.7':
-    dependencies:
-      '@babel/helper-validator-identifier': 7.25.7
-      chalk: 2.4.2
-      js-tokens: 4.0.0
-      picocolors: 1.1.0
 
   '@babel/parser@7.26.0':
     dependencies:
@@ -3180,7 +3154,7 @@ snapshots:
       - prettier-plugin-style-order
       - prettier-plugin-svelte
 
-  '@jeromefitz/release-notes-generator@3.0.11(lodash@4.17.21)':
+  '@jeromefitz/release-notes-generator@3.0.12(lodash@4.17.21)':
     dependencies:
       '@octokit/rest': 21.0.2
       conventional-commits-filter: 5.0.0
@@ -5212,7 +5186,7 @@ snapshots:
   normalize-package-data@6.0.0:
     dependencies:
       hosted-git-info: 7.0.1
-      is-core-module: 2.13.1
+      is-core-module: 2.15.1
       semver: 7.6.3
       validate-npm-package-license: 3.0.4
 
@@ -5348,7 +5322,7 @@ snapshots:
 
   parse-json@8.1.0:
     dependencies:
-      '@babel/code-frame': 7.25.7
+      '@babel/code-frame': 7.26.0
       index-to-position: 0.1.2
       type-fest: 4.9.0
 
