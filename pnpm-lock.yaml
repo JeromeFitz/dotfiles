@@ -25,8 +25,8 @@ importers:
         specifier: 7.25.9
         version: 7.25.9(@babel/core@7.26.0)(eslint@9.13.0)
       '@jeromefitz/conventional-gitmoji':
-        specifier: 4.0.9
-        version: 4.0.9(lodash@4.17.21)
+        specifier: 4.0.10
+        version: 4.0.10(lodash@4.17.21)
       '@jeromefitz/eslint-config':
         specifier: 5.0.0-canary.17
         version: 5.0.0-canary.17(@typescript-eslint/eslint-plugin@8.11.0(@typescript-eslint/parser@8.11.0(eslint@9.13.0)(typescript@5.6.3))(eslint@9.13.0)(typescript@5.6.3))(typescript@5.6.3)
@@ -41,7 +41,7 @@ importers:
         version: 3.0.11(lodash@4.17.21)
       '@jeromefitz/semantic':
         specifier: 11.0.7
-        version: 11.0.7(@jeromefitz/conventional-gitmoji@4.0.9(lodash@4.17.21))(typescript@5.6.3)
+        version: 11.0.7(@jeromefitz/conventional-gitmoji@4.0.10(lodash@4.17.21))(typescript@5.6.3)
       '@jeromefitz/tsconfig':
         specifier: 2.0.1
         version: 2.0.1
@@ -220,8 +220,8 @@ packages:
     resolution: {integrity: sha512-JBxkERygn7Bv/GbN5Rv8Ul6LVknS+5Bp6RgDC/O8gEBU/yeH5Ui5C/OlWrTb6qct7LjjfT6Re2NxB0ln0yYybA==}
     engines: {node: '>=18.18'}
 
-  '@jeromefitz/conventional-gitmoji@4.0.9':
-    resolution: {integrity: sha512-rruKBBiCfAG1N+fjB5swj6ijVmveoD+DGel0kzv0A0CCtnPTI9CkGP584PmWQEgxyokVr13sUBxFJXalTW3JeQ==}
+  '@jeromefitz/conventional-gitmoji@4.0.10':
+    resolution: {integrity: sha512-aKl3ZgLPjbvIdbAmDj2OSyfaoi7AkAXDiaI2QWuKt3GGr4B6eVhsvokYVnpNImCFItUjnv9JPOZ68uKz7CkEsw==}
     engines: {node: '>=20'}
     peerDependencies:
       lodash: ^4.17.21
@@ -1299,10 +1299,6 @@ packages:
   execa@8.0.1:
     resolution: {integrity: sha512-VyhnebXciFV2DESc+p6B+y0LjSm0krU4OgJN44qFAhBY0TJ+1V61tYD2+wHusZ6F9n5K+vl8k0sTy7PEfV4qpg==}
     engines: {node: '>=16.17'}
-
-  execa@9.4.1:
-    resolution: {integrity: sha512-5eo/BRqZm3GYce+1jqX/tJ7duA2AnE39i88fuedNFUV8XxGxUpF3aWkBRfbUcjV49gCkvS/pzc0YrCPhaIewdg==}
-    engines: {node: ^18.19.0 || >=20.5.0}
 
   execa@9.5.0:
     resolution: {integrity: sha512-t7vvYt+oKnMbF3O+S5+HkylsPrsUatwJSe4Cv+4017R0MCySjECxnVJ2eyDXVD/Xpj5H29YzyYn6eEpugG7GJA==}
@@ -3104,7 +3100,7 @@ snapshots:
 
   '@humanwhocodes/retry@0.3.1': {}
 
-  '@jeromefitz/conventional-gitmoji@4.0.9(lodash@4.17.21)':
+  '@jeromefitz/conventional-gitmoji@4.0.10(lodash@4.17.21)':
     dependencies:
       fast-json-stable-stringify: 2.1.0
       grapheme-splitter: 1.0.4
@@ -3193,9 +3189,9 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@jeromefitz/semantic@11.0.7(@jeromefitz/conventional-gitmoji@4.0.9(lodash@4.17.21))(typescript@5.6.3)':
+  '@jeromefitz/semantic@11.0.7(@jeromefitz/conventional-gitmoji@4.0.10(lodash@4.17.21))(typescript@5.6.3)':
     dependencies:
-      '@jeromefitz/conventional-gitmoji': 4.0.9(lodash@4.17.21)
+      '@jeromefitz/conventional-gitmoji': 4.0.10(lodash@4.17.21)
       '@semantic-release/commit-analyzer': 13.0.0(patch_hash=4ldj247mh3etpypyayklcqtkvm)(semantic-release@24.2.0(typescript@5.6.3))
       '@semantic-release/git': 10.0.1(semantic-release@24.2.0(typescript@5.6.3))
       semantic-release: 24.2.0(typescript@5.6.3)
@@ -4526,21 +4522,6 @@ snapshots:
       signal-exit: 4.1.0
       strip-final-newline: 3.0.0
 
-  execa@9.4.1:
-    dependencies:
-      '@sindresorhus/merge-streams': 4.0.0
-      cross-spawn: 7.0.3
-      figures: 6.1.0
-      get-stream: 9.0.1
-      human-signals: 8.0.0
-      is-plain-obj: 4.1.0
-      is-stream: 4.0.1
-      npm-run-path: 6.0.0
-      pretty-ms: 9.0.0
-      signal-exit: 4.1.0
-      strip-final-newline: 4.0.0
-      yoctocolors: 2.0.2
-
   execa@9.5.0:
     dependencies:
       '@sindresorhus/merge-streams': 4.0.0
@@ -5549,7 +5530,7 @@ snapshots:
       cosmiconfig: 9.0.0(typescript@5.6.3)
       debug: 4.3.6
       env-ci: 11.0.0
-      execa: 9.4.1
+      execa: 9.5.0
       figures: 6.1.0
       find-versions: 6.0.0
       get-stream: 6.0.1
