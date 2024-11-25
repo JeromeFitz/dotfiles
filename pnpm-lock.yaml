@@ -26,8 +26,8 @@ importers:
         specifier: 7.25.9
         version: 7.25.9(@babel/core@7.26.0)(eslint@9.15.0)
       '@jeromefitz/conventional-gitmoji':
-        specifier: 4.0.12
-        version: 4.0.12(lodash@4.17.21)
+        specifier: 4.0.13
+        version: 4.0.13(lodash@4.17.21)
       '@jeromefitz/eslint-config':
         specifier: 5.0.0-canary.21
         version: 5.0.0-canary.21(@typescript-eslint/eslint-plugin@8.15.0(@typescript-eslint/parser@8.15.0(eslint@9.15.0)(typescript@5.7.2))(eslint@9.15.0)(typescript@5.7.2))(typescript@5.7.2)
@@ -42,7 +42,7 @@ importers:
         version: 3.0.12(lodash@4.17.21)
       '@jeromefitz/semantic':
         specifier: 11.0.8
-        version: 11.0.8(@jeromefitz/conventional-gitmoji@4.0.12(lodash@4.17.21))(typescript@5.7.2)
+        version: 11.0.8(@jeromefitz/conventional-gitmoji@4.0.13(lodash@4.17.21))(typescript@5.7.2)
       '@jeromefitz/tsconfig':
         specifier: 2.0.1
         version: 2.0.1
@@ -217,8 +217,8 @@ packages:
     resolution: {integrity: sha512-c7hNEllBlenFTHBky65mhq8WD2kbN9Q6gk0bTk8lSBvc554jpXSkST1iePudpt7+A/AQvuHs9EMqjHDXMY1lrA==}
     engines: {node: '>=18.18'}
 
-  '@jeromefitz/conventional-gitmoji@4.0.12':
-    resolution: {integrity: sha512-us23SKpEn4kcpbOx+uGCCvk4HXX95ehbKDLvv7lHXiKWlANGM21BQqPUahe9ASsCQ1AmMdVg/h2LU3PzwFjUqw==}
+  '@jeromefitz/conventional-gitmoji@4.0.13':
+    resolution: {integrity: sha512-UBzz0tOKCZ4SwP0mGv2AsbMRdoT8ALXdslkEsygo7tYi7PeWPFz7ByIUL+eC+I/6SpjwH3dxNNAtUXs7ot/77Q==}
     engines: {node: '>=20'}
     peerDependencies:
       lodash: ^4.17.21
@@ -2641,6 +2641,10 @@ packages:
     resolution: {integrity: sha512-HtJL7yozZem9ufiWnwcftBpbNAO+phHMfao8CS4QLON7HzjyDRlf7qE9SXna6/749ZzpEsBZHy+MmY/GOS4i6g==}
     hasBin: true
 
+  title@4.0.1:
+    resolution: {integrity: sha512-xRnPkJx9nvE5MF6LkB5e8QJjE2FW8269wTu/LQdf7zZqBgPly0QJPf/CWAo7srj5so4yXfoLEdCFgurlpi47zg==}
+    hasBin: true
+
   to-regex-range@5.0.1:
     resolution: {integrity: sha512-65P7iz6X5yEr1cwcgvQxbbIw7Uk3gOy5dIdtZ4rDveLqhrdJP+Li/Hx6tyK0NEb+2GCyneCMJiGqrADCSNk8sQ==}
     engines: {node: '>=8.0'}
@@ -3029,12 +3033,12 @@ snapshots:
 
   '@humanwhocodes/retry@0.4.1': {}
 
-  '@jeromefitz/conventional-gitmoji@4.0.12(lodash@4.17.21)':
+  '@jeromefitz/conventional-gitmoji@4.0.13(lodash@4.17.21)':
     dependencies:
       fast-json-stable-stringify: 2.1.0
       grapheme-splitter: 1.0.4
       lodash: 4.17.21
-      title: 4.0.0
+      title: 4.0.1
 
   '@jeromefitz/eslint-config@5.0.0-canary.21(@typescript-eslint/eslint-plugin@8.15.0(@typescript-eslint/parser@8.15.0(eslint@9.15.0)(typescript@5.7.2))(eslint@9.15.0)(typescript@5.7.2))(typescript@5.7.2)':
     dependencies:
@@ -3118,9 +3122,9 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@jeromefitz/semantic@11.0.8(@jeromefitz/conventional-gitmoji@4.0.12(lodash@4.17.21))(typescript@5.7.2)':
+  '@jeromefitz/semantic@11.0.8(@jeromefitz/conventional-gitmoji@4.0.13(lodash@4.17.21))(typescript@5.7.2)':
     dependencies:
-      '@jeromefitz/conventional-gitmoji': 4.0.12(lodash@4.17.21)
+      '@jeromefitz/conventional-gitmoji': 4.0.13(lodash@4.17.21)
       '@semantic-release/commit-analyzer': 13.0.0(patch_hash=4ldj247mh3etpypyayklcqtkvm)(semantic-release@24.2.0(typescript@5.7.2))
       '@semantic-release/git': 10.0.1(semantic-release@24.2.0(typescript@5.7.2))
       semantic-release: 24.2.0(typescript@5.7.2)
@@ -5680,6 +5684,12 @@ snapshots:
       convert-hrtime: 5.0.0
 
   title@4.0.0:
+    dependencies:
+      arg: 5.0.2
+      chalk: 5.3.0
+      clipboardy: 4.0.0
+
+  title@4.0.1:
     dependencies:
       arg: 5.0.2
       chalk: 5.3.0
