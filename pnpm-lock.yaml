@@ -33,7 +33,7 @@ importers:
         version: 5.0.0-canary.25(@typescript-eslint/eslint-plugin@8.16.0(@typescript-eslint/parser@8.16.0(eslint@9.16.0)(typescript@5.7.2))(eslint@9.16.0)(typescript@5.7.2))(typescript@5.7.2)
       '@jeromefitz/lint-staged':
         specifier: 2.0.7
-        version: 2.0.7(is-ci@3.0.1)
+        version: 2.0.7(is-ci@4.1.0)
       '@jeromefitz/prettier-config':
         specifier: 2.0.12
         version: 2.0.12
@@ -56,8 +56,8 @@ importers:
         specifier: 9.1.7
         version: 9.1.7
       is-ci:
-        specifier: 3.0.1
-        version: 3.0.1
+        specifier: 4.1.0
+        version: 4.1.0
       typescript:
         specifier: 5.7.2
         version: 5.7.2
@@ -747,8 +747,9 @@ packages:
     resolution: {integrity: sha512-kWWXztvZ5SBQV+eRgKFeh8q5sLuZY2+8WUIzlxWVTg+oGwY14qylx1KbKzHd8P6ZYkAg0xyIDU9JMHhyJMZ1jw==}
     engines: {node: '>=10'}
 
-  ci-info@3.3.1:
-    resolution: {integrity: sha512-SXgeMX9VwDe7iFFaEWkA5AstuER9YKqy4EhHqr4DVqkwmD9rpVimkMKWHdjn30Ja45txyjhSn63lVX69eVCckg==}
+  ci-info@4.1.0:
+    resolution: {integrity: sha512-HutrvTNsF48wnxkzERIXOe5/mlcfFcbfCmwcg6CJnizbSue78AbDt+1cgl26zwn61WFxhcPykPfZrbqjGmBb4A==}
+    engines: {node: '>=8'}
 
   clean-stack@2.2.0:
     resolution: {integrity: sha512-4diC9HaTE+KRAMWhDhrGOECgWZxoevMc5TlkObMqNSsVU62PYzXZ/SMTjzyGAFF1YusgxGcSWTEXBhp0CPwQ1A==}
@@ -1542,8 +1543,8 @@ packages:
     resolution: {integrity: sha512-1BC0BVFhS/p0qtw6enp8e+8OD0UrK0oFLztSjNzhcKA3WDuJxxAPXzPuPtKkjEY9UUoEWlX/8fgKeu2S8i9JTA==}
     engines: {node: '>= 0.4'}
 
-  is-ci@3.0.1:
-    resolution: {integrity: sha512-ZYvCgrefwqoQ6yTyYUbQu64HsITZ3NfKX1lzaEYdkTDcfKzzCI/wthRRYKkdjHKFVgNiXKAKm65Zo1pk2as/QQ==}
+  is-ci@4.1.0:
+    resolution: {integrity: sha512-Ab9bQDQ11lWootZUI5qxgN2ZXwxNI5hTwnsvOc1wyxQ7zQ8OkEDw79mI0+9jI3x432NfwbVRru+3noJfXF6lSQ==}
     hasBin: true
 
   is-core-module@2.15.1:
@@ -2996,9 +2997,9 @@ snapshots:
       - tailwindcss
       - typescript
 
-  '@jeromefitz/lint-staged@2.0.7(is-ci@3.0.1)':
+  '@jeromefitz/lint-staged@2.0.7(is-ci@4.1.0)':
     dependencies:
-      is-ci: 3.0.1
+      is-ci: 4.1.0
       lint-staged: 15.2.10
       micromatch: 4.0.8
     transitivePeerDependencies:
@@ -3661,7 +3662,7 @@ snapshots:
 
   char-regex@1.0.2: {}
 
-  ci-info@3.3.1: {}
+  ci-info@4.1.0: {}
 
   clean-stack@2.2.0: {}
 
@@ -4619,9 +4620,9 @@ snapshots:
 
   is-callable@1.2.7: {}
 
-  is-ci@3.0.1:
+  is-ci@4.1.0:
     dependencies:
-      ci-info: 3.3.1
+      ci-info: 4.1.0
 
   is-core-module@2.15.1:
     dependencies:
