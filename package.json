@@ -61,6 +61,7 @@
   "pnpm": {
     "overrides": {
       "cross-spawn": "7.0.6",
+      "nanoid@^3.0.0": "^3.3.8",
       "postcss": "8.4.49",
       "semver": "7.6.3",
       "word-wrap": "1.2.5"
