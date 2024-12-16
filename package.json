@@ -46,7 +46,7 @@
     "@babel/core": "7.26.0",
     "@babel/eslint-parser": "7.25.9",
     "@jeromefitz/conventional-gitmoji": "4.0.13",
-    "@jeromefitz/eslint-config": "5.0.0-canary.26",
+    "@jeromefitz/eslint-config": "5.0.0-canary.27",
     "@jeromefitz/lint-staged": "2.1.0",
     "@jeromefitz/prettier-config": "2.1.0",
     "@jeromefitz/release-notes-generator": "3.1.0",
