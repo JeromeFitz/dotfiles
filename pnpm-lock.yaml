@@ -27,8 +27,8 @@ importers:
         specifier: 7.25.9
         version: 7.25.9(@babel/core@7.26.0)(eslint@9.17.0)
       '@jeromefitz/conventional-gitmoji':
-        specifier: 4.0.13
-        version: 4.0.13(lodash@4.17.21)
+        specifier: 4.0.14
+        version: 4.0.14(lodash@4.17.21)
       '@jeromefitz/eslint-config':
         specifier: 5.0.0-canary.28
         version: 5.0.0-canary.28(@typescript-eslint/eslint-plugin@8.18.1(@typescript-eslint/parser@8.18.1(eslint@9.17.0)(typescript@5.7.2))(eslint@9.17.0)(typescript@5.7.2))(typescript@5.7.2)
@@ -43,7 +43,7 @@ importers:
         version: 3.1.0(lodash@4.17.21)
       '@jeromefitz/semantic':
         specifier: 11.1.0
-        version: 11.1.0(@jeromefitz/conventional-gitmoji@4.0.13(lodash@4.17.21))(typescript@5.7.2)
+        version: 11.1.0(@jeromefitz/conventional-gitmoji@4.0.14(lodash@4.17.21))(typescript@5.7.2)
       '@jeromefitz/tsconfig':
         specifier: 2.1.0
         version: 2.1.0
@@ -214,8 +214,8 @@ packages:
     resolution: {integrity: sha512-c7hNEllBlenFTHBky65mhq8WD2kbN9Q6gk0bTk8lSBvc554jpXSkST1iePudpt7+A/AQvuHs9EMqjHDXMY1lrA==}
     engines: {node: '>=18.18'}
 
-  '@jeromefitz/conventional-gitmoji@4.0.13':
-    resolution: {integrity: sha512-UBzz0tOKCZ4SwP0mGv2AsbMRdoT8ALXdslkEsygo7tYi7PeWPFz7ByIUL+eC+I/6SpjwH3dxNNAtUXs7ot/77Q==}
+  '@jeromefitz/conventional-gitmoji@4.0.14':
+    resolution: {integrity: sha512-Wdmdrh2qsKKd30O60w15xztsyNwCaUfGLNXOIX+hDfw/z7w1Wk1svgAwla0c5iWrw4bnBnKTWqzbnJcaPaozsA==}
     engines: {node: '>=20'}
     peerDependencies:
       lodash: ^4.17.21
@@ -737,10 +737,6 @@ packages:
   chalk@4.1.2:
     resolution: {integrity: sha512-oKnbhFyRIXpUuez8iBMmyEa4nbj4IOQyuhc/wy9kY7/WVPcwIO9VA668Pu8RkO7+0G76SLROeyw9CpQ061i4mA==}
     engines: {node: '>=10'}
-
-  chalk@5.3.0:
-    resolution: {integrity: sha512-dLitG79d+GV1Nb/VYcCDFivJeK1hiukt9QjRNVOsUtTy1rR1YJsmpGGTZ3qJos+uw7WmWF4wUwBd9jxjocFC2w==}
-    engines: {node: ^12.17.0 || ^14.13 || >=16.0.0}
 
   chalk@5.4.1:
     resolution: {integrity: sha512-zgVZuo2WcZgfUEmsn6eO3kINexW8RAE4maiQ8QNs8CtpPCSyMiYsULR3HQYkm3w8FIA3SberyMJMSldGsW+U3w==}
@@ -2969,7 +2965,7 @@ snapshots:
 
   '@humanwhocodes/retry@0.4.1': {}
 
-  '@jeromefitz/conventional-gitmoji@4.0.13(lodash@4.17.21)':
+  '@jeromefitz/conventional-gitmoji@4.0.14(lodash@4.17.21)':
     dependencies:
       fast-json-stable-stringify: 2.1.0
       grapheme-splitter: 1.0.4
@@ -3054,9 +3050,9 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@jeromefitz/semantic@11.1.0(@jeromefitz/conventional-gitmoji@4.0.13(lodash@4.17.21))(typescript@5.7.2)':
+  '@jeromefitz/semantic@11.1.0(@jeromefitz/conventional-gitmoji@4.0.14(lodash@4.17.21))(typescript@5.7.2)':
     dependencies:
-      '@jeromefitz/conventional-gitmoji': 4.0.13(lodash@4.17.21)
+      '@jeromefitz/conventional-gitmoji': 4.0.14(lodash@4.17.21)
       '@semantic-release/commit-analyzer': 13.0.0(patch_hash=4ldj247mh3etpypyayklcqtkvm)(semantic-release@24.2.0(typescript@5.7.2))
       '@semantic-release/git': 10.0.1(semantic-release@24.2.0(typescript@5.7.2))
       semantic-release: 24.2.0(typescript@5.7.2)
@@ -3699,8 +3695,6 @@ snapshots:
     dependencies:
       ansi-styles: 4.3.0
       supports-color: 7.2.0
-
-  chalk@5.3.0: {}
 
   chalk@5.4.1: {}
 
@@ -4941,7 +4935,7 @@ snapshots:
   marked-terminal@7.0.0(marked@12.0.0):
     dependencies:
       ansi-escapes: 6.2.0
-      chalk: 5.3.0
+      chalk: 5.4.1
       cli-highlight: 2.1.11
       cli-table3: 0.6.3
       marked: 12.0.0
@@ -5594,7 +5588,7 @@ snapshots:
   title@4.0.1:
     dependencies:
       arg: 5.0.2
-      chalk: 5.3.0
+      chalk: 5.4.1
       clipboardy: 4.0.0
 
   to-regex-range@5.0.1:
