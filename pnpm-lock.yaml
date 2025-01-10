@@ -24,8 +24,8 @@ importers:
         specifier: 7.26.0
         version: 7.26.0
       '@babel/eslint-parser':
-        specifier: 7.25.9
-        version: 7.25.9(@babel/core@7.26.0)(eslint@9.17.0)
+        specifier: 7.26.5
+        version: 7.26.5(@babel/core@7.26.0)(eslint@9.17.0)
       '@jeromefitz/conventional-gitmoji':
         specifier: 4.0.14
         version: 4.0.14(lodash@4.17.21)
@@ -87,6 +87,13 @@ packages:
 
   '@babel/eslint-parser@7.25.9':
     resolution: {integrity: sha512-5UXfgpK0j0Xr/xIdgdLEhOFxaDZ0bRPWJJchRpqOSur/3rZoPbqqki5mm0p4NE2cs28krBEiSM2MB7//afRSQQ==}
+    engines: {node: ^10.13.0 || ^12.13.0 || >=14.0.0}
+    peerDependencies:
+      '@babel/core': ^7.11.0
+      eslint: ^7.5.0 || ^8.0.0 || ^9.0.0
+
+  '@babel/eslint-parser@7.26.5':
+    resolution: {integrity: sha512-Kkm8C8uxI842AwQADxl0GbcG1rupELYLShazYEZO/2DYjhyWXJIOUVOE3tBYm6JXzUCNJOZEzqc4rCW/jsEQYQ==}
     engines: {node: ^10.13.0 || ^12.13.0 || >=14.0.0}
     peerDependencies:
       '@babel/core': ^7.11.0
@@ -3094,6 +3101,14 @@ snapshots:
       - supports-color
 
   '@babel/eslint-parser@7.25.9(@babel/core@7.26.0)(eslint@9.17.0)':
+    dependencies:
+      '@babel/core': 7.26.0
+      '@nicolo-ribaudo/eslint-scope-5-internals': 5.1.1-v1
+      eslint: 9.17.0
+      eslint-visitor-keys: 2.1.0
+      semver: 7.6.3
+
+  '@babel/eslint-parser@7.26.5(@babel/core@7.26.0)(eslint@9.17.0)':
     dependencies:
       '@babel/core': 7.26.0
       '@nicolo-ribaudo/eslint-scope-5-internals': 5.1.1-v1
