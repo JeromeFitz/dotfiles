@@ -63,7 +63,7 @@
       "cross-spawn": "7.0.6",
       "nanoid@^3.0.0": "^3.3.8",
       "postcss": "8.5.1",
-      "semver": "7.6.3",
+      "semver": "7.7.0",
       "word-wrap": "1.2.5"
     },
     "patchedDependencies": {
