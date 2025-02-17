@@ -42,8 +42,8 @@ importers:
         specifier: 3.1.5
         version: 3.1.5(lodash@4.17.21)
       '@jeromefitz/semantic':
-        specifier: 11.1.3
-        version: 11.1.3(@jeromefitz/conventional-gitmoji@4.0.15(lodash@4.17.21))(typescript@5.7.3)
+        specifier: 11.1.4
+        version: 11.1.4(@jeromefitz/conventional-gitmoji@4.0.15(lodash@4.17.21))(typescript@5.7.3)
       '@jeromefitz/tsconfig':
         specifier: 2.1.0
         version: 2.1.0
@@ -273,8 +273,8 @@ packages:
     peerDependencies:
       lodash: ^4.17.21
 
-  '@jeromefitz/semantic@11.1.3':
-    resolution: {integrity: sha512-5jrPYZQbbgoLdVBy1s4i9iAF3kgf+MhqfiY/BMIkDtOInsiPLlHBfWArI8qZYrHbRvwUkg5Ax2xS13RASkBU6g==}
+  '@jeromefitz/semantic@11.1.4':
+    resolution: {integrity: sha512-SFgrsOvMsvLHfrbv13m2X1mld32W9/stGozxKMcutdoJJBUOFdnjBjFKCqd/uKekbjhU+caT3SiDDGYsKmvT0g==}
     engines: {node: '>=20'}
     peerDependencies:
       '@jeromefitz/conventional-gitmoji': ^4.0.0
@@ -323,16 +323,8 @@ packages:
     resolution: {integrity: sha512-RTmWsLfig8SBoiSdgvCht4BXl1CHU89Co5xiQ5JF19my/sIRDFCQ1RPrmK0exgqUZuNm39C/bV8+/83+MJEjGg==}
     engines: {node: '>= 18'}
 
-  '@octokit/core@6.1.3':
-    resolution: {integrity: sha512-z+j7DixNnfpdToYsOutStDgeRzJSMnbj8T1C/oQjB6Aa+kRfNjs/Fn7W6c8bmlt6mfy3FkgeKBRnDjxQow5dow==}
-    engines: {node: '>= 18'}
-
   '@octokit/core@6.1.4':
     resolution: {integrity: sha512-lAS9k7d6I0MPN+gb9bKDt7X8SdxknYqAMh44S5L+lNqIN2NuV8nvv3g8rPp7MuRxcOpxpUIATWprO0C34a8Qmg==}
-    engines: {node: '>= 18'}
-
-  '@octokit/endpoint@10.0.0':
-    resolution: {integrity: sha512-emBcNDxBdC1y3+knJonS5zhUB/CG6TihubxM2U1/pG/Z1y3a4oV0Gzz3lmkCvWWQI6h3tqBAX9MgCBFp+M68Jw==}
     engines: {node: '>= 18'}
 
   '@octokit/endpoint@10.1.3':
@@ -348,12 +340,6 @@ packages:
 
   '@octokit/openapi-types@23.0.1':
     resolution: {integrity: sha512-izFjMJ1sir0jn0ldEKhZ7xegCTj/ObmEDlEfpFrx4k/JyZSMRHbO3/rBwgE7f3m2DHt+RrNGIVw4wSmwnm3t/g==}
-
-  '@octokit/plugin-paginate-rest@11.4.0':
-    resolution: {integrity: sha512-ttpGck5AYWkwMkMazNCZMqxKqIq1fJBNxBfsFwwfyYKTf914jKkLF0POMS3YkPBwp5g1c2Y4L79gDz01GhSr1g==}
-    engines: {node: '>= 18'}
-    peerDependencies:
-      '@octokit/core': '>=6'
 
   '@octokit/plugin-paginate-rest@11.4.2':
     resolution: {integrity: sha512-BXJ7XPCTDXFF+wxcg/zscfgw2O/iDPtNSkwwR1W1W5c4Mb3zav/M2XvxQ23nVmKj7jpweB4g8viMeCQdm7LMVA==}
@@ -385,16 +371,8 @@ packages:
     peerDependencies:
       '@octokit/core': ^6.0.0
 
-  '@octokit/request-error@6.1.6':
-    resolution: {integrity: sha512-pqnVKYo/at0NuOjinrgcQYpEbv4snvP3bKMRqHaD9kIsk9u1LCpb2smHZi8/qJfgeNqLo5hNW4Z7FezNdEo0xg==}
-    engines: {node: '>= 18'}
-
   '@octokit/request-error@6.1.7':
     resolution: {integrity: sha512-69NIppAwaauwZv6aOzb+VVLwt+0havz9GT5YplkeJv7fG7a40qpLt/yZKyiDxAhgz0EtgNdNcb96Z0u+Zyuy2g==}
-    engines: {node: '>= 18'}
-
-  '@octokit/request@9.1.4':
-    resolution: {integrity: sha512-tMbOwGm6wDII6vygP3wUVqFTw3Aoo0FnVQyhihh8vVq12uO3P+vQZeo2CKMpWtPSogpACD0yyZAlVlQnjW71DA==}
     engines: {node: '>= 18'}
 
   '@octokit/request@9.2.2':
@@ -868,11 +846,6 @@ packages:
   conventional-commits-filter@5.0.0:
     resolution: {integrity: sha512-tQMagCOC59EVgNZcC5zl7XqO30Wki9i9J3acbUvkaosCT6JX3EeFwJD7Qqp4MCikRnzS18WXV3BLIQ66ytu6+Q==}
     engines: {node: '>=18'}
-
-  conventional-commits-parser@6.0.0:
-    resolution: {integrity: sha512-TbsINLp48XeMXR8EvGjTnKGsZqBemisPoyWESlpRyR8lif0lcwzqz+NMtYSj1ooF/WYjSuu7wX0CtdeeMEQAmA==}
-    engines: {node: '>=18'}
-    hasBin: true
 
   conventional-commits-parser@6.1.0:
     resolution: {integrity: sha512-5nxDo7TwKB5InYBl4ZC//1g9GRwB/F3TXOGR9hgUjMGfvSP4Vu5NkpNro2+1+TIEy1vwxApl5ircECr2ri5JIw==}
@@ -2432,8 +2405,8 @@ packages:
   semantic-release-commit-filter@1.0.2:
     resolution: {integrity: sha512-LpIB1UN78oRmJnqgPdvA/qRgVitih5V1Ybyszv8GcOBAJWJBHGWI1PmSrOfdEmbf1ZvGkdK/NNDdBHbuSQqSyQ==}
 
-  semantic-release@24.2.2:
-    resolution: {integrity: sha512-f1PLgDKbSrZ1i1jFgHO/qJavv0SSZgahJdusPH0eUkWXcm0qYHAr1qFFC69ELYVCPzLUd5UZJuhEaQP/QOd1jw==}
+  semantic-release@24.2.3:
+    resolution: {integrity: sha512-KRhQG9cUazPavJiJEFIJ3XAMjgfd0fcK3B+T26qOl8L0UG5aZUjeRfREO0KM5InGtYwxqiiytkJrbcYoLDEv0A==}
     engines: {node: '>=20.8.1'}
     hasBin: true
 
@@ -3223,12 +3196,12 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@jeromefitz/semantic@11.1.3(@jeromefitz/conventional-gitmoji@4.0.15(lodash@4.17.21))(typescript@5.7.3)':
+  '@jeromefitz/semantic@11.1.4(@jeromefitz/conventional-gitmoji@4.0.15(lodash@4.17.21))(typescript@5.7.3)':
     dependencies:
       '@jeromefitz/conventional-gitmoji': 4.0.15(lodash@4.17.21)
-      '@semantic-release/commit-analyzer': 13.0.1(patch_hash=12f29c0334ee55892c4c4d3dc4d9e1f0f18476656fb8c3c462a6203bc740493b)(semantic-release@24.2.2(typescript@5.7.3))
-      '@semantic-release/git': 10.0.1(semantic-release@24.2.2(typescript@5.7.3))
-      semantic-release: 24.2.2(typescript@5.7.3)
+      '@semantic-release/commit-analyzer': 13.0.1(patch_hash=12f29c0334ee55892c4c4d3dc4d9e1f0f18476656fb8c3c462a6203bc740493b)(semantic-release@24.2.3(typescript@5.7.3))
+      '@semantic-release/git': 10.0.1(semantic-release@24.2.3(typescript@5.7.3))
+      semantic-release: 24.2.3(typescript@5.7.3)
       semantic-release-commit-filter: 1.0.2
       title: 4.0.1
     transitivePeerDependencies:
@@ -3276,16 +3249,6 @@ snapshots:
 
   '@octokit/auth-token@5.0.1': {}
 
-  '@octokit/core@6.1.3':
-    dependencies:
-      '@octokit/auth-token': 5.0.1
-      '@octokit/graphql': 8.1.2
-      '@octokit/request': 9.1.4
-      '@octokit/request-error': 6.1.6
-      '@octokit/types': 13.7.0
-      before-after-hook: 3.0.2
-      universal-user-agent: 7.0.2
-
   '@octokit/core@6.1.4':
     dependencies:
       '@octokit/auth-token': 5.0.1
@@ -3294,11 +3257,6 @@ snapshots:
       '@octokit/request-error': 6.1.7
       '@octokit/types': 13.7.0
       before-after-hook: 3.0.2
-      universal-user-agent: 7.0.2
-
-  '@octokit/endpoint@10.0.0':
-    dependencies:
-      '@octokit/types': 12.6.0
       universal-user-agent: 7.0.2
 
   '@octokit/endpoint@10.1.3':
@@ -3316,11 +3274,6 @@ snapshots:
 
   '@octokit/openapi-types@23.0.1': {}
 
-  '@octokit/plugin-paginate-rest@11.4.0(@octokit/core@6.1.3)':
-    dependencies:
-      '@octokit/core': 6.1.3
-      '@octokit/types': 13.7.0
-
   '@octokit/plugin-paginate-rest@11.4.2(@octokit/core@6.1.4)':
     dependencies:
       '@octokit/core': 6.1.4
@@ -3335,34 +3288,22 @@ snapshots:
       '@octokit/core': 6.1.4
       '@octokit/types': 13.7.0
 
-  '@octokit/plugin-retry@7.0.3(@octokit/core@6.1.3)':
+  '@octokit/plugin-retry@7.0.3(@octokit/core@6.1.4)':
     dependencies:
-      '@octokit/core': 6.1.3
-      '@octokit/request-error': 6.1.6
+      '@octokit/core': 6.1.4
+      '@octokit/request-error': 6.1.7
       '@octokit/types': 12.6.0
       bottleneck: 2.19.5
 
-  '@octokit/plugin-throttling@9.0.3(@octokit/core@6.1.3)':
+  '@octokit/plugin-throttling@9.0.3(@octokit/core@6.1.4)':
     dependencies:
-      '@octokit/core': 6.1.3
+      '@octokit/core': 6.1.4
       '@octokit/types': 12.6.0
       bottleneck: 2.19.5
-
-  '@octokit/request-error@6.1.6':
-    dependencies:
-      '@octokit/types': 13.7.0
 
   '@octokit/request-error@6.1.7':
     dependencies:
       '@octokit/types': 13.7.0
-
-  '@octokit/request@9.1.4':
-    dependencies:
-      '@octokit/endpoint': 10.0.0
-      '@octokit/request-error': 6.1.6
-      '@octokit/types': 13.7.0
-      fast-content-type-parse: 2.0.1
-      universal-user-agent: 7.0.2
 
   '@octokit/request@9.2.2':
     dependencies:
@@ -3405,17 +3346,17 @@ snapshots:
 
   '@sec-ant/readable-stream@0.4.1': {}
 
-  '@semantic-release/commit-analyzer@13.0.1(patch_hash=12f29c0334ee55892c4c4d3dc4d9e1f0f18476656fb8c3c462a6203bc740493b)(semantic-release@24.2.2(typescript@5.7.3))':
+  '@semantic-release/commit-analyzer@13.0.1(patch_hash=12f29c0334ee55892c4c4d3dc4d9e1f0f18476656fb8c3c462a6203bc740493b)(semantic-release@24.2.3(typescript@5.7.3))':
     dependencies:
       conventional-changelog-angular: 8.0.0
       conventional-changelog-writer: 8.0.0
       conventional-commits-filter: 5.0.0
-      conventional-commits-parser: 6.0.0
+      conventional-commits-parser: 6.1.0
       debug: 4.4.0
       import-from-esm: 2.0.0
       lodash-es: 4.17.21
       micromatch: 4.0.8
-      semantic-release: 24.2.2(typescript@5.7.3)
+      semantic-release: 24.2.3(typescript@5.7.3)
     transitivePeerDependencies:
       - supports-color
 
@@ -3423,7 +3364,7 @@ snapshots:
 
   '@semantic-release/error@4.0.0': {}
 
-  '@semantic-release/git@10.0.1(semantic-release@24.2.2(typescript@5.7.3))':
+  '@semantic-release/git@10.0.1(semantic-release@24.2.3(typescript@5.7.3))':
     dependencies:
       '@semantic-release/error': 3.0.0
       aggregate-error: 3.1.0
@@ -3433,16 +3374,16 @@ snapshots:
       lodash: 4.17.21
       micromatch: 4.0.8
       p-reduce: 2.1.0
-      semantic-release: 24.2.2(typescript@5.7.3)
+      semantic-release: 24.2.3(typescript@5.7.3)
     transitivePeerDependencies:
       - supports-color
 
-  '@semantic-release/github@11.0.0(semantic-release@24.2.2(typescript@5.7.3))':
+  '@semantic-release/github@11.0.0(semantic-release@24.2.3(typescript@5.7.3))':
     dependencies:
-      '@octokit/core': 6.1.3
-      '@octokit/plugin-paginate-rest': 11.4.0(@octokit/core@6.1.3)
-      '@octokit/plugin-retry': 7.0.3(@octokit/core@6.1.3)
-      '@octokit/plugin-throttling': 9.0.3(@octokit/core@6.1.3)
+      '@octokit/core': 6.1.4
+      '@octokit/plugin-paginate-rest': 11.4.2(@octokit/core@6.1.4)
+      '@octokit/plugin-retry': 7.0.3(@octokit/core@6.1.4)
+      '@octokit/plugin-throttling': 9.0.3(@octokit/core@6.1.4)
       '@semantic-release/error': 4.0.0
       aggregate-error: 5.0.0
       debug: 4.4.0
@@ -3454,12 +3395,12 @@ snapshots:
       lodash-es: 4.17.21
       mime: 4.0.1
       p-filter: 4.1.0
-      semantic-release: 24.2.2(typescript@5.7.3)
+      semantic-release: 24.2.3(typescript@5.7.3)
       url-join: 5.0.0
     transitivePeerDependencies:
       - supports-color
 
-  '@semantic-release/npm@12.0.0(semantic-release@24.2.2(typescript@5.7.3))':
+  '@semantic-release/npm@12.0.0(semantic-release@24.2.3(typescript@5.7.3))':
     dependencies:
       '@semantic-release/error': 4.0.0
       aggregate-error: 5.0.0
@@ -3472,23 +3413,23 @@ snapshots:
       rc: 1.2.8
       read-pkg: 9.0.1
       registry-auth-token: 5.0.2
-      semantic-release: 24.2.2(typescript@5.7.3)
+      semantic-release: 24.2.3(typescript@5.7.3)
       semver: 7.7.1
       tempy: 3.1.0
 
-  '@semantic-release/release-notes-generator@14.0.1(semantic-release@24.2.2(typescript@5.7.3))':
+  '@semantic-release/release-notes-generator@14.0.1(semantic-release@24.2.3(typescript@5.7.3))':
     dependencies:
       conventional-changelog-angular: 8.0.0
       conventional-changelog-writer: 8.0.0
       conventional-commits-filter: 5.0.0
-      conventional-commits-parser: 6.0.0
+      conventional-commits-parser: 6.1.0
       debug: 4.4.0
       get-stream: 7.0.1
       import-from-esm: 1.3.4
       into-stream: 7.0.0
       lodash-es: 4.17.21
       read-package-up: 11.0.0
-      semantic-release: 24.2.2(typescript@5.7.3)
+      semantic-release: 24.2.3(typescript@5.7.3)
     transitivePeerDependencies:
       - supports-color
 
@@ -3970,10 +3911,6 @@ snapshots:
       semver: 7.7.1
 
   conventional-commits-filter@5.0.0: {}
-
-  conventional-commits-parser@6.0.0:
-    dependencies:
-      meow: 13.2.0
 
   conventional-commits-parser@6.1.0:
     dependencies:
@@ -5556,13 +5493,13 @@ snapshots:
 
   semantic-release-commit-filter@1.0.2: {}
 
-  semantic-release@24.2.2(typescript@5.7.3):
+  semantic-release@24.2.3(typescript@5.7.3):
     dependencies:
-      '@semantic-release/commit-analyzer': 13.0.1(patch_hash=12f29c0334ee55892c4c4d3dc4d9e1f0f18476656fb8c3c462a6203bc740493b)(semantic-release@24.2.2(typescript@5.7.3))
+      '@semantic-release/commit-analyzer': 13.0.1(patch_hash=12f29c0334ee55892c4c4d3dc4d9e1f0f18476656fb8c3c462a6203bc740493b)(semantic-release@24.2.3(typescript@5.7.3))
       '@semantic-release/error': 4.0.0
-      '@semantic-release/github': 11.0.0(semantic-release@24.2.2(typescript@5.7.3))
-      '@semantic-release/npm': 12.0.0(semantic-release@24.2.2(typescript@5.7.3))
-      '@semantic-release/release-notes-generator': 14.0.1(semantic-release@24.2.2(typescript@5.7.3))
+      '@semantic-release/github': 11.0.0(semantic-release@24.2.3(typescript@5.7.3))
+      '@semantic-release/npm': 12.0.0(semantic-release@24.2.3(typescript@5.7.3))
+      '@semantic-release/release-notes-generator': 14.0.1(semantic-release@24.2.3(typescript@5.7.3))
       aggregate-error: 5.0.0
       cosmiconfig: 9.0.0(typescript@5.7.3)
       debug: 4.4.0
