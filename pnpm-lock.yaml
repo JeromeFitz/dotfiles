@@ -7,7 +7,7 @@ settings:
 overrides:
   cross-spawn: 7.0.6
   nanoid@^3.0.0: ^3.3.8
-  postcss: 8.5.2
+  postcss: 8.5.3
   semver: 7.7.1
   word-wrap: 1.2.5
 
@@ -2219,8 +2219,8 @@ packages:
     resolution: {integrity: sha512-d7Uw+eZoloe0EHDIYoe+bQ5WXnGMOpmiZFTuMWCwpjzzkL2nTjcKiAk4hh8TjnGye2TwWOk3UXucZ+3rbmBa8Q==}
     engines: {node: '>= 0.4'}
 
-  postcss@8.5.2:
-    resolution: {integrity: sha512-MjOadfU3Ys9KYoX0AdkBlFEF1Vx37uCCeN4ZHnmwm9FfpbsGWMZeBLMmmpY+6Ocqod7mkdZ0DT31OlbsFrLlkA==}
+  postcss@8.5.3:
+    resolution: {integrity: sha512-dle9A3yYxlBSrt8Fu+IpjGT8SY8hN0mlaA6GY8t0P5PjIOZemULz/E2Bnm/2dcUOena75OTNkHI76uZBNUUq3A==}
     engines: {node: ^10 || ^12 || >=14}
 
   prelude-ls@1.2.1:
@@ -4354,7 +4354,7 @@ snapshots:
   eslint-plugin-tailwindcss@3.18.0:
     dependencies:
       fast-glob: 3.3.2
-      postcss: 8.5.2
+      postcss: 8.5.3
 
   eslint-plugin-testing-library@7.1.1(eslint@9.20.1)(typescript@5.7.3):
     dependencies:
@@ -5340,7 +5340,7 @@ snapshots:
 
   possible-typed-array-names@1.0.0: {}
 
-  postcss@8.5.2:
+  postcss@8.5.3:
     dependencies:
       nanoid: 3.3.8
       picocolors: 1.1.1
