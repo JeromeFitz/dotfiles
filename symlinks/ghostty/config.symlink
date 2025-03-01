@@ -1,0 +1,27 @@
+bold-is-bright = true
+cursor-style = block
+cursor-style-blink = false
+desktop-notifications = true
+font-family = "Geist Mono"
+font-family = "Operator Mono Lig"
+font-family = "AT Name Mono Variable"
+font-family = "IBM Plex Mono"
+font-family = "Fira Code"
+font-family = "Roboto Mono"
+font-family = "Menlo"
+font-family = "DejaVu Sans Mono"
+font-family = "Consolas"
+font-family = "Lucida Console"
+font-family = "monospace"
+font-size = 16
+font-style = Regular
+macos-icon = xray
+macos-titlebar-proxy-icon = hidden
+macos-titlebar-style = transparent
+shell-integration-features = no-cursor
+title = 🐩💨💩
+theme = Dracula+
+window-colorspace = display-p3
+window-theme = light
+
+keybind = cmd+backspace=esc:w

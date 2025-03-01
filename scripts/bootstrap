@@ -171,14 +171,24 @@ install_dotfiles () {
     link_file "$src" "$dst"
   done
 
-  #
+  for src in $(find -H "$DOTFILES_ROOT/symlinks/ghostty" -maxdepth 1 -name '*.symlink' -not -path '*.git*' | sort)
+  do
+    dst="$HOME/.config/ghostty/$(basename "${src%.*}")"
+    link_file "$src" "$dst"
+  done
+
+  # for src in $(find -H "$DOTFILES_ROOT/symlinks/ghostty/themes" -maxdepth 1 -name '*.symlink' -not -path '*.git*' | sort)
+  # do
+  #   dst="$HOME/.config/ghostty/themes/$(basename "${src%.*}")"
+  #   link_file "$src" "$dst"
+  # done
+
   # vim.install.sh
   for f in {ftdetect,ftplugin}; do
     mkdir -p "$HOME/.vim/$f"
     for src in $(find -H "$DOTFILES_ROOT/symlinks/vim/$f" -maxdepth 2 -name '*.vim' | sort)
       do
         dst="$HOME/.vim/$f/$(basename "${src%.*}.vim")"
-        link_file "$src" "$dst"
       done
   done
 
