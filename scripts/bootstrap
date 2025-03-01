@@ -189,6 +189,7 @@ install_dotfiles () {
     for src in $(find -H "$DOTFILES_ROOT/symlinks/vim/$f" -maxdepth 2 -name '*.vim' | sort)
       do
         dst="$HOME/.vim/$f/$(basename "${src%.*}.vim")"
+        link_file "$src" "$dst"
       done
   done
 
