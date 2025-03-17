@@ -46,7 +46,7 @@
     "@babel/core": "7.26.10",
     "@babel/eslint-parser": "7.26.10",
     "@jeromefitz/conventional-gitmoji": "4.0.16",
-    "@jeromefitz/eslint-config": "5.0.0-canary.44",
+    "@jeromefitz/eslint-config": "5.0.0-canary.46",
     "@jeromefitz/lint-staged": "2.1.4",
     "@jeromefitz/prettier-config": "2.1.6",
     "@jeromefitz/release-notes-generator": "3.1.6",
@@ -61,7 +61,6 @@
   "pnpm": {
     "overrides": {
       "cross-spawn": "7.0.6",
-      "nanoid@^3.0.0": "^3.3.8",
       "postcss": "8.5.3",
       "semver": "7.7.1",
       "word-wrap": "1.2.5"
