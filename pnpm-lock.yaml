@@ -26,8 +26,8 @@ importers:
         specifier: 7.27.1
         version: 7.27.1(@babel/core@7.27.1)(eslint@9.25.0)
       '@jeromefitz/conventional-gitmoji':
-        specifier: 4.0.16
-        version: 4.0.16(lodash@4.17.21)
+        specifier: 4.0.17
+        version: 4.0.17(lodash@4.17.21)
       '@jeromefitz/eslint-config':
         specifier: 5.0.0-canary.54
         version: 5.0.0-canary.54(@typescript-eslint/eslint-plugin@8.30.1(@typescript-eslint/parser@8.30.1(eslint@9.25.0)(typescript@5.8.3))(eslint@9.25.0)(typescript@5.8.3))(typescript@5.8.3)
@@ -42,7 +42,7 @@ importers:
         version: 3.1.7(lodash@4.17.21)
       '@jeromefitz/semantic':
         specifier: 11.1.5
-        version: 11.1.5(@jeromefitz/conventional-gitmoji@4.0.16(lodash@4.17.21))(typescript@5.8.3)
+        version: 11.1.5(@jeromefitz/conventional-gitmoji@4.0.17(lodash@4.17.21))(typescript@5.8.3)
       '@jeromefitz/tsconfig':
         specifier: 2.1.0
         version: 2.1.0
@@ -292,8 +292,8 @@ packages:
     resolution: {integrity: sha512-xeO57FpIu4p1Ri3Jq/EXq4ClRm86dVF2z/+kvFnyqVYRavTZmaFaUBbWCOuuTh0o/g7DSsk6kc2vrS4Vl5oPOQ==}
     engines: {node: '>=18.18'}
 
-  '@jeromefitz/conventional-gitmoji@4.0.16':
-    resolution: {integrity: sha512-oeHc/J0z+rVzuHf+ZDpmhLqhYoZkPvrC9+Z/JyQQBMKemUJ5LT0HbDRTEi2UJBVUCfpiyYeLWMqm4YEQmoVehA==}
+  '@jeromefitz/conventional-gitmoji@4.0.17':
+    resolution: {integrity: sha512-0JTQyDkgC7o7c6qAQzIqGlghQasarL7yzzQzfSkQADA4uCNDnZdp+Be+rCMSU2Dy++ub5N4U/HkoLxfzmpLLaQ==}
     engines: {node: '>=20'}
     peerDependencies:
       lodash: ^4.17.21
@@ -3277,7 +3277,7 @@ snapshots:
 
   '@humanwhocodes/retry@0.4.2': {}
 
-  '@jeromefitz/conventional-gitmoji@4.0.16(lodash@4.17.21)':
+  '@jeromefitz/conventional-gitmoji@4.0.17(lodash@4.17.21)':
     dependencies:
       fast-json-stable-stringify: 2.1.0
       grapheme-splitter: 1.0.4
@@ -3361,9 +3361,9 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@jeromefitz/semantic@11.1.5(@jeromefitz/conventional-gitmoji@4.0.16(lodash@4.17.21))(typescript@5.8.3)':
+  '@jeromefitz/semantic@11.1.5(@jeromefitz/conventional-gitmoji@4.0.17(lodash@4.17.21))(typescript@5.8.3)':
     dependencies:
-      '@jeromefitz/conventional-gitmoji': 4.0.16(lodash@4.17.21)
+      '@jeromefitz/conventional-gitmoji': 4.0.17(lodash@4.17.21)
       '@semantic-release/commit-analyzer': 13.0.1(patch_hash=12f29c0334ee55892c4c4d3dc4d9e1f0f18476656fb8c3c462a6203bc740493b)(semantic-release@24.2.4(typescript@5.8.3))
       '@semantic-release/git': 10.0.1(semantic-release@24.2.4(typescript@5.8.3))
       semantic-release: 24.2.4(typescript@5.8.3)
