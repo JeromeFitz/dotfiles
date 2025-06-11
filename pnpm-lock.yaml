@@ -6,7 +6,7 @@ settings:
 
 overrides:
   cross-spawn: 7.0.6
-  postcss: 8.5.4
+  postcss: 8.5.5
   semver: 7.7.2
   word-wrap: 1.2.5
 
