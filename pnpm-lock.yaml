@@ -26,8 +26,8 @@ importers:
         specifier: 7.27.5
         version: 7.27.5(@babel/core@7.27.7)(eslint@9.28.0)
       '@jeromefitz/conventional-gitmoji':
-        specifier: 4.0.18
-        version: 4.0.18(lodash@4.17.21)
+        specifier: 4.0.19
+        version: 4.0.19(lodash@4.17.21)
       '@jeromefitz/eslint-config':
         specifier: 5.0.0-canary.63
         version: 5.0.0-canary.63(@typescript-eslint/eslint-plugin@8.33.1(@typescript-eslint/parser@8.33.1(eslint@9.28.0)(typescript@5.8.3))(eslint@9.28.0)(typescript@5.8.3))(@typescript-eslint/utils@8.33.1(eslint@9.28.0)(typescript@5.8.3))(eslint-import-resolver-node@0.3.9)(typescript@5.8.3)
@@ -42,7 +42,7 @@ importers:
         version: 3.1.11(lodash@4.17.21)
       '@jeromefitz/semantic':
         specifier: 11.1.6
-        version: 11.1.6(@jeromefitz/conventional-gitmoji@4.0.18(lodash@4.17.21))(typescript@5.8.3)
+        version: 11.1.6(@jeromefitz/conventional-gitmoji@4.0.19(lodash@4.17.21))(typescript@5.8.3)
       '@jeromefitz/tsconfig':
         specifier: 2.1.0
         version: 2.1.0
@@ -251,8 +251,8 @@ packages:
     resolution: {integrity: sha512-xeO57FpIu4p1Ri3Jq/EXq4ClRm86dVF2z/+kvFnyqVYRavTZmaFaUBbWCOuuTh0o/g7DSsk6kc2vrS4Vl5oPOQ==}
     engines: {node: '>=18.18'}
 
-  '@jeromefitz/conventional-gitmoji@4.0.18':
-    resolution: {integrity: sha512-eK1BP3kExGCTwR/IJTxdqw6aJfW+qKf8MPRjr0EWjdD3PTPV6+8j9SAC6P+4ie5hH4O5arcAw2zd5Af7oKNBDQ==}
+  '@jeromefitz/conventional-gitmoji@4.0.19':
+    resolution: {integrity: sha512-qrggmXximGf98DaHEpWUvuwyg4HLZNCyahga0WYLzSPcGICUusXMeltVmXALuAqL0U/mKHZgVtqHrb37Zitd6Q==}
     engines: {node: '>=20'}
     peerDependencies:
       lodash: ^4.17.21
@@ -3229,7 +3229,7 @@ snapshots:
 
   '@humanwhocodes/retry@0.4.2': {}
 
-  '@jeromefitz/conventional-gitmoji@4.0.18(lodash@4.17.21)':
+  '@jeromefitz/conventional-gitmoji@4.0.19(lodash@4.17.21)':
     dependencies:
       fast-json-stable-stringify: 2.1.0
       grapheme-splitter: 1.0.4
@@ -3315,9 +3315,9 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@jeromefitz/semantic@11.1.6(@jeromefitz/conventional-gitmoji@4.0.18(lodash@4.17.21))(typescript@5.8.3)':
+  '@jeromefitz/semantic@11.1.6(@jeromefitz/conventional-gitmoji@4.0.19(lodash@4.17.21))(typescript@5.8.3)':
     dependencies:
-      '@jeromefitz/conventional-gitmoji': 4.0.18(lodash@4.17.21)
+      '@jeromefitz/conventional-gitmoji': 4.0.19(lodash@4.17.21)
       '@semantic-release/commit-analyzer': 13.0.1(patch_hash=12f29c0334ee55892c4c4d3dc4d9e1f0f18476656fb8c3c462a6203bc740493b)(semantic-release@24.2.5(typescript@5.8.3))
       '@semantic-release/git': 10.0.1(semantic-release@24.2.5(typescript@5.8.3))
       semantic-release: 24.2.5(typescript@5.8.3)
