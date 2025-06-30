@@ -35,8 +35,8 @@ importers:
         specifier: 3.0.1
         version: 3.0.1(is-ci@4.1.0)
       '@jeromefitz/prettier-config':
-        specifier: 2.1.11
-        version: 2.1.11
+        specifier: 2.1.12
+        version: 2.1.12
       '@jeromefitz/release-notes-generator':
         specifier: 3.1.11
         version: 3.1.11(lodash@4.17.21)
@@ -267,8 +267,8 @@ packages:
     peerDependencies:
       is-ci: ^3.0.1 || ^4.0.0
 
-  '@jeromefitz/prettier-config@2.1.11':
-    resolution: {integrity: sha512-sRoqgh+IbZSseEshq7lQK0LTNSyasCTbbWQ0vsZtXaJdHVCzEdDUj1ZU93T9qSKNkikII9koZRJ3VqwENJU1qA==}
+  '@jeromefitz/prettier-config@2.1.12':
+    resolution: {integrity: sha512-DXiRV/06yNkUaPdjBTh0YHe7S9qWN3PaIKb8iutGEWn7IABGE0Xna0FV9MfKdKjomN5YBRiof9YyFMj1wd8y8A==}
     engines: {node: '>=20'}
 
   '@jeromefitz/release-notes-generator@3.1.11':
@@ -2402,8 +2402,8 @@ packages:
       prettier-plugin-svelte:
         optional: true
 
-  prettier@3.5.3:
-    resolution: {integrity: sha512-QQtaxnoDJeAkDvDKWCLiwIXkTgRhwYDEQCghU9Z6q03iyek/rxRh/2lC3HB7P8sWT2xC/y5JDctPLBIGzHKbhw==}
+  prettier@3.6.2:
+    resolution: {integrity: sha512-I7AIg5boAr5R0FFtJ6rCfD+LFsWHp81dolrFD8S79U9tb8Az2nGrJncnMSnys+bpQJfRUzqs9hnA81OAA3hCuQ==}
     engines: {node: '>=14'}
     hasBin: true
 
@@ -3279,11 +3279,11 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@jeromefitz/prettier-config@2.1.11':
+  '@jeromefitz/prettier-config@2.1.12':
     dependencies:
-      prettier: 3.5.3
-      prettier-plugin-pkg: 0.21.1(prettier@3.5.3)
-      prettier-plugin-tailwindcss: 0.6.13(prettier@3.5.3)
+      prettier: 3.6.2
+      prettier-plugin-pkg: 0.21.1(prettier@3.6.2)
+      prettier-plugin-tailwindcss: 0.6.13(prettier@3.6.2)
     transitivePeerDependencies:
       - '@ianvs/prettier-plugin-sort-imports'
       - '@prettier/plugin-pug'
@@ -5528,15 +5528,15 @@ snapshots:
 
   prelude-ls@1.2.1: {}
 
-  prettier-plugin-pkg@0.21.1(prettier@3.5.3):
+  prettier-plugin-pkg@0.21.1(prettier@3.6.2):
     dependencies:
-      prettier: 3.5.3
+      prettier: 3.6.2
 
-  prettier-plugin-tailwindcss@0.6.13(prettier@3.5.3):
+  prettier-plugin-tailwindcss@0.6.13(prettier@3.6.2):
     dependencies:
-      prettier: 3.5.3
+      prettier: 3.6.2
 
-  prettier@3.5.3: {}
+  prettier@3.6.2: {}
 
   pretty-ms@9.0.0:
     dependencies:
