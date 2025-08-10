@@ -52,9 +52,6 @@ importers:
       dotenv:
         specifier: 17.2.1
         version: 17.2.1
-      husky:
-        specifier: 9.1.7
-        version: 9.1.7
       is-ci:
         specifier: 4.1.0
         version: 4.1.0
@@ -945,8 +942,8 @@ packages:
     resolution: {integrity: sha512-kWWXztvZ5SBQV+eRgKFeh8q5sLuZY2+8WUIzlxWVTg+oGwY14qylx1KbKzHd8P6ZYkAg0xyIDU9JMHhyJMZ1jw==}
     engines: {node: '>=10'}
 
-  ci-info@4.1.0:
-    resolution: {integrity: sha512-HutrvTNsF48wnxkzERIXOe5/mlcfFcbfCmwcg6CJnizbSue78AbDt+1cgl26zwn61WFxhcPykPfZrbqjGmBb4A==}
+  ci-info@4.3.0:
+    resolution: {integrity: sha512-l+2bNRMiQgcfILUi33labAZYIWlH1kWDp+ecNo5iisRKrbm0xcRyCww71/YU0Fkw0mAFpz9bJayXPjey6vkmaQ==}
     engines: {node: '>=8'}
 
   clean-stack@2.2.0:
@@ -1692,11 +1689,6 @@ packages:
   human-signals@8.0.1:
     resolution: {integrity: sha512-eKCa6bwnJhvxj14kZk5NCPc6Hb6BdsU9DZcOnmQKSnO1VKrfV0zCvtttPZUsBvjmNDn8rpcJfpwSYnHBjc95MQ==}
     engines: {node: '>=18.18.0'}
-
-  husky@9.1.7:
-    resolution: {integrity: sha512-5gs5ytaNjBrh5Ow3zrvdUUY+0VxIuWVL4i9irt6friV+BqdCfmV11CQTWMiBYWHbXhco+J1kHfTOUkePhCDvMA==}
-    engines: {node: '>=18'}
-    hasBin: true
 
   ignore@5.3.1:
     resolution: {integrity: sha512-5Fytz/IraMjqpwfd34ke28PTVMjZjJG2MPn5t7OE4eUCUNf8BAa7b5WUS9/Qvr6mwOQS7Mk6vdsMno5he+T8Xw==}
@@ -4147,7 +4139,7 @@ snapshots:
 
   char-regex@1.0.2: {}
 
-  ci-info@4.1.0: {}
+  ci-info@4.3.0: {}
 
   clean-stack@2.2.0: {}
 
@@ -5068,8 +5060,6 @@ snapshots:
 
   human-signals@8.0.1: {}
 
-  husky@9.1.7: {}
-
   ignore@5.3.1: {}
 
   ignore@7.0.5: {}
@@ -5143,7 +5133,7 @@ snapshots:
 
   is-ci@4.1.0:
     dependencies:
-      ci-info: 4.1.0
+      ci-info: 4.3.0
 
   is-core-module@2.15.1:
     dependencies:
