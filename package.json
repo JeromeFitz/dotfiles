@@ -53,7 +53,7 @@
     "@jeromefitz/semantic": "11.1.8",
     "@jeromefitz/tsconfig": "2.1.0",
     "ccommit": "3.1.4",
-    "dotenv": "17.2.1",
+    "dotenv": "17.2.2",
     "is-ci": "4.1.0",
     "typescript": "5.9.2"
   },
