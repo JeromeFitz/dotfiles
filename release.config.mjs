@@ -17,6 +17,7 @@ const _config = {
   },
   enableNpm: false,
   repositoryUrl: `https://github.com/JeromeFitz/dotfiles`,
+  // biome-ignore lint/suspicious/noTemplateCurlyInString: migrate
   tagFormat: 'v${version}',
 }
 

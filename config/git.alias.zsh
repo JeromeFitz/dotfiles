@@ -19,5 +19,6 @@ alias ga.="git add ."
 alias gcom="git commit"
 alias gac="ga. && gcom"
 alias gacp="ga. && gcom && ggp"
+alias garc="ga. && HUSKY=0 git rebase --continue"
 alias gsb='git status -sb'
 alias gss='git status -s'
