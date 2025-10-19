@@ -21,11 +21,14 @@ osascript -e 'tell application "System Events" to tell appearance preferences to
 defaults write com.apple.Finder FXPreferredViewStyle clmv
 
 # Show all file extensions inside the Finder
-defaults write NSGlobalDomain "AppleShowAllExtensions" -bool "true"
+defaults write NSGlobalDomain "AppleShowAllExtensions" -bool true
 
 # Hide external drives or removeable media from the desktop
 defaults write com.apple.finder ShowExternalHardDrivesOnDesktop -bool false
 defaults write com.apple.finder ShowRemovableMediaOnDesktop -bool false
+
+# Enable Finder to be: Quit
+defaults write com.apple.finder QuitMenuItem -bool true
 
 # # Show the ~/Library folder.
 # chflags nohidden ~/Library
