@@ -173,7 +173,15 @@ install_dotfiles () {
 
   for src in $(find -H "$DOTFILES_ROOT/symlinks/ghostty" -maxdepth 1 -name '*.symlink' -not -path '*.git*' | sort)
   do
+    mkdir -p $HOME/.config/ghostty
     dst="$HOME/.config/ghostty/$(basename "${src%.*}")"
+    link_file "$src" "$dst"
+  done
+
+  for src in $(find -H "$DOTFILES_ROOT/symlinks/zed" -maxdepth 1 -name '*.symlink' -not -path '*.git*' | sort)
+  do
+    mkdir -p $HOME/.config/zed
+    dst="$HOME/.config/zed/$(basename "${src%.*}")"
     link_file "$src" "$dst"
   done
 

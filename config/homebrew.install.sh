@@ -55,7 +55,7 @@ echo "› 🍺️ analytics"
 brew analytics off
 
 echo "› 🚨️ linting..."
-pnpm run lint:fix
+pnpm run biome:write
 
 echo
 
