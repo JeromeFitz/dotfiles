@@ -48,7 +48,7 @@
     "uninstall": "sh ./scripts/uninstall"
   },
   "dependencies": {
-    "@biomejs/biome": "2.3.13",
+    "@biomejs/biome": "2.3.14",
     "@jeromefitz/conventional-gitmoji": "4.0.20",
     "@jeromefitz/prettier-config": "2.1.13",
     "@jeromefitz/release-notes-generator": "3.1.13",
