@@ -54,7 +54,7 @@
     "@jeromefitz/release-notes-generator": "3.1.13",
     "@jeromefitz/semantic": "11.1.8",
     "ccommit": "3.1.4",
-    "dotenv": "17.2.3",
+    "dotenv": "17.2.4",
     "is-ci": "4.1.0"
   },
   "pnpm": {
