@@ -26,8 +26,8 @@ importers:
         specifier: 5.0.0
         version: 5.0.0(lodash-es@4.17.23)
       '@jeromefitz/prettier-config':
-        specifier: 3.0.0
-        version: 3.0.0
+        specifier: 3.0.1
+        version: 3.0.1
       '@jeromefitz/release-notes-generator':
         specifier: 4.0.0
         version: 4.0.0(lodash-es@4.17.23)
@@ -133,8 +133,8 @@ packages:
     peerDependencies:
       lodash-es: ^4.17.21
 
-  '@jeromefitz/prettier-config@3.0.0':
-    resolution: {integrity: sha512-bgcWEzrmWBEy+fO1WiONfnHIacAWP4h7JHdclSgl6KkZRGZ+J1ZXaQuPJDukTDhTh+/ePtacy+jlNG2BuflJog==}
+  '@jeromefitz/prettier-config@3.0.1':
+    resolution: {integrity: sha512-41AR/T6WmXirGuRakblvYi3qw6vrUVnvr6XR6Kl5Nc2wC8n7t7MQJycK8qUCMvLZgbPbh1Z5QyfLvcwVz/O09A==}
     engines: {node: '>=24'}
 
   '@jeromefitz/release-notes-generator@4.0.0':
@@ -1124,8 +1124,8 @@ packages:
     resolution: {integrity: sha512-C+VUP+8jis7EsQZIhDYmS5qlNtjv2yP4SNtjXK9AP1ZcTRlnSfuumaTnRfYZnYgUUYVIKqL0fRvmUGDV2fmp6g==}
     engines: {node: '>=4'}
 
-  prettier-plugin-pkg@0.21.2:
-    resolution: {integrity: sha512-CSlM5+51B7yTKcoRWT4M3ImcdFHD5NUz0Xu2t8J03B761zu6J3BjSo/XleKp2kB0tH49K7oG5Uuqn6ldI5LRLg==}
+  prettier-plugin-pkg@0.22.0:
+    resolution: {integrity: sha512-jqkbvnIG7YLWRkcu/5Gj04B5Rr+0FeygtsD8g0EvQa86KYWYLjzcMwLbpVY042rBSPsKp88QnMt2b/ndSHIuxA==}
     engines: {node: ^14.18.0 || >=16.0.0}
     peerDependencies:
       prettier: ^3.0.3
@@ -1541,10 +1541,10 @@ snapshots:
       lodash-es: 4.17.23
       title: 4.0.1
 
-  '@jeromefitz/prettier-config@3.0.0':
+  '@jeromefitz/prettier-config@3.0.1':
     dependencies:
       prettier: 3.8.1
-      prettier-plugin-pkg: 0.21.2(prettier@3.8.1)
+      prettier-plugin-pkg: 0.22.0(prettier@3.8.1)
 
   '@jeromefitz/release-notes-generator@4.0.0(lodash-es@4.17.23)':
     dependencies:
@@ -2457,7 +2457,7 @@ snapshots:
       find-up: 2.1.0
       load-json-file: 4.0.0
 
-  prettier-plugin-pkg@0.21.2(prettier@3.8.1):
+  prettier-plugin-pkg@0.22.0(prettier@3.8.1):
     dependencies:
       prettier: 3.8.1
 
