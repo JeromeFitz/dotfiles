@@ -26,8 +26,8 @@ importers:
         specifier: 5.0.0
         version: 5.0.0(lodash-es@4.17.23)
       '@jeromefitz/prettier-config':
-        specifier: 3.0.1
-        version: 3.0.1
+        specifier: 3.0.3
+        version: 3.0.3
       '@jeromefitz/release-notes-generator':
         specifier: 4.0.0
         version: 4.0.0(lodash-es@4.17.23)
@@ -133,8 +133,8 @@ packages:
     peerDependencies:
       lodash-es: ^4.17.21
 
-  '@jeromefitz/prettier-config@3.0.1':
-    resolution: {integrity: sha512-41AR/T6WmXirGuRakblvYi3qw6vrUVnvr6XR6Kl5Nc2wC8n7t7MQJycK8qUCMvLZgbPbh1Z5QyfLvcwVz/O09A==}
+  '@jeromefitz/prettier-config@3.0.3':
+    resolution: {integrity: sha512-rXz8t6kB3DAGIyKX5nieaNgJ4XVNJjgFKswEy5btCvK6UCZLITzNCg1YrdZ73ja41S/VV6A1lMsQxOEt7g7I9g==}
     engines: {node: '>=24'}
 
   '@jeromefitz/release-notes-generator@4.0.0':
@@ -1124,14 +1124,14 @@ packages:
     resolution: {integrity: sha512-C+VUP+8jis7EsQZIhDYmS5qlNtjv2yP4SNtjXK9AP1ZcTRlnSfuumaTnRfYZnYgUUYVIKqL0fRvmUGDV2fmp6g==}
     engines: {node: '>=4'}
 
-  prettier-plugin-pkg@0.22.0:
-    resolution: {integrity: sha512-jqkbvnIG7YLWRkcu/5Gj04B5Rr+0FeygtsD8g0EvQa86KYWYLjzcMwLbpVY042rBSPsKp88QnMt2b/ndSHIuxA==}
+  prettier-plugin-pkg@0.22.1:
+    resolution: {integrity: sha512-l9qnxic48hgTXsvXi9yWWWzovpqkEYo/Ljf8Af7zSkDTNVmLwscXW63IEVMJXH94DyloO8YkogeLheJUzJh/ZQ==}
     engines: {node: ^14.18.0 || >=16.0.0}
     peerDependencies:
       prettier: ^3.0.3
 
-  prettier@3.8.1:
-    resolution: {integrity: sha512-UOnG6LftzbdaHZcKoPFtOcCKztrQ57WkHDeRD9t/PTQtmT0NHSeWWepj6pS0z/N7+08BHFDQVUrfmfMRcZwbMg==}
+  prettier@3.8.3:
+    resolution: {integrity: sha512-7igPTM53cGHMW8xWuVTydi2KO233VFiTNyF5hLJqpilHfmn8C8gPf+PS7dUT64YcXFbiMGZxS9pCSxL/Dxm/Jw==}
     engines: {node: '>=14'}
     hasBin: true
 
@@ -1541,10 +1541,10 @@ snapshots:
       lodash-es: 4.17.23
       title: 4.0.1
 
-  '@jeromefitz/prettier-config@3.0.1':
+  '@jeromefitz/prettier-config@3.0.3':
     dependencies:
-      prettier: 3.8.1
-      prettier-plugin-pkg: 0.22.0(prettier@3.8.1)
+      prettier: 3.8.3
+      prettier-plugin-pkg: 0.22.1(prettier@3.8.3)
 
   '@jeromefitz/release-notes-generator@4.0.0(lodash-es@4.17.23)':
     dependencies:
@@ -2457,11 +2457,11 @@ snapshots:
       find-up: 2.1.0
       load-json-file: 4.0.0
 
-  prettier-plugin-pkg@0.22.0(prettier@3.8.1):
+  prettier-plugin-pkg@0.22.1(prettier@3.8.3):
     dependencies:
-      prettier: 3.8.1
+      prettier: 3.8.3
 
-  prettier@3.8.1: {}
+  prettier@3.8.3: {}
 
   pretty-ms@9.3.0:
     dependencies:
