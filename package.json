@@ -61,7 +61,7 @@
     "overrides": {
       "cross-spawn": "7.0.6",
       "postcss": "8.5.15",
-      "semver": "7.8.0",
+      "semver": "7.8.1",
       "word-wrap": "1.2.5"
     },
     "patchedDependencies": {
