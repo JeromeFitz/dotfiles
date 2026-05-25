@@ -1,8 +1,17 @@
 lockfileVersion: '9.0'
 
 settings:
-  autoInstallPeers: true
+  autoInstallPeers: false
   excludeLinksFromLockfile: false
+
+overrides:
+  cross-spawn@^7.0.0: ^7.0.6
+  semver@^5.0.0: ^5.7.2
+  semver@^6.0.0: ^6.3.1
+  semver@^7.0.0: ^7.8.1
+
+patchedDependencies:
+  '@semantic-release/commit-analyzer@13.0.1': 12f29c0334ee55892c4c4d3dc4d9e1f0f18476656fb8c3c462a6203bc740493b
 
 importers:
 
@@ -1188,11 +1197,6 @@ packages:
     resolution: {integrity: sha512-hunMQrEy1T6Jr2uEVjrAIqjwWcQTgOAcIM52C8MY1EZSD3DDNft04XzvYKPqjED65bNVVko0YI38nYeEHCX3yw==}
     engines: {node: '>=12'}
 
-  semver@7.7.4:
-    resolution: {integrity: sha512-vFKC2IEtQnVhpT78h1Yp8wzwrf8CM+MzKMHGJZfBtzhZNycRFnXsHk6E5TxIkkMsgNS7mdX3AGB7x2QM2di4lA==}
-    engines: {node: '>=10'}
-    hasBin: true
-
   semver@7.8.1:
     resolution: {integrity: sha512-rkVq3IXh+4FDGch+KwzX3aV9W3kO54GyEgpvBzSyctDA6Xtd7RJQV1xmXbeQp5v7+VzLOfVqiutSE6GICgPFvg==}
     engines: {node: '>=10'}
@@ -1549,14 +1553,14 @@ snapshots:
       import-from-esm: 2.0.0
       lodash-es: 4.17.23
       read-package-up: 12.0.0
-      semver: 7.7.4
+      semver: 7.8.1
     transitivePeerDependencies:
       - supports-color
 
   '@jeromefitz/semantic@12.0.2(@jeromefitz/conventional-gitmoji@5.0.0(lodash-es@4.17.23))':
     dependencies:
       '@jeromefitz/conventional-gitmoji': 5.0.0(lodash-es@4.17.23)
-      '@semantic-release/commit-analyzer': 13.0.1(semantic-release@25.0.3)
+      '@semantic-release/commit-analyzer': 13.0.1(patch_hash=12f29c0334ee55892c4c4d3dc4d9e1f0f18476656fb8c3c462a6203bc740493b)(semantic-release@25.0.3)
       '@semantic-release/git': 10.0.1(semantic-release@25.0.3)
       semantic-release: 25.0.3
       semantic-release-commit-filter: 1.0.2
@@ -1655,7 +1659,7 @@ snapshots:
 
   '@sec-ant/readable-stream@0.4.1': {}
 
-  '@semantic-release/commit-analyzer@13.0.1(semantic-release@25.0.3)':
+  '@semantic-release/commit-analyzer@13.0.1(patch_hash=12f29c0334ee55892c4c4d3dc4d9e1f0f18476656fb8c3c462a6203bc740493b)(semantic-release@25.0.3)':
     dependencies:
       conventional-changelog-angular: 8.3.0
       conventional-changelog-writer: 8.4.0
@@ -2526,7 +2530,7 @@ snapshots:
 
   semantic-release@25.0.3:
     dependencies:
-      '@semantic-release/commit-analyzer': 13.0.1(semantic-release@25.0.3)
+      '@semantic-release/commit-analyzer': 13.0.1(patch_hash=12f29c0334ee55892c4c4d3dc4d9e1f0f18476656fb8c3c462a6203bc740493b)(semantic-release@25.0.3)
       '@semantic-release/error': 4.0.0
       '@semantic-release/github': 12.0.6(semantic-release@25.0.3)
       '@semantic-release/npm': 13.1.5(semantic-release@25.0.3)
@@ -2559,8 +2563,6 @@ snapshots:
       - typescript
 
   semver-regex@4.0.5: {}
-
-  semver@7.7.4: {}
 
   semver@7.8.1: {}
 

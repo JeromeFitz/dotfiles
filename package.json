@@ -56,16 +56,5 @@
     "ccommit": "4.0.1",
     "dotenv": "17.4.2",
     "is-ci": "4.1.0"
-  },
-  "pnpm": {
-    "overrides": {
-      "cross-spawn": "7.0.6",
-      "postcss": "8.5.15",
-      "semver": "7.8.1",
-      "word-wrap": "1.2.5"
-    },
-    "patchedDependencies": {
-      "@semantic-release/commit-analyzer@13.0.1": "patches/@semantic-release__commit-analyzer@13.0.0.patch"
-    }
   }
 }
