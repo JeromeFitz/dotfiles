@@ -16,10 +16,10 @@
   },
   "license": "MIT",
   "private": true,
-  "packageManager": "pnpm@10.33.0+sha512.10568bb4a6afb58c9eb3630da90cc9516417abebd3fabbe6739f0ae795728da1491e9db5a544c76ad8eb7570f5c4bb3d6c637b2cb41bfdcdb47fa823c8649319",
+  "packageManager": "pnpm@11.3.0+sha512.2c403d6594527287672b1f7056343a1f7c3634036a67ffabfcc2b3d7595d843768f8787148d1b57cf7956c90606bbd192857c363af19e96d2d0ec9ec5741d215",
   "engines": {
     "node": ">=20",
-    "pnpm": ">=10 <11"
+    "pnpm": ">=10 <12"
   },
   "keywords": [
     "dotfiles"
@@ -56,16 +56,5 @@
     "ccommit": "4.0.1",
     "dotenv": "17.4.2",
     "is-ci": "4.1.0"
-  },
-  "pnpm": {
-    "overrides": {
-      "cross-spawn": "7.0.6",
-      "postcss": "8.5.15",
-      "semver": "7.8.1",
-      "word-wrap": "1.2.5"
-    },
-    "patchedDependencies": {
-      "@semantic-release/commit-analyzer@13.0.1": "patches/@semantic-release__commit-analyzer@13.0.0.patch"
-    }
   }
 }

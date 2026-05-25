@@ -5,15 +5,13 @@ settings:
   excludeLinksFromLockfile: false
 
 overrides:
-  cross-spawn: 7.0.6
-  postcss: 8.5.15
-  semver: 7.8.1
-  word-wrap: 1.2.5
+  cross-spawn@^7.0.0: ^7.0.6
+  semver@^5.0.0: ^5.7.2
+  semver@^6.0.0: ^6.3.1
+  semver@^7.0.0: ^7.8.1
 
 patchedDependencies:
-  '@semantic-release/commit-analyzer@13.0.1':
-    hash: 12f29c0334ee55892c4c4d3dc4d9e1f0f18476656fb8c3c462a6203bc740493b
-    path: patches/@semantic-release__commit-analyzer@13.0.0.patch
+  '@semantic-release/commit-analyzer@13.0.1': 12f29c0334ee55892c4c4d3dc4d9e1f0f18476656fb8c3c462a6203bc740493b
 
 importers:
 
