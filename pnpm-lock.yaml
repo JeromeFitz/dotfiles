@@ -21,8 +21,8 @@ importers:
         specifier: 2.4.16
         version: 2.4.16
       '@jeromefitz/conventional-gitmoji':
-        specifier: 5.0.0
-        version: 5.0.0(lodash-es@4.17.23)
+        specifier: 5.0.1
+        version: 5.0.1(lodash-es@4.17.23)
       '@jeromefitz/prettier-config':
         specifier: 3.0.3
         version: 3.0.3
@@ -31,7 +31,7 @@ importers:
         version: 4.0.0(lodash-es@4.17.23)
       '@jeromefitz/semantic':
         specifier: 12.0.2
-        version: 12.0.2(@jeromefitz/conventional-gitmoji@5.0.0(lodash-es@4.17.23))
+        version: 12.0.2(@jeromefitz/conventional-gitmoji@5.0.1(lodash-es@4.17.23))
       ccommit:
         specifier: 4.0.1
         version: 4.0.1
@@ -125,11 +125,11 @@ packages:
     resolution: {integrity: sha512-ooWCrlZP11i8GImSjTHYHLkvFDP48nS4+204nGb1RiX/WXYHmJA2III9/e2DWVabCESdW7hBAEzHRqUn9OUVvQ==}
     engines: {node: '>=0.1.90'}
 
-  '@jeromefitz/conventional-gitmoji@5.0.0':
-    resolution: {integrity: sha512-ME52o12W7jY/aFXp3fIuEWns4UgcAOS1nBY3k8SpCka19zCKvm8qY1ImY2SuTEeFuxCsC0cIyXCAzmvMwFzwjg==}
+  '@jeromefitz/conventional-gitmoji@5.0.1':
+    resolution: {integrity: sha512-Jkdjp0qg6OuLvzjyVHptQ2IG6QIPvYVine87HOD6MZ3FaHxBTqPTFEUaPuxFh/9rE1im3rG49nyhekqSnRc0BA==}
     engines: {node: '>=24'}
     peerDependencies:
-      lodash-es: ^4.17.21
+      lodash-es: ^4.18.0
 
   '@jeromefitz/prettier-config@3.0.3':
     resolution: {integrity: sha512-rXz8t6kB3DAGIyKX5nieaNgJ4XVNJjgFKswEy5btCvK6UCZLITzNCg1YrdZ73ja41S/VV6A1lMsQxOEt7g7I9g==}
@@ -1532,7 +1532,7 @@ snapshots:
   '@colors/colors@1.5.0':
     optional: true
 
-  '@jeromefitz/conventional-gitmoji@5.0.0(lodash-es@4.17.23)':
+  '@jeromefitz/conventional-gitmoji@5.0.1(lodash-es@4.17.23)':
     dependencies:
       fast-json-stable-stringify: 2.1.0
       grapheme-splitter: 1.0.4
@@ -1557,9 +1557,9 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@jeromefitz/semantic@12.0.2(@jeromefitz/conventional-gitmoji@5.0.0(lodash-es@4.17.23))':
+  '@jeromefitz/semantic@12.0.2(@jeromefitz/conventional-gitmoji@5.0.1(lodash-es@4.17.23))':
     dependencies:
-      '@jeromefitz/conventional-gitmoji': 5.0.0(lodash-es@4.17.23)
+      '@jeromefitz/conventional-gitmoji': 5.0.1(lodash-es@4.17.23)
       '@semantic-release/commit-analyzer': 13.0.1(patch_hash=12f29c0334ee55892c4c4d3dc4d9e1f0f18476656fb8c3c462a6203bc740493b)(semantic-release@25.0.3)
       '@semantic-release/git': 10.0.1(semantic-release@25.0.3)
       semantic-release: 25.0.3
