@@ -1,8 +1,8 @@
 
 source $ZSH/zsh/brew.export.zsh
-source $ZSH/config/fnm.path.zsh
 source $ZSH/config/go.path.zsh
 source $ZSH/config/homebrew.path.zsh
+source $ZSH/config/fnm.path.zsh
 source $ZSH/config/java.path.zsh
 source $ZSH/config/python.path.zsh
 source $ZSH/config/rust.path.zsh
