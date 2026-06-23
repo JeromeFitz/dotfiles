@@ -34,8 +34,7 @@ brew 'mas' # Mac App Store command-line interface
 # brew 'mongodb'
 brew 'mysql'
 brew 'nginx'
-brew 'node'
-brew 'nvm'
+brew 'fnm'
 brew 'openssl'
 #
 brew 'php'

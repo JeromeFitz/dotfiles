@@ -1,11 +1,11 @@
-# nvm
-alias node12="nvm use 12 && nvm alias default 12"
-alias node14="nvm use 14 && nvm alias default 14"
-alias node16="nvm use 16 && nvm alias default 16"
-alias node18="nvm use 18 && nvm alias default 18"
-alias node20="nvm use 20 && nvm alias default 20"
-alias node22="nvm use 22 && nvm alias default 22"
-alias node24="nvm use 24 && nvm alias default 24"
+# fnm
+alias node12="fnm use 12 && fnm default 12"
+alias node14="fnm use 14 && fnm default 14"
+alias node16="fnm use 16 && fnm default 16"
+alias node18="fnm use 18 && fnm default 18"
+alias node20="fnm use 20 && fnm default 20"
+alias node22="fnm use 22 && fnm default 22"
+alias node24="fnm use 24 && fnm default 24"
 
 # ref: https://dev.to/trilon/how-to-delete-all-nodemodules-folders-on-your-machine-43dh
 alias listNodeModules="find . -name 'node_modules' -type d -prune -print | xargs du -chs"
