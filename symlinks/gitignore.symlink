@@ -12,3 +12,4 @@ tmp/**/*
 !tmp/cache/.keep
 *.pyc
 #.next/
+**/.claude/settings.local.json

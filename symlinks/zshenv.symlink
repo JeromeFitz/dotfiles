@@ -1,0 +1,2 @@
+export ZSH=$HOME/.dotfiles
+eval "$(/opt/homebrew/bin/fnm env --use-on-cd --shell zsh)"
