@@ -1,9 +1,9 @@
 
 source $ZSH/zsh/brew.export.zsh
+source $ZSH/config/fnm.path.zsh
 source $ZSH/config/go.path.zsh
 source $ZSH/config/homebrew.path.zsh
 source $ZSH/config/java.path.zsh
-source $ZSH/config/nvm.path.zsh
 source $ZSH/config/python.path.zsh
 source $ZSH/config/rust.path.zsh
 source $ZSH/config/system.path.zsh
@@ -27,6 +27,5 @@ source $ZSH/zsh/fpath.zsh
 source $ZSH/zsh/prompt.zsh
 autoload -Uz compinit && compinit
 source $ZSH/config/git.completion.zsh
-source $ZSH/config/nvm.completion.zsh
 source $ZSH/config/ruby.completion.zsh
 source $ZSH/config/zsh.completion.zsh
