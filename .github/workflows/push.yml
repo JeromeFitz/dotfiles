@@ -1,4 +1,4 @@
-name: '  🔀️  Push'
+name: "  🔀️  Push"
 
 on:
   push:
@@ -26,7 +26,7 @@ env:
 
 jobs:
   pull:
-    name: '👷️  CI'
+    name: "👷️  CI"
     if: (contains(github.event.head_commit.message, '[b]') || github.ref == 'refs/heads/main') && !contains(github.event.head_commit.message, '[skip ci]')
     timeout-minutes: 20
     runs-on: ubuntu-latest
@@ -39,17 +39,17 @@ jobs:
       # TURBO_TOKEN: ${{ secrets.TURBO_TOKEN }}
       # TURBO_TEAM: ${{ secrets.TURBO_TEAM }}
     steps:
-      - name: '🐙️  Checkout'
+      - name: "🐙️  Checkout"
         id: pull-checkout
         uses: actions/checkout@v6
         with:
           fetch-depth: 10
 
-      - name: '💽️  Init'
+      - name: "💽️  Init"
         id: push-init
         uses: JeromeFitz/packages/.github/actions/init@main
 
-      - name: '📦  Install'
+      - name: "📦  Install"
         id: push-install
         uses: JeromeFitz/packages/.github/actions/install@main
 
@@ -67,14 +67,14 @@ jobs:
       #     TURBO_TEAM: ${{ secrets.TURBO_TEAM }}
       #     TURBO_TOKEN: ${{ secrets.TURBO_TOKEN }}
 
-      - name: '🚨️  Lint'
-        id: push-lint
+      - name: "🎯  Quality"
+        id: push-quality
         shell: bash
         run: |
-          pnpm run lint
+          pnpm run quality
 
       # https://docs.github.com/en/actions/learn-github-actions/expressions
-      - name: '📛  Commit Message'
+      - name: "📛  Commit Message"
         id: push-commit-message
         run: |
           echo "message=$(git log --no-merges -1 --oneline)" >> $GITHUB_OUTPUT
@@ -86,7 +86,7 @@ jobs:
       #     TURBO_TEAM: ${{ secrets.TURBO_TEAM }}
       #     TURBO_TOKEN: ${{ secrets.TURBO_TOKEN }}
 
-      - name: '🏷️  Release'
+      - name: "🏷️  Release"
         id: push-release
         if: ${{ contains(steps.push-commit-message.outputs.message, '[b]') }}
         uses: JeromeFitz/packages/.github/actions/release@main

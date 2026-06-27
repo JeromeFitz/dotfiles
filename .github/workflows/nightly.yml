@@ -1,4 +1,4 @@
-name: '  🌃️  Nightly'
+name: "  🌃️  Nightly"
 on:
   schedule:
     # * is a special character in YAML so you have to quote this string
@@ -12,7 +12,7 @@ on:
     #        │ │ │ │ │
     #        │ │ │ │ │
     #        * * * * *
-    - cron: '0 0 * * *'
+    - cron: "0 0 * * *"
 
 env:
   GH_BOT_TOKEN: ${{ secrets.GH_BOT_TOKEN }}
@@ -24,7 +24,7 @@ env:
 
 jobs:
   pull:
-    name: '👷️  CI'
+    name: "👷️  CI"
     if: github.ref == 'refs/heads/main'
     timeout-minutes: 20
     runs-on: ubuntu-latest
@@ -37,17 +37,17 @@ jobs:
       # TURBO_TOKEN: ${{ secrets.TURBO_TOKEN }}
       # TURBO_TEAM: ${{ secrets.TURBO_TEAM }}
     steps:
-      - name: '🐙️  Checkout'
+      - name: "🐙️  Checkout"
         id: pull-checkout
         uses: actions/checkout@v6
         with:
           fetch-depth: 100
 
-      - name: '💽️  Init'
+      - name: "💽️  Init"
         id: cron-init
         uses: JeromeFitz/packages/.github/actions/init@main
 
-      - name: '📦  Install'
+      - name: "📦  Install"
         id: cron-install
         uses: JeromeFitz/packages/.github/actions/install@main
 
@@ -65,11 +65,11 @@ jobs:
       #     TURBO_TEAM: ${{ secrets.TURBO_TEAM }}
       #     TURBO_TOKEN: ${{ secrets.TURBO_TOKEN }}
 
-      - name: '🚨️  Lint'
-        id: cron-lint
+      - name: "🎯  Quality"
+        id: cron-quality
         shell: bash
         run: |
-          pnpm run lint
+          pnpm run quality
 
       # - name: '🏗️  Build'
       #   id: cron-build
@@ -78,7 +78,7 @@ jobs:
       #     TURBO_TEAM: ${{ secrets.TURBO_TEAM }}
       #     TURBO_TOKEN: ${{ secrets.TURBO_TOKEN }}
 
-      - name: '🏷️  Release'
+      - name: "🏷️  Release"
         id: cron-release
         uses: JeromeFitz/packages/.github/actions/release@main
         with:

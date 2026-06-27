@@ -1,0 +1,4 @@
+{
+  "ignorePatterns": ["node_modules"],
+  "sortImports": true
+}
