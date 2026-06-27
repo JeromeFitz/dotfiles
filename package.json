@@ -50,12 +50,12 @@
   "devEngines": {
     "packageManager": {
       "name": "pnpm",
-      "version": "11.8.0"
+      "version": "11.9.0"
+    },
+    "runtime": {
+      "name": "node",
+      "version": ">=24.17.0 <25"
     }
-  },
-  "engines": {
-    "node": ">=24.14.0 <25",
-    "pnpm": "11.9.0"
   },
   "packageManager": "pnpm@11.9.0"
 }
