@@ -1,4 +1,4 @@
-name: '  ▶️  Pull'
+name: "  ▶️  Pull"
 
 on:
   pull_request:
@@ -26,7 +26,7 @@ env:
 
 jobs:
   pull:
-    name: '👷️  CI'
+    name: "👷️  CI"
     if: github.event.pull_request.draft == false && !contains(github.event.head_commit.message, '[skip ci]')
     timeout-minutes: 20
     runs-on: ubuntu-latest
@@ -44,14 +44,14 @@ jobs:
       IS_ACTOR_RENOVATE: ${{ github.actor == 'renovate[bot]' }}
       IS_LABEL_PNPM: ${{ contains( github.event.pull_request.labels.*.name, '📦 pnpm' ) }}
     steps:
-      - name: '🐙️  Checkout'
+      - name: "🐙️  Checkout"
         id: pull-checkout
         uses: actions/checkout@v6
         with:
           ref: ${{ github.event.pull_request.head.ref }}
           fetch-depth: 1
 
-      - name: '💽️  Init'
+      - name: "💽️  Init"
         id: pull-init
         uses: JeromeFitz/packages/.github/actions/init@main
 
@@ -91,7 +91,7 @@ jobs:
       #     IS_ACTOR_RENOVATE: ${{ env.IS_ACTOR_RENOVATE }}
       #     IS_LABEL_PNPM: ${{ env.IS_LABEL_PNPM }}
 
-      - name: '📦  Install'
+      - name: "📦  Install"
         id: pull-install
         uses: JeromeFitz/packages/.github/actions/install@main
 
@@ -109,14 +109,14 @@ jobs:
       #     TURBO_TEAM: ${{ secrets.TURBO_TEAM }}
       #     TURBO_TOKEN: ${{ secrets.TURBO_TOKEN }}
 
-      - name: '🚨️  Lint'
-        id: pull-lint
+      - name: "🎯  Quality"
+        id: pull-quality
         shell: bash
         run: |
-          pnpm run lint
+          pnpm run quality
 
       # https://docs.github.com/en/actions/learn-github-actions/expressions
-      - name: '📛  Commit Message'
+      - name: "📛  Commit Message"
         id: pull-commit-message
         run: |
           echo "message=$(git log --no-merges -1 --oneline)" >> $GITHUB_OUTPUT

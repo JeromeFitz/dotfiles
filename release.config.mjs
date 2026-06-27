@@ -1,26 +1,25 @@
-import { getConfig } from '@jeromefitz/semantic'
-
-import isCI from 'is-ci'
+import { getConfig } from "@jeromefitz/semantic";
+import isCI from "is-ci";
 
 if (!isCI) {
-  const dotenv = await import('dotenv')
-  dotenv.config({ path: './.env' })
+  const dotenv = await import("dotenv");
+  dotenv.config({ path: "./.env" });
 }
 
-const branches = [{ name: 'main' }, { name: 'develop', prerelease: 'develop' }]
+const branches = [{ name: "main" }, { name: "develop", prerelease: "develop" }];
 
 const _config = {
   branches,
   contributorsProhibitList: {
     email: [],
-    login: ['BotJerome', 'JeromeFitz'],
+    login: ["BotJerome", "JeromeFitz"],
   },
   enableNpm: false,
   repositoryUrl: `https://github.com/JeromeFitz/dotfiles`,
   // biome-ignore lint/suspicious/noTemplateCurlyInString: migrate
-  tagFormat: 'v${version}',
-}
+  tagFormat: "v${version}",
+};
 
-const config = getConfig(_config)
+const config = getConfig(_config);
 
-export default config
+export default config;

@@ -6,14 +6,15 @@ overrides:
   semver@^6.0.0: ^6.3.1
   semver@^7.0.0: ^7.8.1
 patchedDependencies:
-  '@semantic-release/commit-analyzer@13.0.1': patches/@semantic-release__commit-analyzer@13.0.0.patch
+  "@semantic-release/commit-analyzer@13.0.1": patches/@semantic-release__commit-analyzer@13.0.0.patch
 publicHoistPattern:
-  - '*ccommit*'
-  - '*eslint*'
-  - '*lint-staged*'
-  - '*prettier*'
-  - '*semantic*'
+  - "*ccommit*"
+  - "*eslint*"
+  - "*lint-staged*"
+  - "*oxfmt*"
+  - "*oxlint*"
+  - "*semantic*"
 registry: https://registry.npmjs.org/
 saveExact: true
 strictPeerDependencies: false
-tagVersionPrefix: ''
+tagVersionPrefix: ""
