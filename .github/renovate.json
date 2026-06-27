@@ -11,7 +11,7 @@
   "commitMessageSuffix": "",
   "commitMessageTopic": " {{depName}}@{{#if isPinDigest}}{{{newDigest}}}{{else}}{{#if isMajor}}{{{newVersion}}}{{else}}{{#if isSingleVersion}}{{{newVersion}}}{{else}}{{#if newValue}}{{{newValue}}}{{else}}{{{newDigest}}}{{/if}}{{/if}}{{/if}}{{/if}}",
   "constraints": {
-    "pnpm": "11.8.0"
+    "pnpm": "11.9.0"
   },
   "dependencyDashboard": false,
   "labels": ["📦️ Dependencies"],
