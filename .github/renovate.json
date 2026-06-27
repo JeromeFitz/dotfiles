@@ -2,15 +2,14 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [":semanticCommitsDisabled"],
   "automerge": false,
-  "baseBranches": ["main"],
+  "baseBranchPatterns": ["main"],
   "branchPrefix": "deps/",
-  "commitMessage": "{{{commitMessagePrefix}}} {{{commitMessageAction}}} {{{commitMessageTopic}}} {{{commitMessageExtra}}} {{{commitMessageSuffix}}}",
-  "commitMessageAction": "",
+  "commitMessageAction": "(deps)",
   "commitMessageExtra": "",
-  "commitMessagePrefix": "⬆️  (deps)",
+  "commitMessagePrefix": "⬆️",
   "commitMessageSuffix": "",
   "commitMessageTopic": " {{depName}}@{{#if isPinDigest}}{{{newDigest}}}{{else}}{{#if isMajor}}{{{newVersion}}}{{else}}{{#if isSingleVersion}}{{{newVersion}}}{{else}}{{#if newValue}}{{{newValue}}}{{else}}{{{newDigest}}}{{/if}}{{/if}}{{/if}}{{/if}}",
-  "dependencyDashboard": false,
+  "dependencyDashboard": true,
   "labels": ["📦️ Dependencies"],
   "packageRules": [
     {
@@ -27,29 +26,32 @@
       "minimumReleaseAge": "1 day"
     },
     {
-      "commitMessagePrefix": "👷  (actions)",
-      "commitMessageExtra": "{{depName}}@{{#if isPinDigest}}{{{newDigest}}}{{else}}{{#if isMajor}}{{{newVersion}}}{{else}}{{#if isSingleVersion}}{{{newVersion}}}{{else}}{{#if newValue}}{{{newValue}}}{{else}}{{{newDigest}}}{{/if}}{{/if}}{{/if}}{{/if}}",
-      "commitMessageTopic": " {{depName}}",
-      "groupName": "github actions :octocat: ...",
+      "commitMessageAction": "(actions)",
+      "commitMessagePrefix": "👷",
+      "groupName": "github actions :octocat:",
       "groupSlug": "github-actions",
-      "matchPackagePatterns": ["^actions"]
+      "matchPackageNames": ["/^actions/"]
     },
     {
       "allowedVersions": "<25",
-      "commitMessagePrefix": "📦  (deps-dev)",
+      "commitMessageAction": "(deps-dev)",
+      "commitMessagePrefix": "📦",
       "matchDepTypes": ["devDependencies", "dependencies"],
       "matchPackageNames": ["@types/node"]
     },
     {
-      "commitMessagePrefix": "⬆️  (deps)",
+      "commitMessageAction": "(deps)",
+      "commitMessagePrefix": "⬆️",
       "matchDepTypes": ["dependencies"]
     },
     {
-      "commitMessagePrefix": "📦  (deps-peer)",
+      "commitMessageAction": "(deps-peer)",
+      "commitMessagePrefix": "📦",
       "matchDepTypes": ["peerDependencies"]
     },
     {
-      "commitMessagePrefix": "📦  (deps-dev)",
+      "commitMessageAction": "(deps-dev)",
+      "commitMessagePrefix": "📦",
       "matchDepTypes": ["devDependencies"]
     },
     {
@@ -63,7 +65,6 @@
   "prFooter": "<!-- COMMIT_BODY_TEXT_END -->",
   "prHeader": "<!-- COMMIT_BODY_TEXT_BEGIN -->",
   "prHourlyLimit": 2,
-  "prTitle": "{{{commitMessagePrefix}}} {{{commitMessageAction}}} {{{commitMessageTopic}}} {{{commitMessageExtra}}} {{{commitMessageSuffix}}}",
   "rebaseWhen": "conflicted",
   "semanticCommits": "disabled"
 }
