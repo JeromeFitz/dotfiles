@@ -12,10 +12,20 @@
   "commitMessageTopic": " {{depName}}@{{#if isPinDigest}}{{{newDigest}}}{{else}}{{#if isMajor}}{{{newVersion}}}{{else}}{{#if isSingleVersion}}{{{newVersion}}}{{else}}{{#if newValue}}{{{newValue}}}{{else}}{{{newDigest}}}{{/if}}{{/if}}{{/if}}{{/if}}",
   "dependencyDashboard": false,
   "labels": ["📦️ Dependencies"],
-  "node": {
-    "enabled": false
-  },
   "packageRules": [
+    {
+      "matchCategories": ["node"],
+      "enabled": false
+    },
+    {
+      "enabled": false,
+      "matchFileNames": ["pnpm-workspace.yaml"],
+      "matchUpdateTypes": ["major"]
+    },
+    {
+      "matchDatasources": ["npm"],
+      "minimumReleaseAge": "1 day"
+    },
     {
       "commitMessagePrefix": "👷  (actions)",
       "commitMessageExtra": "{{depName}}@{{#if isPinDigest}}{{{newDigest}}}{{else}}{{#if isMajor}}{{{newVersion}}}{{else}}{{#if isSingleVersion}}{{{newVersion}}}{{else}}{{#if newValue}}{{{newValue}}}{{else}}{{{newDigest}}}{{/if}}{{/if}}{{/if}}{{/if}}",
@@ -25,7 +35,7 @@
       "matchPackagePatterns": ["^actions"]
     },
     {
-      "allowedVersions": "<21",
+      "allowedVersions": "<25",
       "commitMessagePrefix": "📦  (deps-dev)",
       "matchDepTypes": ["devDependencies", "dependencies"],
       "matchPackageNames": ["@types/node"]
