@@ -220,8 +220,8 @@ importers:
         specifier: 5.1.0
         version: 5.1.0(lodash-es@4.17.23)
       '@jeromefitz/release-notes-generator':
-        specifier: 4.0.3
-        version: 4.0.3(lodash-es@4.17.23)
+        specifier: 4.1.0
+        version: 4.1.0(lodash-es@4.17.23)
       '@jeromefitz/semantic':
         specifier: 12.0.2
         version: 12.0.2(@jeromefitz/conventional-gitmoji@5.1.0(lodash-es@4.17.23))
@@ -273,8 +273,8 @@ packages:
     peerDependencies:
       lodash-es: ^4.18.0
 
-  '@jeromefitz/release-notes-generator@4.0.3':
-    resolution: {integrity: sha512-v5PqKP5uZ2KY6q9t1GHYi2/mqbBgGrfy0zx7+pAnWjDLZL+XZ0u3EnVrk7ckYu9hcAIsWFlDftFU5iDAvrZ4gg==}
+  '@jeromefitz/release-notes-generator@4.1.0':
+    resolution: {integrity: sha512-HbdqkXdUskDyruCzsuOdbAwwT1upRafqd8SCv1y7w8eL+Fnra9XR4wKX9ATal2hTHvDqqdSgFUFkTfWyrIDAww==}
     engines: {node: '>=24'}
     peerDependencies:
       lodash-es: ^4.18.0
@@ -815,11 +815,6 @@ packages:
     resolution: {integrity: sha512-tQMagCOC59EVgNZcC5zl7XqO30Wki9i9J3acbUvkaosCT6JX3EeFwJD7Qqp4MCikRnzS18WXV3BLIQ66ytu6+Q==}
     engines: {node: '>=18'}
 
-  conventional-commits-parser@6.3.0:
-    resolution: {integrity: sha512-RfOq/Cqy9xV9bOA8N+ZH6DlrDR+5S3Mi0B5kACEjESpE+AviIpAptx9a9cFpWCCvgRtWT+0BbUw+e1BZfts9jg==}
-    engines: {node: '>=18'}
-    hasBin: true
-
   conventional-commits-parser@6.4.0:
     resolution: {integrity: sha512-tvRg7FIBNlyPzjdG8wWRlPHQJJHI7DylhtRGeU9Lq+JuoPh5BKpPRX83ZdLrvXuOSu5Eo/e7SzOQhU4Hd2Miuw==}
     engines: {node: '>=18'}
@@ -849,8 +844,8 @@ packages:
     resolution: {integrity: sha512-x8dy3RnvYdlUcPOjkEHqozhiwzKNSq7GcPuXFbnyMOCHxX8V3OgIg/pYuabl2sbUPfIJaeAQB7PMOK8DFIdoRA==}
     engines: {node: '>=12'}
 
-  date-fns@4.3.0:
-    resolution: {integrity: sha512-OYcL+3N/jyWbYdFGqoMAhytDgxP9pbYPUUiRCOgn4Fewaadk9l/Wam4Avciiyp2BgkpfQyBV9B+ehnVJych+eQ==}
+  date-fns@4.4.0:
+    resolution: {integrity: sha512-+1UMbeh68lH1SegH83CGWwpb6OHHbpSgr3+s5Eww5M4CAgswBpoWS0AjTOfEJ33HiYKz1hdj/KTFprzXHmq/6w==}
 
   debug@4.4.3:
     resolution: {integrity: sha512-RGwwWnwQvkVfavKVt22FGLw+xYSdzARwm0ru6DhTVA3umU5hZc28V3kO4stgYryrTlLpuvgI9GiijltAjNbcqA==}
@@ -1910,18 +1905,15 @@ snapshots:
       lodash-es: 4.17.23
       title: 4.0.1
 
-  '@jeromefitz/release-notes-generator@4.0.3(lodash-es@4.17.23)':
+  '@jeromefitz/release-notes-generator@4.1.0(lodash-es@4.17.23)':
     dependencies:
       '@octokit/rest': 22.0.1
       conventional-commits-filter: 5.0.0
       conventional-commits-parser: 6.4.0
-      date-fns: 4.3.0
-      import-from-esm: 2.0.0
+      date-fns: 4.4.0
       lodash-es: 4.17.23
       read-package-up: 12.0.0
       semver: 7.8.1
-    transitivePeerDependencies:
-      - supports-color
 
   '@jeromefitz/semantic@12.0.2(@jeromefitz/conventional-gitmoji@5.1.0(lodash-es@4.17.23))':
     dependencies:
@@ -2144,7 +2136,7 @@ snapshots:
       conventional-changelog-angular: 8.3.0
       conventional-changelog-writer: 8.4.0
       conventional-commits-filter: 5.0.0
-      conventional-commits-parser: 6.3.0
+      conventional-commits-parser: 6.4.0
       debug: 4.4.3
       import-from-esm: 2.0.0
       lodash-es: 4.17.23
@@ -2218,7 +2210,7 @@ snapshots:
       conventional-changelog-angular: 8.3.0
       conventional-changelog-writer: 8.4.0
       conventional-commits-filter: 5.0.0
-      conventional-commits-parser: 6.3.0
+      conventional-commits-parser: 6.4.0
       debug: 4.4.3
       get-stream: 7.0.1
       import-from-esm: 2.0.0
@@ -2389,11 +2381,6 @@ snapshots:
 
   conventional-commits-filter@5.0.0: {}
 
-  conventional-commits-parser@6.3.0:
-    dependencies:
-      '@simple-libs/stream-utils': 1.2.0
-      meow: 13.2.0
-
   conventional-commits-parser@6.4.0:
     dependencies:
       '@simple-libs/stream-utils': 1.2.0
@@ -2420,7 +2407,7 @@ snapshots:
     dependencies:
       type-fest: 1.4.0
 
-  date-fns@4.3.0: {}
+  date-fns@4.4.0: {}
 
   debug@4.4.3:
     dependencies:
