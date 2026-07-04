@@ -38,7 +38,7 @@
     "uninstall": "sh ./scripts/uninstall"
   },
   "dependencies": {
-    "@jeromefitz/conventional-gitmoji": "5.1.0",
+    "@jeromefitz/conventional-gitmoji": "5.2.0",
     "@jeromefitz/release-notes-generator": "4.1.0",
     "@jeromefitz/semantic": "12.1.0",
     "ccommit": "4.1.0",
