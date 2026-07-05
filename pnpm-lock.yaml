@@ -223,8 +223,8 @@ importers:
         specifier: 4.2.0
         version: 4.2.0(lodash-es@4.17.23)
       '@jeromefitz/semantic':
-        specifier: 12.1.0
-        version: 12.1.0(@jeromefitz/conventional-gitmoji@5.2.0(lodash-es@4.17.23))
+        specifier: 12.2.0
+        version: 12.2.0(@jeromefitz/conventional-gitmoji@5.2.0(lodash-es@4.17.23))
       ccommit:
         specifier: 4.2.0
         version: 4.2.0
@@ -279,8 +279,8 @@ packages:
     peerDependencies:
       lodash-es: ^4.18.0
 
-  '@jeromefitz/semantic@12.1.0':
-    resolution: {integrity: sha512-1WreoV+RnFR3Qgc+0oDYEzVvo/LKyZFoQwFtdcXldvJGYagy3L/j2pvszHgQc8C0yx5K1TL+4dS/5wIQiLymkA==}
+  '@jeromefitz/semantic@12.2.0':
+    resolution: {integrity: sha512-s7DczD+ZJeZ5YFTLn4NRsr7NT4cvA61W65ZO7Bv78M3RssqMAZwyBeiqtp/ZNHIZhXHCV32O1eTJI+TafYa3rA==}
     engines: {node: '>=24'}
     peerDependencies:
       '@jeromefitz/conventional-gitmoji': ^5.0.0
@@ -1928,7 +1928,7 @@ snapshots:
       read-package-up: 12.0.0
       semver: 7.8.1
 
-  '@jeromefitz/semantic@12.1.0(@jeromefitz/conventional-gitmoji@5.2.0(lodash-es@4.17.23))':
+  '@jeromefitz/semantic@12.2.0(@jeromefitz/conventional-gitmoji@5.2.0(lodash-es@4.17.23))':
     dependencies:
       '@jeromefitz/conventional-gitmoji': 5.2.0(lodash-es@4.17.23)
       '@semantic-release/commit-analyzer': 13.0.1(patch_hash=12f29c0334ee55892c4c4d3dc4d9e1f0f18476656fb8c3c462a6203bc740493b)(semantic-release@25.0.5)
