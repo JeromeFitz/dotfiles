@@ -226,8 +226,8 @@ importers:
         specifier: 12.1.0
         version: 12.1.0(@jeromefitz/conventional-gitmoji@5.2.0(lodash-es@4.17.23))
       ccommit:
-        specifier: 4.1.0
-        version: 4.1.0
+        specifier: 4.2.0
+        version: 4.2.0
       dotenv:
         specifier: 17.4.2
         version: 17.4.2
@@ -734,8 +734,8 @@ packages:
     resolution: {integrity: sha512-P8BjAsXvZS+VIDUI11hHCQEv74YT67YUi5JJFNWIqL235sBmjX4+qx9Muvls5ivyNENctx46xQLQ3aTuE7ssaQ==}
     engines: {node: '>=6'}
 
-  ccommit@4.1.0:
-    resolution: {integrity: sha512-1y3KtzpuSvTuxFOrGWIAQPbtygJVrpEue/tnrx8ZZNpLi+MCVF5zw7CVi4U8qorM4o/vXY23o7sARvBsoS7/Vg==}
+  ccommit@4.2.0:
+    resolution: {integrity: sha512-i/D76jj+/4zjwCzNBcc3IUJ5H5qul1CLbVES2fEwXHObEgeUs4dzxlXzdM69D+7vmiDcr0aJnc6FrbZnN3NhIg==}
     engines: {node: '>=24'}
     hasBin: true
 
@@ -2296,7 +2296,7 @@ snapshots:
 
   callsites@3.1.0: {}
 
-  ccommit@4.1.0:
+  ccommit@4.2.0:
     dependencies:
       ansi-colors: 4.1.3
       enquirer: 2.4.1
