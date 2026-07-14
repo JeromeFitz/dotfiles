@@ -41,7 +41,7 @@
     "@jeromefitz/conventional-gitmoji": "5.2.0",
     "@jeromefitz/release-notes-generator": "4.2.1",
     "@jeromefitz/semantic": "12.2.1",
-    "ccommit": "4.2.0",
+    "ccommit": "4.2.1",
     "dotenv": "17.4.2",
     "is-ci": "4.1.0",
     "oxfmt": "0.58.0",
