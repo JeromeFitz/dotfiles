@@ -223,8 +223,8 @@ importers:
         specifier: 4.2.1
         version: 4.2.1(lodash-es@4.17.23)
       '@jeromefitz/semantic':
-        specifier: 12.2.0
-        version: 12.2.0(@jeromefitz/conventional-gitmoji@5.2.0(lodash-es@4.17.23))
+        specifier: 12.2.1
+        version: 12.2.1(@jeromefitz/conventional-gitmoji@5.2.0(lodash-es@4.17.23))
       ccommit:
         specifier: 4.2.0
         version: 4.2.0
@@ -279,8 +279,8 @@ packages:
     peerDependencies:
       lodash-es: ^4.18.0
 
-  '@jeromefitz/semantic@12.2.0':
-    resolution: {integrity: sha512-s7DczD+ZJeZ5YFTLn4NRsr7NT4cvA61W65ZO7Bv78M3RssqMAZwyBeiqtp/ZNHIZhXHCV32O1eTJI+TafYa3rA==}
+  '@jeromefitz/semantic@12.2.1':
+    resolution: {integrity: sha512-MvKqPGwzpw5fhIla7Q8ikjrs+QkgZYCSko26OvgqBtfNo5mSJpYnl6irVv+Em/QUIbB0SATzoGD8k4h2Gg+XMg==}
     engines: {node: '>=24'}
     peerDependencies:
       '@jeromefitz/conventional-gitmoji': ^5.0.0
@@ -1602,8 +1602,8 @@ packages:
   semantic-release-commit-filter@1.0.2:
     resolution: {integrity: sha512-LpIB1UN78oRmJnqgPdvA/qRgVitih5V1Ybyszv8GcOBAJWJBHGWI1PmSrOfdEmbf1ZvGkdK/NNDdBHbuSQqSyQ==}
 
-  semantic-release@25.0.5:
-    resolution: {integrity: sha512-mn61SUJwtM8ThrWn2WmgLVpwVJeG/hPSupua1psdMoufmwRIPyvRLkRkL0JDXkP67OntlLWUYnBnfVc8EDO3/g==}
+  semantic-release@25.0.6:
+    resolution: {integrity: sha512-EGS5PWCDavYD4jAE4vKQ+VKcwXFpxLsKg05UcrUQwqxUCM1KtNRx9ZdMyYJL3z2aTyAH9zDgQSNFjRvbsIuKHQ==}
     engines: {node: ^22.14.0 || >= 24.10.0}
     hasBin: true
 
@@ -1932,12 +1932,12 @@ snapshots:
       read-package-up: 12.0.0
       semver: 7.8.1
 
-  '@jeromefitz/semantic@12.2.0(@jeromefitz/conventional-gitmoji@5.2.0(lodash-es@4.17.23))':
+  '@jeromefitz/semantic@12.2.1(@jeromefitz/conventional-gitmoji@5.2.0(lodash-es@4.17.23))':
     dependencies:
       '@jeromefitz/conventional-gitmoji': 5.2.0(lodash-es@4.17.23)
-      '@semantic-release/commit-analyzer': 13.0.1(patch_hash=12f29c0334ee55892c4c4d3dc4d9e1f0f18476656fb8c3c462a6203bc740493b)(semantic-release@25.0.5)
-      '@semantic-release/git': 10.0.1(semantic-release@25.0.5)
-      semantic-release: 25.0.5
+      '@semantic-release/commit-analyzer': 13.0.1(patch_hash=12f29c0334ee55892c4c4d3dc4d9e1f0f18476656fb8c3c462a6203bc740493b)(semantic-release@25.0.6)
+      '@semantic-release/git': 10.0.1(semantic-release@25.0.6)
+      semantic-release: 25.0.6
       semantic-release-commit-filter: 1.0.2
       title: 4.0.1
     transitivePeerDependencies:
@@ -2148,7 +2148,7 @@ snapshots:
 
   '@sec-ant/readable-stream@0.4.1': {}
 
-  '@semantic-release/commit-analyzer@13.0.1(patch_hash=12f29c0334ee55892c4c4d3dc4d9e1f0f18476656fb8c3c462a6203bc740493b)(semantic-release@25.0.5)':
+  '@semantic-release/commit-analyzer@13.0.1(patch_hash=12f29c0334ee55892c4c4d3dc4d9e1f0f18476656fb8c3c462a6203bc740493b)(semantic-release@25.0.6)':
     dependencies:
       conventional-changelog-angular: 8.3.0
       conventional-changelog-writer: 8.4.0
@@ -2158,7 +2158,7 @@ snapshots:
       import-from-esm: 2.0.0
       lodash-es: 4.17.23
       micromatch: 4.0.8
-      semantic-release: 25.0.5
+      semantic-release: 25.0.6
     transitivePeerDependencies:
       - supports-color
 
@@ -2166,7 +2166,7 @@ snapshots:
 
   '@semantic-release/error@4.0.0': {}
 
-  '@semantic-release/git@10.0.1(semantic-release@25.0.5)':
+  '@semantic-release/git@10.0.1(semantic-release@25.0.6)':
     dependencies:
       '@semantic-release/error': 3.0.0
       aggregate-error: 3.1.0
@@ -2176,11 +2176,11 @@ snapshots:
       lodash: 4.17.23
       micromatch: 4.0.8
       p-reduce: 2.1.0
-      semantic-release: 25.0.5
+      semantic-release: 25.0.6
     transitivePeerDependencies:
       - supports-color
 
-  '@semantic-release/github@12.0.6(semantic-release@25.0.5)':
+  '@semantic-release/github@12.0.6(semantic-release@25.0.6)':
     dependencies:
       '@octokit/core': 7.0.6
       '@octokit/plugin-paginate-rest': 14.0.0(@octokit/core@7.0.6)
@@ -2196,14 +2196,14 @@ snapshots:
       lodash-es: 4.17.23
       mime: 4.1.0
       p-filter: 4.1.0
-      semantic-release: 25.0.5
+      semantic-release: 25.0.6
       tinyglobby: 0.2.15
       undici: 7.24.4
       url-join: 5.0.0
     transitivePeerDependencies:
       - supports-color
 
-  '@semantic-release/npm@13.1.5(semantic-release@25.0.5)':
+  '@semantic-release/npm@13.1.5(semantic-release@25.0.6)':
     dependencies:
       '@actions/core': 3.0.0
       '@semantic-release/error': 4.0.0
@@ -2218,11 +2218,11 @@ snapshots:
       rc: 1.2.8
       read-pkg: 10.1.0
       registry-auth-token: 5.1.1
-      semantic-release: 25.0.5
+      semantic-release: 25.0.6
       semver: 7.8.1
       tempy: 3.2.0
 
-  '@semantic-release/release-notes-generator@14.1.0(semantic-release@25.0.5)':
+  '@semantic-release/release-notes-generator@14.1.0(semantic-release@25.0.6)':
     dependencies:
       conventional-changelog-angular: 8.3.0
       conventional-changelog-writer: 8.4.0
@@ -2234,7 +2234,7 @@ snapshots:
       into-stream: 7.0.0
       lodash-es: 4.17.23
       read-package-up: 11.0.0
-      semantic-release: 25.0.5
+      semantic-release: 25.0.6
     transitivePeerDependencies:
       - supports-color
 
@@ -3068,13 +3068,13 @@ snapshots:
 
   semantic-release-commit-filter@1.0.2: {}
 
-  semantic-release@25.0.5:
+  semantic-release@25.0.6:
     dependencies:
-      '@semantic-release/commit-analyzer': 13.0.1(patch_hash=12f29c0334ee55892c4c4d3dc4d9e1f0f18476656fb8c3c462a6203bc740493b)(semantic-release@25.0.5)
+      '@semantic-release/commit-analyzer': 13.0.1(patch_hash=12f29c0334ee55892c4c4d3dc4d9e1f0f18476656fb8c3c462a6203bc740493b)(semantic-release@25.0.6)
       '@semantic-release/error': 4.0.0
-      '@semantic-release/github': 12.0.6(semantic-release@25.0.5)
-      '@semantic-release/npm': 13.1.5(semantic-release@25.0.5)
-      '@semantic-release/release-notes-generator': 14.1.0(semantic-release@25.0.5)
+      '@semantic-release/github': 12.0.6(semantic-release@25.0.6)
+      '@semantic-release/npm': 13.1.5(semantic-release@25.0.6)
+      '@semantic-release/release-notes-generator': 14.1.0(semantic-release@25.0.6)
       aggregate-error: 5.0.0
       cosmiconfig: 9.0.1
       debug: 4.4.3
