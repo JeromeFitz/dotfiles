@@ -40,7 +40,7 @@
   "dependencies": {
     "@jeromefitz/conventional-gitmoji": "5.2.0",
     "@jeromefitz/release-notes-generator": "4.2.1",
-    "@jeromefitz/semantic": "12.2.0",
+    "@jeromefitz/semantic": "12.2.1",
     "ccommit": "4.2.0",
     "dotenv": "17.4.2",
     "is-ci": "4.1.0",
