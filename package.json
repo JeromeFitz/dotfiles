@@ -57,5 +57,5 @@
       "version": ">=24.17.0 <25"
     }
   },
-  "packageManager": "pnpm@11.9.0"
+  "packageManager": "pnpm@11.17.0"
 }
