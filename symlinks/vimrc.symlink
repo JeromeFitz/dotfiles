@@ -42,25 +42,16 @@ call plug#begin('~/.vim/plugged')
   " Define plugins via GitHub repos
   Plug 'dracula/vim', { 'as': 'dracula' }
   Plug 'AndrewRadev/splitjoin.vim'
-  Plug 'acarapetis/vim-colors-github'
-  Plug 'ctrlpvim/ctrlp.vim'
-  Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
   Plug 'janko-m/vim-test'
+  Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+  Plug 'junegunn/fzf.vim'
   Plug 'junegunn/vim-easy-align'
-  Plug 'leafgarland/typescript-vim'
-  Plug 'mxw/vim-jsx'
   Plug 'nicholaides/words-to-avoid.vim'
-  Plug 'pangloss/vim-javascript'
-  Plug 'pbrisbin/vim-mkdir'
   Plug 'sbdchd/neoformat'
-  Plug 'tpope/vim-bundler'
   Plug 'tpope/vim-endwise'
   Plug 'tpope/vim-eunuch'
   Plug 'tpope/vim-fugitive'
   Plug 'tpope/vim-projectionist'
-  Plug 'tpope/vim-rails'
-  Plug 'vim-ruby/vim-ruby'
-  Plug 'vim-scripts/tComment'
   Plug 'w0rp/ale'
 call plug#end()
 
@@ -99,28 +90,35 @@ set expandtab
 " Display extra whitespace
 set list listchars=tab:»·,trail:·,nbsp:·
 
+" Vim ignores U+FE0F, so these gitmoji measure 1 cell while the terminal draws
+" 2. Vim then writes over the glyph's second half and the terminal blanks it.
+if exists('*setcellwidths')
+  call setcellwidths([
+    \ [0x2697, 0x2697, 2],
+    \ [0x267b, 0x267b, 2],
+    \ [0x26b0, 0x26b0, 2],
+    \ [0x270f, 0x270f, 2],
+    \ [0x2708, 0x2708, 2],
+    \ [0x2b06, 0x2b07, 2],
+    \ ])
+endif
+
 " Don't highlight tabs in Go files
 autocmd BufRead,BufNewFile *.go setlocal nolist ft=go
 
 " Use one space, not two, after punctuation.
 set nojoinspaces
 
-" Use The Silver Searcher https://github.com/ggreer/the_silver_searcher
-if executable('ag')
-  " Use Ag over Grep
-  set grepprg=ag\ --nogroup\ --nocolor
-
-  " Use ag in CtrlP for listing files. Lightning fast and respects .gitignore
-  let g:ctrlp_user_command = 'ag -Q -l --nocolor --hidden -g "" %s'
-
-  " ag is fast enough that CtrlP doesn't need to cache
-  let g:ctrlp_use_caching = 0
-
-  if !exists(":Ag")
-    command -nargs=+ -complete=file -bar Ag silent! grep! <args>|cwindow|redraw!
-    nnoremap \ :Ag<SPACE>
-  endif
+" Use ripgrep for :grep, respects .gitignore
+if executable('rg')
+  set grepprg=rg\ --vimgrep\ --no-heading\ --smart-case
+  set grepformat=%f:%l:%c:%m
 endif
+
+" fzf
+nnoremap <C-p> :Files<CR>
+nnoremap <leader>b :Buffers<CR>
+nnoremap \ :Rg<SPACE>
 
 " Make it obvious where 80 characters is
 set textwidth=80
@@ -178,6 +176,46 @@ nnoremap <C-l> <C-w>l
 nnoremap ]r :ALENextWrap<CR>
 nnoremap [r :ALEPreviousWrap<CR>
 
+" ALE ships no oxlint linter, so define one. Lints the file on disk, oxlint
+" has no stdin mode.
+call ale#Set('javascript_oxlint_executable', 'oxlint')
+call ale#Set('javascript_oxlint_use_global', get(g:, 'ale_use_global_executables', 0))
+
+function! s:OxlintExecutable(buffer) abort
+  return ale#path#FindExecutable(a:buffer, 'javascript_oxlint', ['node_modules/.bin/oxlint'])
+endfunction
+
+function! s:OxlintHandler(buffer, lines) abort
+  let l:out = []
+  for l:m in ale#util#GetMatches(a:lines, '\v^.+:(\d+):(\d+): (.+) \[(\w+)/(.+)\]$')
+    call add(l:out, {
+    \ 'lnum': str2nr(l:m[1]),
+    \ 'col': str2nr(l:m[2]),
+    \ 'text': l:m[3],
+    \ 'type': l:m[4] is# 'Error' ? 'E' : 'W',
+    \ 'code': l:m[5],
+    \ })
+  endfor
+  return l:out
+endfunction
+
+for s:lang in ['javascript', 'javascriptreact', 'typescript', 'typescriptreact']
+  call ale#linter#Define(s:lang, {
+  \ 'name': 'oxlint',
+  \ 'executable': function('s:OxlintExecutable'),
+  \ 'command': '%e -f unix %s',
+  \ 'callback': function('s:OxlintHandler'),
+  \ 'lint_file': 1,
+  \ })
+endfor
+
+let g:ale_linters = {
+\ 'javascript': ['oxlint'],
+\ 'javascriptreact': ['oxlint'],
+\ 'typescript': ['oxlint', 'tsserver'],
+\ 'typescriptreact': ['oxlint', 'tsserver'],
+\ }
+
 " Set spellfile to location that is guaranteed to exist, can be symlinked to
 " Dropbox or kept in Git and managed outside of thoughtbot/dotfiles using rcm.
 set spellfile=$HOME/.vim-spell-en.utf-8.add
@@ -206,17 +244,31 @@ set exrc
 " Fold YAML files
 au FileType yaml setlocal foldmethod=indent
 
-" Auto-format on save
-augroup fmt
+" Create missing parent directories on write
+augroup mkdir
   autocmd!
-  autocmd BufWritePre *.js,*.jsx,*.ts,*.tsx Neoformat prettier
-  autocmd BufWritePre *.rb Neoformat rubocop
+  autocmd BufWritePre * if expand('%') !~# '://' && !isdirectory(expand('%:p:h'))
+    \ | call mkdir(expand('%:p:h'), 'p') | endif
 augroup END
 
-" Exclude JavaScript files in :Rtags via rails.vim due to warnings when parsing
-let g:Tlist_Ctags_Cmd="ctags --exclude='*.js'"
+" Auto-format on save, oxfmt resolved per-project out of node_modules/.bin
+let g:neoformat_try_node_exe = 1
+for s:ft in ['javascript', 'javascriptreact', 'typescript', 'typescriptreact']
+  let g:neoformat_{s:ft}_oxfmt = {
+    \ 'exe': 'oxfmt',
+    \ 'args': ['--stdin-filepath', '%:p'],
+    \ 'stdin': 1,
+    \ 'try_node_exe': 1,
+    \ }
+  let g:neoformat_enabled_{s:ft} = ['oxfmt']
+endfor
 
-" Index ctags from any project, including those outside Rails
+augroup fmt
+  autocmd!
+  autocmd BufWritePre *.js,*.jsx,*.mjs,*.cjs,*.ts,*.tsx,*.mts,*.cts Neoformat
+augroup END
+
+" Index ctags from any project
 function! ReindexCtags()
   let l:ctags_hook = '$(git rev-parse --show-toplevel)/.git/hooks/ctags'
 
