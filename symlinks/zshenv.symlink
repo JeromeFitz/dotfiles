@@ -1,2 +1,2 @@
 export ZSH=$HOME/.dotfiles
-eval "$(/opt/homebrew/bin/fnm env --use-on-cd --shell zsh)"
+eval "$(/opt/homebrew/bin/fnm env --use-on-cd --shell zsh --log-level quiet)"
