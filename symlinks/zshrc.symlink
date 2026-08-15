@@ -10,6 +10,9 @@ DEFAULT_USER=`whoami`
 # 🥪️ load sandboxd
 source $ZSH/zsh/plugins/sandboxd.plugin.zsh
 
+# 🧹 fnm leaves orphaned multishell symlinks behind (github.com/Schniz/fnm known limitation) — sweep daily
+find ~/.local/state/fnm_multishells -mindepth 1 -maxdepth 1 -mtime +1 -exec rm -rf {} + 2>/dev/null
+
 # ⚗️ debugging
 # zmodload zsh/zprof
 
@@ -45,3 +48,5 @@ case ":$PATH:" in
   *) export PATH="$PNPM_HOME/bin:$PATH" ;;
 esac
 # pnpm end
+export TURBO_NO_DAEMON=true
+export TURBO_TELEMETRY_DISABLED=1

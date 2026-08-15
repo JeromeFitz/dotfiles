@@ -13,3 +13,4 @@ tmp/**/*
 *.pyc
 #.next/
 **/.claude/settings.local.json
+**/.claude/.cc-writes/
