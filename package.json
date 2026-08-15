@@ -48,10 +48,6 @@
     "oxlint": "1.78.0"
   },
   "devEngines": {
-    "packageManager": {
-      "name": "pnpm",
-      "version": "11.9.0"
-    },
     "runtime": {
       "name": "node",
       "version": ">=24.17.0 <25"
