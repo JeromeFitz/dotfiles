@@ -44,7 +44,7 @@
     "ccommit": "4.2.3",
     "dotenv": "17.4.2",
     "is-ci": "4.1.0",
-    "oxfmt": "0.67.0",
+    "oxfmt": "0.68.0",
     "oxlint": "1.82.0"
   },
   "devEngines": {
