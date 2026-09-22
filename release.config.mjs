@@ -3,7 +3,7 @@ import isCI from "is-ci";
 
 if (!isCI) {
   const dotenv = await import("dotenv");
-  dotenv.config({ path: "./.env" });
+  dotenv.config({ fast: true, path: "./.env" });
 }
 
 const branches = [{ name: "main" }, { name: "develop", prerelease: "develop" }];

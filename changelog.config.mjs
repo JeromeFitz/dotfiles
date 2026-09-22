@@ -3,7 +3,7 @@ import isCI from "is-ci";
 if (!isCI) {
   // @hack(dotenv) 14.3.0 breaking change
   const dotenv = await import("dotenv");
-  dotenv.default.config({ path: "./.env" });
+  dotenv.default.config({ fast: true, path: "./.env" });
 }
 
 // eslint-disable-next-line no-undef
