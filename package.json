@@ -42,7 +42,7 @@
     "@jeromefitz/release-notes-generator": "4.2.2",
     "@jeromefitz/semantic": "12.2.3",
     "ccommit": "4.2.4",
-    "dotenv": "18.0.1",
+    "dotenv": "18.0.2",
     "is-ci": "4.1.0",
     "oxfmt": "0.68.0",
     "oxlint": "1.83.0"
