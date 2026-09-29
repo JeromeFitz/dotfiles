@@ -45,7 +45,7 @@
     "dotenv": "18.0.4",
     "is-ci": "4.1.0",
     "oxfmt": "0.71.0",
-    "oxlint": "1.85.0"
+    "oxlint": "1.86.0"
   },
   "devEngines": {
     "runtime": {
