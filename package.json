@@ -50,8 +50,8 @@
   "devEngines": {
     "runtime": {
       "name": "node",
-      "version": ">=24.17.0 <25"
+      "version": "26.13.1"
     }
   },
-  "packageManager": "pnpm@11.27.1"
+  "packageManager": "pnpm@12.23.0"
 }
